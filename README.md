@@ -1,1 +1,1 @@
-# ChicagoTradingCompetition2024
+# Chicago Tradin gCompetition 2024
