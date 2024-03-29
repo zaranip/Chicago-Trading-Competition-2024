@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xchangelib
+Version: 0.0.0
+Summary: A client library for interacting with xchange-v3
+Author-email: Rohan Voddhi <rohan.voddhi@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/UChicagoFM/xchangelib
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# xchange-v3-client
+
+This is a client for the xchange-v3. See example_bot.py and xchange_client.py for more information how to create a bot.

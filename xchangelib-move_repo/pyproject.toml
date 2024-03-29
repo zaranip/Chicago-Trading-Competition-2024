@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xchangelib"
+version = "0.0.0"
+authors = [
+    { name="Rohan Voddhi", email="rohan.voddhi@gmail.com" },
+]
+description = "A client library for interacting with xchange-v3"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = {text = "MIT License"}
+
+[project.urls]
+Homepage = "https://github.com/UChicagoFM/xchangelib"
+
+
