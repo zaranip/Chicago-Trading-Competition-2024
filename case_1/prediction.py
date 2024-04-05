@@ -144,7 +144,7 @@ class Prediction():
         bids = [bid for bid in self.round.get_bid_prices() if bid < pred]
         return min(bids, key=lambda x: abs(x-pred)) + 1
     
-    def ask(self):
+    def ask(self, pred):
         # implemented penny out
         asks = [ask for ask in self.round.get_asks_prices() if ask > pred]
         return min(asks, key=lambda x: abs(x-pred)) - 1
