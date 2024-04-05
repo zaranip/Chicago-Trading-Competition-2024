@@ -152,8 +152,6 @@ class Prediction():
     def __str__(self):
         # TODO: fill in the representation for informative print outs
         return f"A predictor of {self.symbol}"
-    
-    
 if __name__ == "__main__":
     pass
     
