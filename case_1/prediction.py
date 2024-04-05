@@ -1,6 +1,7 @@
 import math
 from sympy import diff, solve, symbols
 import sympy as sp
+import collections
 import numpy as np
 from scipy import stats
 from sklearn.linear_model import GammaRegressor
@@ -37,7 +38,7 @@ class HistPred():
     
     def grad(self, x, mu_k):
         if isinstance(x, sp.Expr):
-            # x_val = float(x.evalf())
+            # x _val = float(x.evalf())
             x_val = x
             return self.d_f(x_val) + mu_k * sp.cos(sp.atan(self.d_f(x_val))) * sp.sqrt(1 + self.f.evaluate(x_val)**2)
         else:
@@ -101,12 +102,13 @@ class RoundPred():
     def get_asks_prices(self):
         return list(self.asks.keys())
 
-    def update(self, order_books):
-        self.volume = sum(v for _, v in self.order_books[self.symbol].bids.items() if v != 0) 
-        + sum(v for _, v in self.order_books[self.symbol].asks.items() if v != 0)
+    def update(self, order_book):
+
+        self.volume = sum(v for _, v in order_book.bids.items() if v != 0) 
+        + sum(v for _, v in order_book.asks.items() if v != 0)
             
-        self.bids = dict((k,v) for k, v in order_books.bids.items() if v != 0)
-        self.asks = dict((k,v) for k, v in order_books.asks.items() if v != 0)
+        self.bids = dict((k,v) for k, v in order_book.bids.items() if v != 0)
+        self.asks = dict((k,v) for k, v in order_book.asks.items() if v != 0)
         self.book = list(self.bids.keys()).extend(list(self.asks.keys()))
         price = self.predict_naive()
         self.prices.append(price)

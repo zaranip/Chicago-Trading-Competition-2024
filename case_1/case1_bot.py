@@ -45,7 +45,8 @@ class MyXchangeClient(xchange_client.XChangeClient):
         while True:
             k = 2
             for pred in predictors:
-                pred.update(self.order_books[pred.name()])
+                order_book = self.order_books[pred.name()] if pred.name() in self.order_books else xchange_client.OrderBook()
+                pred.update(order_book)
             predictions = dict((pred.name(), pred.predict(k)) for pred in predictors)
             bids = dict((pred.name(), pred.bid(predictions[pred.name()])) for pred in predictors)
             asks = dict((pred.name(), pred.ask(predictions[pred.name()])) for pred in predictors)
