@@ -43,20 +43,15 @@ class MyXchangeClient(xchange_client.XChangeClient):
         df = pd.read_csv("Case1_Historical.csv")
         predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in symbols]
         while True:
-            bids = dict((symbol, [k for k, v in self.order_books[symbol].bids.items() if v != 0]) for symbol in symbols)
-            asks = dict((symbol, [k for k, v in self.order_books[symbol].asks.items() if v != 0]) for symbol in symbols)
-            books = dict((symbol, bids[symbol] + asks[symbol]) for symbol in symbols)
             k = 2
             for pred in predictors:
-                pred.update(books[pred.name()])
+                pred.update(self.order_books[pred.name()])
             predictions = dict((pred.name(), pred.predict(k)) for pred in predictors)
-
-            for symbol, prediction in predictions.items():
-                buy_order_id = await self.market_order(symbol, prediction - 1, xchange_client.Side.BUY)
-                sell_order_id = await self.market_order(symbol, prediction + 1, xchange_client.Side.SELL) 
-            print("Buy market Order ID:", buy_order_id)
-            print("Sell market Order ID:", sell_order_id)
-
+            bids = dict((pred.name(), pred.bid(predictions[pred.name()])) for pred in predictors)
+            asks = dict((pred.name(), pred.ask(predictions[pred.name()])) for pred in predictors)
+            for symbol, _ in predictions.items():
+                buy_order_id = await self.market_order(symbol, bids[symbol], xchange_client.Side.BUY)
+                sell_order_id = await self.market_order(symbol, asks[symbol], xchange_client.Side.SELL) 
             # Viewing Positions
             print("My positions:", self.positions)
             await asyncio.sleep(1)
@@ -65,7 +60,6 @@ class MyXchangeClient(xchange_client.XChangeClient):
         """Prints the books every 3 seconds."""
         while True:
             await asyncio.sleep(3)
-            # print(self.order_books)
             for security, book in self.order_books.items():
                 sorted_bids = sorted((k,v) for k,v in book.bids.items() if v != 0)
                 sorted_asks = sorted((k,v) for k,v in book.asks.items() if v != 0)

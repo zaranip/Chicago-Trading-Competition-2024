@@ -3,8 +3,7 @@ from sympy import diff, solve, symbols
 import sympy as sp
 import numpy as np
 from scipy import stats
-from sklearn.model_selection import GridSearchCV
-from sklearn.neighbors import KernelDensity
+from sklearn.linear_model import GammaRegressor
 import statsmodels.api as sm
 
 class Model():
@@ -16,14 +15,12 @@ class Model():
                 return b**a / math.gamma(a) * x**(a-1) * math.exp(-b*x)
         return gamma
     def fit_gamma(kde):
-        params = {'alpha': np.linspace(0.1, 10, 100),
-                  'beta': np.linspace(0.1, 10, 100)}
-        
-        grid_search = GridSearchCV(KernelDensity(), params, cv=5)
-        grid_search.fit(kde.support, kde.density)
-        
-        best_alpha = grid_search.best_params_['alpha']
-        best_beta = grid_search.best_params_['beta']
+        clf = GammaRegressor()
+        X = kde.support
+        y = kde.density
+        clf.fit(X.reshape(-1, 1), y)
+        best_alpha = clf.coef_[0]
+        best_beta = clf.coef_[1]
         
         return Model.gamma_distribution(best_alpha, best_beta)
 
@@ -67,14 +64,12 @@ class HistPred():
     def find_f(self, sample):
         kde = sm.nonparametric.KDEUnivariate(sample)
         kde.fit()
-        return Model.fit_gamma(kde)
+        # return Model.fit_gamma(kde)
+        return kde
     
     def find_d_f(self, dx=1e-6):
         x = sp.Symbol('x')
-        def f_callable(x_val):
-            return self.f.evaluate(x_val)
-
-        f_expr = f_callable(x)
+        f_expr = self.f
         d_f_expr = (f_expr.subs(x, x + dx) - f_expr.subs(x, x - dx)) / (2 * dx)
         d_f_callable = sp.lambdify(x, d_f_expr, 'numpy')
 
@@ -84,27 +79,43 @@ class HistPred():
 
 class RoundPred():
     def __init__(self, symbol):
+        self.symbol = symbol
         self.alpha = 0.2
         self.prices = []
         self.soft_average = 0
+        self.volume = 0
+        self.bids = {}
+        self.asks = {}
+        self.book = []
         pass
     
     def name(self):
         return self.symbol
     
-    def get_current(self):
+    def get_current_price(self):
         return self.prices[-1]
+    
+    def get_bid_prices(self):
+        return list(self.bids.keys())
 
-    def update(self, book):
-        price = self.predict_naive(book)
+    def get_asks_prices(self):
+        return list(self.asks.keys())
+
+    def update(self, order_books):
+        self.volume = sum(v for _, v in self.order_books[self.symbol].bids.items() if v != 0) 
+        + sum(v for _, v in self.order_books[self.symbol].asks.items() if v != 0)
+            
+        self.bids = dict((k,v) for k, v in order_books.bids.items() if v != 0)
+        self.asks = dict((k,v) for k, v in order_books.asks.items() if v != 0)
+        self.book = list(self.bids.keys()).extend(list(self.asks.keys()))
+        price = self.predict_naive()
         self.prices.append(price)
         self.soft_average = (1-self.alpha)*self.soft_average + self.alpha*price if len(self.prices) > 1 else price
     
-    def predict_naive(self, book):
-        return np.mean(book) if len(book) > 0 else 0
+    def predict_naive(self):
+        return np.mean(self.book) if len(self.book) > 0 else 0
     
     def predict_window(self, book):
-        # TODO: implement the sliding window approach
         pass
     
     def average(self):
@@ -125,12 +136,22 @@ class Prediction():
         self.round.update(book)
 
     def predict(self, k):
-        x = self.round.get_current()
+        x = self.round.get_current_price()
         return (1-self.weight) * self.round.average() + self.weight*self.hist.solver(x, k)
     
-    def __repr__(self):
+    def bid(self, pred):
+        # implemented penny in
+        bids = [bid for bid in self.round.get_bid_prices() if bid < pred]
+        return min(bids, key=lambda x: abs(x-pred)) + 1
+    
+    def ask(self):
+        # implemented penny out
+        asks = [ask for ask in self.round.get_asks_prices() if ask > pred]
+        return min(asks, key=lambda x: abs(x-pred)) - 1
+    
+    def __str__(self):
         # TODO: fill in the representation for informative print outs
-        return self.symbol
+        return f"A predictor of {self.symbol}"
     
     
 if __name__ == "__main__":
