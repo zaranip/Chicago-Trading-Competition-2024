@@ -1,7 +1,9 @@
 from typing import Optional
-
 from xchangelib import xchange_client
+from  prediction import Prediction
 import asyncio
+import numpy as np
+import pandas as pd
 
 
 class MyXchangeClient(xchange_client.XChangeClient):
@@ -36,38 +38,34 @@ class MyXchangeClient(xchange_client.XChangeClient):
 
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
-        await asyncio.sleep(5)
-        print("attempting to trade")
-        await self.place_order("BRV",3, xchange_client.Side.SELL, 7)
+        # await self.view_books()
+        symbols = ["EPT","DLO","MKU","IGM","BRV"]
+        df = pd.read_csv("Case1_Historical.csv")
+        predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in symbols]
+        while True:
+            bids = dict((symbol, [k for k, v in self.order_books[symbol].bids.items() if v != 0]) for symbol in symbols)
+            asks = dict((symbol, [k for k, v in self.order_books[symbol].asks.items() if v != 0]) for symbol in symbols)
+            books = dict((symbol, bids[symbol] + asks[symbol]) for symbol in symbols)
+            k = 2
+            for pred in predictors:
+                pred.update(books[pred.name()])
+            predictions = dict((pred.name(), pred.predict(k)) for pred in predictors)
 
-        # Cancelling an order
-        order_to_cancel = await self.place_order("BRV",3, xchange_client.Side.BUY, 5)
-        await asyncio.sleep(5)
-        await self.cancel_order(order_to_cancel)
+            for symbol, prediction in predictions.items():
+                buy_order_id = await self.market_order(symbol, prediction - 1, xchange_client.Side.BUY)
+                sell_order_id = await self.market_order(symbol, prediction + 1, xchange_client.Side.SELL) 
+            print("Buy market Order ID:", buy_order_id)
+            print("Sell market Order ID:", sell_order_id)
 
-        # Placing Swap requests
-        await self.place_swap_order('toJAK', 1)
-        await asyncio.sleep(5)
-        await self.place_swap_order('fromSCP', 1)
-        await asyncio.sleep(5)
-
-        # Placing an order that gets rejected for exceeding qty limits
-        await self.place_order("BRV",1000, xchange_client.Side.SELL, 7)
-        await asyncio.sleep(5)
-
-        # Placing a market order
-        market_order_id = await self.place_order("BRV",10, xchange_client.Side.SELL)
-        print("Market Order ID:", market_order_id)
-        await asyncio.sleep(5)
-
-        # Viewing Positions
-        print("My positions:", self.positions)
+            # Viewing Positions
+            print("My positions:", self.positions)
+            await asyncio.sleep(1)
 
     async def view_books(self):
         """Prints the books every 3 seconds."""
         while True:
             await asyncio.sleep(3)
-            print(self.order_books)
+            # print(self.order_books)
             for security, book in self.order_books.items():
                 sorted_bids = sorted((k,v) for k,v in book.bids.items() if v != 0)
                 sorted_asks = sorted((k,v) for k,v in book.asks.items() if v != 0)
@@ -91,8 +89,10 @@ async def main():
     return
 
 if __name__ == "__main__":
+    print("Aloha")
     loop = asyncio.get_event_loop()
     result = loop.run_until_complete(main())
 
+    
 
 
