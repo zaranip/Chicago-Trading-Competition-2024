@@ -3,9 +3,29 @@ from sympy import diff, solve, symbols
 import sympy as sp
 import numpy as np
 from scipy import stats
+from sklearn.model_selection import GridSearchCV
+from sklearn.neighbors import KernelDensity
 import statsmodels.api as sm
 
-
+class Model():
+    def gamma_distribution(a,b):
+        def gamma(x):
+            if isinstance(x, sp.Expr):
+                return b**a / sp.gamma(a) * x**(a-1) * sp.exp(-b*x)
+            else:
+                return b**a / math.gamma(a) * x**(a-1) * math.exp(-b*x)
+        return gamma
+    def fit_gamma(kde):
+        params = {'alpha': np.linspace(0.1, 10, 100),
+                  'beta': np.linspace(0.1, 10, 100)}
+        
+        grid_search = GridSearchCV(KernelDensity(), params, cv=5)
+        grid_search.fit(kde.support, kde.density)
+        
+        best_alpha = grid_search.best_params_['alpha']
+        best_beta = grid_search.best_params_['beta']
+        
+        return Model.gamma_distribution(best_alpha, best_beta)
 
 class HistPred():
     def __init__(self, symbol, sample):
@@ -20,10 +40,11 @@ class HistPred():
     
     def grad(self, x, mu_k):
         if isinstance(x, sp.Expr):
-            x_val = float(x.evalf())
-            return self.d_f(x_val) + mu_k * sp.cos(sp.atan(self.d_f(x_val))) * sp.sqrt(1 + self.f(x_val)**2)
+            # x_val = float(x.evalf())
+            x_val = x
+            return self.d_f(x_val) + mu_k * sp.cos(sp.atan(self.d_f(x_val))) * sp.sqrt(1 + self.f.evaluate(x_val)**2)
         else:
-            return self.d_f(x) + mu_k * math.cos(math.atan(self.d_f(x))) * math.sqrt(1 + self.f(x)**2)    
+            return self.d_f(x) + mu_k * math.cos(math.atan(self.d_f(x))) * math.sqrt(1 + self.f.evaluate(x)**2)    
         
     def solver(self, x, k):
         mu_k = self.find_mu(k)
@@ -46,14 +67,11 @@ class HistPred():
     def find_f(self, sample):
         kde = sm.nonparametric.KDEUnivariate(sample)
         kde.fit()
-        return kde
+        return Model.fit_gamma(kde)
     
     def find_d_f(self, dx=1e-6):
         x = sp.Symbol('x')
-
         def f_callable(x_val):
-            if isinstance(x_val, sp.Expr):
-                x_val = float(x_val.evalf())
             return self.f.evaluate(x_val)
 
         f_expr = f_callable(x)
@@ -61,10 +79,7 @@ class HistPred():
         d_f_callable = sp.lambdify(x, d_f_expr, 'numpy')
 
         def d_f(x_val):
-            if isinstance(x_val, sp.Expr):
-                x_val = float(x_val.evalf())
             return d_f_callable(x_val)
-
         return d_f
 
 class RoundPred():
@@ -81,7 +96,8 @@ class RoundPred():
         return self.prices[-1]
 
     def update(self, book):
-        self.prices.append(self.predict_naive(book))
+        price = self.predict_naive(book)
+        self.prices.append(price)
         self.soft_average = (1-self.alpha)*self.soft_average + self.alpha*price if len(self.prices) > 1 else price
     
     def predict_naive(self, book):
