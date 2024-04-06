@@ -54,6 +54,14 @@ class MyXchangeClient(xchange_client.XChangeClient):
                 buy_order_id = await self.market_order(symbol, bids[symbol], xchange_client.Side.BUY)
                 sell_order_id = await self.market_order(symbol, asks[symbol], xchange_client.Side.SELL) 
             # Viewing Positions
+                
+            # TODO: implement the fade parameter
+
+
+            # TODO: implement the selling ladder
+
+
+            
             print("My positions:", self.positions)
             await asyncio.sleep(1)
 

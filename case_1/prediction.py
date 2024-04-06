@@ -1,82 +1,220 @@
 import math
-from sympy import diff, solve, symbols
 import sympy as sp
+from sympy import symbols, exp, sqrt, pi, lambdify, diff, solve, atan, cos, gamma, loggamma, log
 import collections
 import numpy as np
-from scipy import stats
 from sklearn.linear_model import GammaRegressor
 import statsmodels.api as sm
 
-class Model():
-    def gamma_distribution(a,b):
-        def gamma(x):
-            if isinstance(x, sp.Expr):
-                return b**a / sp.gamma(a) * x**(a-1) * sp.exp(-b*x)
-            else:
-                return b**a / math.gamma(a) * x**(a-1) * math.exp(-b*x)
-        return gamma
-    def fit_gamma(kde):
-        clf = GammaRegressor()
-        X = kde.support
-        y = kde.density
-        clf.fit(X.reshape(-1, 1), y)
-        best_alpha = clf.coef_[0]
-        best_beta = clf.coef_[1]
-        
-        return Model.gamma_distribution(best_alpha, best_beta)
+import numpy as np
+from scipy import stats
+from scipy.stats import gaussian_kde
+from scipy.optimize import minimize
+import sympy as sp
 
-class HistPred():
+class GammaDistribution:
+    def __init__(self, data):
+        self.data = data
+        self.kde = gaussian_kde(data)
+        self.a, self.loc, self.scale = self._fit_params()
+    
+    def _fit_params(self):
+        def mse(params):
+            a, loc, scale = params
+            x = np.linspace(min(self.data), max(self.data), 100)
+            pdf_values = stats.gamma.pdf(x, a, loc=loc, scale=scale)
+            kde_values = self.kde(x)
+            return np.mean((pdf_values - kde_values)**2)
+        
+        initial_params = stats.gamma.fit(self.data)
+        result = minimize(mse, initial_params, method='Nelder-Mead')
+        return result.x
+    
+    def pdf(self, x):
+        if isinstance(x, sp.Symbol):
+            print(x)
+            return (x**(self.a - 1) * sp.exp(-x / self.scale)) / (self.scale**self.a * sp.gamma(self.a))
+        else:
+            return stats.gamma.pdf(x, self.a, loc=self.loc, scale=self.scale)
+    
+    def deriv_pdf(self, x):
+        if isinstance(x, sp.Symbol):
+            a, scale = self.a, self.scale
+            return sp.diff((x**(a - 1) * sp.exp(-x / scale)) / (scale**a * sp.gamma(a)), x)
+        else:
+            a, scale = self.a, self.scale
+            print(a, scale)
+            return (x**(a - 2) * np.exp(-x / scale) * (a - 1 - x / scale)) / (scale**a * np.math.gamma(a))
+
+class LognormDistribution:
+    def __init__(self, data):
+        self.data = data
+        self.kde = gaussian_kde(data)
+        self.s, self.loc, self.scale = self._fit_params()
+
+    def _fit_params(self):
+        def mse(params):
+            s, loc, scale = params
+            x = np.linspace(min(self.data), max(self.data), 100)
+            pdf_values = stats.lognorm.pdf(x, s, loc=loc, scale=scale)
+            kde_values = self.kde(x)
+            return np.mean((np.log(pdf_values) - np.log(kde_values))**2)
+
+        initial_params = stats.lognorm.fit(self.data)
+        result = minimize(mse, initial_params, method='Nelder-Mead')
+        print("optimized")
+        return result.x
+
+    def log_pdf(self, x):
+        if isinstance(x, sp.Symbol):
+            return -(sp.log(x) - self.loc)**2 / (2 * self.s**2) - sp.log(x) - sp.log(self.s) - 0.5 * sp.log(2 * sp.pi)
+        else:
+            x = np.where(x == 0, np.finfo(float).eps, x)  # Replace 0 with a small value
+            return stats.lognorm.logpdf(x, self.s, loc=self.loc, scale=self.scale)
+
+    def log_deriv_pdf(self, x):
+        if isinstance(x, sp.Symbol):
+            s, loc = self.s, self.loc
+            return sp.diff(-(sp.log(x) - loc)**2 / (2 * s**2) - sp.log(x) - sp.log(s) - 0.5 * sp.log(2 * sp.pi), x)
+        else:
+            s, loc = self.s, self.loc
+            x = np.where(x == 0, np.finfo(float).eps, x)  # Replace 0 with a small value
+            return -(np.log(x) - loc) / (s**2 * x) - 1 / x
+
+    def pdf(self, x):
+        return sp.exp(self.log_pdf(x))
+
+    def deriv_pdf(self, x):
+        return sp.exp(self.log_deriv_pdf(x))
+    
+
+class GammaKDE:
+    def __init__(self, data):
+        self.data = data
+        self.n = len(data)
+        self.k = symbols('k')
+        self.theta = symbols('theta')
+        self.pdf_expr = None
+        self.pdf_func = None
+        self.deriv_pdf_expr = None
+        self.deriv_pdf_func = None
+
+    def fit(self):
+        # Estimate shape and scale parameters
+        data_mean = np.mean(self.data)
+        data_var = np.var(self.data)
+        self.k_value = data_mean**2 / data_var
+        self.theta_value = data_var / data_mean
+
+        # Calculate the PDF expression
+        self.pdf_expr = (self.k**self.k * self.theta**(-self.k) * gamma(self.k) * (self.k - 1) * exp(-self.k * self.theta))
+        self.pdf_func = lambdify([self.k, self.theta], self.pdf_expr, 'numpy')
+
+    def pdf(self, x, k=None, theta=None):
+        if k is None:
+            k = self.k_value
+        if theta is None:
+            theta = self.theta_value
+
+        log_pdf_expr = k * log(k) - k * log(theta) + (k - 1) * log(x) - x / theta - loggamma(k)
+
+        if isinstance(x, (int, float)):
+            return float(exp(log_pdf_expr.subs([(self.k, k), (self.theta, theta)])))
+        else:
+            return exp(log_pdf_expr.subs([(self.k, k), (self.theta, theta)]))
+
+    def deriv_pdf(self, x, k=None, theta=None):
+        if self.deriv_pdf_expr is None:
+            self.deriv_pdf_expr = diff(self.pdf_expr, self.k)
+            self.deriv_pdf_func = lambdify([self.k, self.theta], self.deriv_pdf_expr, 'numpy')
+
+        if k is None:
+            k = self.k_value
+        if theta is None:
+            theta = self.theta_value
+
+        if isinstance(x, (int, float)):
+            return self.deriv_pdf_func(k, theta).subs([(self.k, k), (self.theta, theta)])
+        else:
+            return self.deriv_pdf_expr.subs([(self.k, k), (self.theta, theta)])
+        
+class GaussianKDE:
+    def __init__(self, data, bandwidth=None):
+        self.data = data
+        self.n = len(data)
+        if bandwidth is None:
+            self.bandwidth = self._scotts_rule()
+        else:
+            self.bandwidth = bandwidth
+        self.x = symbols('x')
+        self.pdf_expr = None
+        self.pdf_func = None
+        self.deriv_pdf_expr = None
+        self.deriv_pdf_func = None
+
+    def _scotts_rule(self):
+        return 1.06 * np.std(self.data) * self.n ** (-1/5)
+
+    def _gaussian_kernel(self, x):
+        return exp(-(x - self.x)**2 / (2 * self.bandwidth**2)) / (sqrt(2 * pi) * self.bandwidth)
+
+    def fit(self):
+        # Calculate the PDF expression
+        self.pdf_expr = sum(self._gaussian_kernel(xi) for xi in self.data) / self.n
+
+        # Create a lambdified function for the PDF
+        self.pdf_func = lambdify(self.x, self.pdf_expr)
+
+    def pdf(self, x):
+        if isinstance(x, (int, float)):
+            return self.pdf_func(x)
+        else:
+            return self.pdf_expr.subs(self.x, x)
+
+    def deriv_pdf(self, x):
+        if self.deriv_pdf_expr is None:
+            self.deriv_pdf_expr = diff(self.pdf_expr, self.x)
+            self.deriv_pdf_func = lambdify(self.x, self.deriv_pdf_expr)
+
+        if isinstance(x, (int, float)):
+            return self.deriv_pdf_func(x)
+        else:
+            return self.deriv_pdf_expr.subs(self.x, x)   
+
+
+class HistPred:
     def __init__(self, symbol, sample):
         self.symbol = symbol
-        self.f = self.find_f(sample)
-        self.d_f = self.find_d_f()
-        self.V = self.find_var(sample)
-        pass
-    
+        self.sample = sample
+        self.kde = LognormDistribution(sample)
+        self.log_f = self.kde.log_pdf
+        self.log_d_f = self.kde.log_deriv_pdf
+        self.V = self.find_var()
+
     def name(self):
         return self.symbol
-    
-    def grad(self, x, mu_k):
-        if isinstance(x, sp.Expr):
-            # x _val = float(x.evalf())
-            x_val = x
-            return self.d_f(x_val) + mu_k * sp.cos(sp.atan(self.d_f(x_val))) * sp.sqrt(1 + self.f.evaluate(x_val)**2)
-        else:
-            return self.d_f(x) + mu_k * math.cos(math.atan(self.d_f(x))) * math.sqrt(1 + self.f.evaluate(x)**2)    
-        
-    def solver(self, x, k):
-        mu_k = self.find_mu(k)
-        y = sp.Symbol('y')
-        eq = sp.Eq(self.grad(y, mu_k), self.grad(x, mu_k))
-        sol = sp.solveset(eq, y, domain=sp.Reals)
-        if isinstance(sol, sp.sets.EmptySet):
-            return None
-        elif isinstance(sol, sp.sets.FiniteSet):
-            return float(sol.args[0])
-        else:
-            return float(sp.min(sol))
-    
-    def find_mu(self, k):
-        return 1/(1+math.log(1+self.V*k))
-    
-    def find_var(self, sample):
-        return np.var(sample)
-        
-    def find_f(self, sample):
-        kde = sm.nonparametric.KDEUnivariate(sample)
-        kde.fit()
-        # return Model.fit_gamma(kde)
-        return kde
-    
-    def find_d_f(self, dx=1e-6):
-        x = sp.Symbol('x')
-        f_expr = self.f
-        d_f_expr = (f_expr.subs(x, x + dx) - f_expr.subs(x, x - dx)) / (2 * dx)
-        d_f_callable = sp.lambdify(x, d_f_expr, 'numpy')
 
-        def d_f(x_val):
-            return d_f_callable(x_val)
-        return d_f
+    def grad(self, x, mu_k):
+        log_exp = self.log_d_f(x) + log(mu_k * cos(atan(exp(self.log_d_f(x)))) * sqrt(1 + exp(2 * self.log_f(x))))
+        print(log_exp)
+        return log_exp
+
+    def solver(self, x, k):
+        x=5000
+        y = symbols('y', real=True)
+        mu_k = self.find_mu(k)
+        print(f"solving for {x} with lookahead {k} and mu {mu_k}")
+        #self.grad(y, mu_k) - self.grad(x, mu_k)
+        result = solve(self.grad(y, mu_k) - self.grad(x, mu_k), simplify=False)
+        print("result is", result)
+        return result[0]
+
+    def find_mu(self, k):
+        return 1 / (1 + log(1 + self.V * k))
+
+    def find_var(self):
+        return np.var(self.sample)
+
 
 class RoundPred():
     def __init__(self, symbol):
@@ -109,12 +247,14 @@ class RoundPred():
             
         self.bids = dict((k,v) for k, v in order_book.bids.items() if v != 0)
         self.asks = dict((k,v) for k, v in order_book.asks.items() if v != 0)
-        self.book = list(self.bids.keys()).extend(list(self.asks.keys()))
+        self.book = list(self.bids.keys()) + (list(self.asks.keys()))
+        # print(self.book)
         price = self.predict_naive()
         self.prices.append(price)
         self.soft_average = (1-self.alpha)*self.soft_average + self.alpha*price if len(self.prices) > 1 else price
     
     def predict_naive(self):
+        # print("Printing book", self.book)
         return np.mean(self.book) if len(self.book) > 0 else 0
     
     def predict_window(self, book):
@@ -129,6 +269,7 @@ class Prediction():
         self.hist = HistPred(symbol, sample)
         self.round = RoundPred(symbol)
         self.weight = 0.3
+        self.fade = 1
         pass
 
     def name(self):
