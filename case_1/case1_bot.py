@@ -1,3 +1,4 @@
+from datetime import datetime
 from typing import Optional
 from xchangelib import xchange_client
 from  prediction import Prediction
@@ -39,10 +40,12 @@ class MyXchangeClient(xchange_client.XChangeClient):
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # await self.view_books()
+        start_time = datetime.now()
         symbols = ["EPT","DLO","MKU","IGM","BRV"]
         df = pd.read_csv("Case1_Historical.csv")
         predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in symbols]
         while True:
+
             k = 2
             for pred in predictors:
                 order_book = self.order_books[pred.name()] if pred.name() in self.order_books else xchange_client.OrderBook()
@@ -53,6 +56,8 @@ class MyXchangeClient(xchange_client.XChangeClient):
             for symbol, _ in predictions.items():
                 buy_order_id = await self.place_order(symbol, 1, xchange_client.Side.BUY, int(bids[symbol]))
                 sell_order_id = await self.place_order(symbol, 1, xchange_client.Side.SELL, int(asks[symbol])) 
+                with open(f"./log/round_data{start_time.date()}-{str(start_time.time())[-6]}.txt", "a") as f:
+                    f.write(f"{symbol}: {int(bids[symbol])}, {int(asks[symbol])}\n")
                 print(symbol, int(bids[symbol]), int(asks[symbol]))
             
             # TODO: implement the fade parameter
