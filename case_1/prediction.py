@@ -1,15 +1,16 @@
 import math
 import sympy as sp
-from sympy import symbols, exp, sqrt, pi, lambdify, diff, solve, atan, cos, gamma, loggamma, log
+from sympy import symbols, exp, sqrt, pi, lambdify, diff, solve, atan, cos, gamma, loggamma, log, nsolve
 import collections
 import numpy as np
 from sklearn.linear_model import GammaRegressor
 import statsmodels.api as sm
 
 import numpy as np
+from numpy import cos, arctan, sqrt
 from scipy import stats
 from scipy.stats import gaussian_kde
-from scipy.optimize import minimize
+from scipy.optimize import minimize, fsolve, newton
 import sympy as sp
 
 class GammaDistribution:
@@ -51,42 +52,32 @@ class LognormDistribution:
         self.data = data
         self.kde = gaussian_kde(data)
         self.s, self.loc, self.scale = self._fit_params()
-
+    
     def _fit_params(self):
         def mse(params):
             s, loc, scale = params
             x = np.linspace(min(self.data), max(self.data), 100)
             pdf_values = stats.lognorm.pdf(x, s, loc=loc, scale=scale)
             kde_values = self.kde(x)
-            return np.mean((np.log(pdf_values) - np.log(kde_values))**2)
-
+            return np.mean((pdf_values - kde_values)**2)
+        
         initial_params = stats.lognorm.fit(self.data)
         result = minimize(mse, initial_params, method='Nelder-Mead')
-        print("optimized")
         return result.x
-
-    def log_pdf(self, x):
-        if isinstance(x, sp.Symbol):
-            return -(sp.log(x) - self.loc)**2 / (2 * self.s**2) - sp.log(x) - sp.log(self.s) - 0.5 * sp.log(2 * sp.pi)
-        else:
-            x = np.where(x == 0, np.finfo(float).eps, x)  # Replace 0 with a small value
-            return stats.lognorm.logpdf(x, self.s, loc=self.loc, scale=self.scale)
-
-    def log_deriv_pdf(self, x):
-        if isinstance(x, sp.Symbol):
-            s, loc = self.s, self.loc
-            return sp.diff(-(sp.log(x) - loc)**2 / (2 * s**2) - sp.log(x) - sp.log(s) - 0.5 * sp.log(2 * sp.pi), x)
-        else:
-            s, loc = self.s, self.loc
-            x = np.where(x == 0, np.finfo(float).eps, x)  # Replace 0 with a small value
-            return -(np.log(x) - loc) / (s**2 * x) - 1 / x
-
-    def pdf(self, x):
-        return sp.exp(self.log_pdf(x))
-
-    def deriv_pdf(self, x):
-        return sp.exp(self.log_deriv_pdf(x))
     
+    def pdf(self, x):
+        if isinstance(x, sp.Symbol):
+            return (sp.exp(-(sp.log(x) - self.loc)**2 / (2 * self.s**2)) / (x * self.s * sp.sqrt(2 * sp.pi)))
+        else:
+            return stats.lognorm.pdf(x, self.s, loc=self.loc, scale=self.scale)
+    
+    def deriv_pdf(self, x):
+        if isinstance(x, sp.Symbol):
+            s, loc = self.s, self.loc
+            return sp.diff((sp.exp(-(sp.log(x) - loc)**2 / (2 * s**2)) / (x * s * sp.sqrt(2 * sp.pi))), x)
+        else:
+            s, loc = self.s, self.loc
+            return (np.exp(-(np.log(x) - loc)**2 / (2 * s**2)) * (-1 - (np.log(x) - loc) / s**2)) / (x**2 * s**3 * np.sqrt(2 * np.pi))
 
 class GammaKDE:
     def __init__(self, data):
@@ -187,34 +178,50 @@ class HistPred:
         self.symbol = symbol
         self.sample = sample
         self.kde = LognormDistribution(sample)
-        self.log_f = self.kde.log_pdf
-        self.log_d_f = self.kde.log_deriv_pdf
+        #self.kde.fit()
+        self.f = self.kde.pdf
+        self.d_f = self.kde.deriv_pdf
         self.V = self.find_var()
 
     def name(self):
         return self.symbol
 
     def grad(self, x, mu_k):
-        log_exp = self.log_d_f(x) + log(mu_k * cos(atan(exp(self.log_d_f(x)))) * sqrt(1 + exp(2 * self.log_f(x))))
-        print(log_exp)
-        return log_exp
+        exp = self.d_f(x) + mu_k * np.cos(np.arctan(self.d_f(x))) * np.sqrt(1 + self.f(x)**2)
+        return exp
 
-    def solver(self, x, k):
-        x=5000
-        y = symbols('y', real=True)
-        mu_k = self.find_mu(k)
-        print(f"solving for {x} with lookahead {k} and mu {mu_k}")
-        #self.grad(y, mu_k) - self.grad(x, mu_k)
-        result = solve(self.grad(y, mu_k) - self.grad(x, mu_k), simplify=False)
-        print("result is", result)
-        return result[0]
+    # def solver(self, x, k):
+    #     x = 4000
+    #     mu_k = self.find_mu(k)
+    #     print(f"solving for {x} with lookahead {k} and mu {mu_k}")
+        
+    #     def equation(y):
+    #         return self.grad(y, mu_k) - self.grad(x, mu_k)
+        
+    #     initial_guess = np.mean(self.sample)
+    #     print("initial guess is", initial_guess)
+    #     result = fsolve(equation, initial_guess)
+    #     print("result is", result)
+    #     return result[0]
+
+    # def solver(self, x, k):
+    #     x = 4000
+    #     mu_k = self.find_mu(k)
+    #     print(f"solving for {x} with lookahead {k} and mu {mu_k}")
+        
+    #     def equation(y):
+    #         return self.grad(y, mu_k) - self.grad(x, mu_k)
+        
+    #     initial_guess = x
+    #     result = newton(equation, initial_guess, tol=1e-6, maxiter=100)
+    #     print("result is", result)
+    #     return result
 
     def find_mu(self, k):
-        return 1 / (1 + log(1 + self.V * k))
+        return 1000000 / (1 + math.log(1 + self.V * k))
 
     def find_var(self):
         return np.var(self.sample)
-
 
 class RoundPred():
     def __init__(self, symbol):
