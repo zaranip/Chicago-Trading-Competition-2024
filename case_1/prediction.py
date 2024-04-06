@@ -204,18 +204,18 @@ class HistPred:
     #     print("result is", result)
     #     return result[0]
 
-    # def solver(self, x, k):
-    #     x = 4000
-    #     mu_k = self.find_mu(k)
-    #     print(f"solving for {x} with lookahead {k} and mu {mu_k}")
+    def solver(self, x, k):
+        print(x)
+        mu_k = self.find_mu(k)
+        print(f"solving for {x} with lookahead {k} and mu {mu_k}")
         
-    #     def equation(y):
-    #         return self.grad(y, mu_k) - self.grad(x, mu_k)
+        def equation(y):
+            return self.grad(y, mu_k) - self.grad(x, mu_k)
         
-    #     initial_guess = x
-    #     result = newton(equation, initial_guess, tol=1e-6, maxiter=100)
-    #     print("result is", result)
-    #     return result
+        initial_guess = x
+        result = newton(equation, initial_guess, tol=1e-6, maxiter=100)
+        print("result is", result)
+        return result
 
     def find_mu(self, k):
         return 1000000 / (1 + math.log(1 + self.V * k))
@@ -227,7 +227,7 @@ class RoundPred():
     def __init__(self, symbol):
         self.symbol = symbol
         self.alpha = 0.2
-        self.prices = []
+        self.prices = [4000]
         self.soft_average = 0
         self.volume = 0
         self.bids = {}
@@ -261,8 +261,9 @@ class RoundPred():
         self.soft_average = (1-self.alpha)*self.soft_average + self.alpha*price if len(self.prices) > 1 else price
     
     def predict_naive(self):
-        # print("Printing book", self.book)
-        return np.mean(self.book) if len(self.book) > 0 else 0
+        if len(self.book) > 0:
+            print(f"Book Mean of {self.symbol} is: ", np.mean(self.book))
+        return np.mean(self.book) if len(self.book) > 0 else self.prices[-1]
     
     def predict_window(self, book):
         pass
@@ -292,16 +293,16 @@ class Prediction():
     def bid(self, pred):
         # implemented penny in
         bids = [bid for bid in self.round.get_bid_prices() if bid < pred]
-        return min(bids, key=lambda x: abs(x-pred)) + 1
+        return min(bids, key=lambda x: abs(x-pred)) + 1 if len(bids) > 0 else pred - 1
     
     def ask(self, pred):
-        # implemented penny out
         asks = [ask for ask in self.round.get_asks_prices() if ask > pred]
-        return min(asks, key=lambda x: abs(x-pred)) - 1
+        return min(asks, key=lambda x: abs(x-pred)) - 1 if len(asks) > 0 else pred + 1
     
     def __str__(self):
         # TODO: fill in the representation for informative print outs
         return f"A predictor of {self.symbol}"
+    
 if __name__ == "__main__":
     pass
     

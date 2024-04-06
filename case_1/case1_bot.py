@@ -51,19 +51,19 @@ class MyXchangeClient(xchange_client.XChangeClient):
             bids = dict((pred.name(), pred.bid(predictions[pred.name()])) for pred in predictors)
             asks = dict((pred.name(), pred.ask(predictions[pred.name()])) for pred in predictors)
             for symbol, _ in predictions.items():
-                buy_order_id = await self.market_order(symbol, bids[symbol], xchange_client.Side.BUY)
-                sell_order_id = await self.market_order(symbol, asks[symbol], xchange_client.Side.SELL) 
-            # Viewing Positions
-                
+                buy_order_id = await self.place_order(symbol, 1, xchange_client.Side.BUY, int(bids[symbol]))
+                sell_order_id = await self.place_order(symbol, 1, xchange_client.Side.SELL, int(asks[symbol])) 
+                print(symbol, int(bids[symbol]), int(asks[symbol]))
+            
             # TODO: implement the fade parameter
 
 
             # TODO: implement the selling ladder
 
 
-            
+            # Viewing Positions
             print("My positions:", self.positions)
-            await asyncio.sleep(1)
+            # await asyncio.sleep(1)
 
     async def view_books(self):
         """Prints the books every 3 seconds."""
@@ -92,7 +92,6 @@ async def main():
     return
 
 if __name__ == "__main__":
-    print("Aloha")
     loop = asyncio.get_event_loop()
     result = loop.run_until_complete(main())
 
