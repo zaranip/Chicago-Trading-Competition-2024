@@ -42,6 +42,7 @@ class MyXchangeClient(xchange_client.XChangeClient):
         # await self.view_books()
         start_time = datetime.now()
         symbols = ["EPT","DLO","MKU","IGM","BRV"]
+        etfs = ["JCR", "JAK"]
         df = pd.read_csv("Case1_Historical.csv")
         predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in symbols]
         while True:
@@ -60,6 +61,22 @@ class MyXchangeClient(xchange_client.XChangeClient):
                     f.write(f"{symbol}: {int(bids[symbol])}, {int(asks[symbol])}\n")
                 print(symbol, int(bids[symbol]), int(asks[symbol]))
             
+            # ETF Arbitrage
+            for etf in etfs:
+                if etf == "SCP":
+                    price = (3 * predictions["EPT"] + 3*predictions["IGM"] + 4*predictions["BRV"])/10
+                    scp_bids = sorted((k,v) for k, v in self.order_books["SCP"].bids.items())
+                    scp_asks = sorted((k,v) for k, v in self.order_books["SCP"].asks.items())
+                    if self.order_books["SCP"].bids[price] > 0:
+                        buy_order_id = await self.place_order(etf, 1, xchange_client.Side.BUY, price)
+                    if self.order_books["SCP"].asks[price] > 0:
+                        sell_order_id = await self.place_order(etf, 1, xchange_client.Side.SELL, price)
+                elif etf == "JAK":
+                    predictions["JAK"] = (2 * predictions['EPT'] + 5*predictions['DLO'] + 3*predictions['MKU'])/10
+                    buy_order_id = await self.place_order(etf, 1, xchange_client.Side.BUY, 1000)
+                    sell_order_id = await self.place_order(etf, 1, xchange_client.Side.SELL, 1000)
+                
+                
             # TODO: implement the fade parameter
 
 
