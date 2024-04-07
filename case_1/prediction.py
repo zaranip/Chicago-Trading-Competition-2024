@@ -249,14 +249,16 @@ class RoundPred():
 
     def update(self, order_book):
 
-        self.volume = sum(v for _, v in order_book.bids.items() if v != 0) 
-        + sum(v for _, v in order_book.asks.items() if v != 0)
+        self.volume = sum(v for _, v in order_book.bids.items() if v > 0) 
+        + sum(v for _, v in order_book.asks.items() if v > 0)
             
-        self.bids = dict((k,v) for k, v in order_book.bids.items() if v != 0)
-        self.asks = dict((k,v) for k, v in order_book.asks.items() if v != 0)
-        self.book = list(self.bids.keys()) + (list(self.asks.keys()))
-        # print(self.book)
-        price = self.predict_naive()
+        self.bids = dict((k,v) for k, v in order_book.bids.items() if v > 0)
+        self.asks = dict((k,v) for k, v in order_book.asks.items() if v > 0)
+        #update self.book
+        self.book = []
+        for k, v in list(self.bids.items()) + list(self.asks.items()):
+            self.book += [k for _ in range(v)]
+        price = self.predict_median()
         self.prices.append(price)
         self.soft_average = (1-self.alpha)*self.soft_average + self.alpha*price if len(self.prices) > 1 else price
     
@@ -264,7 +266,9 @@ class RoundPred():
         if len(self.book) > 0:
             print(f"Book Mean of {self.symbol} is: ", np.mean(self.book))
         return np.mean(self.book) if len(self.book) > 0 else self.prices[-1]
-    
+    def predict_median(self):
+        return np.median(self.book) if len(self.book) > 0 else self.prices[-1]
+
     def predict_window(self, book):
         pass
     
