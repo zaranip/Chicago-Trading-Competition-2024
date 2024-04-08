@@ -94,9 +94,8 @@ class MainBot(xchange_client.XChangeClient):
 
     async def bot_handle_order_fill(self, order_id: str, qty: int, price: int):
         global start_time
-        with open(f"./log/round_data{start_time.date()}-{str(start_time.time())[-6]}.txt", "a") as f:
-                    if order_id in self.order_ids:
-                        f.write(f"{order_id} {self.order_ids[order_id]} {qty} {price}\n")
+        with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
+            f.write(f"{order_id} {self.order_ids[order_id]} {qty} {price}\n")
 
     async def bot_handle_order_rejected(self, order_id: str, reason: str) -> None:
         print(f"[DEBUG] Order Rejected - Order ID: {order_id}, Reason: {reason}")
@@ -136,6 +135,8 @@ class MainBot(xchange_client.XChangeClient):
                 ask_id = await self.place_order(symbol, 1, xchange_client.Side.SELL, int(asks[symbol])) 
                 self.order_ids[bid_id] = (symbol, "BID")
                 self.order_ids[ask_id] = (symbol, "ASK")
+                with open(f"./log/placed/round_data_{start_time}.txt", "a") as f:
+                    f.write(f"{bid_id} {int(bids[symbol])} {ask_id} {int(asks[symbol])}\n")
             # ETF Arbitrage
             for etf in etfs:
                 margin = 100
@@ -143,14 +144,14 @@ class MainBot(xchange_client.XChangeClient):
                     price = (3 * predictions["EPT"] + 3*predictions["IGM"] + 4*predictions["BRV"])/10
                 elif etf == "JAK":
                     price = (2 * predictions['EPT'] + 5*predictions['DLO'] + 3*predictions['MKU'])/10
-                etf_bids = sorted((k,v) for k, v in self.order_books[etf].bids.items() if k > price + margin)
-                etf_asks = sorted((k,v) for k, v in self.order_books[etf].asks.items() if k < price - margin)
+                etf_bids = sorted((k,v) for k, v in self.order_books[etf].bids.items() if k > price + margin and v > 0)
+                etf_asks = sorted((k,v) for k, v in self.order_books[etf].asks.items() if k < price - margin and v > 0)
                 for k,v in etf_bids:
                     bid_id = await self.place_order(etf, v, xchange_client.Side.SELL, k)
-                    self.order_ids[bid_id] = (etf, "BID")
+                    self.order_ids[bid_id] = (etf, "ASK")
                 for k,v in etf_asks:
                     ask_id = await self.place_order(etf, v, xchange_client.Side.BUY, k)
-                    self.order_ids[ask_id] = (etf, "ASK")
+                    self.order_ids[ask_id] = (etf, "BID")
                 
                 
             # TODO: implement the fade parameter
@@ -161,7 +162,7 @@ class MainBot(xchange_client.XChangeClient):
 
             # Viewing Positions
             print("My positions:", self.positions)
-            # await asyncio.sleep(1)
+            await asyncio.sleep(1)
 
     async def view_books(self):
         """Prints the books every 3 seconds."""
@@ -189,7 +190,7 @@ async def main():
     await asyncio.Event().wait()
 
 if __name__ == "__main__":
-    start_time = datetime.now()
+    start_time = datetime.now().strftime("%y-%m-%d-%H-%M-%S")
     loop = asyncio.get_event_loop()
     result = loop.run_until_complete(main())
 
