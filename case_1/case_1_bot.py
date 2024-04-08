@@ -1,3 +1,4 @@
+import collections
 from datetime import datetime
 from typing import Optional
 from xchangelib import xchange_client
@@ -5,6 +6,14 @@ from  prediction import Prediction
 import asyncio
 import numpy as np
 import pandas as pd
+
+
+# constants
+MAX_ORDER_SIZE = 100
+MAX_OPEN_ORDERS = 100
+OUTSTANDING_VOLUME = 100
+MAX_ABSOLUTE_POSITION = 100
+
 
 class OrderResponse:
     def __init__(self, order_id: str):
@@ -60,21 +69,22 @@ class OpenOrders:
     def get_id(self, price):
         return self.price_to_id[price]
 
-class MyXchangeClient(xchange_client.XChangeClient):
+class MainBot(xchange_client.XChangeClient):
     '''A shell client with the methods that can be implemented to interact with the xchange.'''
 
     def __init__(self, host: str, username: str, password: str):
         super().__init__(host, username, password)
         self.contracts = ["EPT", "DLO", "MKU", "IGM", "BRV"]
         self.order_size = 10
-        self.order_l1 = 15
-        self.order_l2 = 10
-        self.order_l3 = 5
-        self.l1_spread = 2
+        self.level_orders = 10
+        self.l1_spread = 20
         self.l2_spread = self.l1_spread * 2
         self.l3_spread = self.l1_spread * 3
-        self.order_ids = {}
-        self.open_orders = {}
+        self.order_ids = collections.defaultdict()
+        self.open_orders = collections.defaultdict(int)
+        self.open_level_orders = collections.defaultdict(int)
+        self.outstanding_volume = collections.defaultdict(int)
+        self.ladder = collections.defaultdict(dict)
         for contract in self.contracts:
             self.order_ids[contract + ' bid'] = ''
             self.order_ids[contract + ' ask'] = ''
@@ -93,18 +103,17 @@ class MyXchangeClient(xchange_client.XChangeClient):
             print(f"[DEBUG] Order Cancellation Failed - Order ID: {order_id}, Error: {error}")
 
     async def bot_handle_order_fill(self, order_id: str, qty: int, price: int):
-        # for order_key in self.open_orders.keys():
-        #     if order_id in self.open_orders[order_key].id_to_qty:
-        #         if qty > 0:
-        #             self.open_orders[order_key].adjust_qty(order_id, -qty)
-        #             self.positions[order_key] += qty
-        #             print(f"[DEBUG] Order Fill - {order_key}: +{qty} @ {price}")
-        #         else:
-        #             self.open_orders[order_key].adjust_qty(order_id, qty)
-        #             self.positions[order_key] -= qty
-        #             print(f"[DEBUG] Order Fill - {order_key}: {qty} @ {price}")
-        #         break
-        print("Order Filled")
+        global start_time
+        symbol, side, level = self.order_ids[order_id]
+        self.outstanding_volume[symbol] -= qty
+        self.open_orders[symbol] -= 1
+        self.open_level_orders[symbol] -= 1 if level else 0
+        # del self.order_ids[order_id]
+
+        with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
+            f.write(f"{order_id} {(symbol, side)} {qty} {price}\n")
+
+        
 
     async def bot_handle_order_rejected(self, order_id: str, reason: str) -> None:
         print(f"[DEBUG] Order Rejected - Order ID: {order_id}, Reason: {reason}")
@@ -122,11 +131,27 @@ class MyXchangeClient(xchange_client.XChangeClient):
         # print("Swap response")
         pass
 
+    async def bot_place_order(self, symbol, qty, side, price, level=False, aggressive=False):
+        vol = min(qty, OUTSTANDING_VOLUME - self.outstanding_volume[symbol])
+
+
+        order_id = await self.place_order(symbol, vol, side, price)
+        
+        self.order_ids[order_id] = (symbol, "BID" if side == xchange_client.Side.BUY else "ASK", level)
+        self.open_orders[symbol] += 1
+
+        if aggressive and vol < qty:
+            # will cancel whatever oldest order and place this order
+            pass
+
+        with open(f"./log/placed/round_data_{start_time}.txt", "a") as f:
+            f.write(f"{order_id} {symbol} {price}\n")
+
+        return order_id
 
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # await self.view_books()
-        start_time = datetime.now()
         symbols = ["EPT","DLO","MKU","IGM","BRV"]
         etfs = ["SCP", "JAK"]
         df = pd.read_csv("Case1_Historical.csv")
@@ -141,35 +166,43 @@ class MyXchangeClient(xchange_client.XChangeClient):
             bids = dict((pred.name(), pred.bid(predictions[pred.name()])) for pred in predictors)
             asks = dict((pred.name(), pred.ask(predictions[pred.name()])) for pred in predictors)
             for symbol, _ in predictions.items():
-                await self.place_order(symbol, 1, xchange_client.Side.BUY, int(bids[symbol]))
-                await self.place_order(symbol, 1, xchange_client.Side.SELL, int(asks[symbol])) 
-                # with open(f"./log/round_data{start_time.date()}-{str(start_time.time())[-6]}.txt", "a") as f:
-                #     f.write(f"{symbol}: {int(bids[symbol])}, {int(asks[symbol])}\n")
-                print(symbol, int(bids[symbol]), int(asks[symbol]))
-            
+                await self.bot_place_order(symbol, 5, xchange_client.Side.BUY, int(bids[symbol]))
+                await self.bot_place_order(symbol, 5, xchange_client.Side.SELL, int(asks[symbol])) 
+
             # ETF Arbitrage
             for etf in etfs:
+                margin = 20
                 if etf == "SCP":
                     price = (3 * predictions["EPT"] + 3*predictions["IGM"] + 4*predictions["BRV"])/10
                 elif etf == "JAK":
                     price = (2 * predictions['EPT'] + 5*predictions['DLO'] + 3*predictions['MKU'])/10
-                etf_bids = sorted((k,v) for k, v in self.order_books[etf].bids.items() if k > price)
-                etf_asks = sorted((k,v) for k, v in self.order_books[etf].asks.items() if k < price)
+                etf_bids = sorted((k,v) for k, v in self.order_books[etf].bids.items() if k > price + margin and v > 0)
+                etf_asks = sorted((k,v) for k, v in self.order_books[etf].asks.items() if k < price - margin and v > 0)
                 for k,v in etf_bids:
-                    await self.place_order(etf, v, xchange_client.Side.SELL, k)
+                    await self.bot_place_order(etf, v, xchange_client.Side.SELL, k)
                 for k,v in etf_asks:
-                    await self.place_order(etf, v, xchange_client.Side.BUY, k)
+                    await self.bot_place_order(etf, v, xchange_client.Side.BUY, k)
                 
                 
-            # TODO: implement the fade parameter
-
-
             # TODO: implement the selling ladder
+            for symbol in symbols:
+                if self.open_orders[symbol] < MAX_OPEN_ORDERS and self.outstanding_volume[symbol] < OUTSTANDING_VOLUME:
+                    for level in range(1, 4):
+                        spread = getattr(self, f"l{level}_spread")
+                        bid = bids[symbol] - spread
+                        ask = asks[symbol] + spread
 
-
+                        aggressive = level < 2
+                        vol = min(OUTSTANDING_VOLUME - self.outstanding_volume[symbol], self.level_orders)
+                        if self.open_level_orders[symbol] < self.level_orders:
+                            await self.bot_place_order(symbol, vol, xchange_client.Side.BUY, int(bid), True, aggressive)
+                            self.open_level_orders[symbol] += 1
+                        if self.open_level_orders[symbol] < self.level_orders:
+                            await self.bot_place_order(symbol, vol, xchange_client.Side.SELL, int(ask), True, aggressive)
+                            self.open_level_orders[symbol] += 1
             # Viewing Positions
             print("My positions:", self.positions)
-            # await asyncio.sleep(1)
+            await asyncio.sleep(1)
 
     async def view_books(self):
         """Prints the books every 3 seconds."""
@@ -192,15 +225,15 @@ class MyXchangeClient(xchange_client.XChangeClient):
 
 
 async def main():
-    SERVER = 'staging.uchicagotradingcompetition.com:3333' # run on sandbox
-    my_client = MyXchangeClient(SERVER,"university_of_chicago_umassamherst","ekans-mew-8133")
-    await my_client.start()
-    return
+    bot = MainBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133")
+    await bot.start()
+    await asyncio.Event().wait()
 
 if __name__ == "__main__":
-    loop = asyncio.get_event_loop()
-    result = loop.run_until_complete(main())
-
+    start_time = datetime.now().strftime("%y-%m-%d-%H-%M-%S")
+    # loop = asyncio.get_event_loop()
+    # result = loop.run_until_complete(main())
+    asyncio.run(main())
     
 
 

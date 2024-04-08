@@ -1,17 +1,27 @@
 import math
 import sympy as sp
-from sympy import symbols, exp, sqrt, pi, lambdify, diff, solve, atan, cos, gamma, loggamma, log, nsolve
-import collections
 import numpy as np
-from sklearn.linear_model import GammaRegressor
 import statsmodels.api as sm
-
+import sympy as sp
 import numpy as np
+
+from collections import defaultdict, Counter
 from numpy import cos, arctan, sqrt
 from scipy import stats
 from scipy.stats import gaussian_kde
 from scipy.optimize import minimize, fsolve, newton
-import sympy as sp
+from sklearn.linear_model import GammaRegressor
+from sympy import symbols, exp, sqrt, pi, lambdify, diff, solve, atan, cos, gamma, loggamma, log, nsolve
+
+expected_prices = {
+    'EPT': 4500,
+    'IGM': 4500,
+    'BRV': 4500,
+    'DLO': 4500,
+    'MKU': 4500,
+    'SCP': 4500,
+    'JAK': 4500
+}
 
 class GammaDistribution:
     def __init__(self, data):
@@ -210,7 +220,9 @@ class HistPred:
         print(f"solving for {x} with lookahead {k} and mu {mu_k}")
         
         def equation(y):
-            return self.grad(y, mu_k) - self.grad(x, mu_k)
+            # return self.grad(y, mu_k) - self.grad(x, mu_k)
+            return self.grad(y, mu_k) - mu_k * np.cos(np.arctan(self.d_f(x))) * np.sqrt(1 + self.f(x)**2)
+        
         
         initial_guess = x
         result = newton(equation, initial_guess, tol=1e-6, maxiter=100)
@@ -227,7 +239,7 @@ class RoundPred():
     def __init__(self, symbol):
         self.symbol = symbol
         self.alpha = 0.2
-        self.prices = [4000]
+        self.prices = [4500]
         self.soft_average = 0
         self.volume = 0
         self.bids = {}
@@ -258,7 +270,7 @@ class RoundPred():
         self.book = []
         for k, v in list(self.bids.items()) + list(self.asks.items()):
             self.book += [k for _ in range(v)]
-        price = self.predict_median()
+        price = self.predict_equal()
         self.prices.append(price)
         self.soft_average = (1-self.alpha)*self.soft_average + self.alpha*price if len(self.prices) > 1 else price
     
@@ -269,9 +281,31 @@ class RoundPred():
     def predict_median(self):
         return np.median(self.book) if len(self.book) > 0 else self.prices[-1]
 
-    def predict_window(self, book):
-        pass
-    
+    def predict_equal(self):
+        string = ""
+        orders = sorted([(bid, 0) for bid, qty in self.bids.items() for _ in range(qty) ] 
+                        + [(ask, 1) for ask, qty in self.asks.items() for _ in range(qty)])
+        for order in orders:
+            string += "(" if order[1] == 0 else ")"
+        diff = math.inf
+        median = -1
+        for i in range(len(string) - 1):
+            if abs(Counter(string[:i])['('] - Counter(string[i:])[')']) < diff:
+                diff = abs(Counter(string[:i])['('] - Counter(string[i:])[')'])
+                median = i
+        print(median)
+        if median == -1:
+            return self.prices[-1]
+        if string[median] == "(":
+            # find the next ")"
+            index = string[median+1:].find(")") + median + 1
+            return orders[median][0] + (orders[index][0] - orders[median][0])/2
+        elif string[median] == ")":
+            # find the previous "("
+            index = string[:median].rfind("(")
+            return orders[index][0] + (orders[median][0] - orders[index][0])/2
+
+
     def average(self):
         return self.soft_average
 
@@ -292,16 +326,17 @@ class Prediction():
 
     def predict(self, k):
         x = self.round.get_current_price()
-        return (1-self.weight) * self.round.average() + self.weight*self.hist.solver(x, k)
+        # return (1-self.weight) * self.round.average() + self.weight*self.hist.solver(x, k)
+        return x
     
     def bid(self, pred):
         # implemented penny in
         bids = [bid for bid in self.round.get_bid_prices() if bid < pred]
-        return min(bids, key=lambda x: abs(x-pred)) + 1 if len(bids) > 0 else pred - 1
+        return min(min(bids, key=lambda x: abs(x-pred)) + 1, pred - 1) if len(bids) > 0 else pred -1
     
     def ask(self, pred):
         asks = [ask for ask in self.round.get_asks_prices() if ask > pred]
-        return min(asks, key=lambda x: abs(x-pred)) - 1 if len(asks) > 0 else pred + 1
+        return max(min(asks, key=lambda x: abs(x-pred)) - 1, pred + 1) if len(asks) > 0 else pred + 1
     
     def __str__(self):
         # TODO: fill in the representation for informative print outs
