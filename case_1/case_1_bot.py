@@ -168,7 +168,7 @@ class MainBot(xchange_client.XChangeClient):
 
     async def load_my_positions(self):
         pass
-    
+
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         await self.load_my_positions()
@@ -178,7 +178,7 @@ class MainBot(xchange_client.XChangeClient):
         predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in symbols + etfs]
 
         while True:
-            volume = dict((symbol, [3,3]) for symbol in symbols + etfs)
+            volume = dict((symbol, [self.positions[symbol]//10 + 1, self.positions[symbol]//10 + 1]) for symbol in symbols + etfs)
             old_order_ids = list(self.old_order_ids.keys())
             for order_id in old_order_ids:
                 if order_id not in self.order_ids:
@@ -225,20 +225,10 @@ class MainBot(xchange_client.XChangeClient):
             # Normal Trading
             for symbol, _ in predictions.items():
                 if symbol in symbols:
-                    # if self.positions[symbol] > 4/5 * MAX_ABSOLUTE_POSITION:
-                    #     await self.bot_place_order(symbol, 2, xchange_client.Side.SELL, int(asks[symbol]))
-                    #     # continue
-                    # elif self.positions[symbol] < -4/5 * MAX_ABSOLUTE_POSITION:
-                    #     await self.bot_place_order(symbol, 2, xchange_client.Side.BUY, int(bids[symbol]))
-                    #     # continue
-                    await self.bot_place_order(symbol, volume[symbol][0], xchange_client.Side.BUY, int(bids[symbol]))
-                    await self.bot_place_order(symbol, volume[symbol][1], xchange_client.Side.SELL, int(asks[symbol])) 
-                # elif symbol in etfs:
-                #     if self.positions[symbol] < -4/5 * MAX_ABSOLUTE_POSITION:
-                #         await self.bot_place_order(symbol, 10, xchange_client.Side.BUY, int(bids[symbol]))
-                #     elif self.positions[symbol] > 4/5 * MAX_ABSOLUTE_POSITION:
-                #         await self.bot_place_order(symbol, 10, xchange_client.Side.SELL, int(asks[symbol]))
-
+                    if int(bids[symbol]) > 0:
+                        await self.bot_place_order(symbol, volume[symbol][0], xchange_client.Side.BUY, int(bids[symbol]))
+                    elif int(asks[symbol]) > 0:
+                        await self.bot_place_order(symbol, volume[symbol][1], xchange_client.Side.SELL, int(asks[symbol])) 
 
             
                 
@@ -246,6 +236,8 @@ class MainBot(xchange_client.XChangeClient):
             for symbol in symbols:
                 if self.open_orders[symbol] < MAX_OPEN_ORDERS and self.outstanding_volume[symbol] < OUTSTANDING_VOLUME:
                     for level in range(1, 4):
+                        if bids[symbol] < 0 or asks[symbol] < 0:
+                            continue
                         spread = getattr(self, f"l{level}_spread")
                         bid = bids[symbol] - spread
                         ask = asks[symbol] + spread

@@ -239,7 +239,7 @@ class RoundPred():
     def __init__(self, symbol):
         self.symbol = symbol
         self.alpha = 0.2
-        self.prices = [4500]
+        self.prices = [-1]
         self.soft_average = 0
         self.volume = 0
         self.bids = {}
@@ -270,7 +270,7 @@ class RoundPred():
         self.book = []
         for k, v in list(self.bids.items()) + list(self.asks.items()):
             self.book += [k for _ in range(v)]
-        price = self.predict_equal()
+        price = self.predict_converge()
         self.prices.append(price)
         self.soft_average = (1-self.alpha)*self.soft_average + self.alpha*price if len(self.prices) > 1 else price
     
@@ -305,6 +305,29 @@ class RoundPred():
             index = string[:median].rfind("(")
             return orders[index][0] + (orders[median][0] - orders[index][0])/2
 
+    def predict_converge(self):
+        string = ""
+        orders = sorted([(bid, 0) for bid, qty in self.bids.items() for _ in range(qty) ] 
+                        + [(ask, 1) for ask, qty in self.asks.items() for _ in range(qty)])
+        for order in orders:
+            string += "(" if order[1] == 0 else ")"
+        diff = math.inf
+        median = -1
+        for i in range(len(string) - 1):
+            if abs(Counter(string[:i])['('] - Counter(string[i:])[')']) < diff:
+                diff = abs(Counter(string[:i])['('] - Counter(string[i:])[')'])
+                median = i
+        # print(median)
+        if median == -1:
+            return self.prices[-1]
+        if string[median] == "(":
+            # find the next ")"
+            index = string[median+1:].find(")") + median + 1
+            return orders[index-1][0] + (orders[index][0] - orders[index-1][0])/2
+        elif string[median] == ")":
+            # find the previous "("
+            index = string[:median].rfind("(")
+            return orders[index+1][0] + (orders[index+1][0] - orders[index][0])/2
 
     def average(self):
         return self.soft_average
@@ -331,10 +354,12 @@ class Prediction():
     
     def bid(self, pred):
         # implemented penny in
+        if pred < 0: return -1
         bids = [bid for bid in self.round.get_bid_prices() if bid < pred]
         return min(min(bids, key=lambda x: abs(x-pred)) + 1, pred - 1) if len(bids) > 0 else pred -1
     
     def ask(self, pred):
+        if pred < 0: return -1
         asks = [ask for ask in self.round.get_asks_prices() if ask > pred]
         return max(min(asks, key=lambda x: abs(x-pred)) - 1, pred + 1) if len(asks) > 0 else pred + 1
     
