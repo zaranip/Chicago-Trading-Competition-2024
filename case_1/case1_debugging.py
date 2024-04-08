@@ -102,10 +102,6 @@ class PIPOBot(xchange_client.XChangeClient):
         for contract in self.contracts:
             self.order_ids[contract] = {'bid': '', 'ask': '', 'l1_bid': '', 'l1_ask': '', 'l2_bid': '', 'l2_ask': '', 'l3_bid': '', 'l3_ask': ''}
             self.open_orders[contract] = OpenOrders(contract)
-
-    async def close(self):
-        await self.disconnect()
-        await super().close()
         
     async def custom_place_order(self, symbol: str, qty: int, side: Side, px: int = None) -> OrderResponse:
         order_id = await super().place_order(symbol, qty, side, px)
@@ -159,8 +155,6 @@ class PIPOBot(xchange_client.XChangeClient):
 
     async def place_level_orders(self, contract, level, spread, penny_bid_price, penny_ask_price):
         if abs(self.positions[contract]) < MAX_ABSOLUTE_POSITION:
-            await self.adjust_level_ratios(contract)
-            
             old_bid_id = self.order_ids[contract][f'l{level}_bid']
             old_ask_id = self.order_ids[contract][f'l{level}_ask']
             
@@ -172,7 +166,7 @@ class PIPOBot(xchange_client.XChangeClient):
             
             bid_response = None
             ask_response = None
-            if bid_qty > 0:
+            if bid_qty > 0 and penny_bid_price - spread > 0:
                 bid_response = await self.custom_place_order(contract, bid_qty, xchange_client.Side.BUY, round(penny_bid_price - spread, 2))
                 self.order_ids[contract][f'l{level}_bid'] = bid_response.order_id
                 self.open_orders[contract].modify_order(round(penny_bid_price - spread, 2), bid_qty, old_bid_id, bid_response.order_id)
@@ -186,6 +180,7 @@ class PIPOBot(xchange_client.XChangeClient):
                 print(f"[DEBUG] {contract} - Placed L{level} Order. Bid ID: {bid_response.order_id}")
             elif ask_response is not None:
                 print(f"[DEBUG] {contract} - Placed L{level} Order. Ask ID: {ask_response.order_id}")
+
 
     async def adjust_level_ratios(self, contract):
         target_ratios = {1: self.order_l1_ratio, 2: self.order_l2_ratio, 3: self.order_l3_ratio}
@@ -227,37 +222,7 @@ class PIPOBot(xchange_client.XChangeClient):
     async def trade(self):
         print("[DEBUG] Starting Quote Update Loop")
         while True:
-            symbols = ["EPT", "DLO", "MKU", "IGM", "BRV"]
-    etfs = ["SCP", "JAK"]
-    df = pd.read_csv("Case1_Historical.csv")
-    predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in symbols]
-
-    while True:
-        k = 2
-        for pred in predictors:
-            order_book = self.order_books[pred.name()] if pred.name() in self.order_books else xchange_client.OrderBook()
-            pred.update(order_book)
-        predictions = dict((pred.name(), pred.predict(k)) for pred in predictors)
-        bids = dict((pred.name(), pred.bid(predictions[pred.name()])) for pred in predictors)
-        asks = dict((pred.name(), pred.ask(predictions[pred.name()])) for pred in predictors)
-        for symbol, _ in predictions.items():
-            await self.bot_place_order(symbol, 5, xchange_client.Side.BUY, int(bids[symbol]))
-            await self.bot_place_order(symbol, 5, xchange_client.Side.SELL, int(asks[symbol]))
-
-        # ETF Arbitrage
-        for etf in etfs:
-            margin = 20
-            if etf == "SCP":
-                price = (3 * predictions["EPT"] + 3 * predictions["IGM"] + 4 * predictions["BRV"]) / 10
-            elif etf == "JAK":
-                price = (2 * predictions['EPT'] + 5 * predictions['DLO'] + 3 * predictions['MKU']) / 10
-            etf_bids = sorted((k, v) for k, v in self.order_books[etf].bids.items() if k > price + margin and v > 0)
-            etf_asks = sorted((k, v) for k, v in self.order_books[etf].asks.items() if k < price - margin and v > 0)
-            for k, v in etf_bids:
-                await self.bot_place_order(etf, v, xchange_client.Side.SELL, k)
-            for k, v in etf_asks:
-                await self.bot_place_order(etf, v, xchange_client.Side.BUY, k)
-                
+            
             for contract in self.contracts:
                 print(f"[DEBUG] {contract} - Updating Quotes")
                 penny_bid_price, penny_ask_price = await self.get_penny_prices(contract)
@@ -270,24 +235,23 @@ class PIPOBot(xchange_client.XChangeClient):
 
                         for level in range(1, 4):
                             spread = getattr(self, f'l{level}_spread')
-                            if penny_bid_price is not None and penny_bid_price - spread > 0:
-                                await self.place_level_orders(contract, level, spread, penny_bid_price, penny_ask_price)
+                            await self.place_level_orders(contract, level, spread, penny_bid_price, penny_ask_price)
                     
-                    # Check if the stock has reached the maximum or minimum threshold
-                    if self.positions[contract] >= MAX_ABSOLUTE_POSITION:
-                        # Sell off the most unfavorable bid at a one-cent profit
-                        unfavorable_bid_id = min(self.order_ids[contract]['bid'], self.order_ids[contract]['l1_bid'], self.order_ids[contract]['l2_bid'], self.order_ids[contract]['l3_bid'], key=lambda x: self.order_id_to_price.get(x, float('inf')))
-                        if unfavorable_bid_id in self.order_id_to_price:
-                            unfavorable_bid_price = self.order_id_to_price[unfavorable_bid_id]
-                            await self.cancel_order(unfavorable_bid_id)
-                            await self.custom_place_order(contract, 1, xchange_client.Side.SELL, round(unfavorable_bid_price + 1, 2))
-                    elif self.positions[contract] <= -MAX_ABSOLUTE_POSITION:
-                        # Buy the most unfavorable ask at a one-cent profit
-                        unfavorable_ask_id = max(self.order_ids[contract]['ask'], self.order_ids[contract]['l1_ask'], self.order_ids[contract]['l2_ask'], self.order_ids[contract]['l3_ask'], key=lambda x: self.order_id_to_price.get(x, float('-inf')))
-                        if unfavorable_ask_id in self.order_id_to_price:
-                            unfavorable_ask_price = self.order_id_to_price[unfavorable_ask_id]
-                            await self.cancel_order(unfavorable_ask_id)
-                            await self.custom_place_order(contract, 1, xchange_client.Side.BUY, round(unfavorable_ask_price - 1, 2))
+                    # # Check if the stock has reached the maximum or minimum threshold
+                    # if self.positions[contract] >= MAX_ABSOLUTE_POSITION:
+                    #     # Sell off the most unfavorable bid at a one-cent profit
+                    #     unfavorable_bid_id = min(self.order_ids[contract]['bid'], self.order_ids[contract]['l1_bid'], self.order_ids[contract]['l2_bid'], self.order_ids[contract]['l3_bid'], key=lambda x: self.order_id_to_price.get(x, float('inf')))
+                    #     if unfavorable_bid_id in self.order_id_to_price:
+                    #         unfavorable_bid_price = self.order_id_to_price[unfavorable_bid_id]
+                    #         await self.cancel_order(unfavorable_bid_id)
+                    #         await self.custom_place_order(contract, 1, xchange_client.Side.SELL, round(unfavorable_bid_price + 1, 2))
+                    # elif self.positions[contract] <= -MAX_ABSOLUTE_POSITION:
+                    #     # Buy the most unfavorable ask at a one-cent profit
+                    #     unfavorable_ask_id = max(self.order_ids[contract]['ask'], self.order_ids[contract]['l1_ask'], self.order_ids[contract]['l2_ask'], self.order_ids[contract]['l3_ask'], key=lambda x: self.order_id_to_price.get(x, float('-inf')))
+                    #     if unfavorable_ask_id in self.order_id_to_price:
+                    #         unfavorable_ask_price = self.order_id_to_price[unfavorable_ask_id]
+                    #         await self.cancel_order(unfavorable_ask_id)
+                    #         await self.custom_place_order(contract, 1, xchange_client.Side.BUY, round(unfavorable_ask_price - 1, 2))
 
                     print(self.order_ids[contract])
                 else:
@@ -360,14 +324,18 @@ async def main():
     log_file_path = "/Users/divy/Desktop/Chicago-Trading-Competition-2024/case_1/log/file.txt"
     log_to_file(log_file_path)
 
-    bot = PIPOBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133")
-    try:
-        await bot.start()
-        await asyncio.Event().wait()
-    except KeyboardInterrupt:
-        print("KeyboardInterrupt: Closing the event loop...")
-    finally:
-        await bot.close()
+    while True:
+        bot = PIPOBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133")
+        try:
+            await bot.start()
+            await asyncio.Event().wait()
+        except Exception as e:
+            print(f"Exception occurred: {e}")
+            print("Restarting the bot...")
+            await asyncio.sleep(1)  # Wait for a short duration before restarting
+        except KeyboardInterrupt:
+            print("KeyboardInterrupt: Closing the event loop...")
+            break
     
 if __name__ == "__main__":
     asyncio.run(main())

@@ -241,9 +241,18 @@ class MainBot(xchange_client.XChangeClient):
 
 
 async def main():
-    bot = MainBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133")
-    await bot.start()
-    # await asyncio.Event().wait()
+    while True:
+        bot = MainBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133")
+        try:
+            await bot.start()
+            await asyncio.Event().wait()
+        except Exception as e:
+            print(f"Exception occurred: {e}")
+            print("Restarting the bot...")
+            await asyncio.sleep(1)  # Wait for a short duration before restarting
+        except KeyboardInterrupt:
+            print("KeyboardInterrupt: Closing the event loop...")
+            break
 
 if __name__ == "__main__":
     start_time = datetime.now().strftime("%y-%m-%d-%H-%M-%S")

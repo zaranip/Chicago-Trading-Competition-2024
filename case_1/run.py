@@ -5,7 +5,7 @@ import datetime
 
 if __name__ == "__main__":
     counter = 0
-    filename = sys.argv[1]
+    filename = "/Users/divy/Desktop/Chicago-Trading-Competition-2024/case_1/case_1_bot.py"
     while True:
         '''
            Run each round until finish, then wait 10 seconds and run the next round
