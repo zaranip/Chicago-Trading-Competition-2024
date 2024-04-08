@@ -293,7 +293,7 @@ class RoundPred():
             if abs(Counter(string[:i])['('] - Counter(string[i:])[')']) < diff:
                 diff = abs(Counter(string[:i])['('] - Counter(string[i:])[')'])
                 median = i
-        print(median)
+        # print(median)
         if median == -1:
             return self.prices[-1]
         if string[median] == "(":

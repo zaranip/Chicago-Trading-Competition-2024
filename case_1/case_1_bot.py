@@ -134,11 +134,11 @@ class MainBot(xchange_client.XChangeClient):
     async def bot_place_order(self, symbol, qty, side, price, level=False, aggressive=False):
         vol = min(qty, OUTSTANDING_VOLUME - self.outstanding_volume[symbol])
 
-
-        order_id = await self.place_order(symbol, vol, side, price)
-        
-        self.order_ids[order_id] = (symbol, "BID" if side == xchange_client.Side.BUY else "ASK", level)
-        self.open_orders[symbol] += 1
+        if self.open_orders[symbol] < MAX_OPEN_ORDERS and vol > 0:
+            order_id = await self.place_order(symbol, vol, side, price)
+            
+            self.order_ids[order_id] = (symbol, "BID" if side == xchange_client.Side.BUY else "ASK", level)
+            self.open_orders[symbol] += 1
 
         if aggressive and vol < qty:
             # will cancel whatever oldest order and place this order
