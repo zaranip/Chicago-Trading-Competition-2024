@@ -18,4 +18,4 @@ if __name__ == "__main__":
         subprocess.run(["python", filename])
         with open("log/runs.txt", "a") as f:
             f.write(f"Finished round {counter + 1} at {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        time.sleep(10)
+        time.sleep(5)

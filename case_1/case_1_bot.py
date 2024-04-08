@@ -76,12 +76,13 @@ class MainBot(xchange_client.XChangeClient):
         super().__init__(host, username, password)
         self.contracts = ["EPT", "DLO", "MKU", "IGM", "BRV"]
         self.order_size = 10
-        self.level_orders = 5
+        self.level_orders = 10
         self.l1_spread = 20
         self.l2_spread = self.l1_spread * 2
         self.l3_spread = self.l1_spread * 3
-        self.order_ids = collections.defaultdict((str, str))
+        self.order_ids = collections.defaultdict()
         self.open_orders = collections.defaultdict(int)
+        self.open_level_orders = collections.defaultdict(int)
         self.outstanding_volume = collections.defaultdict(int)
         self.ladder = collections.defaultdict(dict)
         for contract in self.contracts:
@@ -103,11 +104,11 @@ class MainBot(xchange_client.XChangeClient):
 
     async def bot_handle_order_fill(self, order_id: str, qty: int, price: int):
         global start_time
-        symbol, side = self.order_ids[order_id]
-
+        symbol, side, level = self.order_ids[order_id]
         self.outstanding_volume[symbol] -= qty
         self.open_orders[symbol] -= 1
-        del self.order_ids[order_id]
+        self.open_level_orders[symbol] -= 1 if level else 0
+        # del self.order_ids[order_id]
 
         with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
             f.write(f"{order_id} {(symbol, side)} {qty} {price}\n")
@@ -130,19 +131,18 @@ class MainBot(xchange_client.XChangeClient):
         # print("Swap response")
         pass
 
-    async def bot_place_order(self, symbol, qty, side, price, aggressive=False):
+    async def bot_place_order(self, symbol, qty, side, price, level=False, aggressive=False):
         vol = min(qty, OUTSTANDING_VOLUME - self.outstanding_volume[symbol])
+
 
         order_id = await self.place_order(symbol, vol, side, price)
         
-        self.order_ids[order_id] = (symbol, "BID" if side == xchange_client.Side.BUY else "ASK")
+        self.order_ids[order_id] = (symbol, "BID" if side == xchange_client.Side.BUY else "ASK", level)
         self.open_orders[symbol] += 1
 
         if aggressive and vol < qty:
-            order_id = await self.place_order(symbol, qty - vol, side, price)
-
-            self.order_ids[order_id] = (symbol, "BID" if side == xchange_client.Side.BUY else "ASK")
-            self.open_orders[symbol] += 1
+            # will cancel whatever oldest order and place this order
+            pass
 
         with open(f"./log/placed/round_data_{start_time}.txt", "a") as f:
             f.write(f"{order_id} {symbol} {price}\n")
@@ -166,8 +166,8 @@ class MainBot(xchange_client.XChangeClient):
             bids = dict((pred.name(), pred.bid(predictions[pred.name()])) for pred in predictors)
             asks = dict((pred.name(), pred.ask(predictions[pred.name()])) for pred in predictors)
             for symbol, _ in predictions.items():
-                await self.bot_place_order(symbol, 2, xchange_client.Side.BUY, int(bids[symbol]))
-                await self.place_order(symbol, 2, xchange_client.Side.SELL, int(asks[symbol])) 
+                await self.bot_place_order(symbol, 5, xchange_client.Side.BUY, int(bids[symbol]))
+                await self.bot_place_order(symbol, 5, xchange_client.Side.SELL, int(asks[symbol])) 
 
             # ETF Arbitrage
             for etf in etfs:
@@ -193,12 +193,13 @@ class MainBot(xchange_client.XChangeClient):
                         ask = asks[symbol] + spread
 
                         aggressive = level < 2
-                        volume = max(self.level_orders - self.open_level_orders[symbol][level], 
-                                     MAX_OPEN_ORDERS - self.open_orders[symbol], 0)    
-                        self.order_ids[symbol + ' l1 bid'] = await self.bot_place_order(symbol, 5, xchange_client.Side.BUY, int(bid), aggressive)
-                        self.order_ids[symbol + ' l1 ask'] = await self.bot_place_order(symbol, 5, xchange_client.Side.SELL, int(ask), aggressive)
-
-
+                        vol = min(OUTSTANDING_VOLUME - self.outstanding_volume[symbol], self.level_orders)
+                        if self.open_level_orders[symbol] < self.level_orders:
+                            await self.bot_place_order(symbol, vol, xchange_client.Side.BUY, int(bid), True, aggressive)
+                            self.open_level_orders[symbol] += 1
+                        if self.open_level_orders[symbol] < self.level_orders:
+                            await self.bot_place_order(symbol, vol, xchange_client.Side.SELL, int(ask), True, aggressive)
+                            self.open_level_orders[symbol] += 1
             # Viewing Positions
             print("My positions:", self.positions)
             await asyncio.sleep(1)
