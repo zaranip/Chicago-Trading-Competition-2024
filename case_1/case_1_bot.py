@@ -176,8 +176,14 @@ class MainBot(xchange_client.XChangeClient):
             bids = dict((pred.name(), pred.bid(predictions[pred.name()])) for pred in predictors)
             asks = dict((pred.name(), pred.ask(predictions[pred.name()])) for pred in predictors)
             for symbol, _ in predictions.items():
-                await self.bot_place_order(symbol, 3, xchange_client.Side.BUY, int(bids[symbol]))
-                await self.bot_place_order(symbol, 3, xchange_client.Side.SELL, int(asks[symbol])) 
+                if symbol in symbols:
+                    await self.bot_place_order(symbol, 2, xchange_client.Side.BUY, int(bids[symbol]))
+                    await self.bot_place_order(symbol, 2, xchange_client.Side.SELL, int(asks[symbol])) 
+                elif symbol in etfs:
+                    if self.positions[symbol] < 0:
+                        await self.bot_place_order(symbol, 10, xchange_client.Side.BUY, int(bids[symbol]))
+                    else:
+                        await self.bot_place_order(symbol, 10, xchange_client.Side.SELL, int(asks[symbol]))
 
             # ETF Arbitrage
             for etf in etfs:
