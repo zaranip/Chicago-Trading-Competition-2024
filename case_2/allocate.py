@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 import os
 
-SYMBOLS = ["JMS", "EPT", "DLO", "MKU", "IGM", "BRV", "JCR", "JAK"]
+SYMBOLS = pd.read_csv('Case 2 Data 2024.csv', index_col=0)
 
 class PortfolioAllocationBot(xchange_client.XChangeClient):
     def __init__(self, host, username, password, train_data):
