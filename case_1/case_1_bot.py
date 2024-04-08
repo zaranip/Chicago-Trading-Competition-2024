@@ -104,7 +104,7 @@ class MainBot(xchange_client.XChangeClient):
 
     async def bot_handle_order_fill(self, order_id: str, qty: int, price: int):
         global start_time
-        symbol, side, level = self.order_ids[order_id]
+        symbol, side, level, vol = self.order_ids[order_id]
         self.outstanding_volume[symbol] -= qty
         self.open_orders[symbol] -= 1
         self.open_level_orders[symbol] -= 1 if level else 0
@@ -116,6 +116,13 @@ class MainBot(xchange_client.XChangeClient):
         
 
     async def bot_handle_order_rejected(self, order_id: str, reason: str) -> None:
+        symbol, side, level, qty = self.order_ids[order_id]
+        self.outstanding_volume[symbol] -= qty
+        self.open_orders[symbol] -= 1
+        self.open_level_orders[symbol] -= 1 if level else 0
+        del self.order_ids[order_id]
+        with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
+            f.write(f"[REJECTED] {order_id} {(symbol, side)}\n")
         print(f"[DEBUG] Order Rejected - Order ID: {order_id}, Reason: {reason}")
 
 
@@ -132,12 +139,14 @@ class MainBot(xchange_client.XChangeClient):
         pass
 
     async def bot_place_order(self, symbol, qty, side, price, level=False, aggressive=False):
-        vol = min(qty, OUTSTANDING_VOLUME - self.outstanding_volume[symbol])
-
+        vol = min(qty, OUTSTANDING_VOLUME - self.outstanding_volume[symbol], 
+                  abs(MAX_ABSOLUTE_POSITION - self.positions[symbol]) if side == xchange_client.Side.BUY else abs(-MAX_ABSOLUTE_POSITION - self.positions[symbol]))
+        
+            
         if self.open_orders[symbol] < MAX_OPEN_ORDERS and vol > 0:
             order_id = await self.place_order(symbol, vol, side, price)
             
-            self.order_ids[order_id] = (symbol, "BID" if side == xchange_client.Side.BUY else "ASK", level)
+            self.order_ids[order_id] = (symbol, "BID" if side == xchange_client.Side.BUY else "ASK", level, vol)
             self.open_orders[symbol] += 1
 
         if aggressive and vol < qty:
@@ -154,20 +163,21 @@ class MainBot(xchange_client.XChangeClient):
         # await self.view_books()
         symbols = ["EPT","DLO","MKU","IGM","BRV"]
         etfs = ["SCP", "JAK"]
-        df = pd.read_csv("Case1_Historical.csv")
-        predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in symbols]
+        df = pd.read_csv("Case1_Historical_Amended.csv")
+        predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in symbols + etfs]
         while True:
-
             k = 2
             for pred in predictors:
                 order_book = self.order_books[pred.name()] if pred.name() in self.order_books else xchange_client.OrderBook()
                 pred.update(order_book)
             predictions = dict((pred.name(), pred.predict(k)) for pred in predictors)
+            predictions["SCP"] = (3 * predictions["EPT"] + 3*predictions["IGM"] + 4*predictions["BRV"])/10
+            predictions["JAK"] = (2 * predictions['EPT'] + 5*predictions['DLO'] + 3*predictions['MKU'])/10
             bids = dict((pred.name(), pred.bid(predictions[pred.name()])) for pred in predictors)
             asks = dict((pred.name(), pred.ask(predictions[pred.name()])) for pred in predictors)
             for symbol, _ in predictions.items():
-                await self.bot_place_order(symbol, 5, xchange_client.Side.BUY, int(bids[symbol]))
-                await self.bot_place_order(symbol, 5, xchange_client.Side.SELL, int(asks[symbol])) 
+                await self.bot_place_order(symbol, 3, xchange_client.Side.BUY, int(bids[symbol]))
+                await self.bot_place_order(symbol, 3, xchange_client.Side.SELL, int(asks[symbol])) 
 
             # ETF Arbitrage
             for etf in etfs:
@@ -227,7 +237,7 @@ class MainBot(xchange_client.XChangeClient):
 async def main():
     bot = MainBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133")
     await bot.start()
-    await asyncio.Event().wait()
+    # await asyncio.Event().wait()
 
 if __name__ == "__main__":
     start_time = datetime.now().strftime("%y-%m-%d-%H-%M-%S")
