@@ -289,20 +289,20 @@ class RoundPred():
             string += "(" if order[1] == 0 else ")"
         diff = math.inf
         median = -1
-        if median == -1:
-            return self.prices[-1]
         for i in range(len(string) - 1):
             if abs(Counter(string[:i])['('] - Counter(string[i:])[')']) < diff:
                 diff = abs(Counter(string[:i])['('] - Counter(string[i:])[')'])
                 median = i
         print(median)
+        if median == -1:
+            return self.prices[-1]
         if string[median] == "(":
             # find the next ")"
-            index = str[median+1:].find(")") + median + 1
+            index = string[median+1:].find(")") + median + 1
             return orders[median][0] + (orders[index][0] - orders[median][0])/2
         elif string[median] == ")":
             # find the previous "("
-            index = str[:median].rfind("(")
+            index = string[:median].rfind("(")
             return orders[index][0] + (orders[median][0] - orders[index][0])/2
 
 

@@ -131,8 +131,8 @@ class MainBot(xchange_client.XChangeClient):
             bids = dict((pred.name(), pred.bid(predictions[pred.name()])) for pred in predictors)
             asks = dict((pred.name(), pred.ask(predictions[pred.name()])) for pred in predictors)
             for symbol, _ in predictions.items():
-                bid_id = await self.place_order(symbol, 1, xchange_client.Side.BUY, int(bids[symbol]))
-                ask_id = await self.place_order(symbol, 1, xchange_client.Side.SELL, int(asks[symbol])) 
+                bid_id = await self.place_order(symbol, 3, xchange_client.Side.BUY, int(bids[symbol]))
+                ask_id = await self.place_order(symbol, 3, xchange_client.Side.SELL, int(asks[symbol])) 
                 self.order_ids[bid_id] = (symbol, "BID")
                 self.order_ids[ask_id] = (symbol, "ASK")
                 with open(f"./log/placed/round_data_{start_time}.txt", "a") as f:
@@ -191,9 +191,9 @@ async def main():
 
 if __name__ == "__main__":
     start_time = datetime.now().strftime("%y-%m-%d-%H-%M-%S")
-    loop = asyncio.get_event_loop()
-    result = loop.run_until_complete(main())
-
+    # loop = asyncio.get_event_loop()
+    # result = loop.run_until_complete(main())
+    asyncio.run(main())
     
 
 
