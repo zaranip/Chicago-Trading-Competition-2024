@@ -14,8 +14,8 @@ if __name__ == "__main__":
               python run.py case_1_pipo.py 
         '''
 
-
-        subprocess.run(["python", filename])
+        start_time = datetime.datetime.now().strftime("%y-%m-%d-%H-%M-%S")
+        subprocess.run(["../venv/Scripts/python", filename])
         counter += 1
-        with open("log/runs.txt", "a") as f:
+        with open(f"log/runs/run_{start_time}.txt", "a") as f:
             f.write(f"Finished round {counter} at {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")

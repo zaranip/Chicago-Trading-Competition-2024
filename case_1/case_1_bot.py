@@ -149,14 +149,14 @@ class MainBot(xchange_client.XChangeClient):
             self.order_ids[order_id] = (symbol, "BID" if side == xchange_client.Side.BUY else "ASK", level, vol)
             self.open_orders[symbol] += 1
 
-        if aggressive and vol < qty:
-            # will cancel whatever oldest order and place this order
-            pass
+            if aggressive and vol < qty:
+                # will cancel whatever oldest order and place this order
+                pass
 
-        with open(f"./log/placed/round_data_{start_time}.txt", "a") as f:
-            f.write(f"{order_id} {symbol} {price}\n")
+            with open(f"./log/placed/round_data_{start_time}.txt", "a") as f:
+                f.write(f"{order_id} {symbol} {price}\n")
 
-        return order_id
+            return order_id
 
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
@@ -241,8 +241,7 @@ async def main():
 
 if __name__ == "__main__":
     start_time = datetime.now().strftime("%y-%m-%d-%H-%M-%S")
-    # loop = asyncio.get_event_loop()
-    # result = loop.run_until_complete(main())
+    # while True:
     asyncio.run(main())
     
 

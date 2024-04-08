@@ -312,7 +312,7 @@ class RoundPred():
 class Prediction():
     def __init__(self, symbol, sample):
         self.symbol = symbol
-        self.hist = HistPred(symbol, sample)
+        # self.hist = HistPred(symbol, sample)
         self.round = RoundPred(symbol)
         self.weight = 0.3
         self.fade = 1
