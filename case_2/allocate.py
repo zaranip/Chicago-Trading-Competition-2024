@@ -8,7 +8,9 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 import os
 
-SYMBOLS = pd.read_csv('Case 2 Data 2024.csv', index_col=0)
+data = pd.read_csv('Case 2 Data 2024.csv', index_col=0)
+SYMBOLS = data.keys()
+print(SYMBOLS)
 
 class PortfolioAllocationBot(xchange_client.XChangeClient):
     def __init__(self, host, username, password, train_data):
@@ -42,6 +44,10 @@ class PortfolioAllocationBot(xchange_client.XChangeClient):
         return returns
     
     def update_quantum_matrix(self, best_portfolio, worst_portfolio):
+        print(self.quantum_matrix.shape)
+        print(best_portfolio.shape)
+        print(worst_portfolio.shape)
+
         self.quantum_matrix += self.update_range * (best_portfolio - worst_portfolio)
         self.quantum_matrix = np.clip(self.quantum_matrix, 0, 1)
     
@@ -85,7 +91,6 @@ def grading(train_data, test_data):
         
     return sharpe, capital, weights
 
-data = pd.read_csv('Case 2 Data 2024.csv', index_col=0)
 TRAIN, TEST = train_test_split(data, test_size=0.2, shuffle=False)
 
 sharpe, capital, weights = grading(TRAIN, TEST)
