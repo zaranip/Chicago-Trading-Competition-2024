@@ -48,7 +48,11 @@ class PortfolioAllocationBot(xchange_client.XChangeClient):
         print(best_portfolio.shape)
         print(worst_portfolio.shape)
 
-        self.quantum_matrix += self.update_range * (best_portfolio - worst_portfolio)
+        best_portfolio = best_portfolio.reshape(-1, 1)
+        worst_portfolio = worst_portfolio.reshape(-1, 1)
+
+        self.quantum_matrix += self.update_range * (np.hstack((best_portfolio, 1 - best_portfolio)) -
+                                                    np.hstack((worst_portfolio, 1 - worst_portfolio)))
         self.quantum_matrix = np.clip(self.quantum_matrix, 0, 1)
     
     def allocate_portfolio(self, asset_prices):
