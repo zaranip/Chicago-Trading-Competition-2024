@@ -81,24 +81,23 @@ class MainBot(xchange_client.XChangeClient):
         self.l2_spread = self.l1_spread * 2
         self.l3_spread = self.l1_spread * 3
         self.order_ids = collections.defaultdict()
+        self.old_order_ids = collections.defaultdict()
         self.open_orders = collections.defaultdict(int)
         self.open_level_orders = collections.defaultdict(int)
         self.outstanding_volume = collections.defaultdict(int)
         self.ladder = collections.defaultdict(dict)
-        for contract in self.contracts:
-            self.order_ids[contract + ' bid'] = ''
-            self.order_ids[contract + ' ask'] = ''
-            self.order_ids[contract + ' l1 bid'] = ''
-            self.order_ids[contract + ' l1 ask'] = ''
-            self.order_ids[contract + ' l2 bid'] = ''
-            self.order_ids[contract + ' l2 ask'] = ''
-            self.order_ids[contract + ' l3 bid'] = ''
-            self.order_ids[contract + ' l3 ask'] = ''
+        
             # self.open_orders[contract] = OpenOrders(contract)
 
     async def bot_handle_cancel_response(self, order_id: str, success: bool, error: Optional[str]) -> None:
         if success:
-            print(f"[DEBUG] Order Cancelled - Order ID: {order_id}")
+            symbol, side, level, qty = self.order_ids[order_id]
+            self.outstanding_volume[symbol] -= qty
+            self.open_orders[symbol] -= 1
+            self.open_level_orders[symbol] -= 1 if level else 0
+            del self.order_ids[order_id]
+            with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
+                f.write(f"[CANCELLED] {order_id} {(symbol, side)}\n")
         else:
             print(f"[DEBUG] Order Cancellation Failed - Order ID: {order_id}, Error: {error}")
 
@@ -108,7 +107,12 @@ class MainBot(xchange_client.XChangeClient):
         self.outstanding_volume[symbol] -= qty
         self.open_orders[symbol] -= 1
         self.open_level_orders[symbol] -= 1 if level else 0
-        # del self.order_ids[order_id]
+        if vol == qty:
+            del self.order_ids[order_id]
+            if order_id in self.old_order_ids:
+                self.old_order_ids.remove(order_id)
+        else:
+            self.order_ids[order_id] = (symbol, side, level, vol - qty)
 
         with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
             f.write(f"{order_id} {(symbol, side)} {qty} {price}\n")
@@ -121,6 +125,8 @@ class MainBot(xchange_client.XChangeClient):
         self.open_orders[symbol] -= 1
         self.open_level_orders[symbol] -= 1 if level else 0
         del self.order_ids[order_id]
+        if order_id in self.old_order_ids:
+            self.old_order_ids.remove(order_id)
         with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
             f.write(f"[REJECTED] {order_id} {(symbol, side)}\n")
         print(f"[DEBUG] Order Rejected - Order ID: {order_id}, Reason: {reason}")
@@ -148,6 +154,7 @@ class MainBot(xchange_client.XChangeClient):
             
             self.order_ids[order_id] = (symbol, "BID" if side == xchange_client.Side.BUY else "ASK", level, vol)
             self.open_orders[symbol] += 1
+            self.outstanding_volume[symbol] += vol
 
             if aggressive and vol < qty:
                 # will cancel whatever oldest order and place this order
@@ -158,6 +165,7 @@ class MainBot(xchange_client.XChangeClient):
 
             return order_id
 
+
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # await self.view_books()
@@ -165,8 +173,19 @@ class MainBot(xchange_client.XChangeClient):
         etfs = ["SCP", "JAK"]
         df = pd.read_csv("Case1_Historical_Amended.csv")
         predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in symbols + etfs]
+
         while True:
             k = 2
+            volume = dict((symbol, 3) for symbol in symbols + etfs)
+            old_order_ids = self.old_order_ids.keys()
+            for order_id in old_order_ids:
+                symbol, side, level, qty = self.order_ids[order_id]
+                volume[symbol] += qty
+                await self.cancel_order(order_id)
+                
+
+            self.old_order_ids = self.order_ids
+            
             for pred in predictors:
                 order_book = self.order_books[pred.name()] if pred.name() in self.order_books else xchange_client.OrderBook()
                 pred.update(order_book)
@@ -177,14 +196,21 @@ class MainBot(xchange_client.XChangeClient):
             asks = dict((pred.name(), pred.ask(predictions[pred.name()])) for pred in predictors)
             for symbol, _ in predictions.items():
                 if symbol in symbols:
-                    await self.bot_place_order(symbol, 2, xchange_client.Side.BUY, int(bids[symbol]))
-                    await self.bot_place_order(symbol, 2, xchange_client.Side.SELL, int(asks[symbol])) 
+                    # if self.positions[symbol] > 4/5 * MAX_ABSOLUTE_POSITION:
+                    #     await self.bot_place_order(symbol, 2, xchange_client.Side.SELL, int(asks[symbol]))
+                    #     # continue
+                    # elif self.positions[symbol] < -4/5 * MAX_ABSOLUTE_POSITION:
+                    #     await self.bot_place_order(symbol, 2, xchange_client.Side.BUY, int(bids[symbol]))
+                    #     # continue
+                    await self.bot_place_order(symbol, volume[symbol], xchange_client.Side.BUY, int(bids[symbol]))
+                    await self.bot_place_order(symbol, volume[symbol], xchange_client.Side.SELL, int(asks[symbol])) 
                 elif symbol in etfs:
                     if self.positions[symbol] < 0:
                         await self.bot_place_order(symbol, 10, xchange_client.Side.BUY, int(bids[symbol]))
                     else:
                         await self.bot_place_order(symbol, 10, xchange_client.Side.SELL, int(asks[symbol]))
 
+            rate = 0.8
             # ETF Arbitrage
             for etf in etfs:
                 margin = 20
@@ -192,12 +218,12 @@ class MainBot(xchange_client.XChangeClient):
                     price = (3 * predictions["EPT"] + 3*predictions["IGM"] + 4*predictions["BRV"])/10
                 elif etf == "JAK":
                     price = (2 * predictions['EPT'] + 5*predictions['DLO'] + 3*predictions['MKU'])/10
-                etf_bids = sorted((k,v) for k, v in self.order_books[etf].bids.items() if k > price + margin and v > 0)
+                etf_bids = sorted([(k,v) for k, v in self.order_books[etf].bids.items() if k > price + margin and v > 0], reverse=True)
                 etf_asks = sorted((k,v) for k, v in self.order_books[etf].asks.items() if k < price - margin and v > 0)
                 for k,v in etf_bids:
-                    await self.bot_place_order(etf, v, xchange_client.Side.SELL, k)
+                    await self.bot_place_order(etf, int(rate * v), xchange_client.Side.SELL, k)
                 for k,v in etf_asks:
-                    await self.bot_place_order(etf, v, xchange_client.Side.BUY, k)
+                    await self.bot_place_order(etf, int(rate * v), xchange_client.Side.BUY, k)
                 
                 
             # TODO: implement the selling ladder
