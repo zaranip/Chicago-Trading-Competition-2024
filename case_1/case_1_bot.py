@@ -1,4 +1,5 @@
 import asyncio
+import traceback
 import numpy as np
 import pandas as pd
 import collections
@@ -26,7 +27,6 @@ class OpenOrders:
     def __init__(self):
         self.num_open_orders = 0
         self.outstanding_volume = 0
-        self.price_to_id = {}
         self.id_to_price = {}
         self.id_to_qty = {}
         self.id_to_side = {}
@@ -39,33 +39,27 @@ class OpenOrders:
         self.outstanding_volume += adj
         if self.id_to_qty[id] == 0:
             self.remove_order(id)
+    def get_price(self, id):
+        return self.id_to_price[id]
     def get_num_open_orders(self):
         return self.num_open_orders
-    def get_qty(self, price):
-        p_id = self.price_to_id[price]
-        return self.id_to_qty[p_id]
+    def get_qty(self, id):
+        return self.id_to_qty[id]
     def get_symbol(self, id):
         return self.id_to_symbol[id]
-    def get_id(self, price):
-        return self.price_to_id[price]
-    
     def get_side(self, id):
         return self.id_to_side[id]
-
     def get_level(self, id):
         return self.id_to_level[id]
-    
     def get_symbol_levels(self, symbol):
         return self.level_orders[symbol]
-
     def get_outstanding_volume(self):
         return self.outstanding_volume
-
-    def get_oldest_order(self, symbol):
-        return self.queue[symbol][0]
-
+    def get_k_oldest_order(self, symbol, k):
+        if len(self.queue) >= k:
+            return [self.queue[symbol][i] for i in range(k)]
+        return self.queue
     def add_order(self, symbol, price, qty, id, side, level):
-        self.price_to_id[price] = id
         self.id_to_price[id] = price
         self.id_to_qty[id] = qty
         self.id_to_side[id] = side
@@ -77,14 +71,12 @@ class OpenOrders:
         self.queue[symbol].append(id)
 
     def remove_order(self, id):
-        price = self.id_to_price[id]
         level = self.id_to_level[id]
         symbol = self.id_to_symbol[id]
         self.outstanding_volume -= self.id_to_qty[id]
         self.num_open_orders -= 1
-        self.queue.remove(id)
         self.level_orders[symbol][level] -= 1
-        del self.price_to_id[price]
+        self.queue[symbol].remove(id)
         del self.id_to_price[id]
         del self.id_to_qty[id]
         del self.id_to_side[id]
@@ -115,9 +107,9 @@ class MainBot(xchange_client.XChangeClient):
             print(f"[DEBUG] Order Cancellation Failed - Order ID: {order_id}, Error: {error}")
 
     async def bot_handle_order_fill(self, order_id: str, qty: int, price: int):
-        symbol = self.open_orders_object.id_to_symbol[order_id]
+        symbol = self.open_orders_object.get_symbol(order_id)
         side = self.open_orders_object.get_side(order_id)
-        qty = self.open_orders_object.get_qty(price)
+        qty = self.open_orders_object.get_qty(order_id)
         gap = self.open_orders_object.get_price(order_id) - price
         self.open_orders_object.adjust_qty(order_id, -qty)
         with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
@@ -145,16 +137,14 @@ class MainBot(xchange_client.XChangeClient):
         pass
 
     async def bot_place_order(self, symbol, qty, side, price, level=0):      
-        vol = min(qty,
-                  MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION,
-                  OUTSTANDING_VOLUME - self.open_orders_object.get_outstanding_volume())
-        
-
         if not level:
-            while self.open_orders_object.get_num_open_orders() >= MAX_OPEN_ORDERS:
-                oldest_order = self.open_orders_object.get_oldest_order(symbol)
-                await self.cancel_order(oldest_order)
-            
+            diff = self.open_orders_object.get_num_open_orders() - MAX_OPEN_ORDERS
+            oldest_orders = self.open_orders_object.get_k_oldest_order(symbol, diff)
+            for order_id in oldest_orders:
+                await self.cancel_order(order_id)
+                
+        vol = min(qty,
+                  MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION) 
         if vol > 0:
             order_id = await self.place_order(symbol, vol, side, price)
             self.open_orders_object.add_order(symbol, price, vol, order_id, side, level)
@@ -213,17 +203,17 @@ class MainBot(xchange_client.XChangeClient):
                 symbol_bids = sorted([(k,v) for k, v in self.order_books[symbol].bids.items() if k > self.predictions[symbol] + margin and v > 0])
                 symbol_asks = sorted([(k,v) for k, v in self.order_books[symbol].asks.items() if k < self.predictions[symbol] - margin and v > 0], reverse=True)
                 for k,v in symbol_bids:
-                    await self.bot_place_order(etf, v//2, xchange_client.Side.SELL, k)
+                    await self.bot_place_order(etf, v//2+1, xchange_client.Side.SELL, k)
                 for k,v in symbol_asks:
-                    await self.bot_place_order(etf, v//2, xchange_client.Side.BUY, k)
+                    await self.bot_place_order(etf, v//2+1, xchange_client.Side.BUY, k)
             
             # Normal Trading
             for symbol, _ in self.predictions.items():
                 if symbol in SYMBOLS:
                     if int(bids[symbol]) > 0:
-                        await self.bot_place_order(symbol, self.positions[symbol]//10 + 1, xchange_client.Side.BUY, int(bids[symbol]))
+                        await self.bot_place_order(symbol, abs(self.positions[symbol]//10) + 1, xchange_client.Side.BUY, int(bids[symbol]))
                     elif int(asks[symbol]) > 0:
-                        await self.bot_place_order(symbol, self.positions[symbol]//10 + 1, xchange_client.Side.SELL, int(asks[symbol])) 
+                        await self.bot_place_order(symbol, abs(self.positions[symbol]//10) + 1, xchange_client.Side.SELL, int(asks[symbol])) 
   
             # Level Orders
             for symbol in SYMBOLS:
@@ -269,8 +259,10 @@ async def main():
             await bot.start()
             await asyncio.Event().wait()
         except Exception as e:
-            print(f"Exception occurred: {e}")
+            traceback.print_exc()
+            print(f"Exception occurred: {e.with_traceback(None)}")  # Print the traceback
             print("Restarting the bot...")
+            # break
             await asyncio.sleep(1)  # Wait for a short duration before restarting
         except KeyboardInterrupt:
             print("KeyboardInterrupt: Closing the event loop...")
