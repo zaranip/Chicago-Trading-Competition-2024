@@ -31,7 +31,7 @@ def log_to_file(log_file_path):
 
 MAX_ABSOLUTE_POSITION = 100
 MAX_ORDER_SIZE = 50
-MAX_OPEN_ORDER = 100
+MAX_OPEN_ORDER = 50
 OUTSTANDING_VOLUME = 1000
 
 class OpenOrders:
@@ -52,6 +52,7 @@ class OpenOrders:
                 if price in self.price_to_id:
                     del self.price_to_id[price]
                 del self.id_to_qty[id]
+                del self.id_to_timestamp[id]
 
     def modify_order(self, price, qty, old_id, new_id):
         if old_id == new_id:
@@ -74,6 +75,8 @@ class OpenOrders:
                 del self.id_to_price[old_id]
             if old_id in self.id_to_qty:
                 del self.id_to_qty[old_id]
+            if old_id in self.id_to_timestamp:
+                del self.id_to_timestamp[old_id]
             self.id_to_price[new_id] = price
             self.price_to_id[price] = new_id
             self.id_to_qty[new_id] = qty
@@ -90,272 +93,188 @@ class PIPOBot(xchange_client.XChangeClient):
     def __init__(self, host, username, password):
         super().__init__(host, username, password)
         self.contracts = ["EPT", "DLO", "MKU", "IGM", "BRV"]
-
         self.order_size = 5
-
-        self.order_l0_ratio, self.order_l1_ratio, self.order_l2_ratio, self.order_l3_ratio = (1,0.5,0.35,0.15)
-
-        self.edge = 1 #cent margin
+        self.order_l0_ratio, self.order_l1_ratio, self.order_l2_ratio, self.order_l3_ratio = (1, 0.5, 0.35, 0.15)
+        self.edge = 1  # cent margin
         self.l0_spread = self.edge
         self.l1_spread = 2
         self.l2_spread = self.l1_spread * 2
         self.l3_spread = self.l1_spread * 3
         self.level_positions = {}
-
-
         self.order_ids = {}
         self.open_orders = {}
         self.order_id_to_price = {}
+        self.order_filled_prices = {}
         for contract in self.contracts:
+            self.order_filled_prices[contract] = {'L0': [], 'L1': [], 'L2': [], 'L3': []}
             self.level_positions[contract] = {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
             self.order_ids[contract] = {'l0_bid': '', 'l0_ask': '', 'l1_bid': '', 'l1_ask': '', 'l2_bid': '', 'l2_ask': '', 'l3_bid': '', 'l3_ask': ''}
             self.open_orders[contract] = OpenOrders(contract)
-
-
         self.fade = 1
         self.slack = 1
-        
         self.total_open = 0
         self.total_fills = 0
         self.total_transactions = 0
         
     async def custom_place_order(self, symbol: str, qty: int, side: Side, px: int = None) -> str:
+        print([self.open_orders[contract].id_to_qty.values() for contract in self.contracts])
+        if sum(sum(1 for v in self.open_orders[contract].id_to_qty.values()) for contract in self.contracts) >= MAX_OPEN_ORDER:
+            await self.cancel_unfavorable_orders_from_pool()
         order_id = await super().place_order(symbol, qty, side, px)
         self.order_id_to_price[order_id] = px
         return order_id
     
-
     async def get_penny_prices(self, contract):
         book = self.order_books[contract]
         bot_bids = {self.open_orders[contract].id_to_price[order_id] for order_id in self.order_ids[contract].values() if order_id in self.open_orders[contract].id_to_price and self.open_orders[contract].id_to_qty[order_id] > 0}
         bot_asks = {self.open_orders[contract].id_to_price[order_id] for order_id in self.order_ids[contract].values() if order_id in self.open_orders[contract].id_to_price and self.open_orders[contract].id_to_qty[order_id] < 0}
         
-        penny_ask_price = None
-        penny_bid_price = None
+        valid_asks = [px for px, qty in book.asks.items() if qty > 0 and px not in bot_asks]
+        valid_bids = [px for px, qty in book.bids.items() if qty > 0 and px not in bot_bids]
         
-        if book.asks:
-            valid_asks = [px for px, qty in book.asks.items() if qty > 0 and px not in bot_asks]
-            if valid_asks:
-                penny_ask_price = min(valid_asks)
-        
-        if book.bids:
-            valid_bids = [px for px, qty in book.bids.items() if qty > 0 and px not in bot_bids]
-            if valid_bids:
-                penny_bid_price = max(valid_bids)
+        penny_ask_price = min(valid_asks) if valid_asks else None
+        penny_bid_price = max(valid_bids) if valid_bids else None
         
         return penny_bid_price, penny_ask_price
-
+    
     async def place_level_orders(self, contract, level, spread, penny_bid_price, penny_ask_price):
         ratio = getattr(self, f'order_l{level}_ratio') / sum(getattr(self, f'order_l{i}_ratio') for i in range(4))
         order_size = min(int(self.order_size * ratio), self.order_size)
-
-        if abs(self.level_positions[contract][f'L{level}']) >= ratio * MAX_ABSOLUTE_POSITION:
-            await self.adjust_level_ratios(contract, level)
-        else:
-            old_bid_id = self.order_ids[contract][f'l{level}_bid']
-            old_ask_id = self.order_ids[contract][f'l{level}_ask']
-            
-            bid_qty = min(order_size, MAX_ABSOLUTE_POSITION - self.positions[contract], MAX_ORDER_SIZE)
-            ask_qty = min(order_size, MAX_ABSOLUTE_POSITION + self.positions[contract], MAX_ORDER_SIZE)
-            
-            bid_response = None
-            ask_response = None
-            if bid_qty > 0 and penny_bid_price - spread > 0:
-                bid_response = await self.custom_place_order(contract, bid_qty, xchange_client.Side.BUY, penny_bid_price - spread - self.edge - int(self.fade * self.positions[contract] / 100))
-                self.order_ids[contract][f'l{level}_bid'] = bid_response
-                self.open_orders[contract].modify_order(penny_bid_price - spread - self.edge - int(self.fade * self.positions[contract] / 100), bid_qty, old_bid_id, bid_response)
-            if ask_qty > 0:
-                ask_response = await self.custom_place_order(contract, ask_qty, xchange_client.Side.SELL, penny_ask_price + spread + self.edge + int(self.fade * self.positions[contract] / 100))
-                self.order_ids[contract][f'l{level}_ask'] = ask_response
-                self.open_orders[contract].modify_order(penny_ask_price + spread + self.edge + int(self.fade * self.positions[contract] / 100), -ask_qty, old_ask_id, ask_response)
-            
-            if bid_response is not None:
-                print(f"[ORDER] {contract} - Placed L{level} Bid Order. ID: {bid_response}, Qty: {bid_qty}, Price: {penny_bid_price - spread - self.edge - int(self.fade * self.positions[contract] / 100)}")
-            if ask_response is not None:
-                print(f"[ORDER] {contract} - Placed L{level} Ask Order. ID: {ask_response}, Qty: {ask_qty}, Price: {penny_ask_price + spread + self.edge + int(self.fade * self.positions[contract] / 100)}")
-
-
-    async def adjust_level_ratios(self, contract, level):
-        bid_key = f'l{level}_bid'
-        ask_key = f'l{level}_ask'
+        old_bid_id = self.order_ids[contract][f'l{level}_bid']
+        old_ask_id = self.order_ids[contract][f'l{level}_ask']
+        bid_qty = min(order_size, MAX_ABSOLUTE_POSITION - self.positions[contract], MAX_ORDER_SIZE)
+        ask_qty = min(order_size, MAX_ABSOLUTE_POSITION + self.positions[contract], MAX_ORDER_SIZE)
+        bid_response = None
+        ask_response = None
         
-        while abs(self.level_positions[contract][f'L{level}']) >= getattr(self, f'order_l{level}_ratio') / sum(getattr(self, f'order_l{i}_ratio') for i in range(4)) * MAX_ABSOLUTE_POSITION:
-            if sum(abs(v) for v in self.open_orders[contract].id_to_qty.values()) >= MAX_OPEN_ORDER:
-                print(f"[WARNING] {contract} - Skipping adjust_level_ratios due to max open orders limit.")
-                break
-            
-            if self.positions[contract] >= 0:
-                # Place a new bid order to reduce position
-                qty = int(min(self.order_size, abs(self.level_positions[contract][f'L{level}']) - getattr(self, f'order_l{level}_ratio') / sum(getattr(self, f'order_l{i}_ratio') for i in range(4)) * MAX_ABSOLUTE_POSITION))
-                if qty > 0:
-                    bid_prices = list(self.order_books[contract].bids.keys())
-                    if bid_prices:
-                        bid_price = bid_prices[-1] + self.edge
-                        bid_response = await self.custom_place_order(contract, qty, xchange_client.Side.BUY, bid_price)
-                        self.order_ids[contract][bid_key] = bid_response
-                        print(f"[ADJUST] {contract} - Placed Bid Order to reduce position. ID: {bid_response}, Qty: {qty}, Price: {bid_price}")
-                    else:
-                        print(f"[WARNING] {contract} - No available bid prices to place order.")
-                        break
-                else:
-                    print(f"[WARNING] {contract} - No need to place bid order to reduce position.")
-                    break
-            else:
-                # Place a new ask order to reduce position
-                qty = int(min(self.order_size, abs(self.level_positions[contract][f'L{level}']) - getattr(self, f'order_l{level}_ratio') / sum(getattr(self, f'order_l{i}_ratio') for i in range(4)) * MAX_ABSOLUTE_POSITION))
-                if qty > 0:
-                    ask_prices = list(self.order_books[contract].asks.keys())
-                    if ask_prices:
-                        ask_price = int(ask_prices[0] - self.edge)
-                        ask_response = await self.custom_place_order(contract, qty, xchange_client.Side.SELL, ask_price)
-                        self.order_ids[contract][ask_key] = ask_response
-                        print(f"[ADJUST] {contract} - Placed Ask Order to reduce position. ID: {ask_response}, Qty: {qty}, Price: {ask_price}")
-                    else:
-                        print(f"[WARNING] {contract} - No available ask prices to place order.")
-                        break
-                else:
-                    print(f"[WARNING] {contract} - No need to place ask order to reduce position.")
-                    break
-            
-            await asyncio.sleep(1)  # Wait for the order to be processed
+        print(self.level_positions[contract])
+        print(self.level_positions[contract][f'L{level}'], ratio * MAX_ABSOLUTE_POSITION)
+        if self.level_positions[contract][f'L{level}'] > ratio * MAX_ABSOLUTE_POSITION:
+            if penny_ask_price - self.edge > self.get_avg_filled_price(contract, level, 'ask'):
+                ask_response = await self.custom_place_order(contract, ask_qty, xchange_client.Side.SELL, penny_ask_price - self.edge)
+                self.order_ids[contract][f'l{level}_ask'] = ask_response
+                self.open_orders[contract].modify_order(penny_ask_price - self.edge, -ask_qty, old_ask_id, ask_response)
+                print(f"[AGGRESSIVE SELL] {contract} - Placed Aggressive Ask Order. ID: {ask_response}, Qty: {ask_qty}, Price: {penny_ask_price - self.edge}")
+        elif self.level_positions[contract][f'L{level}'] < -ratio * MAX_ABSOLUTE_POSITION:
+            if penny_bid_price + self.edge < self.get_avg_filled_price(contract, level, 'bid'):
+                bid_response = await self.custom_place_order(contract, bid_qty, xchange_client.Side.BUY, penny_bid_price + self.edge)
+                self.order_ids[contract][f'l{level}_bid'] = bid_response
+                self.open_orders[contract].modify_order(penny_bid_price + self.edge, bid_qty, old_bid_id, bid_response)
+                print(f"[AGGRESSIVE BUY] {contract} - Placed Aggressive Bid Order. ID: {bid_response}, Qty: {bid_qty}, Price: {penny_bid_price + self.edge}")
+        else:
+            if bid_qty > 0 and penny_bid_price - spread > 0:
+                bid_response = await self.custom_place_order(contract, bid_qty, xchange_client.Side.BUY, penny_bid_price - spread - self.edge)
+                self.order_ids[contract][f'l{level}_bid'] = bid_response
+                self.open_orders[contract].modify_order(penny_bid_price - spread - self.edge, bid_qty, old_bid_id, bid_response)
+            if ask_qty > 0:
+                ask_response = await self.custom_place_order(contract, ask_qty, xchange_client.Side.SELL, penny_ask_price + spread + self.edge)
+                self.order_ids[contract][f'l{level}_ask'] = ask_response
+                self.open_orders[contract].modify_order(penny_ask_price + spread + self.edge, -ask_qty, old_ask_id, ask_response)
     
-    # Time to cancel orders
+    def get_avg_filled_price(self, contract, level, side):
+        filled_prices = self.order_filled_prices[contract][f'L{level}']
+        filled_prices = [price for price in filled_prices if (side == 'bid' and price > 0) or (side == 'ask' and price < 0)]
+        return sum(filled_prices) / len(filled_prices) if filled_prices else (float('inf') if side == 'bid' else float('-inf'))
+    
     async def cancel_unfavorable_orders(self, contract):
-        while sum(abs(v) for v in self.open_orders[contract].id_to_qty.values()) > MAX_OPEN_ORDER:
-            if self.positions[contract] >= 0:
-                # Cancel the most unfavorable ask
-                unfavorable_ask_id = min(self.order_ids[contract].values(), key=lambda x: self.order_id_to_price.get(x, float('-inf')))
-                if unfavorable_ask_id in self.order_id_to_price:
-                    await self.cancel_order(unfavorable_ask_id)
-                    print(f"[CANCELLED] {unfavorable_ask_id} ('{contract}', 'ASK')")
-                else:
-                    print(f"[WARNING] {contract} - No unfavorable ask orders to cancel.")
-                    break
-            else:
-                # Cancel the most unfavorable bid
-                unfavorable_bid_id = max(self.order_ids[contract].values(), key=lambda x: self.order_id_to_price.get(x, float('inf')))
-                if unfavorable_bid_id in self.order_id_to_price:
-                    await self.cancel_order(unfavorable_bid_id)
-                    print(f"[CANCELLED] {unfavorable_bid_id} ('{contract}', 'BID')")
-                else:
-                    print(f"[WARNING] {contract} - No unfavorable bid orders to cancel.")
-                    break
-
-    # Sell at one cent less than current ask if it greater than what we bought it for. Otherwise, hold.
+        while sum(1 for v in self.open_orders[contract].id_to_qty.values()) > 0.9 * MAX_OPEN_ORDER:
+            oldest_order_id = min(self.open_orders[contract].id_to_timestamp, key=self.open_orders[contract].id_to_timestamp.get)
+            await self.cancel_order(oldest_order_id)
+            del self.open_orders[contract].id_to_timestamp[oldest_order_id]
+            print(f"[CANCELLED] Oldest Order - ID: {oldest_order_id}")
+    
+    async def cancel_unfavorable_orders_from_pool(self):
+        all_open_orders = [(contract, order_id, timestamp) for contract in self.contracts for order_id, timestamp in self.open_orders[contract].id_to_timestamp.items()]
+        all_open_orders.sort(key=lambda x: x[2])  # Sort by timestamp
+        while sum(sum(1 for v in self.open_orders[contract].id_to_qty.values()) for contract in self.contracts) > 0.9 * MAX_OPEN_ORDER and len(all_open_orders) > 0:
+            contract, order_id, _ = all_open_orders.pop(0)
+            await self.cancel_order(order_id)
+            del self.open_orders[contract].id_to_timestamp[order_id]
+            print(f"[CANCELLED] Oldest Order from Pool - ID: {order_id}, Contract: {contract}")
+    
     async def adjust_aggressiveness(self, contract, penny_bid_price, penny_ask_price):
+        print(self.positions[contract])
         if self.positions[contract] > 0.8 * MAX_ABSOLUTE_POSITION:
-            # Sell more aggressively
             ask_qty = min(self.order_size, MAX_ABSOLUTE_POSITION + self.positions[contract], MAX_ORDER_SIZE)
-            ask_response = await self.custom_place_order(contract, ask_qty, xchange_client.Side.SELL, penny_ask_price - self.edge)
-            self.order_ids[contract]['l0_ask'] = ask_response
-            print(f"[AGGRESSIVE] {contract} - Placed Aggressive Ask Order. ID: {ask_response}, Qty: {ask_qty}, Price: {penny_ask_price - self.edge}")
-        elif self.positions[contract] < -0.8 * MAX_ABSOLUTE_POSITION:
-            # Buy more aggressively
-            bid_qty = min(self.order_size, MAX_ABSOLUTE_POSITION - self.positions[contract], MAX_ORDER_SIZE)
-            bid_response = await self.custom_place_order(contract, bid_qty, xchange_client.Side.BUY, penny_bid_price + self.edge)
-            self.order_ids[contract]['l0_bid'] = bid_response
-            print(f"[AGGRESSIVE] {contract} - Placed Aggressive Bid Order. ID: {bid_response}, Qty: {bid_qty}, Price: {penny_bid_price + self.edge}")
+            if penny_ask_price - self.edge > self.get_avg_filled_price(contract, 0, 'ask'):
+                ask_response = await self.custom_place_order(contract, ask_qty, xchange_client.Side.SELL, penny_ask_price - self.edge)
+                self.order_ids[contract]['l0_ask'] = ask_response
+                print(f"[AGGRESSIVE ASK] {contract} - Placed Aggressive Ask Order. ID: {ask_response}, Qty: {ask_qty}, Price: {penny_ask_price - self.edge}")
+        elif self.positions[contract] < -0.5 * MAX_ABSOLUTE_POSITION:  # Adjust the threshold for aggressive buying
+            bid_qty = min(2 * self.order_size, MAX_ABSOLUTE_POSITION - self.positions[contract], MAX_ORDER_SIZE)  # Increase the bid quantity
+            if penny_bid_price + self.edge < self.get_avg_filled_price(contract, 0, 'bid'):
+                bid_response = await self.custom_place_order(contract, bid_qty, xchange_client.Side.BUY, penny_bid_price + self.edge)
+                self.order_ids[contract]['l0_bid'] = bid_response
+                print(f"[AGGRESSIVE BUY] {contract} - Placed Aggressive Bid Order. ID: {bid_response}, Qty: {bid_qty}, Price: {penny_bid_price + self.edge}")
 
     async def trade(self):
         print("[INFO] Starting Quote Update Loop")
         while True:
             iteration_orders = 0
             iteration_fills = 0
-            
             for contract in self.contracts:
                 penny_bid_price, penny_ask_price = await self.get_penny_prices(contract)
-
                 if penny_bid_price is not None and penny_ask_price is not None:
                     print(f"[INFO] {contract} - Penny Bid: {penny_bid_price}, Penny Ask: {penny_ask_price}")
-
                     if penny_ask_price - penny_bid_price > self.slack:
                         for level in range(0, 4):
                             spread = getattr(self, f'l{level}_spread')
                             await self.place_level_orders(contract, level, spread, penny_bid_price, penny_ask_price)
-                    
                     print(f"[LOG] {contract} - {self.level_positions[contract]}")
                     print(f"[SUMMARY] Iteration Orders: {iteration_orders}, Iteration Fills: {iteration_fills}, Total Orders: {self.total_open}, Total Fills: {self.total_fills}, Total Transactions: {self.total_transactions}")
-
-                    await self.cancel_unfavorable_orders(contract)
                     await self.adjust_aggressiveness(contract, penny_bid_price, penny_ask_price)
-
+                    await self.cancel_unfavorable_orders(contract)
                 else:
                     print(f"[WARNING] {contract} - Invalid Penny Prices. Skipping order placement.")
-
             await asyncio.sleep(1)
-
-    def calculate_pnl_score(self):
-        pnl = 0
-        for contract in self.contracts:
-            if self.order_books[contract].bids and self.order_books[contract].asks:
-                mid_price = (list(self.order_books[contract].bids.keys())[-1] + list(self.order_books[contract].asks.keys())[0]) / 2
-                pnl += self.positions[contract] * mid_price
-        pnl += self.positions['cash']
-        return pnl
-
+    
     async def bot_handle_book_update(self, symbol):
         pass
-
+    
     async def bot_handle_trade_msg(self, symbol, price, qty):
         pass
-
+    
     async def bot_handle_order_fill(self, order_id, qty, price):
         for contract in self.contracts:
             open_orders = self.open_orders[contract]
             for order_key, order_value in self.order_ids[contract].items():
                 if order_id == order_value:
                     if order_id in open_orders.id_to_qty:
-                        if qty > 0:
-                            open_orders.adjust_qty(order_id, -qty)
-                            self.positions[contract] += qty
-                            if 'l0' in order_key:
-                                self.level_positions[contract]['L0'] += qty
-                            if 'l1' in order_key:
-                                self.level_positions[contract]['L1'] += qty
-                            elif 'l2' in order_key:
-                                self.level_positions[contract]['L2'] += qty
-                            elif 'l3' in order_key:
-                                self.level_positions[contract]['L3'] += qty
-                             
-                            print(f"[FILL] Order Fill - {contract}: +{qty} @ {price}")
-                        else:
-                            open_orders.adjust_qty(order_id, qty)
-                            self.positions[contract] -= qty
-                            if 'l0' in order_key:
-                                self.level_positions[contract]['L0'] -= qty
-                            if 'l1' in order_key:
-                                self.level_positions[contract]['L1'] -= qty
-                            elif 'l2' in order_key:
-                                self.level_positions[contract]['L2'] -= qty
-                            elif 'l3' in order_key:
-                                self.level_positions[contract]['L3'] -= qty
-                            print(f"[FILL] Order Fill - {contract}: {qty} @ {price}")
-                        
-                        # Update the id_to_filled_prices dictionary
-                        if order_id not in open_orders.id_to_filled_prices:
-                            open_orders.id_to_filled_prices[order_id] = []
-                        open_orders.id_to_filled_prices[order_id].extend([price] * abs(qty))
+                        filled_qty = -qty if qty > 0 else qty
+                        open_orders.adjust_qty(order_id, filled_qty)
+                        self.positions[contract] += qty
+                        if 'l0' in order_key:
+                            self.level_positions[contract]['L0'] += qty
+                            self.order_filled_prices[contract]['L0'].append(price if qty > 0 else -price)
+                        if 'l1' in order_key:
+                            self.level_positions[contract]['L1'] += qty
+                            self.order_filled_prices[contract]['L1'].append(price if qty > 0 else -price)
+                        elif 'l2' in order_key:
+                            self.level_positions[contract]['L2'] += qty
+                            self.order_filled_prices[contract]['L2'].append(price if qty > 0 else -price)
+                        elif 'l3' in order_key:
+                            self.level_positions[contract]['L3'] += qty
+                            self.order_filled_prices[contract]['L3'].append(price if qty > 0 else -price)
+                        print(f"[FILL] Order Fill - {contract}: {'+'if qty > 0 else ''}{qty} @ {price}")
                     break
-
+    
     async def bot_handle_order_rejected(self, order_id, reason):
         print(f"[REJECTED] Order Rejected - Order ID: {order_id}, Reason: {reason}")
-
+        await self.cancel_unfavorable_orders_from_pool()
+    
     async def bot_handle_cancel_response(self, order_id, success, error):
         if success:
             print(f"[CANCELED] Order Cancelled - Order ID: {order_id}")
         else:
             print(f"[ERROR] Order Cancellation Failed - Order ID: {order_id}, Error: {error}")
-
+    
     async def start(self):
         asyncio.create_task(self.trade())
         await self.connect()
 
-
 async def main():
     log_file_path = "/Users/divy/Desktop/Chicago-Trading-Competition-2024/case_1/log/file.txt"
     log_to_file(log_file_path)
-
-    # while True:
     bot = PIPOBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133")
     try:
         await bot.start()
@@ -366,11 +285,6 @@ async def main():
         await asyncio.sleep(1)  # Wait for a short duration before restarting
     except KeyboardInterrupt:
         print("KeyboardInterrupt: Closing the event loop...")
-    
+
 if __name__ == "__main__":
     asyncio.run(main())
-
-
-
-
-
