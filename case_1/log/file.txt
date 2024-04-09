@@ -4,142 +4,1920 @@
 [WARNING] MKU - Invalid Penny Prices. Skipping order placement.
 [WARNING] IGM - Invalid Penny Prices. Skipping order placement.
 [WARNING] BRV - Invalid Penny Prices. Skipping order placement.
-[INFO] EPT - Penny Bid: 4784, Penny Ask: 4788
-1712619327830639104 ('EPT', 'BID') 15 4784 0 1712619327830639105 ('EPT', 'ASK') 15 4788 0
-1712619327830639106 ('EPT', 'L1_BID') 7 4782 0 1712619327830639107 ('EPT', 'L1_ASK') 7 4790 0
-1712619327830639108 ('EPT', 'L2_BID') 5 4780 0 1712619327830639109 ('EPT', 'L2_ASK') 5 4792 0
-1712619327830639110 ('EPT', 'L3_BID') 2 4778 0 1712619327830639111 ('EPT', 'L3_ASK') 2 4794 0
-[INFO] DLO - Penny Bid: 4896, Penny Ask: 4900
-1712619327830639112 ('DLO', 'BID') 15 4896 0 1712619327830639113 ('DLO', 'ASK') 15 4900 0
-1712619327830639114 ('DLO', 'L1_BID') 7 4894 0 1712619327830639115 ('DLO', 'L1_ASK') 7 4902 0
-1712619327830639116 ('DLO', 'L2_BID') 5 4892 0 1712619327830639117 ('DLO', 'L2_ASK') 5 4904 0
-1712619327830639118 ('DLO', 'L3_BID') 2 4890 0 1712619327830639119 ('DLO', 'L3_ASK') 2 4906 0
-[INFO] MKU - Penny Bid: 4976, Penny Ask: 4980
-1712619327830639120 ('MKU', 'BID') 15 4976 0 1712619327830639121 ('MKU', 'ASK') 15 4980 0
-1712619327830639122 ('MKU', 'L1_BID') 7 4974 0 1712619327830639123 ('MKU', 'L1_ASK') 7 4982 0
-1712619327830639124 ('MKU', 'L2_BID') 5 4972 0 1712619327830639125 ('MKU', 'L2_ASK') 5 4984 0
-1712619327830639126 ('MKU', 'L3_BID') 2 4970 0 1712619327830639127 ('MKU', 'L3_ASK') 2 4986 0
-[INFO] IGM - Penny Bid: 6125, Penny Ask: 6129
-1712619327830639128 ('IGM', 'BID') 15 6125 0 1712619327830639129 ('IGM', 'ASK') 15 6129 0
-1712619327830639130 ('IGM', 'L1_BID') 7 6123 0 1712619327830639131 ('IGM', 'L1_ASK') 7 6131 0
-1712619327830639132 ('IGM', 'L2_BID') 5 6121 0 1712619327830639133 ('IGM', 'L2_ASK') 5 6133 0
-1712619327830639134 ('IGM', 'L3_BID') 2 6119 0 1712619327830639135 ('IGM', 'L3_ASK') 2 6135 0
-[INFO] BRV - Penny Bid: 5367, Penny Ask: 5371
-1712619327830639136 ('BRV', 'BID') 15 5367 0 1712619327830639137 ('BRV', 'ASK') 15 5371 0
-1712619327830639138 ('BRV', 'L1_BID') 7 5365 0 1712619327830639139 ('BRV', 'L1_ASK') 7 5373 0
-1712619327830639140 ('BRV', 'L2_BID') 5 5363 0 1712619327830639141 ('BRV', 'L2_ASK') 5 5375 0
-1712619327830639142 ('BRV', 'L3_BID') 2 5361 0 1712619327830639143 ('BRV', 'L3_ASK') 2 5377 0
-[FILL] Order Fill - BRV: +15 @ 5367
-[FILL] Order Fill - EPT: +15 @ 4784
-[FILL] Order Fill - IGM: +15 @ 6125
-[FILL] Order Fill - IGM: +7 @ 6123
-[FILL] Order Fill - DLO: +15 @ 4900
-[FILL] Order Fill - EPT: +15 @ 4788
-[FILL] Order Fill - EPT: +7 @ 4790
-[FILL] Order Fill - EPT: +5 @ 4792
-[FILL] Order Fill - EPT: +2 @ 4794
-[FILL] Order Fill - BRV: +7 @ 5365
-[FILL] Order Fill - EPT: +7 @ 4782
-[FILL] Order Fill - IGM: +5 @ 6121
-[FILL] Order Fill - DLO: +7 @ 4902
-[FILL] Order Fill - BRV: +5 @ 5363
-[FILL] Order Fill - BRV: +2 @ 5361
-[FILL] Order Fill - DLO: +5 @ 4904
-[FILL] Order Fill - DLO: +2 @ 4906
-[FILL] Order Fill - MKU: +15 @ 4980
-[FILL] Order Fill - IGM: +2 @ 6119
-[FILL] Order Fill - MKU: +7 @ 4982
-[FILL] Order Fill - IGM: +15 @ 6129
-[FILL] Order Fill - IGM: +7 @ 6131
-[FILL] Order Fill - IGM: +5 @ 6133
-[FILL] Order Fill - IGM: +2 @ 6135
-[FILL] Order Fill - MKU: +5 @ 4984
-[INFO] EPT - Penny Bid: 4788, Penny Ask: 4792
-1712619327830639144 ('EPT', 'BID') 15 4788 0 1712619327830639145 ('EPT', 'ASK') 15 4792 0
-[INFO] DLO - Penny Bid: 4906, Penny Ask: 4910
-1712619327830639146 ('DLO', 'BID') 15 4906 0 1712619327830639147 ('DLO', 'ASK') 15 4910 0
-1712619327830639148 ('DLO', 'L1_BID') 7 4904 0 1712619327830639149 ('DLO', 'L1_ASK') 7 4912 0
-1712619327830639150 ('DLO', 'L2_BID') 5 4902 0 1712619327830639151 ('DLO', 'L2_ASK') 5 4914 0
-1712619327830639152 ('DLO', 'L3_BID') 2 4900 0 1712619327830639153 ('DLO', 'L3_ASK') 2 4916 0
-[INFO] MKU - Penny Bid: 4985, Penny Ask: 4989
-1712619327830639154 ('MKU', 'BID') 15 4985 0 1712619327830639155 ('MKU', 'ASK') 15 4989 0
-1712619327830639156 ('MKU', 'L1_BID') 7 4983 0 1712619327830639157 ('MKU', 'L1_ASK') 7 4991 0
-1712619327830639158 ('MKU', 'L2_BID') 5 4981 0 1712619327830639159 ('MKU', 'L2_ASK') 5 4993 0
-1712619327830639160 ('MKU', 'L3_BID') 2 4979 0 1712619327830639161 ('MKU', 'L3_ASK') 2 4995 0
-[INFO] IGM - Penny Bid: 6114, Penny Ask: 6118
-1712619327830639162 ('IGM', 'BID') 15 6114 0 1712619327830639163 ('IGM', 'ASK') 15 6118 0
-[INFO] BRV - Penny Bid: 5307, Penny Ask: 5310
-1712619327830639164 ('BRV', 'BID') 15 5307 0 1712619327830639165 ('BRV', 'ASK') 15 5310 0
-[FILL] Order Fill - BRV: +10 @ 5303
-[FILL] Order Fill - BRV: +5 @ 5304
-[FILL] Order Fill - EPT: +15 @ 4792
-[FILL] Order Fill - IGM: +15 @ 6118
-[FILL] Order Fill - DLO: +15 @ 4906
-[FILL] Order Fill - DLO: +7 @ 4904
-[FILL] Order Fill - DLO: +5 @ 4902
-[FILL] Order Fill - DLO: +2 @ 4900
-[FILL] Order Fill - MKU: +15 @ 4985
-[FILL] Order Fill - MKU: +7 @ 4983
-[FILL] Order Fill - BRV: +15 @ 5310
-[FILL] Order Fill - MKU: +5 @ 4981
-[INFO] EPT - Penny Bid: 4813, Penny Ask: 4817
-1712619327830639166 ('EPT', 'BID') 15 4813 0 1712619327830639167 ('EPT', 'ASK') 15 4817 0
-[INFO] DLO - Penny Bid: 4873, Penny Ask: 4877
-1712619327830639168 ('DLO', 'BID') 13 4873 0 1712619327830639169 ('DLO', 'ASK') 15 4877 0
-[INFO] MKU - Penny Bid: 4977, Penny Ask: 4980
-1712619327830639170 ('MKU', 'BID') 15 4977 0 1712619327830639171 ('MKU', 'ASK') 15 4980 0
-[INFO] IGM - Penny Bid: 6150, Penny Ask: 6154
-1712619327830639172 ('IGM', 'BID') 15 6150 0 1712619327830639173 ('IGM', 'ASK') 15 6154 0
-[INFO] BRV - Penny Bid: 5312, Penny Ask: 5316
-1712619327830639174 ('BRV', 'BID') 12 5312 0 1712619327830639175 ('BRV', 'ASK') 15 5316 0
-[FILL] Order Fill - MKU: +2 @ 4979
-[FILL] Order Fill - EPT: +15 @ 4818
-[FILL] Order Fill - DLO: +13 @ 4868
-[FILL] Order Fill - IGM: +15 @ 6160
-[FILL] Order Fill - BRV: +15 @ 5320
-[FILL] Order Fill - MKU: +15 @ 4977
-[FILL] Order Fill - BRV: +12 @ 5312
-[FILL] Order Fill - MKU: +15 @ 4980
-[FILL] Order Fill - MKU: +7 @ 4991
-[FILL] Order Fill - MKU: +5 @ 4993
-[FILL] Order Fill - IGM: +15 @ 6150
-[FILL] Order Fill - MKU: +2 @ 4995
-[INFO] EPT - Penny Bid: 4821, Penny Ask: 4825
-1712619327830639176 ('EPT', 'BID') 15 4821 0 1712619327830639177 ('EPT', 'ASK') 15 4825 0
-[INFO] DLO - Penny Bid: 4866, Penny Ask: 4870
-[INFO] MKU - Penny Bid: 4998, Penny Ask: 5002
-1712619327830639178 ('MKU', 'BID') 14 4998 0 1712619327830639179 ('MKU', 'ASK') 15 5002 0
-[INFO] IGM - Penny Bid: 6141, Penny Ask: 6145
-1712619327830639180 ('IGM', 'BID') 12 6141 0 1712619327830639181 ('IGM', 'ASK') 15 6145 0
-[INFO] BRV - Penny Bid: 5264, Penny Ask: 5267
-[FILL] Order Fill - MKU: +15 @ 5004
-[FILL] Order Fill - IGM: +12 @ 6139
-[FILL] Order Fill - EPT: +15 @ 4825
-[INFO] EPT - Penny Bid: 4843, Penny Ask: 4847
-1712619327830639182 ('EPT', 'BID') 15 4843 0 1712619327830639183 ('EPT', 'ASK') 15 4847 0
-[INFO] DLO - Penny Bid: 4857, Penny Ask: 4859
-[INFO] MKU - Penny Bid: 5023, Penny Ask: 5025
-1712619327830639184 ('MKU', 'BID') 14 5023 0 1712619327830639185 ('MKU', 'ASK') 15 5025 0
-[INFO] IGM - Penny Bid: 6130, Penny Ask: 6135
-[INFO] BRV - Penny Bid: 5280, Penny Ask: 5284
-[FILL] Order Fill - EPT: +15 @ 4848
-[FILL] Order Fill - MKU: +15 @ 5025
-[FILL] Order Fill - EPT: +15 @ 4843
-[INFO] EPT - Penny Bid: 4856, Penny Ask: 4860
-1712619327830639186 ('EPT', 'BID') 15 4856 0 1712619327830639187 ('EPT', 'ASK') 15 4860 0
-[INFO] DLO - Penny Bid: 4847, Penny Ask: 4851
-[INFO] MKU - Penny Bid: 5042, Penny Ask: 5044
-1712619327830639188 ('MKU', 'BID') 14 5042 0 1712619327830639189 ('MKU', 'ASK') 15 5044 0
-[INFO] IGM - Penny Bid: 6122, Penny Ask: 6125
-[INFO] BRV - Penny Bid: 5301, Penny Ask: 5305
-[FILL] Order Fill - MKU: +15 @ 5044
-[FILL] Order Fill - EPT: +15 @ 4856
-[INFO] EPT - Penny Bid: 4829, Penny Ask: 4833
-[INFO] DLO - Penny Bid: 4840, Penny Ask: 4844
-[INFO] MKU - Penny Bid: 5066, Penny Ask: 5070
-1712619327830639190 ('MKU', 'BID') 14 5066 0 1712619327830639191 ('MKU', 'ASK') 15 5070 0
-[INFO] IGM - Penny Bid: 6098, Penny Ask: 6102
-[INFO] BRV - Penny Bid: 5372, Penny Ask: 5380
-1712619327830639192 ('BRV', 'BID') 3 5372 0 1712619327830639193 ('BRV', 'ASK') 15 5380 0
-[FILL] Order Fill - BRV: +7 @ 5373
-[FILL] Order Fill - BRV: +5 @ 5375
+Exception occurred: <AioRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:18.188.190.235:3333: Failed to connect to remote host: Connection refused"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2024-04-08T23:51:58.68264-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:18.188.190.235:3333: Failed to connect to remote host: Connection refused"}"
+>
+Restarting the bot...
+[WARNING] EPT - Invalid Penny Prices. Skipping order placement.
+[WARNING] DLO - Invalid Penny Prices. Skipping order placement.
+[WARNING] MKU - Invalid Penny Prices. Skipping order placement.
+[WARNING] IGM - Invalid Penny Prices. Skipping order placement.
+[WARNING] BRV - Invalid Penny Prices. Skipping order placement.
+[INFO] Starting Quote Update Loop
+[WARNING] EPT - Invalid Penny Prices. Skipping order placement.
+[WARNING] DLO - Invalid Penny Prices. Skipping order placement.
+[WARNING] MKU - Invalid Penny Prices. Skipping order placement.
+[WARNING] IGM - Invalid Penny Prices. Skipping order placement.
+[WARNING] BRV - Invalid Penny Prices. Skipping order placement.
+[INFO] EPT - Penny Bid: 4754, Penny Ask: 4760
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712634721181277952, Qty: 30, Price: 4752
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712634721181277953, Qty: 30, Price: 4762
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712634721181277954, Qty: 15, Price: 4751
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712634721181277955, Qty: 15, Price: 4763
+[ORDER] EPT - Placed L2 Bid Order. ID: 1712634721181277956, Qty: 10, Price: 4749
+[ORDER] EPT - Placed L2 Ask Order. ID: 1712634721181277957, Qty: 10, Price: 4765
+[ORDER] EPT - Placed L3 Bid Order. ID: 1712634721181277958, Qty: 4, Price: 4747
+[ORDER] EPT - Placed L3 Ask Order. ID: 1712634721181277959, Qty: 4, Price: 4767
+[LOG] EPT - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4902, Penny Ask: 4908
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712634721181277960, Qty: 30, Price: 4900
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712634721181277961, Qty: 30, Price: 4910
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712634721181277962, Qty: 15, Price: 4899
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712634721181277963, Qty: 15, Price: 4911
+[ORDER] DLO - Placed L2 Bid Order. ID: 1712634721181277964, Qty: 10, Price: 4897
+[ORDER] DLO - Placed L2 Ask Order. ID: 1712634721181277965, Qty: 10, Price: 4913
+[ORDER] DLO - Placed L3 Bid Order. ID: 1712634721181277966, Qty: 4, Price: 4895
+[ORDER] DLO - Placed L3 Ask Order. ID: 1712634721181277967, Qty: 4, Price: 4915
+[LOG] DLO - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5088, Penny Ask: 5094
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712634721181277968, Qty: 30, Price: 5086
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712634721181277969, Qty: 30, Price: 5096
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712634721181277970, Qty: 15, Price: 5085
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712634721181277971, Qty: 15, Price: 5097
+[ORDER] MKU - Placed L2 Bid Order. ID: 1712634721181277972, Qty: 10, Price: 5083
+[ORDER] MKU - Placed L2 Ask Order. ID: 1712634721181277973, Qty: 10, Price: 5099
+[ORDER] MKU - Placed L3 Bid Order. ID: 1712634721181277974, Qty: 4, Price: 5081
+[ORDER] MKU - Placed L3 Ask Order. ID: 1712634721181277975, Qty: 4, Price: 5101
+[LOG] MKU - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 5575, Penny Ask: 5581
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712634721181277976, Qty: 30, Price: 5573
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712634721181277977, Qty: 30, Price: 5583
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712634721181277978, Qty: 15, Price: 5572
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712634721181277979, Qty: 15, Price: 5584
+[ORDER] IGM - Placed L2 Bid Order. ID: 1712634721181277980, Qty: 10, Price: 5570
+[ORDER] IGM - Placed L2 Ask Order. ID: 1712634721181277981, Qty: 10, Price: 5586
+[ORDER] IGM - Placed L3 Bid Order. ID: 1712634721181277982, Qty: 4, Price: 5568
+[ORDER] IGM - Placed L3 Ask Order. ID: 1712634721181277983, Qty: 4, Price: 5588
+[LOG] IGM - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5088, Penny Ask: 5094
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712634721181277984, Qty: 30, Price: 5086
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712634721181277985, Qty: 30, Price: 5096
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712634721181277986, Qty: 15, Price: 5085
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712634721181277987, Qty: 15, Price: 5097
+[ORDER] BRV - Placed L2 Bid Order. ID: 1712634721181277988, Qty: 10, Price: 5083
+[ORDER] BRV - Placed L2 Ask Order. ID: 1712634721181277989, Qty: 10, Price: 5099
+[ORDER] BRV - Placed L3 Bid Order. ID: 1712634721181277990, Qty: 4, Price: 5081
+[ORDER] BRV - Placed L3 Ask Order. ID: 1712634721181277991, Qty: 4, Price: 5101
+[LOG] BRV - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - EPT: +30 @ 4751
+[REJECTED] Order Rejected - Order ID: 1712634721181277965, Reason: Order ID 1712634721181277965 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181277966, Reason: Order ID 1712634721181277966 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181277967, Reason: Order ID 1712634721181277967 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181277973, Reason: Order ID 1712634721181277973 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181277974, Reason: Order ID 1712634721181277974 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181277975, Reason: Order ID 1712634721181277975 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181277981, Reason: Order ID 1712634721181277981 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181277982, Reason: Order ID 1712634721181277982 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181277983, Reason: Order ID 1712634721181277983 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181277989, Reason: Order ID 1712634721181277989 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181277990, Reason: Order ID 1712634721181277990 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181277991, Reason: Order ID 1712634721181277991 exceeds limits
+[FILL] Order Fill - MKU: +30 @ 5096
+[FILL] Order Fill - DLO: +30 @ 4910
+[FILL] Order Fill - MKU: +15 @ 5097
+[FILL] Order Fill - DLO: +15 @ 4911
+[FILL] Order Fill - EPT: +30 @ 4762
+[INFO] EPT - Penny Bid: 4762, Penny Ask: 4769
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712634721181277992, Qty: 30, Price: 4760
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712634721181277993, Qty: 30, Price: 4771
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712634721181277994, Qty: 15, Price: 4759
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712634721181277995, Qty: 15, Price: 4772
+[ORDER] EPT - Placed L2 Bid Order. ID: 1712634721181277996, Qty: 10, Price: 4757
+[ORDER] EPT - Placed L2 Ask Order. ID: 1712634721181277997, Qty: 10, Price: 4774
+[ORDER] EPT - Placed L3 Bid Order. ID: 1712634721181277998, Qty: 4, Price: 4755
+[ORDER] EPT - Placed L3 Ask Order. ID: 1712634721181277999, Qty: 4, Price: 4776
+[LOG] EPT - {'L0': 60, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4919, Penny Ask: 4925
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712634721181278000, Qty: 30, Price: 4917
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712634721181278001, Qty: 30, Price: 4927
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712634721181278002, Qty: 15, Price: 4916
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712634721181278003, Qty: 15, Price: 4928
+[ORDER] DLO - Placed L2 Bid Order. ID: 1712634721181278004, Qty: 10, Price: 4914
+[ORDER] DLO - Placed L2 Ask Order. ID: 1712634721181278005, Qty: 10, Price: 4930
+[ORDER] DLO - Placed L3 Bid Order. ID: 1712634721181278006, Qty: 4, Price: 4912
+[ORDER] DLO - Placed L3 Ask Order. ID: 1712634721181278007, Qty: 4, Price: 4932
+[LOG] DLO - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5103, Penny Ask: 5109
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712634721181278008, Qty: 30, Price: 5101
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712634721181278009, Qty: 30, Price: 5111
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712634721181278010, Qty: 15, Price: 5100
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712634721181278011, Qty: 15, Price: 5112
+[ORDER] MKU - Placed L2 Bid Order. ID: 1712634721181278012, Qty: 10, Price: 5098
+[ORDER] MKU - Placed L2 Ask Order. ID: 1712634721181278013, Qty: 10, Price: 5114
+[ORDER] MKU - Placed L3 Bid Order. ID: 1712634721181278014, Qty: 4, Price: 5096
+[ORDER] MKU - Placed L3 Ask Order. ID: 1712634721181278015, Qty: 4, Price: 5116
+[LOG] MKU - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 5569, Penny Ask: 5576
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712634721181278016, Qty: 30, Price: 5567
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712634721181278017, Qty: 30, Price: 5578
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712634721181278018, Qty: 15, Price: 5566
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712634721181278019, Qty: 15, Price: 5579
+[ORDER] IGM - Placed L2 Bid Order. ID: 1712634721181278020, Qty: 10, Price: 5564
+[ORDER] IGM - Placed L2 Ask Order. ID: 1712634721181278021, Qty: 10, Price: 5581
+[ORDER] IGM - Placed L3 Bid Order. ID: 1712634721181278022, Qty: 4, Price: 5562
+[ORDER] IGM - Placed L3 Ask Order. ID: 1712634721181278023, Qty: 4, Price: 5583
+[LOG] IGM - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5089, Penny Ask: 5095
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712634721181278024, Qty: 30, Price: 5087
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712634721181278025, Qty: 30, Price: 5097
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712634721181278026, Qty: 15, Price: 5086
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712634721181278027, Qty: 15, Price: 5098
+[ORDER] BRV - Placed L2 Bid Order. ID: 1712634721181278028, Qty: 10, Price: 5084
+[ORDER] BRV - Placed L2 Ask Order. ID: 1712634721181278029, Qty: 10, Price: 5100
+[ORDER] BRV - Placed L3 Bid Order. ID: 1712634721181278030, Qty: 4, Price: 5082
+[ORDER] BRV - Placed L3 Ask Order. ID: 1712634721181278031, Qty: 4, Price: 5102
+[LOG] BRV - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] EPT - Penny Bid: 4762, Penny Ask: 4763
+[LOG] EPT - {'L0': 60, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4919, Penny Ask: 4925
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712634721181278032, Qty: 30, Price: 4917
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712634721181278033, Qty: 30, Price: 4927
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712634721181278034, Qty: 15, Price: 4916
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712634721181278035, Qty: 15, Price: 4928
+[ORDER] DLO - Placed L2 Bid Order. ID: 1712634721181278036, Qty: 10, Price: 4914
+[ORDER] DLO - Placed L2 Ask Order. ID: 1712634721181278037, Qty: 10, Price: 4930
+[ORDER] DLO - Placed L3 Bid Order. ID: 1712634721181278038, Qty: 4, Price: 4912
+[ORDER] DLO - Placed L3 Ask Order. ID: 1712634721181278039, Qty: 4, Price: 4932
+[LOG] DLO - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5103, Penny Ask: 5109
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712634721181278040, Qty: 30, Price: 5101
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712634721181278041, Qty: 30, Price: 5111
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712634721181278042, Qty: 15, Price: 5100
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712634721181278043, Qty: 15, Price: 5112
+[ORDER] MKU - Placed L2 Bid Order. ID: 1712634721181278044, Qty: 10, Price: 5098
+[ORDER] MKU - Placed L2 Ask Order. ID: 1712634721181278045, Qty: 10, Price: 5114
+[ORDER] MKU - Placed L3 Bid Order. ID: 1712634721181278046, Qty: 4, Price: 5096
+[ORDER] MKU - Placed L3 Ask Order. ID: 1712634721181278047, Qty: 4, Price: 5116
+[LOG] MKU - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 5573, Penny Ask: 5576
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712634721181278048, Qty: 30, Price: 5571
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712634721181278049, Qty: 30, Price: 5578
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712634721181278050, Qty: 15, Price: 5570
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712634721181278051, Qty: 15, Price: 5579
+[ORDER] IGM - Placed L2 Bid Order. ID: 1712634721181278052, Qty: 10, Price: 5568
+[ORDER] IGM - Placed L2 Ask Order. ID: 1712634721181278053, Qty: 10, Price: 5581
+[ORDER] IGM - Placed L3 Bid Order. ID: 1712634721181278054, Qty: 4, Price: 5566
+[ORDER] IGM - Placed L3 Ask Order. ID: 1712634721181278055, Qty: 4, Price: 5583
+[LOG] IGM - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5089, Penny Ask: 5095
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712634721181278056, Qty: 30, Price: 5087
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712634721181278057, Qty: 30, Price: 5097
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712634721181278058, Qty: 15, Price: 5086
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712634721181278059, Qty: 15, Price: 5098
+[ORDER] BRV - Placed L2 Bid Order. ID: 1712634721181278060, Qty: 10, Price: 5084
+[ORDER] BRV - Placed L2 Ask Order. ID: 1712634721181278061, Qty: 10, Price: 5100
+[ORDER] BRV - Placed L3 Bid Order. ID: 1712634721181278062, Qty: 4, Price: 5082
+[ORDER] BRV - Placed L3 Ask Order. ID: 1712634721181278063, Qty: 4, Price: 5102
+[LOG] BRV - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] EPT - Penny Bid: 4770, Penny Ask: 4777
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712634721181278064, Qty: 30, Price: 4768
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712634721181278065, Qty: 30, Price: 4779
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712634721181278066, Qty: 15, Price: 4767
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712634721181278067, Qty: 15, Price: 4780
+[ORDER] EPT - Placed L2 Bid Order. ID: 1712634721181278068, Qty: 10, Price: 4765
+[ORDER] EPT - Placed L2 Ask Order. ID: 1712634721181278069, Qty: 10, Price: 4782
+[ORDER] EPT - Placed L3 Bid Order. ID: 1712634721181278070, Qty: 4, Price: 4763
+[ORDER] EPT - Placed L3 Ask Order. ID: 1712634721181278071, Qty: 4, Price: 4784
+[LOG] EPT - {'L0': 60, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4925, Penny Ask: 4929
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712634721181278072, Qty: 30, Price: 4923
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712634721181278073, Qty: 30, Price: 4931
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712634721181278074, Qty: 15, Price: 4922
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712634721181278075, Qty: 15, Price: 4932
+[ORDER] DLO - Placed L2 Bid Order. ID: 1712634721181278076, Qty: 10, Price: 4920
+[ORDER] DLO - Placed L2 Ask Order. ID: 1712634721181278077, Qty: 10, Price: 4934
+[ORDER] DLO - Placed L3 Bid Order. ID: 1712634721181278078, Qty: 4, Price: 4918
+[ORDER] DLO - Placed L3 Ask Order. ID: 1712634721181278079, Qty: 4, Price: 4936
+[LOG] DLO - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5106, Penny Ask: 5113
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712634721181278080, Qty: 30, Price: 5104
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712634721181278081, Qty: 30, Price: 5115
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712634721181278082, Qty: 15, Price: 5103
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712634721181278083, Qty: 15, Price: 5116
+[ORDER] MKU - Placed L2 Bid Order. ID: 1712634721181278084, Qty: 10, Price: 5101
+[ORDER] MKU - Placed L2 Ask Order. ID: 1712634721181278085, Qty: 10, Price: 5118
+[ORDER] MKU - Placed L3 Bid Order. ID: 1712634721181278086, Qty: 4, Price: 5099
+[ORDER] MKU - Placed L3 Ask Order. ID: 1712634721181278087, Qty: 4, Price: 5120
+[LOG] MKU - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 5573, Penny Ask: 5575
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712634721181278088, Qty: 30, Price: 5571
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712634721181278089, Qty: 30, Price: 5577
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712634721181278090, Qty: 15, Price: 5570
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712634721181278091, Qty: 15, Price: 5578
+[ORDER] IGM - Placed L2 Bid Order. ID: 1712634721181278092, Qty: 10, Price: 5568
+[ORDER] IGM - Placed L2 Ask Order. ID: 1712634721181278093, Qty: 10, Price: 5580
+[ORDER] IGM - Placed L3 Bid Order. ID: 1712634721181278094, Qty: 4, Price: 5566
+[ORDER] IGM - Placed L3 Ask Order. ID: 1712634721181278095, Qty: 4, Price: 5582
+[LOG] IGM - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5089, Penny Ask: 5095
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712634721181278096, Qty: 30, Price: 5087
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712634721181278097, Qty: 30, Price: 5097
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712634721181278098, Qty: 15, Price: 5086
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712634721181278099, Qty: 15, Price: 5098
+[ORDER] BRV - Placed L2 Bid Order. ID: 1712634721181278100, Qty: 10, Price: 5084
+[ORDER] BRV - Placed L2 Ask Order. ID: 1712634721181278101, Qty: 10, Price: 5100
+[ORDER] BRV - Placed L3 Bid Order. ID: 1712634721181278102, Qty: 4, Price: 5082
+[ORDER] BRV - Placed L3 Ask Order. ID: 1712634721181278103, Qty: 4, Price: 5102
+[LOG] BRV - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[REJECTED] Order Rejected - Order ID: 1712634721181278001, Reason: Order ID 1712634721181278001 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278003, Reason: Order ID 1712634721181278003 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278004, Reason: Order ID 1712634721181278004 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278005, Reason: Order ID 1712634721181278005 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278006, Reason: Order ID 1712634721181278006 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278007, Reason: Order ID 1712634721181278007 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278009, Reason: Order ID 1712634721181278009 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278011, Reason: Order ID 1712634721181278011 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278012, Reason: Order ID 1712634721181278012 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278013, Reason: Order ID 1712634721181278013 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278014, Reason: Order ID 1712634721181278014 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278015, Reason: Order ID 1712634721181278015 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278017, Reason: Order ID 1712634721181278017 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278019, Reason: Order ID 1712634721181278019 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278021, Reason: Order ID 1712634721181278021 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278022, Reason: Order ID 1712634721181278022 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278023, Reason: Order ID 1712634721181278023 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278025, Reason: Order ID 1712634721181278025 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278027, Reason: Order ID 1712634721181278027 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278029, Reason: Order ID 1712634721181278029 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278030, Reason: Order ID 1712634721181278030 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278031, Reason: Order ID 1712634721181278031 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278032, Reason: Order ID 1712634721181278032 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278033, Reason: Order ID 1712634721181278033 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278034, Reason: Order ID 1712634721181278034 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278035, Reason: Order ID 1712634721181278035 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278036, Reason: Order ID 1712634721181278036 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278037, Reason: Order ID 1712634721181278037 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278038, Reason: Order ID 1712634721181278038 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278039, Reason: Order ID 1712634721181278039 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278040, Reason: Order ID 1712634721181278040 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278041, Reason: Order ID 1712634721181278041 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278042, Reason: Order ID 1712634721181278042 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278043, Reason: Order ID 1712634721181278043 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278044, Reason: Order ID 1712634721181278044 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278045, Reason: Order ID 1712634721181278045 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278046, Reason: Order ID 1712634721181278046 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278047, Reason: Order ID 1712634721181278047 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278048, Reason: Order ID 1712634721181278048 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278049, Reason: Order ID 1712634721181278049 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278050, Reason: Order ID 1712634721181278050 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278051, Reason: Order ID 1712634721181278051 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278052, Reason: Order ID 1712634721181278052 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278053, Reason: Order ID 1712634721181278053 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278054, Reason: Order ID 1712634721181278054 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278055, Reason: Order ID 1712634721181278055 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278056, Reason: Order ID 1712634721181278056 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278058, Reason: Order ID 1712634721181278058 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278060, Reason: Order ID 1712634721181278060 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278062, Reason: Order ID 1712634721181278062 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278063, Reason: Order ID 1712634721181278063 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278064, Reason: Order ID 1712634721181278064 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278065, Reason: Order ID 1712634721181278065 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278066, Reason: Order ID 1712634721181278066 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278067, Reason: Order ID 1712634721181278067 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278069, Reason: Order ID 1712634721181278069 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278070, Reason: Order ID 1712634721181278070 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278071, Reason: Order ID 1712634721181278071 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278072, Reason: Order ID 1712634721181278072 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278073, Reason: Order ID 1712634721181278073 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278074, Reason: Order ID 1712634721181278074 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278075, Reason: Order ID 1712634721181278075 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278076, Reason: Order ID 1712634721181278076 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278077, Reason: Order ID 1712634721181278077 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278078, Reason: Order ID 1712634721181278078 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278079, Reason: Order ID 1712634721181278079 exceeds limits
+[FILL] Order Fill - MKU: +30 @ 5077
+[FILL] Order Fill - MKU: +15 @ 5078
+[REJECTED] Order Rejected - Order ID: 1712634721181278084, Reason: Order ID 1712634721181278084 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278086, Reason: Order ID 1712634721181278086 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278088, Reason: Order ID 1712634721181278088 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278090, Reason: Order ID 1712634721181278090 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278092, Reason: Order ID 1712634721181278092 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278094, Reason: Order ID 1712634721181278094 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278095, Reason: Order ID 1712634721181278095 exceeds limits
+[FILL] Order Fill - BRV: +30 @ 5107
+[FILL] Order Fill - BRV: +15 @ 5107
+[FILL] Order Fill - BRV: +10 @ 5107
+[FILL] Order Fill - BRV: +4 @ 5107
+[FILL] Order Fill - BRV: +30 @ 5087
+[FILL] Order Fill - BRV: +15 @ 5086
+[FILL] Order Fill - BRV: +10 @ 5084
+[INFO] EPT - Penny Bid: 4813, Penny Ask: 4819
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712634721181278104, Qty: 30, Price: 4811
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712634721181278105, Qty: 30, Price: 4821
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712634721181278106, Qty: 15, Price: 4810
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712634721181278107, Qty: 15, Price: 4822
+[ORDER] EPT - Placed L2 Bid Order. ID: 1712634721181278108, Qty: 10, Price: 4808
+[ORDER] EPT - Placed L2 Ask Order. ID: 1712634721181278109, Qty: 10, Price: 4824
+[ORDER] EPT - Placed L3 Bid Order. ID: 1712634721181278110, Qty: 4, Price: 4806
+[ORDER] EPT - Placed L3 Ask Order. ID: 1712634721181278111, Qty: 4, Price: 4826
+[LOG] EPT - {'L0': 60, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4919, Penny Ask: 4925
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712634721181278112, Qty: 30, Price: 4917
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712634721181278113, Qty: 30, Price: 4927
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712634721181278114, Qty: 15, Price: 4916
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712634721181278115, Qty: 15, Price: 4928
+[ORDER] DLO - Placed L2 Bid Order. ID: 1712634721181278116, Qty: 10, Price: 4914
+[ORDER] DLO - Placed L2 Ask Order. ID: 1712634721181278117, Qty: 10, Price: 4930
+[ORDER] DLO - Placed L3 Bid Order. ID: 1712634721181278118, Qty: 4, Price: 4912
+[ORDER] DLO - Placed L3 Ask Order. ID: 1712634721181278119, Qty: 4, Price: 4932
+[LOG] DLO - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5069, Penny Ask: 5075
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712634721181278120, Qty: 30, Price: 5066
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712634721181278121, Qty: 30, Price: 5078
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712634721181278122, Qty: 15, Price: 5065
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712634721181278123, Qty: 15, Price: 5079
+[ORDER] MKU - Placed L2 Bid Order. ID: 1712634721181278124, Qty: 10, Price: 5063
+[ORDER] MKU - Placed L2 Ask Order. ID: 1712634721181278125, Qty: 10, Price: 5081
+[ORDER] MKU - Placed L3 Bid Order. ID: 1712634721181278126, Qty: 4, Price: 5061
+[ORDER] MKU - Placed L3 Ask Order. ID: 1712634721181278127, Qty: 4, Price: 5083
+[LOG] MKU - {'L0': 60, 'L1': 30, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 5526, Penny Ask: 5532
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712634721181278128, Qty: 30, Price: 5523
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712634721181278129, Qty: 30, Price: 5535
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712634721181278130, Qty: 15, Price: 5522
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712634721181278131, Qty: 15, Price: 5536
+[ORDER] IGM - Placed L2 Bid Order. ID: 1712634721181278132, Qty: 10, Price: 5520
+[ORDER] IGM - Placed L2 Ask Order. ID: 1712634721181278133, Qty: 10, Price: 5538
+[ORDER] IGM - Placed L3 Bid Order. ID: 1712634721181278134, Qty: 4, Price: 5518
+[ORDER] IGM - Placed L3 Ask Order. ID: 1712634721181278135, Qty: 4, Price: 5540
+[LOG] IGM - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5093, Penny Ask: 5099
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712634721181278136, Qty: 30, Price: 5090
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712634721181278137, Qty: 30, Price: 5102
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712634721181278138, Qty: 15, Price: 5089
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712634721181278139, Qty: 15, Price: 5103
+[ORDER] BRV - Placed L2 Bid Order. ID: 1712634721181278140, Qty: 10, Price: 5087
+[ORDER] BRV - Placed L2 Ask Order. ID: 1712634721181278141, Qty: 10, Price: 5105
+[ORDER] BRV - Placed L3 Bid Order. ID: 1712634721181278142, Qty: 4, Price: 5085
+[ORDER] BRV - Placed L3 Ask Order. ID: 1712634721181278143, Qty: 4, Price: 5107
+[LOG] BRV - {'L0': 60, 'L1': 30, 'L2': 20, 'L3': 4}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[REJECTED] Order Rejected - Order ID: 1712634721181278104, Reason: Order ID 1712634721181278104 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278105, Reason: Order ID 1712634721181278105 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278106, Reason: Order ID 1712634721181278106 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278107, Reason: Order ID 1712634721181278107 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278108, Reason: Order ID 1712634721181278108 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278109, Reason: Order ID 1712634721181278109 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278110, Reason: Order ID 1712634721181278110 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278111, Reason: Order ID 1712634721181278111 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278112, Reason: Order ID 1712634721181278112 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278113, Reason: Order ID 1712634721181278113 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278114, Reason: Order ID 1712634721181278114 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278115, Reason: Order ID 1712634721181278115 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278116, Reason: Order ID 1712634721181278116 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278117, Reason: Order ID 1712634721181278117 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278118, Reason: Order ID 1712634721181278118 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278119, Reason: Order ID 1712634721181278119 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278120, Reason: Order ID 1712634721181278120 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278122, Reason: Order ID 1712634721181278122 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278123, Reason: Order ID 1712634721181278123 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278124, Reason: Order ID 1712634721181278124 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278126, Reason: Order ID 1712634721181278126 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278127, Reason: Order ID 1712634721181278127 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278128, Reason: Order ID 1712634721181278128 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278129, Reason: Order ID 1712634721181278129 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278130, Reason: Order ID 1712634721181278130 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278131, Reason: Order ID 1712634721181278131 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278132, Reason: Order ID 1712634721181278132 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278133, Reason: Order ID 1712634721181278133 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278134, Reason: Order ID 1712634721181278134 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278135, Reason: Order ID 1712634721181278135 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278140, Reason: Order ID 1712634721181278140 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278141, Reason: Order ID 1712634721181278141 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278143, Reason: Order ID 1712634721181278143 exceeds limits
+[FILL] Order Fill - BRV: +30 @ 5090
+[FILL] Order Fill - BRV: +15 @ 5089
+[FILL] Order Fill - MKU: +30 @ 5078
+[FILL] Order Fill - BRV: +4 @ 5085
+[FILL] Order Fill - MKU: +10 @ 5081
+[INFO] EPT - Penny Bid: 4798, Penny Ask: 4804
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712634721181278144, Qty: 30, Price: 4796
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712634721181278145, Qty: 30, Price: 4806
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712634721181278146, Qty: 15, Price: 4795
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712634721181278147, Qty: 15, Price: 4807
+[ORDER] EPT - Placed L2 Bid Order. ID: 1712634721181278148, Qty: 10, Price: 4793
+[ORDER] EPT - Placed L2 Ask Order. ID: 1712634721181278149, Qty: 10, Price: 4809
+[ORDER] EPT - Placed L3 Bid Order. ID: 1712634721181278150, Qty: 4, Price: 4791
+[ORDER] EPT - Placed L3 Ask Order. ID: 1712634721181278151, Qty: 4, Price: 4811
+[LOG] EPT - {'L0': 60, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4913, Penny Ask: 4919
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712634721181278152, Qty: 30, Price: 4911
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712634721181278153, Qty: 30, Price: 4921
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712634721181278154, Qty: 15, Price: 4910
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712634721181278155, Qty: 15, Price: 4922
+[ORDER] DLO - Placed L2 Bid Order. ID: 1712634721181278156, Qty: 10, Price: 4908
+[ORDER] DLO - Placed L2 Ask Order. ID: 1712634721181278157, Qty: 10, Price: 4924
+[ORDER] DLO - Placed L3 Bid Order. ID: 1712634721181278158, Qty: 4, Price: 4906
+[ORDER] DLO - Placed L3 Ask Order. ID: 1712634721181278159, Qty: 4, Price: 4926
+[LOG] DLO - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5105, Penny Ask: 5111
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712634721181278160, Qty: 30, Price: 5102
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712634721181278161, Qty: 30, Price: 5114
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712634721181278162, Qty: 15, Price: 5101
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712634721181278163, Qty: 15, Price: 5115
+[ORDER] MKU - Placed L2 Bid Order. ID: 1712634721181278164, Qty: 10, Price: 5099
+[ORDER] MKU - Placed L2 Ask Order. ID: 1712634721181278165, Qty: 10, Price: 5117
+[ORDER] MKU - Placed L3 Bid Order. ID: 1712634721181278166, Qty: 4, Price: 5097
+[ORDER] MKU - Placed L3 Ask Order. ID: 1712634721181278167, Qty: 4, Price: 5119
+[LOG] MKU - {'L0': 90, 'L1': 30, 'L2': 10, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 5472, Penny Ask: 5479
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712634721181278168, Qty: 30, Price: 5469
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712634721181278169, Qty: 30, Price: 5482
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712634721181278170, Qty: 15, Price: 5468
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712634721181278171, Qty: 15, Price: 5483
+[ORDER] IGM - Placed L2 Bid Order. ID: 1712634721181278172, Qty: 10, Price: 5466
+[ORDER] IGM - Placed L2 Ask Order. ID: 1712634721181278173, Qty: 10, Price: 5485
+[ORDER] IGM - Placed L3 Bid Order. ID: 1712634721181278174, Qty: 4, Price: 5464
+[ORDER] IGM - Placed L3 Ask Order. ID: 1712634721181278175, Qty: 4, Price: 5487
+[LOG] IGM - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5033, Penny Ask: 5038
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712634721181278176, Qty: 30, Price: 5029
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712634721181278177, Qty: 30, Price: 5042
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712634721181278178, Qty: 15, Price: 5028
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712634721181278179, Qty: 15, Price: 5043
+[ORDER] BRV - Placed L2 Bid Order. ID: 1712634721181278180, Qty: 10, Price: 5026
+[ORDER] BRV - Placed L2 Ask Order. ID: 1712634721181278181, Qty: 10, Price: 5045
+[ORDER] BRV - Placed L3 Bid Order. ID: 1712634721181278182, Qty: 4, Price: 5024
+[ORDER] BRV - Placed L3 Ask Order. ID: 1712634721181278183, Qty: 4, Price: 5047
+[LOG] BRV - {'L0': 90, 'L1': 45, 'L2': 20, 'L3': 8}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[REJECTED] Order Rejected - Order ID: 1712634721181278144, Reason: Order ID 1712634721181278144 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278145, Reason: Order ID 1712634721181278145 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278146, Reason: Order ID 1712634721181278146 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278147, Reason: Order ID 1712634721181278147 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278148, Reason: Order ID 1712634721181278148 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278149, Reason: Order ID 1712634721181278149 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278150, Reason: Order ID 1712634721181278150 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278151, Reason: Order ID 1712634721181278151 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278152, Reason: Order ID 1712634721181278152 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278153, Reason: Order ID 1712634721181278153 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278154, Reason: Order ID 1712634721181278154 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278155, Reason: Order ID 1712634721181278155 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278156, Reason: Order ID 1712634721181278156 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278157, Reason: Order ID 1712634721181278157 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278158, Reason: Order ID 1712634721181278158 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278159, Reason: Order ID 1712634721181278159 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278165, Reason: Order ID 1712634721181278165 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278166, Reason: Order ID 1712634721181278166 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278167, Reason: Order ID 1712634721181278167 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278168, Reason: Order ID 1712634721181278168 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278169, Reason: Order ID 1712634721181278169 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278170, Reason: Order ID 1712634721181278170 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278171, Reason: Order ID 1712634721181278171 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278172, Reason: Order ID 1712634721181278172 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278173, Reason: Order ID 1712634721181278173 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278174, Reason: Order ID 1712634721181278174 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278175, Reason: Order ID 1712634721181278175 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278177, Reason: Order ID 1712634721181278177 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278179, Reason: Order ID 1712634721181278179 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278181, Reason: Order ID 1712634721181278181 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278182, Reason: Order ID 1712634721181278182 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278183, Reason: Order ID 1712634721181278183 exceeds limits
+[FILL] Order Fill - MKU: +30 @ 5114
+[FILL] Order Fill - BRV: +30 @ 5029
+[FILL] Order Fill - BRV: +15 @ 5028
+[FILL] Order Fill - BRV: +10 @ 5026
+[FILL] Order Fill - MKU: +15 @ 5115
+[INFO] EPT - Penny Bid: 4774, Penny Ask: 4778
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712634721181278184, Qty: 30, Price: 4772
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712634721181278185, Qty: 30, Price: 4780
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712634721181278186, Qty: 15, Price: 4771
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712634721181278187, Qty: 15, Price: 4781
+[ORDER] EPT - Placed L2 Bid Order. ID: 1712634721181278188, Qty: 10, Price: 4769
+[ORDER] EPT - Placed L2 Ask Order. ID: 1712634721181278189, Qty: 10, Price: 4783
+[ORDER] EPT - Placed L3 Bid Order. ID: 1712634721181278190, Qty: 4, Price: 4767
+[ORDER] EPT - Placed L3 Ask Order. ID: 1712634721181278191, Qty: 4, Price: 4785
+[LOG] EPT - {'L0': 60, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4901, Penny Ask: 4907
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712634721181278192, Qty: 30, Price: 4899
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712634721181278193, Qty: 30, Price: 4909
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712634721181278194, Qty: 15, Price: 4898
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712634721181278195, Qty: 15, Price: 4910
+[ORDER] DLO - Placed L2 Bid Order. ID: 1712634721181278196, Qty: 10, Price: 4896
+[ORDER] DLO - Placed L2 Ask Order. ID: 1712634721181278197, Qty: 10, Price: 4912
+[ORDER] DLO - Placed L3 Bid Order. ID: 1712634721181278198, Qty: 4, Price: 4894
+[ORDER] DLO - Placed L3 Ask Order. ID: 1712634721181278199, Qty: 4, Price: 4914
+[LOG] DLO - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5123, Penny Ask: 5129
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712634721181278200, Qty: 30, Price: 5120
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712634721181278201, Qty: 30, Price: 5132
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712634721181278202, Qty: 15, Price: 5119
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712634721181278203, Qty: 15, Price: 5133
+[ORDER] MKU - Placed L2 Bid Order. ID: 1712634721181278204, Qty: 10, Price: 5117
+[ORDER] MKU - Placed L2 Ask Order. ID: 1712634721181278205, Qty: 10, Price: 5135
+[ORDER] MKU - Placed L3 Bid Order. ID: 1712634721181278206, Qty: 4, Price: 5115
+[ORDER] MKU - Placed L3 Ask Order. ID: 1712634721181278207, Qty: 4, Price: 5137
+[LOG] MKU - {'L0': 120, 'L1': 45, 'L2': 10, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 5404, Penny Ask: 5405
+[LOG] IGM - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5069, Penny Ask: 5075
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712634721181278208, Qty: 30, Price: 5064
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712634721181278209, Qty: 30, Price: 5080
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712634721181278210, Qty: 15, Price: 5063
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712634721181278211, Qty: 15, Price: 5081
+[ORDER] BRV - Placed L2 Bid Order. ID: 1712634721181278212, Qty: 10, Price: 5061
+[ORDER] BRV - Placed L2 Ask Order. ID: 1712634721181278213, Qty: 10, Price: 5083
+[ORDER] BRV - Placed L3 Bid Order. ID: 1712634721181278214, Qty: 4, Price: 5059
+[ORDER] BRV - Placed L3 Ask Order. ID: 1712634721181278215, Qty: 4, Price: 5085
+[LOG] BRV - {'L0': 120, 'L1': 60, 'L2': 30, 'L3': 8}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[REJECTED] Order Rejected - Order ID: 1712634721181278184, Reason: Order ID 1712634721181278184 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278185, Reason: Order ID 1712634721181278185 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278186, Reason: Order ID 1712634721181278186 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278187, Reason: Order ID 1712634721181278187 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278188, Reason: Order ID 1712634721181278188 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278189, Reason: Order ID 1712634721181278189 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278190, Reason: Order ID 1712634721181278190 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278191, Reason: Order ID 1712634721181278191 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278193, Reason: Order ID 1712634721181278193 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278195, Reason: Order ID 1712634721181278195 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278196, Reason: Order ID 1712634721181278196 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278197, Reason: Order ID 1712634721181278197 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278198, Reason: Order ID 1712634721181278198 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278199, Reason: Order ID 1712634721181278199 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278201, Reason: Order ID 1712634721181278201 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278203, Reason: Order ID 1712634721181278203 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278204, Reason: Order ID 1712634721181278204 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278205, Reason: Order ID 1712634721181278205 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278206, Reason: Order ID 1712634721181278206 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278207, Reason: Order ID 1712634721181278207 exceeds limits
+[REJECTED] Order Rejected - Order ID: 1712634721181278208, Reason: Order ID 1712634721181278208 exceeds limits
+[FILL] Order Fill - BRV: +10 @ 5085
+[FILL] Order Fill - BRV: +20 @ 5084
+[FILL] Order Fill - BRV: +15 @ 5084
+[FILL] Order Fill - BRV: +10 @ 5084
+[FILL] Order Fill - BRV: +4 @ 5085
+[INFO] Starting Quote Update Loop
+[WARNING] EPT - Invalid Penny Prices. Skipping order placement.
+[WARNING] DLO - Invalid Penny Prices. Skipping order placement.
+[WARNING] MKU - Invalid Penny Prices. Skipping order placement.
+[WARNING] IGM - Invalid Penny Prices. Skipping order placement.
+[WARNING] BRV - Invalid Penny Prices. Skipping order placement.
+[INFO] EPT - Penny Bid: 4511, Penny Ask: 4517
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914789888, Qty: 2, Price: 4509
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914789889, Qty: 2, Price: 4519
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914789890, Qty: 1, Price: 4508
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914789891, Qty: 1, Price: 4520
+[LOG] EPT - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5082, Penny Ask: 5088
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914789892, Qty: 2, Price: 5080
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914789893, Qty: 2, Price: 5090
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914789894, Qty: 1, Price: 5079
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914789895, Qty: 1, Price: 5091
+[LOG] DLO - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5520, Penny Ask: 5526
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914789896, Qty: 2, Price: 5518
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914789897, Qty: 2, Price: 5528
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914789898, Qty: 1, Price: 5517
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914789899, Qty: 1, Price: 5529
+[LOG] MKU - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6243, Penny Ask: 6250
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914789900, Qty: 2, Price: 6241
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914789901, Qty: 2, Price: 6252
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914789902, Qty: 1, Price: 6240
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914789903, Qty: 1, Price: 6253
+[LOG] IGM - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5143, Penny Ask: 5150
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914789904, Qty: 2, Price: 5141
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914789905, Qty: 2, Price: 5152
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914789906, Qty: 1, Price: 5140
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914789907, Qty: 1, Price: 5153
+[LOG] BRV - {'L0': 0, 'L1': 0, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - EPT: +2 @ 4520
+[FILL] Order Fill - EPT: +1 @ 4520
+[FILL] Order Fill - IGM: +2 @ 6257
+[FILL] Order Fill - IGM: +1 @ 6257
+[FILL] Order Fill - BRV: +2 @ 5139
+[FILL] Order Fill - BRV: +1 @ 5139
+[FILL] Order Fill - DLO: +2 @ 5080
+[FILL] Order Fill - MKU: +2 @ 5528
+[FILL] Order Fill - MKU: +1 @ 5529
+[FILL] Order Fill - DLO: +1 @ 5079
+[INFO] EPT - Penny Bid: 4543, Penny Ask: 4549
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914789908, Qty: 2, Price: 4541
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914789909, Qty: 2, Price: 4551
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914789910, Qty: 1, Price: 4540
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914789911, Qty: 1, Price: 4552
+[LOG] EPT - {'L0': 2, 'L1': 1, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5063, Penny Ask: 5069
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914789912, Qty: 2, Price: 5061
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914789913, Qty: 2, Price: 5071
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914789914, Qty: 1, Price: 5060
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914789915, Qty: 1, Price: 5072
+[LOG] DLO - {'L0': 2, 'L1': 1, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5555, Penny Ask: 5561
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914789916, Qty: 2, Price: 5553
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914789917, Qty: 2, Price: 5563
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914789918, Qty: 1, Price: 5552
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914789919, Qty: 1, Price: 5564
+[LOG] MKU - {'L0': 2, 'L1': 1, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6282, Penny Ask: 6288
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914789920, Qty: 2, Price: 6280
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914789921, Qty: 2, Price: 6290
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914789922, Qty: 1, Price: 6279
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914789923, Qty: 1, Price: 6291
+[LOG] IGM - {'L0': 2, 'L1': 1, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5079, Penny Ask: 5083
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914789924, Qty: 2, Price: 5077
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914789925, Qty: 2, Price: 5085
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914789926, Qty: 1, Price: 5076
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914789927, Qty: 1, Price: 5086
+[LOG] BRV - {'L0': 2, 'L1': 1, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - MKU: +2 @ 5563
+[FILL] Order Fill - BRV: +2 @ 5062
+[FILL] Order Fill - BRV: +1 @ 5062
+[FILL] Order Fill - IGM: +2 @ 6280
+[FILL] Order Fill - MKU: +1 @ 5564
+[FILL] Order Fill - IGM: +1 @ 6279
+[INFO] EPT - Penny Bid: 4542, Penny Ask: 4548
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914789928, Qty: 2, Price: 4540
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914789929, Qty: 2, Price: 4550
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914789930, Qty: 1, Price: 4539
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914789931, Qty: 1, Price: 4551
+[LOG] EPT - {'L0': 2, 'L1': 1, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5067, Penny Ask: 5073
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914789932, Qty: 2, Price: 5065
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914789933, Qty: 2, Price: 5075
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914789934, Qty: 1, Price: 5064
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914789935, Qty: 1, Price: 5076
+[LOG] DLO - {'L0': 2, 'L1': 1, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5571, Penny Ask: 5577
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914789936, Qty: 2, Price: 5569
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914789937, Qty: 2, Price: 5579
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914789938, Qty: 1, Price: 5568
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914789939, Qty: 1, Price: 5580
+[LOG] MKU - {'L0': 4, 'L1': 2, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6276, Penny Ask: 6282
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914789940, Qty: 2, Price: 6274
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914789941, Qty: 2, Price: 6284
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914789942, Qty: 1, Price: 6273
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914789943, Qty: 1, Price: 6285
+[LOG] IGM - {'L0': 4, 'L1': 2, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 4986, Penny Ask: 4992
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914789944, Qty: 2, Price: 4984
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914789945, Qty: 2, Price: 4994
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914789946, Qty: 1, Price: 4983
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914789947, Qty: 1, Price: 4995
+[LOG] BRV - {'L0': 4, 'L1': 2, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - IGM: +2 @ 6284
+[FILL] Order Fill - BRV: +2 @ 4981
+[FILL] Order Fill - BRV: +1 @ 4981
+[FILL] Order Fill - IGM: +1 @ 6285
+[FILL] Order Fill - MKU: +2 @ 5569
+[FILL] Order Fill - MKU: +1 @ 5568
+[FILL] Order Fill - EPT: +2 @ 4540
+[INFO] EPT - Penny Bid: 4534, Penny Ask: 4540
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914789948, Qty: 2, Price: 4532
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914789949, Qty: 2, Price: 4542
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914789950, Qty: 1, Price: 4531
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914789951, Qty: 1, Price: 4543
+[LOG] EPT - {'L0': 4, 'L1': 1, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5068, Penny Ask: 5072
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914789952, Qty: 2, Price: 5066
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914789953, Qty: 2, Price: 5074
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914789954, Qty: 1, Price: 5065
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914789955, Qty: 1, Price: 5075
+[LOG] DLO - {'L0': 2, 'L1': 1, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5546, Penny Ask: 5552
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914789956, Qty: 2, Price: 5544
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914789957, Qty: 2, Price: 5554
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914789958, Qty: 1, Price: 5543
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914789959, Qty: 1, Price: 5555
+[LOG] MKU - {'L0': 6, 'L1': 3, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6290, Penny Ask: 6296
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914789960, Qty: 2, Price: 6288
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914789961, Qty: 2, Price: 6298
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914789962, Qty: 1, Price: 6287
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914789963, Qty: 1, Price: 6299
+[LOG] IGM - {'L0': 6, 'L1': 3, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 4968, Penny Ask: 4973
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914789964, Qty: 2, Price: 4966
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914789965, Qty: 2, Price: 4975
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914789966, Qty: 1, Price: 4965
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914789967, Qty: 1, Price: 4976
+[LOG] BRV - {'L0': 6, 'L1': 3, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - BRV: +2 @ 4976
+[FILL] Order Fill - BRV: +1 @ 4976
+[FILL] Order Fill - IGM: +2 @ 6288
+[FILL] Order Fill - IGM: +1 @ 6287
+[FILL] Order Fill - DLO: +2 @ 5066
+[FILL] Order Fill - DLO: +1 @ 5065
+[INFO] EPT - Penny Bid: 4528, Penny Ask: 4534
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914789968, Qty: 2, Price: 4526
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914789969, Qty: 2, Price: 4536
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914789970, Qty: 1, Price: 4525
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914789971, Qty: 1, Price: 4537
+[LOG] EPT - {'L0': 4, 'L1': 1, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5061, Penny Ask: 5062
+[LOG] DLO - {'L0': 4, 'L1': 2, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5551, Penny Ask: 5557
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914789972, Qty: 2, Price: 5549
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914789973, Qty: 2, Price: 5559
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914789974, Qty: 1, Price: 5548
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914789975, Qty: 1, Price: 5560
+[LOG] MKU - {'L0': 6, 'L1': 3, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6246, Penny Ask: 6252
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914789976, Qty: 2, Price: 6244
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914789977, Qty: 2, Price: 6254
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914789978, Qty: 1, Price: 6243
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914789979, Qty: 1, Price: 6255
+[LOG] IGM - {'L0': 8, 'L1': 4, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5041, Penny Ask: 5047
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914789980, Qty: 2, Price: 5039
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914789981, Qty: 2, Price: 5049
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914789982, Qty: 1, Price: 5038
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914789983, Qty: 1, Price: 5050
+[LOG] BRV - {'L0': 8, 'L1': 4, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - BRV: +2 @ 5049
+[FILL] Order Fill - BRV: +1 @ 5050
+[FILL] Order Fill - IGM: +2 @ 6244
+[FILL] Order Fill - IGM: +1 @ 6243
+[FILL] Order Fill - MKU: +2 @ 5559
+[FILL] Order Fill - MKU: +1 @ 5560
+[FILL] Order Fill - EPT: +2 @ 4526
+[FILL] Order Fill - EPT: +1 @ 4525
+[FILL] Order Fill - IGM: +2 @ 6254
+[FILL] Order Fill - IGM: +1 @ 6255
+[INFO] EPT - Penny Bid: 4518, Penny Ask: 4524
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914789984, Qty: 2, Price: 4516
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914789985, Qty: 2, Price: 4526
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914789986, Qty: 1, Price: 4515
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914789987, Qty: 1, Price: 4527
+[LOG] EPT - {'L0': 6, 'L1': 2, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5037, Penny Ask: 5043
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914789988, Qty: 2, Price: 5035
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914789989, Qty: 2, Price: 5045
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914789990, Qty: 1, Price: 5034
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914789991, Qty: 1, Price: 5046
+[LOG] DLO - {'L0': 4, 'L1': 2, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5579, Penny Ask: 5580
+[LOG] MKU - {'L0': 8, 'L1': 4, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6227, Penny Ask: 6233
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914789992, Qty: 2, Price: 6225
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914789993, Qty: 2, Price: 6235
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914789994, Qty: 1, Price: 6224
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914789995, Qty: 1, Price: 6236
+[LOG] IGM - {'L0': 12, 'L1': 6, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5096, Penny Ask: 5102
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914789996, Qty: 2, Price: 5094
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914789997, Qty: 2, Price: 5104
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914789998, Qty: 1, Price: 5093
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914789999, Qty: 1, Price: 5105
+[LOG] BRV - {'L0': 10, 'L1': 5, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - IGM: +2 @ 6235
+[FILL] Order Fill - IGM: +1 @ 6236
+[FILL] Order Fill - BRV: +2 @ 5104
+[FILL] Order Fill - BRV: +1 @ 5105
+[FILL] Order Fill - DLO: +2 @ 5035
+[FILL] Order Fill - DLO: +1 @ 5034
+[FILL] Order Fill - EPT: +2 @ 4516
+[FILL] Order Fill - EPT: +1 @ 4515
+[INFO] EPT - Penny Bid: 4498, Penny Ask: 4504
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790000, Qty: 2, Price: 4496
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790001, Qty: 2, Price: 4506
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790002, Qty: 1, Price: 4495
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790003, Qty: 1, Price: 4507
+[LOG] EPT - {'L0': 8, 'L1': 3, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5024, Penny Ask: 5030
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790004, Qty: 2, Price: 5022
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790005, Qty: 2, Price: 5032
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790006, Qty: 1, Price: 5021
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790007, Qty: 1, Price: 5033
+[LOG] DLO - {'L0': 6, 'L1': 3, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5592, Penny Ask: 5598
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790008, Qty: 2, Price: 5590
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790009, Qty: 2, Price: 5600
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790010, Qty: 1, Price: 5589
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790011, Qty: 1, Price: 5601
+[LOG] MKU - {'L0': 8, 'L1': 4, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6278, Penny Ask: 6285
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790012, Qty: 2, Price: 6276
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790013, Qty: 2, Price: 6287
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790014, Qty: 1, Price: 6275
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790015, Qty: 1, Price: 6288
+[LOG] IGM - {'L0': 14, 'L1': 7, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5099, Penny Ask: 5106
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790016, Qty: 2, Price: 5097
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790017, Qty: 2, Price: 5108
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790018, Qty: 1, Price: 5096
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790019, Qty: 1, Price: 5109
+[LOG] BRV - {'L0': 12, 'L1': 6, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - EPT: +2 @ 4496
+[FILL] Order Fill - IGM: +2 @ 6290
+[FILL] Order Fill - IGM: +1 @ 6290
+[FILL] Order Fill - BRV: +2 @ 5094
+[FILL] Order Fill - BRV: +1 @ 5094
+[FILL] Order Fill - EPT: +1 @ 4495
+[INFO] EPT - Penny Bid: 4476, Penny Ask: 4482
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790020, Qty: 2, Price: 4474
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790021, Qty: 2, Price: 4484
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790022, Qty: 1, Price: 4473
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790023, Qty: 1, Price: 4485
+[LOG] EPT - {'L0': 10, 'L1': 4, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5019, Penny Ask: 5025
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790024, Qty: 2, Price: 5017
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790025, Qty: 2, Price: 5027
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790026, Qty: 1, Price: 5016
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790027, Qty: 1, Price: 5028
+[LOG] DLO - {'L0': 6, 'L1': 3, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5596, Penny Ask: 5602
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790028, Qty: 2, Price: 5594
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790029, Qty: 2, Price: 5604
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790030, Qty: 1, Price: 5593
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790031, Qty: 1, Price: 5605
+[LOG] MKU - {'L0': 8, 'L1': 4, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6305, Penny Ask: 6311
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790032, Qty: 2, Price: 6303
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790033, Qty: 2, Price: 6313
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790034, Qty: 1, Price: 6302
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790035, Qty: 1, Price: 6314
+[LOG] IGM - {'L0': 16, 'L1': 8, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5083, Penny Ask: 5088
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790036, Qty: 2, Price: 5081
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790037, Qty: 2, Price: 5090
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790038, Qty: 1, Price: 5080
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790039, Qty: 1, Price: 5091
+[LOG] BRV - {'L0': 14, 'L1': 7, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - BRV: +2 @ 5092
+[FILL] Order Fill - BRV: +1 @ 5092
+[FILL] Order Fill - DLO: +2 @ 5017
+[FILL] Order Fill - DLO: +1 @ 5016
+[FILL] Order Fill - IGM: +2 @ 6303
+[FILL] Order Fill - IGM: +1 @ 6302
+[FILL] Order Fill - MKU: +2 @ 5604
+[FILL] Order Fill - MKU: +1 @ 5605
+[FILL] Order Fill - EPT: +2 @ 4484
+[FILL] Order Fill - EPT: +1 @ 4485
+[INFO] EPT - Penny Bid: 4493, Penny Ask: 4499
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790040, Qty: 2, Price: 4491
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790041, Qty: 2, Price: 4501
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790042, Qty: 1, Price: 4490
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790043, Qty: 1, Price: 4502
+[LOG] EPT - {'L0': 12, 'L1': 5, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5004, Penny Ask: 5010
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790044, Qty: 2, Price: 5002
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790045, Qty: 2, Price: 5012
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790046, Qty: 1, Price: 5001
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790047, Qty: 1, Price: 5013
+[LOG] DLO - {'L0': 8, 'L1': 4, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5603, Penny Ask: 5608
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790048, Qty: 2, Price: 5601
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790049, Qty: 2, Price: 5610
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790050, Qty: 1, Price: 5600
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790051, Qty: 1, Price: 5611
+[LOG] MKU - {'L0': 10, 'L1': 5, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6258, Penny Ask: 6261
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790052, Qty: 2, Price: 6256
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790053, Qty: 2, Price: 6263
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790054, Qty: 1, Price: 6255
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790055, Qty: 1, Price: 6264
+[LOG] IGM - {'L0': 18, 'L1': 9, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5124, Penny Ask: 5125
+[LOG] BRV - {'L0': 16, 'L1': 8, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - IGM: +2 @ 6256
+[FILL] Order Fill - IGM: +1 @ 6255
+[FILL] Order Fill - DLO: +2 @ 5002
+[FILL] Order Fill - BRV: +2 @ 5081
+[FILL] Order Fill - BRV: +1 @ 5080
+[FILL] Order Fill - DLO: +1 @ 5001
+[FILL] Order Fill - EPT: +2 @ 4501
+[FILL] Order Fill - EPT: +1 @ 4502
+[FILL] Order Fill - MKU: +2 @ 5610
+[FILL] Order Fill - MKU: +1 @ 5611
+[INFO] EPT - Penny Bid: 4508, Penny Ask: 4514
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790056, Qty: 2, Price: 4506
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790057, Qty: 2, Price: 4516
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790058, Qty: 1, Price: 4505
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790059, Qty: 1, Price: 4517
+[LOG] EPT - {'L0': 14, 'L1': 6, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4990, Penny Ask: 4996
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790060, Qty: 2, Price: 4988
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790061, Qty: 2, Price: 4998
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790062, Qty: 1, Price: 4987
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790063, Qty: 1, Price: 4999
+[LOG] DLO - {'L0': 10, 'L1': 5, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5621, Penny Ask: 5627
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790064, Qty: 2, Price: 5619
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790065, Qty: 2, Price: 5629
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790066, Qty: 1, Price: 5618
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790067, Qty: 1, Price: 5630
+[LOG] MKU - {'L0': 12, 'L1': 6, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6240, Penny Ask: 6246
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790068, Qty: 2, Price: 6238
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790069, Qty: 2, Price: 6248
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790070, Qty: 1, Price: 6237
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790071, Qty: 1, Price: 6249
+[LOG] IGM - {'L0': 20, 'L1': 10, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5028, Penny Ask: 5034
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790072, Qty: 2, Price: 5026
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790073, Qty: 2, Price: 5036
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790074, Qty: 1, Price: 5025
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790075, Qty: 1, Price: 5037
+[LOG] BRV - {'L0': 18, 'L1': 9, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - MKU: +2 @ 5629
+[FILL] Order Fill - MKU: +1 @ 5630
+[FILL] Order Fill - IGM: +2 @ 6248
+[FILL] Order Fill - IGM: +1 @ 6249
+[FILL] Order Fill - EPT: +2 @ 4516
+[FILL] Order Fill - EPT: +1 @ 4517
+[FILL] Order Fill - BRV: +2 @ 5026
+[FILL] Order Fill - BRV: +1 @ 5025
+[INFO] EPT - Penny Bid: 4528, Penny Ask: 4533
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790076, Qty: 2, Price: 4526
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790077, Qty: 2, Price: 4535
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790078, Qty: 1, Price: 4525
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790079, Qty: 1, Price: 4536
+[LOG] EPT - {'L0': 16, 'L1': 7, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4992, Penny Ask: 4997
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790080, Qty: 2, Price: 4990
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790081, Qty: 2, Price: 4999
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790082, Qty: 1, Price: 4989
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790083, Qty: 1, Price: 5000
+[LOG] DLO - {'L0': 10, 'L1': 5, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5642, Penny Ask: 5648
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790084, Qty: 2, Price: 5640
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790085, Qty: 2, Price: 5650
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790086, Qty: 1, Price: 5639
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790087, Qty: 1, Price: 5651
+[LOG] MKU - {'L0': 14, 'L1': 7, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6261, Penny Ask: 6265
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790088, Qty: 2, Price: 6259
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790089, Qty: 2, Price: 6267
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790090, Qty: 1, Price: 6258
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790091, Qty: 1, Price: 6268
+[LOG] IGM - {'L0': 22, 'L1': 11, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5018, Penny Ask: 5019
+[LOG] BRV - {'L0': 20, 'L1': 10, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - MKU: +2 @ 5640
+[FILL] Order Fill - MKU: +1 @ 5639
+[FILL] Order Fill - IGM: +2 @ 6259
+[FILL] Order Fill - IGM: +1 @ 6258
+[FILL] Order Fill - EPT: +2 @ 4535
+[FILL] Order Fill - EPT: +1 @ 4536
+[INFO] EPT - Penny Bid: 4538, Penny Ask: 4542
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790092, Qty: 2, Price: 4536
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790093, Qty: 2, Price: 4544
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790094, Qty: 1, Price: 4535
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790095, Qty: 1, Price: 4545
+[LOG] EPT - {'L0': 18, 'L1': 8, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4988, Penny Ask: 4992
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790096, Qty: 2, Price: 4986
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790097, Qty: 2, Price: 4994
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790098, Qty: 1, Price: 4985
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790099, Qty: 1, Price: 4995
+[LOG] DLO - {'L0': 10, 'L1': 5, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5628, Penny Ask: 5632
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790100, Qty: 2, Price: 5626
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790101, Qty: 2, Price: 5634
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790102, Qty: 1, Price: 5625
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790103, Qty: 1, Price: 5635
+[LOG] MKU - {'L0': 16, 'L1': 8, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6241, Penny Ask: 6245
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790104, Qty: 2, Price: 6239
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790105, Qty: 2, Price: 6247
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790106, Qty: 1, Price: 6238
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790107, Qty: 1, Price: 6248
+[LOG] IGM - {'L0': 24, 'L1': 12, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 4975, Penny Ask: 4978
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790108, Qty: 2, Price: 4973
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790109, Qty: 2, Price: 4980
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790110, Qty: 1, Price: 4972
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790111, Qty: 1, Price: 4981
+[LOG] BRV - {'L0': 20, 'L1': 10, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - BRV: +2 @ 4973
+[FILL] Order Fill - BRV: +1 @ 4972
+[FILL] Order Fill - IGM: +2 @ 6239
+[FILL] Order Fill - IGM: +1 @ 6238
+[FILL] Order Fill - MKU: +2 @ 5626
+[FILL] Order Fill - DLO: +2 @ 4986
+[FILL] Order Fill - DLO: +1 @ 4985
+[FILL] Order Fill - MKU: +1 @ 5625
+[FILL] Order Fill - EPT: +2 @ 4544
+[FILL] Order Fill - EPT: +1 @ 4545
+[WARNING] EPT - Invalid Penny Prices. Skipping order placement.
+[INFO] DLO - Penny Bid: 4983, Penny Ask: 4989
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790112, Qty: 2, Price: 4981
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790113, Qty: 2, Price: 4991
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790114, Qty: 1, Price: 4980
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790115, Qty: 1, Price: 4992
+[LOG] DLO - {'L0': 12, 'L1': 6, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5619, Penny Ask: 5625
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790116, Qty: 2, Price: 5617
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790117, Qty: 2, Price: 5627
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790118, Qty: 1, Price: 5616
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790119, Qty: 1, Price: 5628
+[LOG] MKU - {'L0': 18, 'L1': 9, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6235, Penny Ask: 6241
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790120, Qty: 2, Price: 6233
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790121, Qty: 2, Price: 6243
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790122, Qty: 1, Price: 6232
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790123, Qty: 1, Price: 6244
+[LOG] IGM - {'L0': 26, 'L1': 13, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 4978, Penny Ask: 4982
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790124, Qty: 2, Price: 4976
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790125, Qty: 2, Price: 4984
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790126, Qty: 1, Price: 4975
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790127, Qty: 1, Price: 4985
+[LOG] BRV - {'L0': 22, 'L1': 11, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - BRV: +2 @ 4986
+[FILL] Order Fill - BRV: +1 @ 4986
+[FILL] Order Fill - IGM: +2 @ 6243
+[FILL] Order Fill - IGM: +1 @ 6244
+[FILL] Order Fill - DLO: +2 @ 4991
+[FILL] Order Fill - DLO: +1 @ 4992
+[FILL] Order Fill - MKU: +2 @ 5627
+[FILL] Order Fill - MKU: +1 @ 5628
+[INFO] EPT - Penny Bid: 4566, Penny Ask: 4572
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790128, Qty: 2, Price: 4564
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790129, Qty: 2, Price: 4574
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790130, Qty: 1, Price: 4563
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790131, Qty: 1, Price: 4575
+[LOG] EPT - {'L0': 20, 'L1': 9, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4996, Penny Ask: 5002
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790132, Qty: 2, Price: 4994
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790133, Qty: 2, Price: 5004
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790134, Qty: 1, Price: 4993
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790135, Qty: 1, Price: 5005
+[LOG] DLO - {'L0': 14, 'L1': 7, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5632, Penny Ask: 5637
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790136, Qty: 2, Price: 5630
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790137, Qty: 2, Price: 5639
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790138, Qty: 1, Price: 5629
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790139, Qty: 1, Price: 5640
+[LOG] MKU - {'L0': 20, 'L1': 10, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6258, Penny Ask: 6264
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790140, Qty: 2, Price: 6256
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790141, Qty: 2, Price: 6266
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790142, Qty: 1, Price: 6255
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790143, Qty: 1, Price: 6267
+[LOG] IGM - {'L0': 28, 'L1': 14, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5052, Penny Ask: 5059
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790144, Qty: 2, Price: 5050
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790145, Qty: 2, Price: 5061
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790146, Qty: 1, Price: 5049
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790147, Qty: 1, Price: 5062
+[LOG] BRV - {'L0': 24, 'L1': 12, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - IGM: +2 @ 6256
+[FILL] Order Fill - BRV: +2 @ 5061
+[FILL] Order Fill - BRV: +1 @ 5062
+[FILL] Order Fill - IGM: +1 @ 6255
+[FILL] Order Fill - DLO: +2 @ 4994
+[FILL] Order Fill - DLO: +1 @ 4993
+[FILL] Order Fill - EPT: +2 @ 4574
+[FILL] Order Fill - EPT: +1 @ 4575
+[INFO] EPT - Penny Bid: 4567, Penny Ask: 4573
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790148, Qty: 2, Price: 4565
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790149, Qty: 2, Price: 4575
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790150, Qty: 1, Price: 4564
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790151, Qty: 1, Price: 4576
+[LOG] EPT - {'L0': 22, 'L1': 10, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 4984, Penny Ask: 4990
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790152, Qty: 2, Price: 4982
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790153, Qty: 2, Price: 4992
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790154, Qty: 1, Price: 4981
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790155, Qty: 1, Price: 4993
+[LOG] DLO - {'L0': 16, 'L1': 8, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5633, Penny Ask: 5641
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790156, Qty: 2, Price: 5631
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790157, Qty: 2, Price: 5643
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790158, Qty: 1, Price: 5630
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790159, Qty: 1, Price: 5644
+[LOG] MKU - {'L0': 20, 'L1': 10, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6237, Penny Ask: 6239
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790160, Qty: 2, Price: 6235
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790161, Qty: 2, Price: 6241
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790162, Qty: 1, Price: 6234
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790163, Qty: 1, Price: 6242
+[LOG] IGM - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5131, Penny Ask: 5133
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790164, Qty: 2, Price: 5129
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790165, Qty: 2, Price: 5135
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790166, Qty: 1, Price: 5128
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790167, Qty: 1, Price: 5136
+[LOG] BRV - {'L0': 26, 'L1': 13, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - BRV: +2 @ 5143
+[FILL] Order Fill - BRV: +1 @ 5143
+[FILL] Order Fill - IGM: +2 @ 6241
+[FILL] Order Fill - IGM: +1 @ 6242
+[FILL] Order Fill - EPT: +2 @ 4565
+[FILL] Order Fill - EPT: +1 @ 4564
+[FILL] Order Fill - DLO: +2 @ 4992
+[FILL] Order Fill - DLO: +1 @ 4993
+[FILL] Order Fill - MKU: +2 @ 5631
+[FILL] Order Fill - MKU: +1 @ 5630
+[INFO] EPT - Penny Bid: 4545, Penny Ask: 4551
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790168, Qty: 2, Price: 4543
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790169, Qty: 2, Price: 4553
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790170, Qty: 1, Price: 4542
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790171, Qty: 1, Price: 4554
+[LOG] EPT - {'L0': 24, 'L1': 11, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5007, Penny Ask: 5012
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790172, Qty: 2, Price: 5005
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790173, Qty: 2, Price: 5014
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790174, Qty: 1, Price: 5004
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790175, Qty: 1, Price: 5015
+[LOG] DLO - {'L0': 18, 'L1': 9, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5602, Penny Ask: 5609
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790176, Qty: 2, Price: 5600
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790177, Qty: 2, Price: 5611
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790178, Qty: 1, Price: 5599
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790179, Qty: 1, Price: 5612
+[LOG] MKU - {'L0': 22, 'L1': 11, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6264, Penny Ask: 6266
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790180, Qty: 2, Price: 6262
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790181, Qty: 2, Price: 6268
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790182, Qty: 1, Price: 6261
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790183, Qty: 1, Price: 6269
+[LOG] IGM - {'L0': 32, 'L1': 16, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5216, Penny Ask: 5221
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790184, Qty: 2, Price: 5214
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790185, Qty: 2, Price: 5223
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790186, Qty: 1, Price: 5213
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790187, Qty: 1, Price: 5224
+[LOG] BRV - {'L0': 28, 'L1': 14, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - MKU: +2 @ 5597
+[FILL] Order Fill - MKU: +1 @ 5597
+[FILL] Order Fill - IGM: +2 @ 6270
+[FILL] Order Fill - IGM: +1 @ 6270
+[FILL] Order Fill - DLO: +2 @ 5014
+[FILL] Order Fill - DLO: +1 @ 5015
+[FILL] Order Fill - BRV: +2 @ 5214
+[FILL] Order Fill - EPT: +2 @ 4553
+[FILL] Order Fill - BRV: +1 @ 5213
+[FILL] Order Fill - EPT: +1 @ 4554
+[INFO] EPT - Penny Bid: 4559, Penny Ask: 4565
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790188, Qty: 2, Price: 4557
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790189, Qty: 2, Price: 4567
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790190, Qty: 1, Price: 4556
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790191, Qty: 1, Price: 4568
+[LOG] EPT - {'L0': 26, 'L1': 12, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5030, Penny Ask: 5032
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790192, Qty: 2, Price: 5028
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790193, Qty: 2, Price: 5034
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790194, Qty: 1, Price: 5027
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790195, Qty: 1, Price: 5035
+[LOG] DLO - {'L0': 20, 'L1': 10, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5549, Penny Ask: 5554
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790196, Qty: 2, Price: 5547
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790197, Qty: 2, Price: 5556
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790198, Qty: 1, Price: 5546
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790199, Qty: 1, Price: 5557
+[LOG] MKU - {'L0': 24, 'L1': 12, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6291, Penny Ask: 6297
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790200, Qty: 2, Price: 6289
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790201, Qty: 2, Price: 6299
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790202, Qty: 1, Price: 6288
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790203, Qty: 1, Price: 6300
+[LOG] IGM - {'L0': 34, 'L1': 17, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5205, Penny Ask: 5211
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790204, Qty: 2, Price: 5203
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790205, Qty: 2, Price: 5213
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790206, Qty: 1, Price: 5202
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790207, Qty: 1, Price: 5214
+[LOG] BRV - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - DLO: +2 @ 5034
+[FILL] Order Fill - MKU: +2 @ 5547
+[FILL] Order Fill - DLO: +1 @ 5035
+[FILL] Order Fill - MKU: +1 @ 5546
+[FILL] Order Fill - IGM: +2 @ 6299
+[FILL] Order Fill - IGM: +1 @ 6300
+[FILL] Order Fill - BRV: +2 @ 5213
+[FILL] Order Fill - BRV: +1 @ 5214
+[FILL] Order Fill - EPT: +2 @ 4567
+[INFO] EPT - Penny Bid: 4567, Penny Ask: 4573
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790208, Qty: 2, Price: 4565
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790209, Qty: 2, Price: 4575
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790210, Qty: 1, Price: 4564
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790211, Qty: 1, Price: 4576
+[LOG] EPT - {'L0': 28, 'L1': 12, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5052, Penny Ask: 5058
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790212, Qty: 2, Price: 5050
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790213, Qty: 2, Price: 5060
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790214, Qty: 1, Price: 5049
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790215, Qty: 1, Price: 5061
+[LOG] DLO - {'L0': 22, 'L1': 11, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5519, Penny Ask: 5525
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790216, Qty: 2, Price: 5517
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790217, Qty: 2, Price: 5527
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790218, Qty: 1, Price: 5516
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790219, Qty: 1, Price: 5528
+[LOG] MKU - {'L0': 26, 'L1': 13, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6298, Penny Ask: 6304
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790220, Qty: 2, Price: 6296
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790221, Qty: 2, Price: 6306
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790222, Qty: 1, Price: 6295
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790223, Qty: 1, Price: 6307
+[LOG] IGM - {'L0': 36, 'L1': 18, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5229, Penny Ask: 5230
+[LOG] BRV - {'L0': 32, 'L1': 16, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - IGM: +2 @ 6296
+[FILL] Order Fill - IGM: +1 @ 6295
+[FILL] Order Fill - DLO: +2 @ 5060
+[FILL] Order Fill - DLO: +1 @ 5061
+[FILL] Order Fill - MKU: +2 @ 5517
+[FILL] Order Fill - EPT: +2 @ 4575
+[FILL] Order Fill - EPT: +1 @ 4576
+[FILL] Order Fill - MKU: +1 @ 5516
+[INFO] EPT - Penny Bid: 4570, Penny Ask: 4577
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790224, Qty: 2, Price: 4568
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790225, Qty: 2, Price: 4579
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790226, Qty: 1, Price: 4567
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790227, Qty: 1, Price: 4580
+[LOG] EPT - {'L0': 30, 'L1': 13, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5069, Penny Ask: 5072
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790228, Qty: 2, Price: 5067
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790229, Qty: 2, Price: 5074
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790230, Qty: 1, Price: 5066
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790231, Qty: 1, Price: 5075
+[LOG] DLO - {'L0': 24, 'L1': 12, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5514, Penny Ask: 5520
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790232, Qty: 2, Price: 5512
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790233, Qty: 2, Price: 5522
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790234, Qty: 1, Price: 5511
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790235, Qty: 1, Price: 5523
+[LOG] MKU - {'L0': 28, 'L1': 14, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6282, Penny Ask: 6288
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790236, Qty: 2, Price: 6280
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790237, Qty: 2, Price: 6290
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790238, Qty: 1, Price: 6279
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790239, Qty: 1, Price: 6291
+[LOG] IGM - {'L0': 38, 'L1': 19, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5273, Penny Ask: 5279
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790240, Qty: 2, Price: 5271
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790241, Qty: 2, Price: 5281
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790242, Qty: 1, Price: 5270
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790243, Qty: 1, Price: 5282
+[LOG] BRV - {'L0': 32, 'L1': 16, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - EPT: +2 @ 4568
+[FILL] Order Fill - IGM: +2 @ 6292
+[FILL] Order Fill - IGM: +1 @ 6292
+[FILL] Order Fill - DLO: +2 @ 5074
+[FILL] Order Fill - DLO: +1 @ 5075
+[FILL] Order Fill - EPT: +1 @ 4567
+[FILL] Order Fill - MKU: +2 @ 5522
+[FILL] Order Fill - MKU: +1 @ 5523
+[FILL] Order Fill - BRV: +2 @ 5281
+[FILL] Order Fill - BRV: +1 @ 5282
+[INFO] EPT - Penny Bid: 4543, Penny Ask: 4548
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790244, Qty: 2, Price: 4541
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790245, Qty: 2, Price: 4550
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790246, Qty: 1, Price: 4540
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790247, Qty: 1, Price: 4551
+[LOG] EPT - {'L0': 32, 'L1': 14, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5081, Penny Ask: 5087
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790248, Qty: 2, Price: 5079
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790249, Qty: 2, Price: 5089
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790250, Qty: 1, Price: 5078
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790251, Qty: 1, Price: 5090
+[LOG] DLO - {'L0': 26, 'L1': 13, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5541, Penny Ask: 5547
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790252, Qty: 2, Price: 5539
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790253, Qty: 2, Price: 5549
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790254, Qty: 1, Price: 5538
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790255, Qty: 1, Price: 5550
+[LOG] MKU - {'L0': 30, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6324, Penny Ask: 6330
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790256, Qty: 2, Price: 6322
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790257, Qty: 2, Price: 6332
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790258, Qty: 1, Price: 6321
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790259, Qty: 1, Price: 6333
+[LOG] IGM - {'L0': 40, 'L1': 20, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5301, Penny Ask: 5308
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790260, Qty: 2, Price: 5299
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790261, Qty: 2, Price: 5310
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790262, Qty: 1, Price: 5298
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790263, Qty: 1, Price: 5311
+[LOG] BRV - {'L0': 34, 'L1': 17, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - BRV: +2 @ 5314
+[FILL] Order Fill - BRV: +1 @ 5314
+[FILL] Order Fill - MKU: +2 @ 5549
+[FILL] Order Fill - EPT: +2 @ 4550
+[FILL] Order Fill - EPT: +1 @ 4551
+[FILL] Order Fill - MKU: +1 @ 5550
+[INFO] EPT - Penny Bid: 4557, Penny Ask: 4563
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790264, Qty: 2, Price: 4555
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790265, Qty: 2, Price: 4565
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790266, Qty: 1, Price: 4554
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790267, Qty: 1, Price: 4566
+[LOG] EPT - {'L0': 34, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5077, Penny Ask: 5085
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790268, Qty: 2, Price: 5075
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790269, Qty: 2, Price: 5087
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790270, Qty: 1, Price: 5074
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790271, Qty: 1, Price: 5088
+[LOG] DLO - {'L0': 26, 'L1': 13, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5550, Penny Ask: 5556
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790272, Qty: 2, Price: 5548
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790273, Qty: 2, Price: 5558
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790274, Qty: 1, Price: 5547
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790275, Qty: 1, Price: 5559
+[LOG] MKU - {'L0': 32, 'L1': 16, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6331, Penny Ask: 6337
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790276, Qty: 2, Price: 6329
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790277, Qty: 2, Price: 6339
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790278, Qty: 1, Price: 6328
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790279, Qty: 1, Price: 6340
+[LOG] IGM - {'L0': 40, 'L1': 20, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5346, Penny Ask: 5352
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790280, Qty: 2, Price: 5344
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790281, Qty: 2, Price: 5354
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790282, Qty: 1, Price: 5343
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790283, Qty: 1, Price: 5355
+[LOG] BRV - {'L0': 36, 'L1': 18, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - BRV: +2 @ 5344
+[FILL] Order Fill - BRV: +1 @ 5343
+[FILL] Order Fill - MKU: +2 @ 5548
+[FILL] Order Fill - MKU: +1 @ 5547
+[FILL] Order Fill - IGM: +2 @ 6339
+[FILL] Order Fill - IGM: +1 @ 6340
+[INFO] EPT - Penny Bid: 4553, Penny Ask: 4560
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790284, Qty: 2, Price: 4551
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790285, Qty: 2, Price: 4562
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790286, Qty: 1, Price: 4550
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790287, Qty: 1, Price: 4563
+[LOG] EPT - {'L0': 34, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5079, Penny Ask: 5084
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790288, Qty: 2, Price: 5077
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790289, Qty: 2, Price: 5086
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790290, Qty: 1, Price: 5076
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790291, Qty: 1, Price: 5087
+[LOG] DLO - {'L0': 26, 'L1': 13, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5525, Penny Ask: 5531
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790292, Qty: 2, Price: 5523
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790293, Qty: 2, Price: 5533
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790294, Qty: 1, Price: 5522
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790295, Qty: 1, Price: 5534
+[LOG] MKU - {'L0': 34, 'L1': 17, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6337, Penny Ask: 6343
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790296, Qty: 2, Price: 6335
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790297, Qty: 2, Price: 6345
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790298, Qty: 1, Price: 6334
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790299, Qty: 1, Price: 6346
+[LOG] IGM - {'L0': 42, 'L1': 21, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5343, Penny Ask: 5345
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790300, Qty: 2, Price: 5341
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790301, Qty: 2, Price: 5347
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790302, Qty: 1, Price: 5340
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790303, Qty: 1, Price: 5348
+[LOG] BRV - {'L0': 38, 'L1': 19, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - BRV: +2 @ 5371
+[FILL] Order Fill - BRV: +1 @ 5371
+[FILL] Order Fill - EPT: +2 @ 4551
+[FILL] Order Fill - EPT: +1 @ 4550
+[FILL] Order Fill - IGM: +2 @ 6335
+[FILL] Order Fill - IGM: +1 @ 6334
+[FILL] Order Fill - MKU: +2 @ 5533
+[FILL] Order Fill - MKU: +1 @ 5534
+[FILL] Order Fill - DLO: +2 @ 5077
+[INFO] EPT - Penny Bid: 4525, Penny Ask: 4531
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790304, Qty: 2, Price: 4523
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790305, Qty: 2, Price: 4533
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790306, Qty: 1, Price: 4522
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790307, Qty: 1, Price: 4534
+[LOG] EPT - {'L0': 36, 'L1': 16, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5075, Penny Ask: 5079
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790308, Qty: 2, Price: 5073
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790309, Qty: 2, Price: 5081
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790310, Qty: 1, Price: 5072
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790311, Qty: 1, Price: 5082
+[LOG] DLO - {'L0': 28, 'L1': 13, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5532, Penny Ask: 5538
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790312, Qty: 2, Price: 5530
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790313, Qty: 2, Price: 5540
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790314, Qty: 1, Price: 5529
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790315, Qty: 1, Price: 5541
+[LOG] MKU - {'L0': 36, 'L1': 18, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6297, Penny Ask: 6302
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790316, Qty: 2, Price: 6295
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790317, Qty: 2, Price: 6304
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790318, Qty: 1, Price: 6294
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790319, Qty: 1, Price: 6305
+[LOG] IGM - {'L0': 44, 'L1': 22, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5460, Penny Ask: 5466
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790320, Qty: 2, Price: 5458
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790321, Qty: 2, Price: 5468
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790322, Qty: 1, Price: 5457
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790323, Qty: 1, Price: 5469
+[LOG] BRV - {'L0': 40, 'L1': 20, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - IGM: +2 @ 6286
+[FILL] Order Fill - IGM: +1 @ 6286
+[FILL] Order Fill - EPT: +2 @ 4523
+[INFO] EPT - Penny Bid: 4521, Penny Ask: 4528
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790324, Qty: 2, Price: 4519
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790325, Qty: 2, Price: 4530
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790326, Qty: 1, Price: 4518
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790327, Qty: 1, Price: 4531
+[LOG] EPT - {'L0': 38, 'L1': 16, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5078, Penny Ask: 5084
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790328, Qty: 2, Price: 5076
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790329, Qty: 2, Price: 5086
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790330, Qty: 1, Price: 5075
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790331, Qty: 1, Price: 5087
+[LOG] DLO - {'L0': 28, 'L1': 13, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5537, Penny Ask: 5543
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790332, Qty: 2, Price: 5535
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790333, Qty: 2, Price: 5545
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790334, Qty: 1, Price: 5534
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790335, Qty: 1, Price: 5546
+[LOG] MKU - {'L0': 36, 'L1': 18, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6236, Penny Ask: 6242
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790336, Qty: 2, Price: 6234
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790337, Qty: 2, Price: 6244
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790338, Qty: 1, Price: 6233
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790339, Qty: 1, Price: 6245
+[LOG] IGM - {'L0': 46, 'L1': 23, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5456, Penny Ask: 5463
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790340, Qty: 2, Price: 5454
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790341, Qty: 2, Price: 5465
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790342, Qty: 1, Price: 5453
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790343, Qty: 1, Price: 5466
+[LOG] BRV - {'L0': 40, 'L1': 20, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - EPT: +2 @ 4530
+[FILL] Order Fill - EPT: +1 @ 4531
+[FILL] Order Fill - BRV: +2 @ 5454
+[FILL] Order Fill - BRV: +1 @ 5453
+[FILL] Order Fill - IGM: +2 @ 6244
+[FILL] Order Fill - IGM: +1 @ 6245
+[FILL] Order Fill - DLO: +2 @ 5076
+[FILL] Order Fill - DLO: +1 @ 5075
+[FILL] Order Fill - MKU: +2 @ 5535
+[FILL] Order Fill - MKU: +1 @ 5534
+[INFO] EPT - Penny Bid: 4548, Penny Ask: 4554
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790344, Qty: 2, Price: 4546
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790345, Qty: 2, Price: 4556
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790346, Qty: 1, Price: 4545
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790347, Qty: 1, Price: 4557
+[LOG] EPT - {'L0': 40, 'L1': 17, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5059, Penny Ask: 5065
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790348, Qty: 2, Price: 5057
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790349, Qty: 2, Price: 5067
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790350, Qty: 1, Price: 5056
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790351, Qty: 1, Price: 5068
+[LOG] DLO - {'L0': 30, 'L1': 14, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5530, Penny Ask: 5536
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790352, Qty: 2, Price: 5528
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790353, Qty: 2, Price: 5538
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790354, Qty: 1, Price: 5527
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790355, Qty: 1, Price: 5539
+[LOG] MKU - {'L0': 38, 'L1': 19, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6257, Penny Ask: 6263
+[ORDER] IGM - Placed L0 Bid Order. ID: 1712635112914790356, Qty: 2, Price: 6255
+[ORDER] IGM - Placed L0 Ask Order. ID: 1712635112914790357, Qty: 2, Price: 6265
+[ORDER] IGM - Placed L1 Bid Order. ID: 1712635112914790358, Qty: 1, Price: 6254
+[ORDER] IGM - Placed L1 Ask Order. ID: 1712635112914790359, Qty: 1, Price: 6266
+[LOG] IGM - {'L0': 48, 'L1': 24, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5428, Penny Ask: 5434
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790360, Qty: 2, Price: 5426
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790361, Qty: 2, Price: 5436
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790362, Qty: 1, Price: 5425
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790363, Qty: 1, Price: 5437
+[LOG] BRV - {'L0': 42, 'L1': 21, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - DLO: +2 @ 5056
+[FILL] Order Fill - DLO: +1 @ 5056
+[FILL] Order Fill - MKU: +2 @ 5528
+[FILL] Order Fill - BRV: +2 @ 5426
+[FILL] Order Fill - BRV: +1 @ 5425
+[FILL] Order Fill - IGM: +2 @ 6265
+[FILL] Order Fill - MKU: +1 @ 5527
+[FILL] Order Fill - IGM: +1 @ 6266
+[FILL] Order Fill - EPT: +2 @ 4556
+[FILL] Order Fill - EPT: +1 @ 4557
+[INFO] EPT - Penny Bid: 4567, Penny Ask: 4573
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790364, Qty: 2, Price: 4565
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790365, Qty: 2, Price: 4575
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790366, Qty: 1, Price: 4564
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790367, Qty: 1, Price: 4576
+[LOG] EPT - {'L0': 42, 'L1': 18, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5024, Penny Ask: 5030
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790368, Qty: 2, Price: 5022
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790369, Qty: 2, Price: 5032
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790370, Qty: 1, Price: 5021
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790371, Qty: 1, Price: 5033
+[LOG] DLO - {'L0': 32, 'L1': 15, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5485, Penny Ask: 5491
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790372, Qty: 2, Price: 5483
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790373, Qty: 2, Price: 5493
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790374, Qty: 1, Price: 5482
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790375, Qty: 1, Price: 5494
+[LOG] MKU - {'L0': 40, 'L1': 20, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[AGGRESSIVE] MKU - Placed Aggressive Ask Order. ID: 1712635112914790376, Qty: 5, Price: 5490
+[INFO] IGM - Penny Bid: 6297, Penny Ask: 6300
+[WARNING] IGM - No need to place bid order to reduce position.
+[WARNING] IGM - No need to place bid order to reduce position.
+[LOG] IGM - {'L0': 50, 'L1': 25, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5398, Penny Ask: 5404
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790377, Qty: 2, Price: 5396
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790378, Qty: 2, Price: 5406
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790379, Qty: 1, Price: 5395
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790380, Qty: 1, Price: 5407
+[LOG] BRV - {'L0': 44, 'L1': 22, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - EPT: +2 @ 4575
+[FILL] Order Fill - MKU: +2 @ 5483
+[FILL] Order Fill - MKU: +1 @ 5482
+[FILL] Order Fill - EPT: +1 @ 4576
+[FILL] Order Fill - DLO: +2 @ 5032
+[FILL] Order Fill - DLO: +1 @ 5033
+[FILL] Order Fill - BRV: +2 @ 5406
+[FILL] Order Fill - BRV: +1 @ 5407
+[INFO] EPT - Penny Bid: 4594, Penny Ask: 4600
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790381, Qty: 2, Price: 4592
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790382, Qty: 2, Price: 4602
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790383, Qty: 1, Price: 4591
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790384, Qty: 1, Price: 4603
+[LOG] EPT - {'L0': 44, 'L1': 19, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5038, Penny Ask: 5044
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790385, Qty: 2, Price: 5036
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790386, Qty: 2, Price: 5046
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790387, Qty: 1, Price: 5035
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790388, Qty: 1, Price: 5047
+[LOG] DLO - {'L0': 34, 'L1': 16, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5444, Penny Ask: 5450
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790389, Qty: 2, Price: 5442
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790390, Qty: 2, Price: 5452
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790391, Qty: 1, Price: 5441
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790392, Qty: 1, Price: 5453
+[LOG] MKU - {'L0': 42, 'L1': 21, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[AGGRESSIVE] MKU - Placed Aggressive Ask Order. ID: 1712635112914790393, Qty: 5, Price: 5449
+[INFO] IGM - Penny Bid: 6395, Penny Ask: 6401
+[WARNING] IGM - No need to place bid order to reduce position.
+[WARNING] IGM - No need to place bid order to reduce position.
+[LOG] IGM - {'L0': 50, 'L1': 25, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5406, Penny Ask: 5465
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790394, Qty: 2, Price: 5404
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790395, Qty: 2, Price: 5467
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790396, Qty: 1, Price: 5403
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790397, Qty: 1, Price: 5468
+[LOG] BRV - {'L0': 46, 'L1': 23, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - EPT: +2 @ 4592
+[FILL] Order Fill - EPT: +1 @ 4591
+[FILL] Order Fill - DLO: +2 @ 5046
+[FILL] Order Fill - MKU: +1 @ 5453
+[INFO] EPT - Penny Bid: 4579, Penny Ask: 4582
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790398, Qty: 2, Price: 4577
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790399, Qty: 2, Price: 4584
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790400, Qty: 1, Price: 4576
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790401, Qty: 1, Price: 4585
+[LOG] EPT - {'L0': 46, 'L1': 20, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5040, Penny Ask: 5048
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790402, Qty: 2, Price: 5038
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790403, Qty: 2, Price: 5050
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790404, Qty: 1, Price: 5037
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790405, Qty: 1, Price: 5051
+[LOG] DLO - {'L0': 36, 'L1': 16, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5456, Penny Ask: 5460
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790406, Qty: 2, Price: 5454
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790407, Qty: 2, Price: 5462
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790408, Qty: 1, Price: 5453
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790409, Qty: 1, Price: 5463
+[LOG] MKU - {'L0': 42, 'L1': 22, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[AGGRESSIVE] MKU - Placed Aggressive Ask Order. ID: 1712635112914790410, Qty: 5, Price: 5459
+[INFO] IGM - Penny Bid: 6376, Penny Ask: 6381
+[WARNING] IGM - No need to place bid order to reduce position.
+[WARNING] IGM - No need to place bid order to reduce position.
+[LOG] IGM - {'L0': 50, 'L1': 25, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5439, Penny Ask: 5445
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790411, Qty: 2, Price: 5437
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790412, Qty: 2, Price: 5447
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790413, Qty: 1, Price: 5436
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790414, Qty: 1, Price: 5448
+[LOG] BRV - {'L0': 46, 'L1': 23, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - EPT: +2 @ 4589
+[FILL] Order Fill - EPT: +1 @ 4589
+[FILL] Order Fill - MKU: +1 @ 5463
+[FILL] Order Fill - DLO: +2 @ 5050
+[FILL] Order Fill - DLO: +1 @ 5051
+[INFO] EPT - Penny Bid: 4624, Penny Ask: 4627
+[ORDER] EPT - Placed L0 Bid Order. ID: 1712635112914790415, Qty: 2, Price: 4622
+[ORDER] EPT - Placed L0 Ask Order. ID: 1712635112914790416, Qty: 2, Price: 4629
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790417, Qty: 1, Price: 4621
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790418, Qty: 1, Price: 4630
+[LOG] EPT - {'L0': 48, 'L1': 21, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5043, Penny Ask: 5049
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790419, Qty: 2, Price: 5041
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790420, Qty: 2, Price: 5051
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790421, Qty: 1, Price: 5040
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790422, Qty: 1, Price: 5052
+[LOG] DLO - {'L0': 38, 'L1': 17, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5468, Penny Ask: 5474
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790423, Qty: 2, Price: 5466
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790424, Qty: 2, Price: 5476
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790425, Qty: 1, Price: 5465
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790426, Qty: 1, Price: 5477
+[LOG] MKU - {'L0': 42, 'L1': 23, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6359, Penny Ask: 6364
+[WARNING] IGM - No need to place bid order to reduce position.
+[WARNING] IGM - No need to place bid order to reduce position.
+[LOG] IGM - {'L0': 50, 'L1': 25, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5432, Penny Ask: 5438
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790427, Qty: 2, Price: 5430
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790428, Qty: 2, Price: 5440
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790429, Qty: 1, Price: 5429
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790430, Qty: 1, Price: 5441
+[LOG] BRV - {'L0': 46, 'L1': 23, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - BRV: +2 @ 5430
+[FILL] Order Fill - EPT: +2 @ 4629
+[FILL] Order Fill - BRV: +1 @ 5429
+[FILL] Order Fill - DLO: +2 @ 5041
+[FILL] Order Fill - DLO: +1 @ 5040
+[FILL] Order Fill - EPT: +1 @ 4630
+[FILL] Order Fill - MKU: +2 @ 5466
+[FILL] Order Fill - MKU: +1 @ 5465
+[INFO] EPT - Penny Bid: 4648, Penny Ask: 4654
+[WARNING] EPT - No need to place bid order to reduce position.
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790431, Qty: 1, Price: 4645
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790432, Qty: 1, Price: 4657
+[LOG] EPT - {'L0': 50, 'L1': 22, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5032, Penny Ask: 5038
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790433, Qty: 2, Price: 5030
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790434, Qty: 2, Price: 5040
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790435, Qty: 1, Price: 5029
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790436, Qty: 1, Price: 5041
+[LOG] DLO - {'L0': 40, 'L1': 18, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5464, Penny Ask: 5470
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790437, Qty: 2, Price: 5462
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790438, Qty: 2, Price: 5472
+[ORDER] MKU - Placed L1 Bid Order. ID: 1712635112914790439, Qty: 1, Price: 5461
+[ORDER] MKU - Placed L1 Ask Order. ID: 1712635112914790440, Qty: 1, Price: 5473
+[LOG] MKU - {'L0': 44, 'L1': 24, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[AGGRESSIVE] MKU - Placed Aggressive Ask Order. ID: 1712635112914790441, Qty: 5, Price: 5469
+[INFO] IGM - Penny Bid: 6286, Penny Ask: 6293
+[WARNING] IGM - No need to place bid order to reduce position.
+[WARNING] IGM - No need to place bid order to reduce position.
+[LOG] IGM - {'L0': 50, 'L1': 25, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] BRV - Penny Bid: 5409, Penny Ask: 5415
+[ORDER] BRV - Placed L0 Bid Order. ID: 1712635112914790442, Qty: 2, Price: 5407
+[ORDER] BRV - Placed L0 Ask Order. ID: 1712635112914790443, Qty: 2, Price: 5417
+[ORDER] BRV - Placed L1 Bid Order. ID: 1712635112914790444, Qty: 1, Price: 5406
+[ORDER] BRV - Placed L1 Ask Order. ID: 1712635112914790445, Qty: 1, Price: 5418
+[LOG] BRV - {'L0': 48, 'L1': 24, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[FILL] Order Fill - BRV: +2 @ 5417
+[FILL] Order Fill - BRV: +1 @ 5418
+[FILL] Order Fill - MKU: +1 @ 5473
+[FILL] Order Fill - EPT: +1 @ 4657
+[FILL] Order Fill - IGM: +2 @ 6255
+[FILL] Order Fill - IGM: +1 @ 6254
+[FILL] Order Fill - EPT: +1 @ 4645
+[FILL] Order Fill - DLO: +2 @ 5030
+[FILL] Order Fill - DLO: +1 @ 5029
+[INFO] EPT - Penny Bid: 4658, Penny Ask: 4664
+[WARNING] EPT - No need to place bid order to reduce position.
+[ORDER] EPT - Placed L1 Bid Order. ID: 1712635112914790446, Qty: 1, Price: 4655
+[ORDER] EPT - Placed L1 Ask Order. ID: 1712635112914790447, Qty: 1, Price: 4667
+[LOG] EPT - {'L0': 50, 'L1': 24, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] DLO - Penny Bid: 5022, Penny Ask: 5027
+[ORDER] DLO - Placed L0 Bid Order. ID: 1712635112914790448, Qty: 2, Price: 5020
+[ORDER] DLO - Placed L0 Ask Order. ID: 1712635112914790449, Qty: 2, Price: 5029
+[ORDER] DLO - Placed L1 Bid Order. ID: 1712635112914790450, Qty: 1, Price: 5019
+[ORDER] DLO - Placed L1 Ask Order. ID: 1712635112914790451, Qty: 1, Price: 5030
+[LOG] DLO - {'L0': 42, 'L1': 19, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] MKU - Penny Bid: 5500, Penny Ask: 5506
+[ORDER] MKU - Placed L0 Bid Order. ID: 1712635112914790452, Qty: 2, Price: 5498
+[ORDER] MKU - Placed L0 Ask Order. ID: 1712635112914790453, Qty: 2, Price: 5508
+[WARNING] MKU - No need to place bid order to reduce position.
+[LOG] MKU - {'L0': 44, 'L1': 25, 'L2': 0, 'L3': 0}
+[SUMMARY] Iteration Orders: 0, Iteration Fills: 0, Total Orders: 0, Total Fills: 0, Total Transactions: 0
+[INFO] IGM - Penny Bid: 6232, Penny Ask: 6238
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790454, Qty: 2, Price: 6352
+[FILL] Order Fill - MKU: +2 @ 5508
+[FILL] Order Fill - EPT: +1 @ 4655
+[FILL] Order Fill - DLO: +2 @ 5020
+[FILL] Order Fill - DLO: +1 @ 5019
+[FILL] Order Fill - EPT: +2 @ 4622
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790455, Qty: 2, Price: 6200
+[FILL] Order Fill - DLO: +2 @ 5029
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790456, Qty: 2, Price: 6175
+[FILL] Order Fill - DLO: +1 @ 5030
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790457, Qty: 2, Price: 6175
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790458, Qty: 2, Price: 6175
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790459, Qty: 2, Price: 6175
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790460, Qty: 2, Price: 6175
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790461, Qty: 2, Price: 6175
+[FILL] Order Fill - EPT: +1 @ 4667
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790462, Qty: 2, Price: 6175
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790463, Qty: 2, Price: 6175
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790464, Qty: 2, Price: 6175
+[FILL] Order Fill - MKU: +2 @ 5498
+[FILL] Order Fill - MKU: +1 @ 5461
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790465, Qty: 2, Price: 6175
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790466, Qty: 2, Price: 6175
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790467, Qty: 2, Price: 6175
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790468, Qty: 2, Price: 6175
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790469, Qty: 2, Price: 6175
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790470, Qty: 2, Price: 6405
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790471, Qty: 2, Price: 6481
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790472, Qty: 2, Price: 6519
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790473, Qty: 2, Price: 6519
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790474, Qty: 2, Price: 6519
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790475, Qty: 2, Price: 6519
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790476, Qty: 2, Price: 6479
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790477, Qty: 2, Price: 6448
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790478, Qty: 2, Price: 6409
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790479, Qty: 2, Price: 6409
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790480, Qty: 2, Price: 6409
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790481, Qty: 2, Price: 6409
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790482, Qty: 2, Price: 6409
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790483, Qty: 2, Price: 6409
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790484, Qty: 2, Price: 6409
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790485, Qty: 2, Price: 6409
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790486, Qty: 2, Price: 6409
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790487, Qty: 2, Price: 6409
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790488, Qty: 2, Price: 6409
+[FILL] Order Fill - BRV: +2 @ 5407
+[FILL] Order Fill - BRV: +1 @ 5406
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790489, Qty: 2, Price: 6409
+[ADJUST] IGM - Placed Bid Order to reduce position. ID: 1712635112914790490, Qty: 2, Price: 6409
