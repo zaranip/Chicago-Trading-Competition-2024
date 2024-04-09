@@ -147,6 +147,8 @@ class PIPOBot(xchange_client.XChangeClient):
         bid_response = None
         ask_response = None
         
+        print(self.level_positions[contract])
+        print(self.level_positions[contract][f'L{level}'], ratio * MAX_ABSOLUTE_POSITION)
         if self.level_positions[contract][f'L{level}'] > ratio * MAX_ABSOLUTE_POSITION:
             if penny_ask_price - self.edge > self.get_avg_filled_price(contract, level, 'ask'):
                 ask_response = await self.custom_place_order(contract, ask_qty, xchange_client.Side.SELL, penny_ask_price - self.edge)
