@@ -229,8 +229,7 @@ class MainBot(xchange_client.XChangeClient):
                         await self.bot_place_order(symbol, volume[symbol][0], xchange_client.Side.BUY, int(bids[symbol]))
                     elif int(asks[symbol]) > 0:
                         await self.bot_place_order(symbol, volume[symbol][1], xchange_client.Side.SELL, int(asks[symbol])) 
-
-            
+           
                 
             # Level Orders
             for symbol in symbols:
