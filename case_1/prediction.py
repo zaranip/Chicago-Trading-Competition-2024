@@ -349,11 +349,13 @@ class Prediction():
 
     def predict(self, k):
         x = self.round.get_current_price()
+        # print(x)
         # return (1-self.weight) * self.round.average() + self.weight*self.hist.solver(x, k)
         return x
     
     def bid(self, pred):
         # implemented penny in
+        # print("Predicted bid: ", pred)
         if pred < 0: return -1
         bids = [bid for bid in self.round.get_bid_prices() if bid < pred]
         return min(min(bids, key=lambda x: abs(x-pred)) + 1, pred - 1) if len(bids) > 0 else pred -1
