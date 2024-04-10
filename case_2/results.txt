@@ -1,0 +1,117 @@
+SLSQP
+Retorno anualizado: 11.84
+Volatilidad anualizada: 13.12
+Skewness: 7.09
+Kurtosis: 5.56
+Max Drawdown: -23.64
+Conteo de datos: 2519.00
+Sharpe Ratio: 90.25
+CVaR: 33.43
+Ratio Sortino: 157.01
+Varianza: 1.72
+
+Nelder-Mead
+Retorno anualizado: 26.19
+Volatilidad anualizada: 30.28
+Skewness: 7.36
+Kurtosis: 5.59
+Max Drawdown: -47.46
+Conteo de datos: 2519.00
+Sharpe Ratio: 86.48
+CVaR: 75.99
+Ratio Sortino: 150.54
+Varianza: 9.17
+
+Powell
+Retorno anualizado: 14.70
+Volatilidad anualizada: 16.38
+Skewness: 7.35
+Kurtosis: 5.59
+Max Drawdown: -28.55
+Conteo de datos: 2519.00
+Sharpe Ratio: 89.77
+CVaR: 41.64
+Ratio Sortino: 156.36
+Varianza: 2.68
+
+CG
+Retorno anualizado: 15.29
+Volatilidad anualizada: 15.13
+Skewness: 5.69
+Kurtosis: -1.84
+Max Drawdown: -26.38
+Conteo de datos: 2519.00
+Sharpe Ratio: 101.07
+CVaR: 40.17
+Ratio Sortino: 172.92
+Varianza: 2.29
+
+BFGS
+Retorno anualizado: 19.67
+Volatilidad anualizada: 19.55
+Skewness: 5.68
+Kurtosis: -1.82
+Max Drawdown: -32.93
+Conteo de datos: 2519.00
+Sharpe Ratio: 100.60
+CVaR: 51.83
+Ratio Sortino: 172.16
+Varianza: 3.82
+
+TODO: Compute Newton-CG + Jacobian
+
+L-BFGS-B
+Retorno anualizado: 11.22
+Volatilidad anualizada: 12.40
+Skewness: 7.36
+Kurtosis: 5.59
+Max Drawdown: -22.36
+Conteo de datos: 2519.00
+Sharpe Ratio: 90.48
+CVaR: 31.61
+Ratio Sortino: 157.49
+Varianza: 1.54
+
+TNC
+Retorno anualizado: 14.01
+Volatilidad anualizada: 15.58
+Skewness: 7.37
+Kurtosis: 5.59
+Max Drawdown: -27.41
+Conteo de datos: 2519.00
+Sharpe Ratio: 89.93
+CVaR: 39.65
+Ratio Sortino: 156.48
+Varianza: 2.43
+
+COBYLA
+Retorno anualizado: 26.71
+Volatilidad anualizada: 30.95
+Skewness: 7.36
+Kurtosis: 5.59
+Max Drawdown: -48.27
+Conteo de datos: 2519.00
+Sharpe Ratio: 86.29
+CVaR: 77.62
+Ratio Sortino: 150.21
+Varianza: 9.58
+
+trust-constr
+Retorno anualizado: 11.85
+Volatilidad anualizada: 13.11
+Skewness: 7.36
+Kurtosis: 5.59
+Max Drawdown: -23.51
+Conteo de datos: 2519.00
+Sharpe Ratio: 90.36
+CVaR: 33.41
+Ratio Sortino: 157.28
+Varianza: 1.72
+
+TODO: dogleg, Jacobian
+
+TODO: trust-ncg, Jacobian
+
+TODO: trust-exact, Jacobian
+
+TODO: trust-krylov, Jacobian
