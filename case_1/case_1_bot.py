@@ -11,10 +11,10 @@ from  prediction import Prediction
 
 
 # constants
-MAX_ORDER_SIZE = 100
-MAX_OPEN_ORDERS = 100
-OUTSTANDING_VOLUME = 100
-MAX_ABSOLUTE_POSITION = 100
+MAX_ORDER_SIZE = 40
+MAX_OPEN_ORDERS = 10
+OUTSTANDING_VOLUME = 120
+MAX_ABSOLUTE_POSITION = 200
 SYMBOLS = ["EPT", "DLO", "MKU", "IGM", "BRV"]
 ETFS = ["SCP", "JAK"]
 df = pd.read_csv("Case1_Historical_Amended.csv")
@@ -58,7 +58,7 @@ class OpenOrders:
     def get_k_oldest_order(self, symbol, k):
         if len(self.queue) >= k:
             return [self.queue[symbol][i] for i in range(k)]
-        return self.queue
+        return self.queue[symbol]
     def add_order(self, symbol, price, qty, id, side, level):
         self.id_to_price[id] = price
         self.id_to_qty[id] = qty
@@ -87,11 +87,12 @@ class MainBot(xchange_client.XChangeClient):
     '''A shell client with the methods that can be implemented to interact with the xchange.'''
 
     def __init__(self, host: str, username: str, password: str):
+        global open_orders
         super().__init__(host, username, password)
         self.order_size = 10
         self.level_orders = 10
         self.spreads = [20, 40, 60]
-        self.open_orders_object = OpenOrders()
+        self.open_orders_object = open_orders
         self.predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in SYMBOLS + ETFS]
         self.predictions = dict((pred.name(), 0) for pred in self.predictors)
 
@@ -144,6 +145,7 @@ class MainBot(xchange_client.XChangeClient):
                 await self.cancel_order(order_id)
                 
         vol = min(qty,
+                  MAX_ORDER_SIZE,
                   MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION,
                   OUTSTANDING_VOLUME - self.open_orders_object.get_outstanding_volume())
         if vol > 0:
@@ -152,6 +154,7 @@ class MainBot(xchange_client.XChangeClient):
             with open(f"./log/placed/round_data_{start_time}.txt", "a") as f:
                 f.write(f"{order_id} {symbol} {price}\n")
             return order_id
+        
         
     async def bot_place_swap_order(self):
         pass
@@ -163,7 +166,10 @@ class MainBot(xchange_client.XChangeClient):
         pass
 
     async def load_my_positions(self):
-        pass
+        """Loads the positions of the bot from the exchange."""
+        positions = await self.get_positions()
+        for position in positions:
+            self.positions[position["symbol"]] = position["position"]
 
     async def bot_update_predictions(self):
         self.predictions = dict((pred.name(), pred.predict(2)) for pred in self.predictors)
@@ -172,7 +178,6 @@ class MainBot(xchange_client.XChangeClient):
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # intended to load the position if we are disconnected somehow
-        await self.load_my_positions()
 
         while True:
             for pred in self.predictors:
@@ -284,6 +289,7 @@ async def main():
             break
 
 if __name__ == "__main__":
+    open_orders = OpenOrders()
     start_time = datetime.now().strftime("%y-%m-%d-%H-%M-%S")
     # while True:
     asyncio.run(main())
