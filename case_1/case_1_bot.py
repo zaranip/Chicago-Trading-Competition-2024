@@ -43,22 +43,8 @@ OUTSTANDING_VOLUME = 120
 MAX_ABSOLUTE_POSITION = 200
 SYMBOLS = ["EPT", "DLO", "MKU", "IGM", "BRV"]
 ETFS = ["SCP", "JAK"]
-TRAP = 1234567890
+TRAP = 1000000
 df = pd.read_csv("Case1_Historical_Amended.csv")
-class MyPositions:
-    def __init__(self):
-        self.positions = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
-        self.average_price = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
-    def update(self, symbol, price, qty):
-        self.positions[symbol] += qty
-        if self.positions[symbol] == 0:
-            self.average_price[symbol] = 0
-        else:
-            self.average_price[symbol] = (self.average_price[symbol] * (self.positions[symbol] - qty) + price * qty) / self.positions[symbol]
-    def get_position(self, symbol):
-        return self.positions[symbol]
-    def get_average_price(self, symbol):
-        return self.average_price[symbol]
 
 class OrderResponse:
     def __init__(self, order_id: str):
@@ -141,14 +127,13 @@ class OpenOrders:
 class MainBot(xchange_client.XChangeClient):
     '''A shell client with the methods that can be implemented to interact with the xchange.'''
 
-    def __init__(self, host: str, username: str, password: str, open_orders, positions):
+    def __init__(self, host: str, username: str, password: str, open_orders):
         super().__init__(host, username, password)
         self.order_size = 10
         self.level_orders = 10
         self.spreads = [2,4,6]
         self.open_orders_object = open_orders
-        self.my_positions = positions
-        self.open_orders = self.load_my_positions()
+        self.open_orders = self.load_open_orders()
         self.predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in SYMBOLS + ETFS]
         self.predictions = dict((pred.name(), 0) for pred in self.predictors)
         print("Object equality", self.open_orders_object)
@@ -160,11 +145,10 @@ class MainBot(xchange_client.XChangeClient):
             self.open_orders_object.remove_order(order_id)
         else:
             print(f"[DEBUG] Order Cancellation Failed - Order ID: {order_id}, Error: {error}")
-            self.open_orders_object.remove_order(order_id)
+            # self.open_orders_object.remove_order(order_id)
 
     async def bot_handle_order_fill(self, order_id: str, qty: int, price: int):
         self.writing_to_file(order_id, "FILLED", price)
-        self.my_positions.update(self.open_orders_object.get_symbol(order_id), price, qty if self.open_orders_object.get_side(order_id) == xchange_client.Side.BUY else -qty)
         self.open_orders_object.adjust_qty(order_id, -qty)
 
     async def bot_handle_order_rejected(self, order_id: str, reason: str) -> None:
@@ -184,13 +168,6 @@ class MainBot(xchange_client.XChangeClient):
         pass
 
     async def bot_place_order(self, symbol, qty, side, price, level=0):
-        if price == TRAP:
-            order_id = await self.place_order(symbol, qty, side, price)
-            self.open_orders_object.trap_ids.add(order_id)
-            self.open_orders_object.add_order(symbol, price, qty, order_id, side, level)
-            # self.writing_to_file(order_id, "PLACED")
-            return order_id
-
         if level == 0:
             diff = self.open_orders_object.get_num_open_orders() + 1 - MAX_OPEN_ORDERS
             oldest_orders = self.open_orders_object.get_k_oldest_order(symbol, diff)
@@ -246,7 +223,7 @@ class MainBot(xchange_client.XChangeClient):
             with open(f"./log/placed/round_data_{start_time}.txt", "a") as f:
                 f.write(f"{order_id} {level} {symbol} {side} {price}\n")
 
-    def load_my_positions(self):
+    def load_open_orders(self):
         open_orders = dict()
         for order_id in self.open_orders_object.get_all_orders():
             symbol = self.open_orders_object.get_symbol(order_id)
@@ -267,10 +244,7 @@ class MainBot(xchange_client.XChangeClient):
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # intended to load the position if we are disconnected somehow
-        self.load_my_positions()
-        # Place a trap here LOL
-        for symbol in SYMBOLS + ETFS:
-            self.bot_place_order(symbol, 1, xchange_client.Side.SELL, TRAP)
+        self.load_open_orders()
         while True:
             for pred in self.predictors:
                 order_book = self.order_books[pred.name()] if pred.name() in self.order_books else xchange_client.OrderBook()
@@ -313,19 +287,6 @@ class MainBot(xchange_client.XChangeClient):
             for symbol, _ in self.predictions.items():
                 if symbol in SYMBOLS + ETFS:
                     buy_volume, sell_volume = 5, 5
-                    if self.positions[symbol] > MAX_ABSOLUTE_POSITION * 3/4:
-                        price = self.my_positions.get_average_price(symbol)
-                        if not price: price = self.predictions[symbol]
-                        extreme_asks = sorted([(k,v) for k, v in self.order_books[symbol].asks.items() if k > price and v > 0])
-                        for item in extreme_asks:
-                            await self.bot_place_order(symbol, item[1], xchange_client.Side.SELL, item[0])
-                    elif self.positions[symbol] < - MAX_ABSOLUTE_POSITION * 3/4:
-                        price = abs(self.my_positions.get_average_price(symbol))
-                        if not price: price = self.predictions[symbol]
-                        extreme_bids = sorted([(k,v) for k, v in self.order_books[symbol].bids.items() if k < price and v > 0], reverse=True)
-                        for item in extreme_bids:
-                            await self.bot_place_order(symbol, item[1], xchange_client.Side.BUY, item[0])
-
 
                     if self.positions[symbol] > MAX_ABSOLUTE_POSITION //2:
                         # encourage selling
@@ -387,11 +348,10 @@ class MainBot(xchange_client.XChangeClient):
 async def main():
     count = 0
     open_orders = OpenOrders()
-    my_positions = MyPositions()
     while True:
         # log_file_path = f"/Users/divy/Desktop/Chicago-Trading-Competition-2024/case_1/log/file{count}.txt"
         # log_to_file(log_file_path)
-        bot = MainBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133", open_orders=open_orders, positions=my_positions)
+        bot = MainBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133", open_orders=open_orders)
         count += 1
         try:
             await bot.start()
@@ -399,7 +359,6 @@ async def main():
         except AioRpcError as e:
             print(f"ConnectionError occurred: {e.with_traceback(None)}")
             open_orders = OpenOrders()
-            my_positions = MyPositions()
             await asyncio.sleep(1)
         except Exception as e:
             traceback.print_exc()
