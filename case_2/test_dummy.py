@@ -109,6 +109,8 @@ def grading(train_data, test_data):
 
     return sharpe, capital, weights
 
+
+
 sharpe, capital, weights = grading(TRAIN, TEST)
 print(sharpe)
 

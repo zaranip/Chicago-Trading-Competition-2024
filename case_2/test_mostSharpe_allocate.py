@@ -39,6 +39,7 @@ class Allocator():
         return -mu / sigma if sigma > 0 else -np.inf
 
     def allocate_portfolio(self, asset_prices):
+        return [0.1,0.2,0.3,0.4,0.5,0.6]
         self.running_price_paths = self.running_price_paths.append(asset_prices, ignore_index=True)
         self.train_data = self.train_data.append(asset_prices, ignore_index=True)
         returns = self.train_data.pct_change().dropna().to_numpy()
@@ -75,6 +76,12 @@ def grading(train_data, test_data):
         net_change = np.dot(shares, np.array(test_data.iloc[i + 1, :]))
         capital.append(balance + net_change)
     capital = np.array(capital)
+    print(capital)
+    print('\n')
+    print(capital[1:])
+    print('\n')
+    print(capital[:-1])
+    print('\n')
     returns = (capital[1:] - capital[:-1]) / capital[:-1]
 
     if np.std(returns) != 0:
