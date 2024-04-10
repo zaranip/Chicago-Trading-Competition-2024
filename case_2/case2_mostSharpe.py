@@ -31,7 +31,7 @@ def log_to_file(log_file_path):
 
     sys.stdout = Logger(log_file_path)
 
-log_to_file("case_2/case2_mostSharpe_methods_stats.txt")
+log_to_file("case_2/trial_3/bruh.txt")
 
 data = pd.read_csv('Case 2 Data 2024.csv')
 symbols = data.columns[1:]  # Exclude the first column (presumably the date or index)
@@ -82,14 +82,15 @@ bounds = tuple((0, 1) for x in range(len(symbols)))
 
 # Optimizations
 init_guess = np.array(len(symbols) * [1. / len(symbols)])
+# ['Powell', 'L-BFGS-B', 'TNC'] ['Nelder-Mead', 'Powell', 'CG', 'BFGS', 'L-BFGS-B', 'TNC', 'SLSQP']
 
 for method in ['Nelder-Mead', 'Powell', 'CG', 'BFGS', 'L-BFGS-B', 'TNC', 'SLSQP']:
     print(f"Method: {method}")
     # Store k values and test Sharpe ratios
     k_values = []
     test_sharpe_ratios = []
-    interval = 10
-    for k in range(1, num_data_points, interval):
+    interval = 1
+    for k in range(int(num_data_points*0.45), int(num_data_points*0.55), interval):
         # print(f"Train-Test Split with k = {k}")
         
         # Split the data into train and test sets
@@ -135,7 +136,7 @@ for method in ['Nelder-Mead', 'Powell', 'CG', 'BFGS', 'L-BFGS-B', 'TNC', 'SLSQP'
     plt.ylabel('Test Sharpe Ratio')
     plt.title(f'k vs. Test Sharpe Ratio - {method}')
     plt.grid(True)
-    plt.savefig(f"case_2/graphs/{method}_sharpe_ratio_graph.png")
+    plt.savefig(f"case_2/trial_3/graphs/{method}_sharpe_ratio_graph.png")
     plt.close()
 
     # Find the best value of k based on the highest test Sharpe ratio

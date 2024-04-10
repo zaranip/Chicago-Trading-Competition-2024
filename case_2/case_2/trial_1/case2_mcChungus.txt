@@ -1,0 +1,14 @@
+Method: Powell
+Mean Sharpe Ratio: nan
+Variance of Sharpe Ratios: nan
+Standard Deviation of Sharpe Ratios: nan
+Best value of k: 2518
+Method: L-BFGS-B
+Mean Sharpe Ratio: nan
+Variance of Sharpe Ratios: nan
+Standard Deviation of Sharpe Ratios: nan
+Best value of k: 2518
+Method: TNC
+Mean Sharpe Ratio: nan
+Variance of Sharpe Ratios: nan
+Standard Deviation of Sharpe Ratios: nan
