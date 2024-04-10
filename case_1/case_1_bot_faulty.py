@@ -322,7 +322,7 @@ class MainBot(xchange_client.XChangeClient):
                     elif self.positions[symbol] < - MAX_ABSOLUTE_POSITION * 3/4:
                         price = abs(self.my_positions.get_average_price(symbol))
                         if not price: price = self.predictions[symbol]
-                        extreme_bids = sorted([(k,v) for k, v in self.order_books[symbol].bids.items() if k < price and v > 0], reverse=True)
+                        extreme_bid = sorted([(k,v) for k, v in self.order_books[symbol].bids.items() if k < price and v > 0], reverse=True)
                         for item in extreme_bids:
                             await self.bot_place_order(symbol, item[1], xchange_client.Side.BUY, item[0])
 
