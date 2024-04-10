@@ -3,12 +3,37 @@ import traceback
 import numpy as np
 import pandas as pd
 import collections
+import os, sys
 
 from datetime import datetime
 from typing import Optional
 from xchangelib import xchange_client, service_pb2 as utc_bot_pb2
 from  prediction import Prediction
 from grpc.aio import AioRpcError
+def log_to_file(log_file_path):
+    """
+    Redirects the console output to a log file.
+    Prints to both the console and the log file.
+    """
+    class Logger(object):
+        def __init__(self, log_file):
+            self.terminal = sys.stdout
+            self.log_file = open(log_file, "a", encoding="utf-8")
+
+        def write(self, message):
+            self.terminal.write(message)
+            self.log_file.write(message)
+
+        def flush(self):
+            self.terminal.flush()
+            self.log_file.flush()
+
+    log_file_dir = os.path.dirname(log_file_path)
+    if not os.path.exists(log_file_dir):
+        os.makedirs(log_file_dir)
+
+    sys.stdout = Logger(log_file_path)
+
 
 # constants
 MAX_ORDER_SIZE = 40
@@ -89,8 +114,7 @@ class OpenOrders:
 class MainBot(xchange_client.XChangeClient):
     '''A shell client with the methods that can be implemented to interact with the xchange.'''
 
-    def __init__(self, host: str, username: str, password: str):
-        global open_orders
+    def __init__(self, host: str, username: str, password: str, open_orders):
         super().__init__(host, username, password)
         self.order_size = 10
         self.level_orders = 10
@@ -99,6 +123,7 @@ class MainBot(xchange_client.XChangeClient):
         self.open_orders = self.load_my_positions()
         self.predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in SYMBOLS + ETFS]
         self.predictions = dict((pred.name(), 0) for pred in self.predictors)
+        print("Object equality", self.open_orders_object)
 
 
     async def bot_handle_cancel_response(self, order_id: str, success: bool, error: Optional[str]) -> None:
@@ -302,30 +327,30 @@ class MainBot(xchange_client.XChangeClient):
 
 
 async def main():
-    global open_orders
+    count = 0
     while True:
-        bot = MainBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133")
+        open_orders = OpenOrders()
+        log_file_path = f"/Users/divy/Desktop/Chicago-Trading-Competition-2024/case_1/log/file{count}.txt"
+        log_to_file(log_file_path)
+        bot = MainBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133", open_orders=open_orders)
+        count += 1
         try:
             await bot.start()
             await asyncio.Event().wait()
         except AioRpcError as e:
             print(f"ConnectionError occurred: {e.with_traceback(None)}")
-            open_orders = OpenOrders()
             await asyncio.sleep(1)
         except Exception as e:
             traceback.print_exc()
             print(f"Exception occurred: {e.with_traceback(None)}")  # Print the traceback
             print("Restarting the bot...")
-            # break
             await asyncio.sleep(1)  # Wait for a short duration before restarting
         except KeyboardInterrupt:
             print("KeyboardInterrupt: Closing the event loop...")
             break
 
 if __name__ == "__main__":
-    open_orders = OpenOrders()
     start_time = datetime.now().strftime("%y-%m-%d-%H-%M-%S")
-    # while True:
     asyncio.run(main())
     
 
