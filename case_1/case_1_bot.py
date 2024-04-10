@@ -8,7 +8,7 @@ from datetime import datetime
 from typing import Optional
 from xchangelib import xchange_client, service_pb2 as utc_bot_pb2
 from  prediction import Prediction
-
+from grpc.aio import AioRpcError
 
 # constants
 MAX_ORDER_SIZE = 40
@@ -302,11 +302,16 @@ class MainBot(xchange_client.XChangeClient):
 
 
 async def main():
+    global open_orders
     while True:
         bot = MainBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133")
         try:
             await bot.start()
             await asyncio.Event().wait()
+        except AioRpcError as e:
+            print(f"ConnectionError occurred: {e.with_traceback(None)}")
+            open_orders = OpenOrders()
+            await asyncio.sleep(1)
         except Exception as e:
             traceback.print_exc()
             print(f"Exception occurred: {e.with_traceback(None)}")  # Print the traceback
