@@ -6,7 +6,7 @@ import collections
 
 from datetime import datetime
 from typing import Optional
-from xchangelib import xchange_client
+from xchangelib import xchange_client, service_pb2 as utc_bot_pb2
 from  prediction import Prediction
 
 
@@ -39,6 +39,8 @@ class OpenOrders:
         self.outstanding_volume += adj
         if self.id_to_qty[id] == 0:
             self.remove_order(id)
+    def get_all_orders(self):
+        return list(self.id_to_price.keys())
     def get_price(self, id):
         return self.id_to_price[id]
     def get_num_open_orders(self):
@@ -56,9 +58,9 @@ class OpenOrders:
     def get_outstanding_volume(self):
         return self.outstanding_volume
     def get_k_oldest_order(self, symbol, k):
-        if len(self.queue) >= k:
+        if len(self.queue[symbol]) >= k:
             return [self.queue[symbol][i] for i in range(k)]
-        return self.queue[symbol]
+        return [i for i in self.queue[symbol]]
     def add_order(self, symbol, price, qty, id, side, level):
         self.id_to_price[id] = price
         self.id_to_qty[id] = qty
@@ -71,6 +73,7 @@ class OpenOrders:
         self.queue[symbol].append(id)
 
     def remove_order(self, id):
+        if id not in self.id_to_level: return
         level = self.id_to_level[id]
         symbol = self.id_to_symbol[id]
         self.outstanding_volume -= self.id_to_qty[id]
@@ -93,37 +96,25 @@ class MainBot(xchange_client.XChangeClient):
         self.level_orders = 10
         self.spreads = [20, 40, 60]
         self.open_orders_object = open_orders
+        self.open_orders = self.load_my_positions()
         self.predictors = [Prediction(symbol, df[symbol].to_numpy()) for symbol in SYMBOLS + ETFS]
         self.predictions = dict((pred.name(), 0) for pred in self.predictors)
 
 
     async def bot_handle_cancel_response(self, order_id: str, success: bool, error: Optional[str]) -> None:
         if success:
-            symbol = self.open_orders_object.id_to_symbol[order_id]
-            side = self.open_orders_object.get_side(order_id)
+            self.writing_to_file(order_id, "CANCELLED")
             self.open_orders_object.remove_order(order_id)
-            with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
-                f.write(f"[CANCELLED] {order_id} {(symbol, side)}\n")
         else:
             print(f"[DEBUG] Order Cancellation Failed - Order ID: {order_id}, Error: {error}")
 
     async def bot_handle_order_fill(self, order_id: str, qty: int, price: int):
-        symbol = self.open_orders_object.get_symbol(order_id)
-        side = self.open_orders_object.get_side(order_id)
-        qty = self.open_orders_object.get_qty(order_id)
-        gap = self.open_orders_object.get_price(order_id) - price
+        self.writing_to_file(order_id, "FILLED", price)
         self.open_orders_object.adjust_qty(order_id, -qty)
-        with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
-            f.write(f"{order_id} {(symbol, side)} {qty} {price} {gap}\n")
 
     async def bot_handle_order_rejected(self, order_id: str, reason: str) -> None:
-        symbol = self.open_orders_object.get_symbol(order_id)
-        side = self.open_orders_object.get_side(order_id)
+        self.writing_to_file(order_id, "REJECTED")
         self.open_orders_object.remove_order(order_id)
-        with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
-            f.write(f"[REJECTED] {order_id} {(symbol, side)}\n")
-        # print(f"[DEBUG] Order Rejected - Order ID: {order_id}, Reason: {reason}")
-
 
     async def bot_handle_trade_msg(self, symbol: str, price: int, qty: int):
         # print("something was traded")
@@ -151,8 +142,7 @@ class MainBot(xchange_client.XChangeClient):
         if vol > 0:
             order_id = await self.place_order(symbol, vol, side, price)
             self.open_orders_object.add_order(symbol, price, vol, order_id, side, level)
-            with open(f"./log/placed/round_data_{start_time}.txt", "a") as f:
-                f.write(f"{order_id} {symbol} {price}\n")
+            self.writing_to_file(order_id, "PLACED")
             return order_id
         
         
@@ -164,13 +154,50 @@ class MainBot(xchange_client.XChangeClient):
 
     async def bot_handle_balancing_order(self, symbol):
         pass
+    
+    def writing_to_file(self, order_id, type, price = 0):
+        verbose = True
+        if not verbose: return
+        if type == "FILLED":
+            symbol = self.open_orders_object.get_symbol(order_id)
+            side = self.open_orders_object.get_side(order_id)
+            qty = self.open_orders_object.get_qty(order_id)
+            gap = self.open_orders_object.get_price(order_id) - price
+            with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
+                f.write(f"{order_id} {(symbol, side)} {qty} {price} {gap}\n")
+        elif type == "CANCELLED":
+            symbol = self.open_orders_object.id_to_symbol[order_id]
+            side = self.open_orders_object.get_side(order_id)
+            self.open_orders_object.remove_order(order_id)
+            with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
+                f.write(f"[CANCELLED] {order_id} {(symbol, side)}\n")
+        elif type == "REJECTED":
+            symbol = self.open_orders_object.get_symbol(order_id)
+            side = self.open_orders_object.get_side(order_id)
+            with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
+                f.write(f"[REJECTED] {order_id} {(symbol, side)}\n")
+        elif type == "PLACED":
+            symbol = self.open_orders_object.get_symbol(order_id)
+            price = self.open_orders_object.get_price(order_id)
+            level = self.open_orders_object.get_level(order_id)
+            side = self.open_orders_object.get_side(order_id)
+            with open(f"./log/placed/round_data_{start_time}.txt", "a") as f:
+                f.write(f"{order_id} {level} {symbol} {side} {price}\n")
 
-    async def load_my_positions(self):
-        """Loads the positions of the bot from the exchange."""
-        positions = await self.get_positions()
-        for position in positions:
-            self.positions[position["symbol"]] = position["position"]
-
+    def load_my_positions(self):
+        open_orders = dict()
+        for order_id in self.open_orders_object.get_all_orders():
+            symbol = self.open_orders_object.get_symbol(order_id)
+            qty = self.open_orders_object.get_qty(order_id)
+            side = self.open_orders_object.get_side(order_id)
+            side = utc_bot_pb2.NewOrderRequest.Side.BUY if side == xchange_client.Side.BUY else utc_bot_pb2.NewOrderRequest.Side.SELL
+            price = self.open_orders_object.get_price(order_id)
+            limit_order_msg = utc_bot_pb2.LimitOrder(qty=qty, px=price)
+            order_request = utc_bot_pb2.NewOrderRequest(symbol=symbol, id=order_id, limit=limit_order_msg,
+                                                        side=side)
+            open_orders[order_id] = [order_request, qty, False]
+        return open_orders
+        # print(self.open_orders)
     async def bot_update_predictions(self):
         self.predictions = dict((pred.name(), pred.predict(2)) for pred in self.predictors)
 
@@ -178,7 +205,10 @@ class MainBot(xchange_client.XChangeClient):
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # intended to load the position if we are disconnected somehow
-
+        self.load_my_positions()
+        # Place a trap here LOL
+        for symbol in SYMBOLS + ETFS:
+            self.bot_place_order(symbol, 1, xchange_client.Side.SELL, 1234567890)
         while True:
             for pred in self.predictors:
                 order_book = self.order_books[pred.name()] if pred.name() in self.order_books else xchange_client.OrderBook()
@@ -186,7 +216,6 @@ class MainBot(xchange_client.XChangeClient):
             await self.bot_update_predictions()
             bids = dict((pred.name(), pred.bid(self.predictions[pred.name()])) for pred in self.predictors)
             asks = dict((pred.name(), pred.ask(self.predictions[pred.name()])) for pred in self.predictors)
-            # print(bids, asks)
             # ETF Arbitrage
             # how aggressively to arbitrage
             rate = 0.8            
@@ -222,11 +251,11 @@ class MainBot(xchange_client.XChangeClient):
             for symbol, _ in self.predictions.items():
                 if symbol in SYMBOLS:
                     buy_volume, sell_volume = 0, 0
-                    if self.positions[symbol] > 0:
+                    if self.positions[symbol] > MAX_ABSOLUTE_POSITION //2:
                         # encourage selling
                         sell_volume = self.positions[symbol]//10
                         buy_volume = (MAX_ABSOLUTE_POSITION - self.positions[symbol])//10
-                    elif self.positions[symbol] < 0:
+                    elif self.positions[symbol] < - MAX_ABSOLUTE_POSITION//2:
                         # encourage buying
                         buy_volume = abs(self.positions[symbol])//10
                         sell_volume = (MAX_ABSOLUTE_POSITION + self.positions[symbol])//10
