@@ -31,7 +31,7 @@ def log_to_file(log_file_path):
 
     sys.stdout = Logger(log_file_path)
 
-log_to_file("case_2/trial_3/mc_chungus.txt")
+log_to_file("case_2/trial_5/mc_chungus_results.txt")
 
 data = pd.read_csv('Case 2 Data 2024.csv')
 symbols = data.columns[1:]  # Exclude the first column (presumably the date or index)
@@ -83,51 +83,49 @@ bounds = tuple((0, 1) for x in range(len(symbols)))
 # Optimizations
 init_guess = np.array(len(symbols) * [1. / len(symbols)])
 
-min_test_points = 50  # Minimum number of data points required in the test set
-
-for method in ['TNC', 'SLSQP']:
-    print(f"Method: {method}")
-    # Store k values and test Sharpe ratios
-    k_values = []
-    test_sharpe_ratios = []
-    interval = 1
-    print(data.shape, returns.shape, num_data_points)
-    for k in range(1, num_data_points - min_test_points, interval):
-        # print(f"Train-Test Split with k = {k}")
+window_sizes = [63, 126, 252, 2520]
+#['Powell', 'L-BFGS-B', 'TNC']
+for window_size in window_sizes: 
+    print(f"Window Size: {window_size}")
+    for method in ['Nelder-Mead', 'Powell', 'CG', 'BFGS', 'L-BFGS-B', 'TNC', 'SLSQP']:
+        print(f"Method: {method}\n\n")
+        sharpe_ratios = []
         
-        # Split the data into train and test sets
-        train_data = returns.iloc[:k]
-        test_data = returns.iloc[k:]
+        for i in range(0, num_data_points, window_size):
+            start_index = i
+            end_index = min(i + window_size, num_data_points)
+            
+            data_window = returns.iloc[start_index:end_index]
+            
+            opt_results_sharpe = minimize(objective_sharpe, init_guess, args=data_window, method=method, bounds=bounds, constraints=cons)
+            optimal_weights_sharpe = opt_results_sharpe.x
+            
+            # Evaluate the portfolio on the data window
+            window_statistics = detailed_portfolio_statistics(optimal_weights_sharpe, data_window)
+            window_sharpe_ratio = window_statistics[6]  # Index 6 corresponds to Sharpe Ratio
+            
+            sharpe_ratios.append(window_sharpe_ratio)
         
-        opt_results_sharpe = minimize(objective_sharpe, init_guess, args=train_data, method=method, bounds=bounds, constraints=cons)
-        optimal_weights_sharpe = opt_results_sharpe.x
+        # Calculate mean, variance, and standard deviation of Sharpe ratios
+        mean_sharpe = np.mean(sharpe_ratios)
+        var_sharpe = np.var(sharpe_ratios)
+        std_sharpe = np.std(sharpe_ratios)
         
-        # Evaluate the portfolio on the test data
-        test_statistics = detailed_portfolio_statistics(optimal_weights_sharpe, test_data)
-        test_sharpe_ratio = test_statistics[6]  # Index 6 corresponds to Sharpe Ratio
+        print(f"Sharpe Ratios: {sharpe_ratios}")
+        print(f"Mean Sharpe Ratio: {mean_sharpe:.4f}")
+        print(f"Variance of Sharpe Ratios: {var_sharpe:.4f}")
+        print(f"Standard Deviation of Sharpe Ratios: {std_sharpe:.4f}")
+        print("\n")
         
-        k_values.append(k)
-        test_sharpe_ratios.append(test_sharpe_ratio)
-
-    # Calculate mean, variance, and standard deviation of Sharpe ratios
-    mean_sharpe = np.mean(test_sharpe_ratios)
-    var_sharpe = np.var(test_sharpe_ratios)
-    std_sharpe = np.std(test_sharpe_ratios)
-
-    print(f"Mean Sharpe Ratio: {mean_sharpe:.4f}")
-    print(f"Variance of Sharpe Ratios: {var_sharpe:.4f}")
-    print(f"Standard Deviation of Sharpe Ratios: {std_sharpe:.4f}")
-
-    # Plot k values vs. test Sharpe ratios
-    plt.figure(figsize=(10, 6))
-    plt.plot(k_values, test_sharpe_ratios, marker='o')
-    plt.xlabel('k')
-    plt.ylabel('Test Sharpe Ratio')
-    plt.title(f'k vs. Test Sharpe Ratio - {method}')
-    plt.grid(True)
-    plt.savefig(f"case_2/trial_3/graphs/{method}_sharpe_ratio_graph.png")
-    plt.close()
-
-    # Find the best value of k based on the highest test Sharpe ratio
-    best_k = k_values[np.argmax(test_sharpe_ratios)]
-    print(f"Best value of k: {best_k}")
+        # Plot Sharpe ratios
+        plt.figure(figsize=(10, 6))
+        plt.plot(range(len(sharpe_ratios)), sharpe_ratios, marker='o')
+        plt.text(100, 1, f"Mean sharpe: {mean_sharpe}", fontsize=12)
+        plt.text(0.1, 15, f"Mean Var: {var_sharpe}", fontsize=12)
+        plt.text(0.1, 30, f"Mean Std: {std_sharpe}", fontsize=12)
+        plt.xlabel('Window')
+        plt.ylabel('Sharpe Ratio')
+        plt.title(f'Sharpe Ratios - {method}')
+        plt.grid(True)
+        plt.savefig(f"case_2/trial_5/{window_size}_{method}_sharpe_ratios_graph.png")
+        plt.close()

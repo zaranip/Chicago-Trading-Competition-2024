@@ -8,4 +8,4 @@ algo = algos.BestMarkowitz()
 # run
 result = algo.run(data)
 print("BestMarkowitz")
-print(result.summary())
+print(result)

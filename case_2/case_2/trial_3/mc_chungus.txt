@@ -1,0 +1,24 @@
+Method: TNC
+(2520, 7) (2519, 6) 2519
+Mean Sharpe Ratio: nan
+Variance of Sharpe Ratios: nan
+Standard Deviation of Sharpe Ratios: nan
+Best value of k: 2518
+Method: SLSQP
+(2520, 7) (2519, 6) 2519
+Mean Sharpe Ratio: nan
+Variance of Sharpe Ratios: nan
+Standard Deviation of Sharpe Ratios: nan
+Best value of k: 2518
+Method: TNC
+(2520, 7) (2519, 6) 2519
+Mean Sharpe Ratio: 1.3605
+Variance of Sharpe Ratios: 0.4482
+Standard Deviation of Sharpe Ratios: 0.6695
+Best value of k: 2452
+Method: SLSQP
+(2520, 7) (2519, 6) 2519
+Mean Sharpe Ratio: 1.2825
+Variance of Sharpe Ratios: 0.4780
+Standard Deviation of Sharpe Ratios: 0.6914
+Best value of k: 2452

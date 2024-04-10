@@ -1,0 +1,70 @@
+Method: Nelder-Mead
+Sharpe Ratios: [4.159461757777814, 0.7353732402427544, 2.709395437936943, 1.0964311558949114, 2.444671609095364, 2.192783633568545, 8.336693760597914, 1.365967782520931, 6.277584360130951, 1.75166496158964]
+Mean Sharpe Ratio: 3.1070
+Variance of Sharpe Ratios: 5.4478
+Standard Deviation of Sharpe Ratios: 2.3340
+Method: Powell
+Sharpe Ratios: [3.941823733160263, 0.7224391041673792, 2.2881040112116966, 1.0949721492805462, 2.4410914419465968, 2.4232437502860287, 8.40638818903977, 1.3658675122326611, 5.412193855297854, 1.9198250560129746]
+Mean Sharpe Ratio: 3.0016
+Variance of Sharpe Ratios: 4.9740
+Standard Deviation of Sharpe Ratios: 2.2302
+Method: CG
+Sharpe Ratios: [3.8502582056531116, 1.6344916039762574, 3.2361121214046453, 3.2451557530675714, 5.130873027303848, 2.4957160145055557, 9.284192883889734, 3.328454116465773, 7.44524519590567, 2.0402681020120084]
+Mean Sharpe Ratio: 4.1691
+Variance of Sharpe Ratios: 5.4111
+Standard Deviation of Sharpe Ratios: 2.3262
+Method: BFGS
+Sharpe Ratios: [3.8205239086635516, nan, nan, nan, nan, 2.5488408380475103, 26.006265261919765, nan, 10.629332306501281, 2.0308766172560735]
+Mean Sharpe Ratio: nan
+Variance of Sharpe Ratios: nan
+Standard Deviation of Sharpe Ratios: nan
+Method: L-BFGS-B
+Sharpe Ratios: [3.7596025930169135, 0.7687222076871235, 2.42177374836062, 1.1088353810689526, 2.223031202774343, 2.4518176842870867, 5.178583400541238, 1.3553717644999246, 5.87989785986713, 1.8328285706640302]
+Mean Sharpe Ratio: 2.6980
+Variance of Sharpe Ratios: 2.6566
+Standard Deviation of Sharpe Ratios: 1.6299
+Method: TNC
+Sharpe Ratios: [3.778022186088767, 0.7739590281239384, 2.5135884476263035, 1.1089581031712994, 2.2033218740430245, 2.4455806914039715, 4.933105398009984, 1.3477067264631897, 5.743574096336737, 1.8181784086310109]
+Mean Sharpe Ratio: 2.6666
+Variance of Sharpe Ratios: 2.4595
+Standard Deviation of Sharpe Ratios: 1.5683
+Method: SLSQP
+Sharpe Ratios: [3.7978693223718754, 0.7584405220680932, 2.4737617916997845, 1.10777631321111, 2.199115676582502, 2.4656074492040227, 5.773709992703717, 1.3278894408862916, 6.312170936571582, 1.8293191968208176]
+Mean Sharpe Ratio: 2.8046
+Variance of Sharpe Ratios: 3.2894
+Standard Deviation of Sharpe Ratios: 1.8137
+Method: Nelder-Mead
+Sharpe Ratios: [9.63850246766597]
+Mean Sharpe Ratio: 9.6385
+Variance of Sharpe Ratios: 0.0000
+Standard Deviation of Sharpe Ratios: 0.0000
+Method: Powell
+Sharpe Ratios: [5.6781748363585836]
+Mean Sharpe Ratio: 5.6782
+Variance of Sharpe Ratios: 0.0000
+Standard Deviation of Sharpe Ratios: 0.0000
+Method: CG
+Sharpe Ratios: [6.618072010098615]
+Mean Sharpe Ratio: 6.6181
+Variance of Sharpe Ratios: 0.0000
+Standard Deviation of Sharpe Ratios: 0.0000
+Method: BFGS
+Sharpe Ratios: [8.279963191184603]
+Mean Sharpe Ratio: 8.2800
+Variance of Sharpe Ratios: 0.0000
+Standard Deviation of Sharpe Ratios: 0.0000
+Method: L-BFGS-B
+Sharpe Ratios: [4.83560310862823]
+Mean Sharpe Ratio: 4.8356
+Variance of Sharpe Ratios: 0.0000
+Standard Deviation of Sharpe Ratios: 0.0000
+Method: TNC
+Sharpe Ratios: [4.898628094174243]
+Mean Sharpe Ratio: 4.8986
+Variance of Sharpe Ratios: 0.0000
+Standard Deviation of Sharpe Ratios: 0.0000
+Method: SLSQP
+Sharpe Ratios: [4.363532868136089]
+Mean Sharpe Ratio: 4.3635
+Variance of Sharpe Ratios: 0.0000
+Standard Deviation of Sharpe Ratios: 0.0000
