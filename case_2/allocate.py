@@ -123,7 +123,7 @@ class PortfolioStatistics:
 def main():
     data_processor = DataProcessor('Case 2 Data 2024.csv')
     symbols = data_processor.symbols
-    train_returns, test_returns = data_processor.split_data(test_size=0.3, random_state=42)
+    train_returns, test_returns = data_processor.split_data(test_size=0, random_state=42)
 
     optimization_objective = OptimizationObjective(train_returns)
     portfolio_optimizer = PortfolioOptimizer(symbols, train_returns)
