@@ -782,4 +782,1962 @@ My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0
 My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
 My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
 My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
-My positions: 
+My positions: defaultdict(<class 'int'>, {'cash': -1069874, 'MKU': 10, 'IGM': 72, 'BRV': 42, 'DLO': 40, 'EPT': 43})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360196891, Error: No such order: 1712719835360196891
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1016395, 'MKU': 4, 'IGM': 72, 'BRV': 38, 'DLO': 38, 'EPT': 45})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360196928, Error: No such order: 1712719835360196928
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1058850, 'MKU': 4, 'IGM': 80, 'BRV': 38, 'DLO': 38, 'EPT': 45})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360196965, Error: No such order: 1712719835360196965
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1053310, 'MKU': 5, 'IGM': 80, 'BRV': 36, 'DLO': 39, 'EPT': 44})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360196999, Error: No such order: 1712719835360196999
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197005, Error: No such order: 1712719835360197005
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360196996, Error: No such order: 1712719835360196996
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197011, Error: No such order: 1712719835360197011
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360196998, Error: No such order: 1712719835360196998
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1158025, 'MKU': 10, 'IGM': 81, 'BRV': 44, 'DLO': 42, 'EPT': 47})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197034, Error: No such order: 1712719835360197034
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197051, Error: No such order: 1712719835360197051
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197053, Error: No such order: 1712719835360197053
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197055, Error: No such order: 1712719835360197055
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197061, Error: No such order: 1712719835360197061
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1232606, 'MKU': 10, 'IGM': 94, 'BRV': 47, 'DLO': 42, 'EPT': 45})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197068, Error: No such order: 1712719835360197068
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1296749, 'MKU': 13, 'IGM': 101, 'BRV': 52, 'DLO': 43, 'EPT': 41})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197114, Error: No such order: 1712719835360197114
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1296585, 'MKU': 14, 'IGM': 99, 'BRV': 52, 'DLO': 43, 'EPT': 42})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1347864, 'MKU': 15, 'IGM': 104, 'BRV': 53, 'DLO': 46, 'EPT': 42})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1342026, 'MKU': 15, 'IGM': 104, 'BRV': 51, 'DLO': 46, 'EPT': 43})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197200, Error: No such order: 1712719835360197200
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197219, Error: No such order: 1712719835360197219
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197221, Error: No such order: 1712719835360197221
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197227, Error: No such order: 1712719835360197227
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1325175, 'MKU': 15, 'IGM': 100, 'BRV': 49, 'DLO': 46, 'EPT': 46})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197248, Error: No such order: 1712719835360197248
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1366835, 'MKU': 14, 'IGM': 105, 'BRV': 52, 'DLO': 47, 'EPT': 46})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1418155, 'MKU': 14, 'IGM': 115, 'BRV': 52, 'DLO': 47, 'EPT': 46})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197306, Error: No such order: 1712719835360197306
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197318, Error: No such order: 1712719835360197318
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1370364, 'MKU': 11, 'IGM': 111, 'BRV': 49, 'DLO': 47, 'EPT': 47})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197331, Error: No such order: 1712719835360197331
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197347, Error: No such order: 1712719835360197347
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1312438, 'MKU': 9, 'IGM': 105, 'BRV': 47, 'DLO': 45, 'EPT': 48})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197378, Error: No such order: 1712719835360197378
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1296521, 'MKU': 9, 'IGM': 101, 'BRV': 47, 'DLO': 46, 'EPT': 48})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197393, Error: No such order: 1712719835360197393
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197399, Error: No such order: 1712719835360197399
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197401, Error: No such order: 1712719835360197401
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1216421, 'MKU': -1, 'IGM': 97, 'BRV': 47, 'DLO': 44, 'EPT': 49})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1215297, 'MKU': -1, 'IGM': 98, 'BRV': 45, 'DLO': 44, 'EPT': 50})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197457, Error: No such order: 1712719835360197457
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197471, Error: No such order: 1712719835360197471
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1176054, 'MKU': -5, 'IGM': 98, 'BRV': 41, 'DLO': 45, 'EPT': 50})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197474, Error: No such order: 1712719835360197474
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197479, Error: No such order: 1712719835360197479
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197498, Error: No such order: 1712719835360197498
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197500, Error: No such order: 1712719835360197500
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197502, Error: No such order: 1712719835360197502
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1064051, 'MKU': -11, 'IGM': 86, 'BRV': 35, 'DLO': 43, 'EPT': 56})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197520, Error: No such order: 1712719835360197520
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1064346, 'MKU': -11, 'IGM': 86, 'BRV': 36, 'DLO': 41, 'EPT': 57})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197541, Error: No such order: 1712719835360197541
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197565, Error: No such order: 1712719835360197565
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197567, Error: No such order: 1712719835360197567
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197571, Error: No such order: 1712719835360197571
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -990388, 'MKU': -15, 'IGM': 78, 'BRV': 32, 'DLO': 41, 'EPT': 60})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197588, Error: No such order: 1712719835360197588
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -996451, 'MKU': -15, 'IGM': 79, 'BRV': 33, 'DLO': 40, 'EPT': 60})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197609, Error: No such order: 1712719835360197609
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1018662, 'MKU': -13, 'IGM': 80, 'BRV': 34, 'DLO': 40, 'EPT': 60})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197643, Error: No such order: 1712719835360197643
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197653, Error: No such order: 1712719835360197653
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197644, Error: No such order: 1712719835360197644
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197659, Error: No such order: 1712719835360197659
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197661, Error: No such order: 1712719835360197661
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197663, Error: No such order: 1712719835360197663
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197665, Error: No such order: 1712719835360197665
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197671, Error: No such order: 1712719835360197671
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197673, Error: No such order: 1712719835360197673
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1225283, 'MKU': 0, 'IGM': 87, 'BRV': 44, 'DLO': 48, 'EPT': 60})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1234381, 'MKU': 1, 'IGM': 83, 'BRV': 45, 'DLO': 49, 'EPT': 63})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197716, Error: No such order: 1712719835360197716
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1309130, 'MKU': 4, 'IGM': 86, 'BRV': 50, 'DLO': 50, 'EPT': 65})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197769, Error: No such order: 1712719835360197769
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1317109, 'MKU': 4, 'IGM': 89, 'BRV': 46, 'DLO': 50, 'EPT': 68})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197805, Error: No such order: 1712719835360197805
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197813, Error: No such order: 1712719835360197813
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1261657, 'MKU': 4, 'IGM': 85, 'BRV': 40, 'DLO': 50, 'EPT': 68})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1280846, 'MKU': 7, 'IGM': 81, 'BRV': 41, 'DLO': 51, 'EPT': 71})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197856, Error: No such order: 1712719835360197856
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1309997, 'MKU': 7, 'IGM': 82, 'BRV': 41, 'DLO': 51, 'EPT': 76})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197912, Error: No such order: 1712719835360197912
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1314370, 'MKU': 8, 'IGM': 82, 'BRV': 40, 'DLO': 51, 'EPT': 77})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1344416, 'MKU': 9, 'IGM': 82, 'BRV': 41, 'DLO': 52, 'EPT': 80})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360197954, Error: No such order: 1712719835360197954
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1417340, 'MKU': 12, 'IGM': 82, 'BRV': 46, 'DLO': 55, 'EPT': 83})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1422846, 'MKU': 12, 'IGM': 83, 'BRV': 46, 'DLO': 55, 'EPT': 83})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198041, Error: No such order: 1712719835360198041
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1391660, 'MKU': 6, 'IGM': 86, 'BRV': 45, 'DLO': 53, 'EPT': 83})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1388736, 'MKU': 7, 'IGM': 82, 'BRV': 45, 'DLO': 53, 'EPT': 86})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198091, Error: No such order: 1712719835360198091
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198085, Error: No such order: 1712719835360198085
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198101, Error: No such order: 1712719835360198101
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198088, Error: No such order: 1712719835360198088
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1505629, 'MKU': 12, 'IGM': 85, 'BRV': 51, 'DLO': 59, 'EPT': 88})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198119, Error: No such order: 1712719835360198119
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198138, Error: No such order: 1712719835360198138
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198152, Error: No such order: 1712719835360198152
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1607278, 'MKU': 19, 'IGM': 85, 'BRV': 60, 'DLO': 60, 'EPT': 90})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198174, Error: No such order: 1712719835360198174
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198156, Error: No such order: 1712719835360198156
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198176, Error: No such order: 1712719835360198176
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1672472, 'MKU': 22, 'IGM': 93, 'BRV': 61, 'DLO': 60, 'EPT': 90})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198194, Error: No such order: 1712719835360198194
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198189, Error: No such order: 1712719835360198189
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198205, Error: No such order: 1712719835360198205
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198215, Error: No such order: 1712719835360198215
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198217, Error: No such order: 1712719835360198217
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198219, Error: No such order: 1712719835360198219
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1759458, 'MKU': 25, 'IGM': 98, 'BRV': 68, 'DLO': 62, 'EPT': 89})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1742464, 'MKU': 23, 'IGM': 98, 'BRV': 66, 'DLO': 62, 'EPT': 90})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198260, Error: No such order: 1712719835360198260
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1763975, 'MKU': 23, 'IGM': 100, 'BRV': 67, 'DLO': 63, 'EPT': 90})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1755405, 'MKU': 23, 'IGM': 100, 'BRV': 63, 'DLO': 63, 'EPT': 93})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198343, Error: No such order: 1712719835360198343
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198328, Error: No such order: 1712719835360198328
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1819980, 'MKU': 24, 'IGM': 104, 'BRV': 68, 'DLO': 64, 'EPT': 94})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198364, Error: No such order: 1712719835360198364
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198370, Error: No such order: 1712719835360198370
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198378, Error: No such order: 1712719835360198378
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198390, Error: No such order: 1712719835360198390
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198392, Error: No such order: 1712719835360198392
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1923575, 'MKU': 31, 'IGM': 104, 'BRV': 75, 'DLO': 67, 'EPT': 97})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198395, Error: No such order: 1712719835360198395
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2020730, 'MKU': 34, 'IGM': 116, 'BRV': 77, 'DLO': 68, 'EPT': 97})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198438, Error: No such order: 1712719835360198438
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198446, Error: No such order: 1712719835360198446
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198448, Error: No such order: 1712719835360198448
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2092151, 'MKU': 41, 'IGM': 116, 'BRV': 80, 'DLO': 71, 'EPT': 98})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2105311, 'MKU': 42, 'IGM': 114, 'BRV': 81, 'DLO': 71, 'EPT': 101})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2099271, 'MKU': 42, 'IGM': 112, 'BRV': 81, 'DLO': 72, 'EPT': 101})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198518, Error: No such order: 1712719835360198518
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2207927, 'MKU': 42, 'IGM': 112, 'BRV': 81, 'DLO': 72, 'EPT': 125})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2218488, 'MKU': 43, 'IGM': 112, 'BRV': 82, 'DLO': 72, 'EPT': 125})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2283924, 'MKU': 44, 'IGM': 121, 'BRV': 83, 'DLO': 73, 'EPT': 125})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2311557, 'MKU': 44, 'IGM': 135, 'BRV': 84, 'DLO': 73, 'EPT': 113})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198629, Error: No such order: 1712719835360198629
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198621, Error: No such order: 1712719835360198621
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198648, Error: No such order: 1712719835360198648
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198650, Error: No such order: 1712719835360198650
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198652, Error: No such order: 1712719835360198652
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2403051, 'MKU': 48, 'IGM': 142, 'BRV': 91, 'DLO': 74, 'EPT': 111})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2387107, 'MKU': 46, 'IGM': 136, 'BRV': 85, 'DLO': 74, 'EPT': 124})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198686, Error: No such order: 1712719835360198686
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2423662, 'MKU': 47, 'IGM': 132, 'BRV': 84, 'DLO': 75, 'EPT': 136})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198723, Error: No such order: 1712719835360198723
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198716, Error: No such order: 1712719835360198716
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2537880, 'MKU': 50, 'IGM': 145, 'BRV': 88, 'DLO': 78, 'EPT': 134})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2580083, 'MKU': 51, 'IGM': 145, 'BRV': 89, 'DLO': 78, 'EPT': 141})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198779, Error: No such order: 1712719835360198779
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198798, Error: No such order: 1712719835360198798
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2653232, 'MKU': 52, 'IGM': 149, 'BRV': 90, 'DLO': 79, 'EPT': 149})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198825, Error: No such order: 1712719835360198825
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198827, Error: No such order: 1712719835360198827
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198831, Error: No such order: 1712719835360198831
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2795408, 'MKU': 59, 'IGM': 163, 'BRV': 95, 'DLO': 80, 'EPT': 149})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198839, Error: No such order: 1712719835360198839
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2870984, 'MKU': 62, 'IGM': 167, 'BRV': 99, 'DLO': 80, 'EPT': 153})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198885, Error: No such order: 1712719835360198885
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198891, Error: No such order: 1712719835360198891
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2979616, 'MKU': 67, 'IGM': 175, 'BRV': 106, 'DLO': 81, 'EPT': 153})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198921, Error: No such order: 1712719835360198921
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198925, Error: No such order: 1712719835360198925
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198927, Error: No such order: 1712719835360198927
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3108548, 'MKU': 70, 'IGM': 186, 'BRV': 116, 'DLO': 82, 'EPT': 153})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3114243, 'MKU': 70, 'IGM': 182, 'BRV': 114, 'DLO': 83, 'EPT': 160})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198982, Error: No such order: 1712719835360198982
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360198992, Error: No such order: 1712719835360198992
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3063347, 'MKU': 64, 'IGM': 178, 'BRV': 114, 'DLO': 83, 'EPT': 160})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3136425, 'MKU': 65, 'IGM': 181, 'BRV': 123, 'DLO': 84, 'EPT': 160})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199042, Error: No such order: 1712719835360199042
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3118230, 'MKU': 63, 'IGM': 179, 'BRV': 121, 'DLO': 82, 'EPT': 165})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199054, Error: No such order: 1712719835360199054
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3212938, 'MKU': 63, 'IGM': 188, 'BRV': 129, 'DLO': 83, 'EPT': 165})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199085, Error: No such order: 1712719835360199085
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3361880, 'MKU': 69, 'IGM': 192, 'BRV': 143, 'DLO': 88, 'EPT': 165})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3395946, 'MKU': 69, 'IGM': 195, 'BRV': 143, 'DLO': 88, 'EPT': 169})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199170, Error: No such order: 1712719835360199170
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3429943, 'MKU': 69, 'IGM': 198, 'BRV': 143, 'DLO': 88, 'EPT': 173})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3455697, 'MKU': 69, 'IGM': 198, 'BRV': 147, 'DLO': 89, 'EPT': 173})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199218, Error: No such order: 1712719835360199218
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199224, Error: No such order: 1712719835360199224
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199226, Error: No such order: 1712719835360199226
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199238, Error: No such order: 1712719835360199238
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3410498, 'MKU': 61, 'IGM': 201, 'BRV': 145, 'DLO': 87, 'EPT': 173})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199246, Error: No such order: 1712719835360199246
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199252, Error: No such order: 1712719835360199252
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199262, Error: No such order: 1712719835360199262
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3349860, 'MKU': 57, 'IGM': 199, 'BRV': 143, 'DLO': 85, 'EPT': 171})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199280, Error: No such order: 1712719835360199280
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3332764, 'MKU': 57, 'IGM': 197, 'BRV': 141, 'DLO': 83, 'EPT': 174})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199305, Error: No such order: 1712719835360199305
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199326, Error: No such order: 1712719835360199326
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3392330, 'MKU': 58, 'IGM': 195, 'BRV': 147, 'DLO': 83, 'EPT': 181})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199332, Error: No such order: 1712719835360199332
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199342, Error: No such order: 1712719835360199342
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199348, Error: No such order: 1712719835360199348
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199350, Error: No such order: 1712719835360199350
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199334, Error: No such order: 1712719835360199334
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199354, Error: No such order: 1712719835360199354
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199356, Error: No such order: 1712719835360199356
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199358, Error: No such order: 1712719835360199358
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199360, Error: No such order: 1712719835360199360
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199362, Error: No such order: 1712719835360199362
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3568798, 'MKU': 65, 'IGM': 202, 'BRV': 161, 'DLO': 89, 'EPT': 181})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199381, Error: No such order: 1712719835360199381
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199393, Error: No such order: 1712719835360199393
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3504854, 'MKU': 61, 'IGM': 202, 'BRV': 153, 'DLO': 89, 'EPT': 181})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199401, Error: No such order: 1712719835360199401
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199407, Error: No such order: 1712719835360199407
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199415, Error: No such order: 1712719835360199415
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199417, Error: No such order: 1712719835360199417
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3412096, 'MKU': 55, 'IGM': 202, 'BRV': 147, 'DLO': 87, 'EPT': 177})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3369044, 'MKU': 51, 'IGM': 202, 'BRV': 143, 'DLO': 87, 'EPT': 177})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199469, Error: No such order: 1712719835360199469
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199486, Error: No such order: 1712719835360199486
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199488, Error: No such order: 1712719835360199488
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3284806, 'MKU': 47, 'IGM': 202, 'BRV': 137, 'DLO': 83, 'EPT': 175})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199492, Error: No such order: 1712719835360199492
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3421364, 'MKU': 52, 'IGM': 202, 'BRV': 156, 'DLO': 84, 'EPT': 175})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199519, Error: No such order: 1712719835360199519
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199529, Error: No such order: 1712719835360199529
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3557693, 'MKU': 59, 'IGM': 202, 'BRV': 167, 'DLO': 91, 'EPT': 176})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199564, Error: No such order: 1712719835360199564
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3589149, 'MKU': 59, 'IGM': 202, 'BRV': 171, 'DLO': 93, 'EPT': 176})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199582, Error: No such order: 1712719835360199582
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199583, Error: No such order: 1712719835360199583
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199606, Error: No such order: 1712719835360199606
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3712636, 'MKU': 65, 'IGM': 202, 'BRV': 182, 'DLO': 97, 'EPT': 179})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199632, Error: No such order: 1712719835360199632
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3798679, 'MKU': 72, 'IGM': 202, 'BRV': 188, 'DLO': 98, 'EPT': 182})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3844050, 'MKU': 75, 'IGM': 202, 'BRV': 192, 'DLO': 98, 'EPT': 184})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3823650, 'MKU': 75, 'IGM': 202, 'BRV': 190, 'DLO': 96, 'EPT': 184})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199705, Error: No such order: 1712719835360199705
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199727, Error: No such order: 1712719835360199727
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3838789, 'MKU': 76, 'IGM': 200, 'BRV': 192, 'DLO': 96, 'EPT': 186})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199736, Error: No such order: 1712719835360199736
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3872175, 'MKU': 76, 'IGM': 200, 'BRV': 192, 'DLO': 97, 'EPT': 192})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199789, Error: No such order: 1712719835360199789
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3872287, 'MKU': 77, 'IGM': 196, 'BRV': 193, 'DLO': 98, 'EPT': 193})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199808, Error: No such order: 1712719835360199808
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199823, Error: No such order: 1712719835360199823
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3892605, 'MKU': 77, 'IGM': 196, 'BRV': 195, 'DLO': 100, 'EPT': 193})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199829, Error: No such order: 1712719835360199829
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199859, Error: No such order: 1712719835360199859
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3951893, 'MKU': 78, 'IGM': 203, 'BRV': 196, 'DLO': 101, 'EPT': 195})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4016299, 'MKU': 79, 'IGM': 203, 'BRV': 197, 'DLO': 111, 'EPT': 196})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4016299, 'MKU': 79, 'IGM': 203, 'BRV': 197, 'DLO': 111, 'EPT': 196})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199942, Error: No such order: 1712719835360199942
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199951, Error: No such order: 1712719835360199951
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199953, Error: No such order: 1712719835360199953
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3988925, 'MKU': 77, 'IGM': 203, 'BRV': 191, 'DLO': 111, 'EPT': 199})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4038739, 'MKU': 77, 'IGM': 203, 'BRV': 192, 'DLO': 120, 'EPT': 199})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199984, Error: No such order: 1712719835360199984
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360199986, Error: No such order: 1712719835360199986
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4123525, 'MKU': 81, 'IGM': 203, 'BRV': 195, 'DLO': 129, 'EPT': 200})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360200025, Error: No such order: 1712719835360200025
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360200033, Error: No such order: 1712719835360200033
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360200042, Error: No such order: 1712719835360200042
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360200044, Error: No such order: 1712719835360200044
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4223413, 'MKU': 86, 'IGM': 203, 'BRV': 200, 'DLO': 139, 'EPT': 200})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4172047, 'MKU': 84, 'IGM': 203, 'BRV': 194, 'DLO': 137, 'EPT': 200})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4217028, 'MKU': 85, 'IGM': 203, 'BRV': 195, 'DLO': 144, 'EPT': 200})
+[DEBUG] Order Cancellation Failed - Order ID: 1712719835360200108, Error: No such order: 1712719835360200108
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4266985, 'MKU': 88, 'IGM': 203, 'BRV': 196, 'DLO': 150, 'EPT': 200})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4261690, 'MKU': 88, 'IGM': 203, 'BRV': 195, 'DLO': 150, 'EPT': 200})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4249880, 'MKU': 86, 'IGM': 203, 'BRV': 189, 'DLO': 156, 'EPT': 200})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4321216, 'MKU': 89, 'IGM': 203, 'BRV': 195, 'DLO': 161, 'EPT': 200})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+Object equality <__main__.OpenOrders object at 0x1943b9b70>
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+ConnectionError occurred: <AioRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:18.188.190.235:3333: Failed to connect to remote host: Connection refused"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:18.188.190.235:3333: Failed to connect to remote host: Connection refused", grpc_status:14, created_time:"2024-04-09T23:56:49.860572-04:00"}"
+>
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+Object equality <__main__.OpenOrders object at 0x1943bbfd0>
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+ConnectionError occurred: <AioRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:18.188.190.235:3333: Failed to connect to remote host: Connection refused"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:18.188.190.235:3333: Failed to connect to remote host: Connection refused", grpc_status:14, created_time:"2024-04-09T23:56:50.920688-04:00"}"
+>
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+Object equality <__main__.OpenOrders object at 0x19446ccd0>
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048006, Error: No such order: 1712721411922048006
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048001, Error: No such order: 1712721411922048001
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048011, Error: No such order: 1712721411922048011
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048002, Error: No such order: 1712721411922048002
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048017, Error: No such order: 1712721411922048017
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048019, Error: No such order: 1712721411922048019
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048021, Error: No such order: 1712721411922048021
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048003, Error: No such order: 1712721411922048003
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048023, Error: No such order: 1712721411922048023
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048025, Error: No such order: 1712721411922048025
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048027, Error: No such order: 1712721411922048027
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048004, Error: No such order: 1712721411922048004
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048029, Error: No such order: 1712721411922048029
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048031, Error: No such order: 1712721411922048031
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048033, Error: No such order: 1712721411922048033
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -197971, 'DLO': 6, 'MKU': 14, 'IGM': 14, 'BRV': 10, 'EPT': -6})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048045, Error: No such order: 1712721411922048045
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -203700, 'DLO': 6, 'MKU': 15, 'IGM': 15, 'BRV': 11, 'EPT': -8})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048066, Error: No such order: 1712721411922048066
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048067, Error: No such order: 1712721411922048067
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048094, Error: No such order: 1712721411922048094
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -238986, 'DLO': 8, 'MKU': 16, 'IGM': 16, 'BRV': 14, 'EPT': -8})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -187806, 'DLO': 8, 'MKU': 14, 'IGM': 14, 'BRV': 8, 'EPT': -8})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -198328, 'DLO': 8, 'MKU': 14, 'IGM': 15, 'BRV': 9, 'EPT': -8})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -203215, 'DLO': 8, 'MKU': 14, 'IGM': 15, 'BRV': 9, 'EPT': -7})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -203215, 'DLO': 8, 'MKU': 14, 'IGM': 15, 'BRV': 9, 'EPT': -7})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048226, Error: No such order: 1712721411922048226
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048207, Error: No such order: 1712721411922048207
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048208, Error: No such order: 1712721411922048208
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048209, Error: No such order: 1712721411922048209
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048210, Error: No such order: 1712721411922048210
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048211, Error: No such order: 1712721411922048211
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048212, Error: No such order: 1712721411922048212
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048203, Error: No such order: 1712721411922048203
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048213, Error: No such order: 1712721411922048213
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048214, Error: No such order: 1712721411922048214
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048215, Error: No such order: 1712721411922048215
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048216, Error: No such order: 1712721411922048216
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048217, Error: No such order: 1712721411922048217
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048218, Error: No such order: 1712721411922048218
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048234, Error: No such order: 1712721411922048234
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048204, Error: No such order: 1712721411922048204
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048219, Error: No such order: 1712721411922048219
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048220, Error: No such order: 1712721411922048220
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048221, Error: No such order: 1712721411922048221
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048222, Error: No such order: 1712721411922048222
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048223, Error: No such order: 1712721411922048223
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048224, Error: No such order: 1712721411922048224
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048235, Error: No such order: 1712721411922048235
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048205, Error: No such order: 1712721411922048205
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048225, Error: No such order: 1712721411922048225
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048226, Error: No such order: 1712721411922048226
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048227, Error: No such order: 1712721411922048227
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048228, Error: No such order: 1712721411922048228
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048229, Error: No such order: 1712721411922048229
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048230, Error: No such order: 1712721411922048230
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048236, Error: No such order: 1712721411922048236
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048256, Error: No such order: 1712721411922048256
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048258, Error: No such order: 1712721411922048258
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048206, Error: No such order: 1712721411922048206
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048231, Error: No such order: 1712721411922048231
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048232, Error: No such order: 1712721411922048232
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048237, Error: No such order: 1712721411922048237
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048262, Error: No such order: 1712721411922048262
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -244706, 'DLO': 9, 'MKU': 15, 'IGM': 18, 'BRV': 12, 'EPT': -7})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -315730, 'DLO': 12, 'MKU': 18, 'IGM': 21, 'BRV': 17, 'EPT': -7})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048287, Error: No such order: 1712721411922048287
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048293, Error: No such order: 1712721411922048293
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048301, Error: No such order: 1712721411922048301
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -397853, 'DLO': 12, 'MKU': 21, 'IGM': 28, 'BRV': 22, 'EPT': -6})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048303, Error: No such order: 1712721411922048303
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048308, Error: No such order: 1712721411922048308
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048321, Error: No such order: 1712721411922048321
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048327, Error: No such order: 1712721411922048327
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048333, Error: No such order: 1712721411922048333
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048335, Error: No such order: 1712721411922048335
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048337, Error: No such order: 1712721411922048337
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -300524, 'DLO': 12, 'MKU': 15, 'IGM': 24, 'BRV': 10, 'EPT': -3})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048339, Error: No such order: 1712721411922048339
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -345651, 'DLO': 14, 'MKU': 18, 'IGM': 25, 'BRV': 13, 'EPT': -3})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048379, Error: No such order: 1712721411922048379
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -376816, 'DLO': 15, 'MKU': 19, 'IGM': 28, 'BRV': 16, 'EPT': -5})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048433, Error: No such order: 1712721411922048433
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -424065, 'DLO': 16, 'MKU': 19, 'IGM': 35, 'BRV': 19, 'EPT': -7})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048450, Error: No such order: 1712721411922048450
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -424818, 'DLO': 16, 'MKU': 19, 'IGM': 38, 'BRV': 20, 'EPT': -11})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -408454, 'DLO': 16, 'MKU': 19, 'IGM': 34, 'BRV': 20, 'EPT': -10})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048540, Error: No such order: 1712721411922048540
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048542, Error: No such order: 1712721411922048542
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -417924, 'DLO': 17, 'MKU': 20, 'IGM': 33, 'BRV': 21, 'EPT': -10})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048576, Error: No such order: 1712721411922048576
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -411366, 'DLO': 17, 'MKU': 20, 'IGM': 29, 'BRV': 21, 'EPT': -7})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048581, Error: No such order: 1712721411922048581
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048608, Error: No such order: 1712721411922048608
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -496474, 'DLO': 21, 'MKU': 23, 'IGM': 32, 'BRV': 28, 'EPT': -7})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048620, Error: No such order: 1712721411922048620
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048627, Error: No such order: 1712721411922048627
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048633, Error: No such order: 1712721411922048633
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048641, Error: No such order: 1712721411922048641
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -597537, 'DLO': 24, 'MKU': 28, 'IGM': 41, 'BRV': 35, 'EPT': -11})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048660, Error: No such order: 1712721411922048660
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -573066, 'DLO': 27, 'MKU': 26, 'IGM': 41, 'BRV': 29, 'EPT': -11})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048704, Error: No such order: 1712721411922048704
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -588823, 'DLO': 27, 'MKU': 24, 'IGM': 44, 'BRV': 30, 'EPT': -10})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048720, Error: No such order: 1712721411922048720
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048721, Error: No such order: 1712721411922048721
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048744, Error: No such order: 1712721411922048744
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048746, Error: No such order: 1712721411922048746
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -714018, 'DLO': 31, 'MKU': 30, 'IGM': 51, 'BRV': 35, 'EPT': -7})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048775, Error: No such order: 1712721411922048775
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048779, Error: No such order: 1712721411922048779
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -729834, 'DLO': 31, 'MKU': 32, 'IGM': 54, 'BRV': 33, 'EPT': -7})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -755828, 'DLO': 31, 'MKU': 32, 'IGM': 61, 'BRV': 33, 'EPT': -9})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048823, Error: No such order: 1712721411922048823
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048849, Error: No such order: 1712721411922048849
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048826, Error: No such order: 1712721411922048826
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048851, Error: No such order: 1712721411922048851
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -804307, 'DLO': 33, 'MKU': 33, 'IGM': 62, 'BRV': 39, 'EPT': -9})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048877, Error: No such order: 1712721411922048877
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048879, Error: No such order: 1712721411922048879
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -923359, 'DLO': 36, 'MKU': 38, 'IGM': 73, 'BRV': 44, 'EPT': -9})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048889, Error: No such order: 1712721411922048889
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -934154, 'DLO': 36, 'MKU': 38, 'IGM': 73, 'BRV': 42, 'EPT': -5})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -968301, 'DLO': 37, 'MKU': 38, 'IGM': 76, 'BRV': 45, 'EPT': -5})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048957, Error: No such order: 1712721411922048957
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048958, Error: No such order: 1712721411922048958
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922048959, Error: No such order: 1712721411922048959
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1006761, 'DLO': 38, 'MKU': 42, 'IGM': 72, 'BRV': 48, 'EPT': -1})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1044242, 'DLO': 41, 'MKU': 43, 'IGM': 71, 'BRV': 53, 'EPT': -1})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049025, Error: No such order: 1712721411922049025
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049042, Error: No such order: 1712721411922049042
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049044, Error: No such order: 1712721411922049044
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049058, Error: No such order: 1712721411922049058
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1135429, 'DLO': 42, 'MKU': 50, 'IGM': 74, 'BRV': 60, 'EPT': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049079, Error: No such order: 1712721411922049079
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049085, Error: No such order: 1712721411922049085
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049093, Error: No such order: 1712721411922049093
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1230338, 'DLO': 43, 'MKU': 55, 'IGM': 81, 'BRV': 69, 'EPT': -2})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049122, Error: No such order: 1712721411922049122
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1259665, 'DLO': 43, 'MKU': 56, 'IGM': 84, 'BRV': 70, 'EPT': -1})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049135, Error: No such order: 1712721411922049135
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1284189, 'DLO': 43, 'MKU': 57, 'IGM': 84, 'BRV': 71, 'EPT': 2})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1281080, 'DLO': 43, 'MKU': 57, 'IGM': 84, 'BRV': 67, 'EPT': 5})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049202, Error: No such order: 1712721411922049202
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1375091, 'DLO': 46, 'MKU': 62, 'IGM': 91, 'BRV': 74, 'EPT': 3})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049251, Error: No such order: 1712721411922049251
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1430449, 'DLO': 47, 'MKU': 67, 'IGM': 91, 'BRV': 79, 'EPT': 4})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049269, Error: No such order: 1712721411922049269
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1472532, 'DLO': 48, 'MKU': 68, 'IGM': 95, 'BRV': 82, 'EPT': 4})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1476893, 'DLO': 48, 'MKU': 68, 'IGM': 98, 'BRV': 82, 'EPT': 2})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049354, Error: No such order: 1712721411922049354
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049366, Error: No such order: 1712721411922049366
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1426716, 'DLO': 48, 'MKU': 64, 'IGM': 96, 'BRV': 76, 'EPT': 3})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049375, Error: No such order: 1712721411922049375
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049396, Error: No such order: 1712721411922049396
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049398, Error: No such order: 1712721411922049398
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1444483, 'DLO': 48, 'MKU': 65, 'IGM': 91, 'BRV': 81, 'EPT': 6})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049405, Error: No such order: 1712721411922049405
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049421, Error: No such order: 1712721411922049421
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049427, Error: No such order: 1712721411922049427
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049437, Error: No such order: 1712721411922049437
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1523259, 'DLO': 50, 'MKU': 68, 'IGM': 96, 'BRV': 88, 'EPT': 6})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1577731, 'DLO': 51, 'MKU': 71, 'IGM': 97, 'BRV': 95, 'EPT': 6})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049485, Error: No such order: 1712721411922049485
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049493, Error: No such order: 1712721411922049493
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1610998, 'DLO': 54, 'MKU': 74, 'IGM': 97, 'BRV': 95, 'EPT': 7})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049526, Error: No such order: 1712721411922049526
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049513, Error: No such order: 1712721411922049513
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1676011, 'DLO': 55, 'MKU': 81, 'IGM': 93, 'BRV': 100, 'EPT': 12})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049551, Error: No such order: 1712721411922049551
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049553, Error: No such order: 1712721411922049553
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049555, Error: No such order: 1712721411922049555
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049565, Error: No such order: 1712721411922049565
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049572, Error: No such order: 1712721411922049572
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1709505, 'DLO': 58, 'MKU': 84, 'IGM': 89, 'BRV': 100, 'EPT': 17})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1717043, 'DLO': 58, 'MKU': 85, 'IGM': 87, 'BRV': 103, 'EPT': 17})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1721981, 'DLO': 58, 'MKU': 85, 'IGM': 88, 'BRV': 103, 'EPT': 17})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049646, Error: No such order: 1712721411922049646
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049647, Error: No such order: 1712721411922049647
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049662, Error: No such order: 1712721411922049662
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049668, Error: No such order: 1712721411922049668
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049670, Error: No such order: 1712721411922049670
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049672, Error: No such order: 1712721411922049672
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049649, Error: No such order: 1712721411922049649
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049674, Error: No such order: 1712721411922049674
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1924486, 'DLO': 62, 'MKU': 95, 'IGM': 99, 'BRV': 125, 'EPT': 15})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -1984985, 'DLO': 62, 'MKU': 96, 'IGM': 102, 'BRV': 135, 'EPT': 15})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049708, Error: No such order: 1712721411922049708
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049703, Error: No such order: 1712721411922049703
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049733, Error: No such order: 1712721411922049733
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2035029, 'DLO': 63, 'MKU': 96, 'IGM': 112, 'BRV': 137, 'EPT': 13})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2040190, 'DLO': 63, 'MKU': 96, 'IGM': 112, 'BRV': 137, 'EPT': 14})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049768, Error: No such order: 1712721411922049768
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049781, Error: No such order: 1712721411922049781
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049787, Error: No such order: 1712721411922049787
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2009419, 'DLO': 61, 'MKU': 90, 'IGM': 110, 'BRV': 137, 'EPT': 17})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2087213, 'DLO': 61, 'MKU': 90, 'IGM': 120, 'BRV': 144, 'EPT': 17})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049817, Error: No such order: 1712721411922049817
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049838, Error: No such order: 1712721411922049838
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049819, Error: No such order: 1712721411922049819
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049844, Error: No such order: 1712721411922049844
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2200591, 'DLO': 62, 'MKU': 94, 'IGM': 131, 'BRV': 153, 'EPT': 17})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049870, Error: No such order: 1712721411922049870
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2249009, 'DLO': 63, 'MKU': 94, 'IGM': 142, 'BRV': 151, 'EPT': 17})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049899, Error: No such order: 1712721411922049899
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2301422, 'DLO': 63, 'MKU': 94, 'IGM': 152, 'BRV': 151, 'EPT': 18})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049914, Error: No such order: 1712721411922049914
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049916, Error: No such order: 1712721411922049916
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049927, Error: No such order: 1712721411922049927
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2297541, 'DLO': 63, 'MKU': 92, 'IGM': 148, 'BRV': 146, 'EPT': 27})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049954, Error: No such order: 1712721411922049954
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049964, Error: No such order: 1712721411922049964
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049970, Error: No such order: 1712721411922049970
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2283780, 'DLO': 63, 'MKU': 90, 'IGM': 146, 'BRV': 146, 'EPT': 28})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049971, Error: No such order: 1712721411922049971
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922049995, Error: No such order: 1712721411922049995
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2343570, 'DLO': 64, 'MKU': 91, 'IGM': 150, 'BRV': 152, 'EPT': 29})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050018, Error: No such order: 1712721411922050018
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050020, Error: No such order: 1712721411922050020
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2293768, 'DLO': 64, 'MKU': 85, 'IGM': 150, 'BRV': 146, 'EPT': 30})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2386479, 'DLO': 67, 'MKU': 90, 'IGM': 156, 'BRV': 152, 'EPT': 30})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050062, Error: No such order: 1712721411922050062
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050086, Error: No such order: 1712721411922050086
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2367461, 'DLO': 67, 'MKU': 90, 'IGM': 150, 'BRV': 152, 'EPT': 32})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050092, Error: No such order: 1712721411922050092
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050105, Error: No such order: 1712721411922050105
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050115, Error: No such order: 1712721411922050115
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050117, Error: No such order: 1712721411922050117
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050119, Error: No such order: 1712721411922050119
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2327028, 'DLO': 67, 'MKU': 84, 'IGM': 148, 'BRV': 148, 'EPT': 35})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050134, Error: No such order: 1712721411922050134
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050144, Error: No such order: 1712721411922050144
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2266569, 'DLO': 65, 'MKU': 78, 'IGM': 142, 'BRV': 144, 'EPT': 40})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050153, Error: No such order: 1712721411922050153
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2218316, 'DLO': 63, 'MKU': 74, 'IGM': 136, 'BRV': 143, 'EPT': 43})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050194, Error: No such order: 1712721411922050194
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2154567, 'DLO': 59, 'MKU': 72, 'IGM': 130, 'BRV': 141, 'EPT': 44})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2238565, 'DLO': 60, 'MKU': 73, 'IGM': 138, 'BRV': 147, 'EPT': 45})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2312253, 'DLO': 61, 'MKU': 74, 'IGM': 145, 'BRV': 153, 'EPT': 45})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050294, Error: No such order: 1712721411922050294
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2386228, 'DLO': 62, 'MKU': 75, 'IGM': 153, 'BRV': 158, 'EPT': 45})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050311, Error: No such order: 1712721411922050311
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2403906, 'DLO': 62, 'MKU': 76, 'IGM': 153, 'BRV': 165, 'EPT': 41})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050351, Error: No such order: 1712721411922050351
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050337, Error: No such order: 1712721411922050337
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050357, Error: No such order: 1712721411922050357
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050365, Error: No such order: 1712721411922050365
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2522551, 'DLO': 63, 'MKU': 79, 'IGM': 167, 'BRV': 171, 'EPT': 41})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2551019, 'DLO': 64, 'MKU': 80, 'IGM': 167, 'BRV': 174, 'EPT': 42})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050408, Error: No such order: 1712721411922050408
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050414, Error: No such order: 1712721411922050414
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050400, Error: No such order: 1712721411922050400
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050426, Error: No such order: 1712721411922050426
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2652893, 'DLO': 67, 'MKU': 85, 'IGM': 175, 'BRV': 179, 'EPT': 42})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050451, Error: No such order: 1712721411922050451
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050455, Error: No such order: 1712721411922050455
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2805745, 'DLO': 72, 'MKU': 94, 'IGM': 184, 'BRV': 188, 'EPT': 42})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050460, Error: No such order: 1712721411922050460
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2739674, 'DLO': 70, 'MKU': 88, 'IGM': 178, 'BRV': 182, 'EPT': 48})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050504, Error: No such order: 1712721411922050504
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2792326, 'DLO': 71, 'MKU': 91, 'IGM': 178, 'BRV': 184, 'EPT': 53})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2807851, 'DLO': 71, 'MKU': 91, 'IGM': 181, 'BRV': 184, 'EPT': 53})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050569, Error: No such order: 1712721411922050569
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2816236, 'DLO': 72, 'MKU': 91, 'IGM': 179, 'BRV': 186, 'EPT': 54})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050599, Error: No such order: 1712721411922050599
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050623, Error: No such order: 1712721411922050623
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2842004, 'DLO': 73, 'MKU': 95, 'IGM': 175, 'BRV': 190, 'EPT': 55})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050651, Error: No such order: 1712721411922050651
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050635, Error: No such order: 1712721411922050635
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050661, Error: No such order: 1712721411922050661
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2947990, 'DLO': 74, 'MKU': 100, 'IGM': 183, 'BRV': 198, 'EPT': 55})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2933876, 'DLO': 74, 'MKU': 100, 'IGM': 181, 'BRV': 194, 'EPT': 58})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050700, Error: No such order: 1712721411922050700
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2981417, 'DLO': 74, 'MKU': 102, 'IGM': 183, 'BRV': 197, 'EPT': 61})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050751, Error: No such order: 1712721411922050751
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050759, Error: No such order: 1712721411922050759
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050761, Error: No such order: 1712721411922050761
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050765, Error: No such order: 1712721411922050765
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2892577, 'DLO': 74, 'MKU': 98, 'IGM': 175, 'BRV': 190, 'EPT': 62})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2863011, 'DLO': 74, 'MKU': 94, 'IGM': 173, 'BRV': 190, 'EPT': 62})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050814, Error: No such order: 1712721411922050814
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050816, Error: No such order: 1712721411922050816
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050822, Error: No such order: 1712721411922050822
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050824, Error: No such order: 1712721411922050824
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050828, Error: No such order: 1712721411922050828
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050830, Error: No such order: 1712721411922050830
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2747294, 'DLO': 68, 'MKU': 90, 'IGM': 163, 'BRV': 186, 'EPT': 63})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050837, Error: No such order: 1712721411922050837
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2718976, 'DLO': 68, 'MKU': 88, 'IGM': 157, 'BRV': 182, 'EPT': 70})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2723698, 'DLO': 68, 'MKU': 88, 'IGM': 157, 'BRV': 182, 'EPT': 71})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050902, Error: No such order: 1712721411922050902
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050903, Error: No such order: 1712721411922050903
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050918, Error: No such order: 1712721411922050918
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050905, Error: No such order: 1712721411922050905
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050930, Error: No such order: 1712721411922050930
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2838801, 'DLO': 72, 'MKU': 96, 'IGM': 164, 'BRV': 188, 'EPT': 69})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050949, Error: No such order: 1712721411922050949
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050957, Error: No such order: 1712721411922050957
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050961, Error: No such order: 1712721411922050961
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -2975392, 'DLO': 75, 'MKU': 105, 'IGM': 171, 'BRV': 196, 'EPT': 70})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050962, Error: No such order: 1712721411922050962
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050967, Error: No such order: 1712721411922050967
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050973, Error: No such order: 1712721411922050973
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922050983, Error: No such order: 1712721411922050983
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3137617, 'DLO': 80, 'MKU': 121, 'IGM': 171, 'BRV': 203, 'EPT': 77})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051006, Error: No such order: 1712721411922051006
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051021, Error: No such order: 1712721411922051021
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3225476, 'DLO': 83, 'MKU': 133, 'IGM': 172, 'BRV': 203, 'EPT': 80})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051036, Error: No such order: 1712721411922051036
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3206976, 'DLO': 83, 'MKU': 131, 'IGM': 172, 'BRV': 203, 'EPT': 78})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051062, Error: No such order: 1712721411922051062
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051073, Error: No such order: 1712721411922051073
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051085, Error: No such order: 1712721411922051085
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3226296, 'DLO': 82, 'MKU': 138, 'IGM': 164, 'BRV': 203, 'EPT': 86})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3219496, 'DLO': 82, 'MKU': 138, 'IGM': 162, 'BRV': 203, 'EPT': 87})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051126, Error: No such order: 1712721411922051126
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3274049, 'DLO': 82, 'MKU': 145, 'IGM': 162, 'BRV': 203, 'EPT': 92})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051176, Error: No such order: 1712721411922051176
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051178, Error: No such order: 1712721411922051178
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051180, Error: No such order: 1712721411922051180
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3207432, 'DLO': 82, 'MKU': 143, 'IGM': 152, 'BRV': 203, 'EPT': 92})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051183, Error: No such order: 1712721411922051183
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3257093, 'DLO': 84, 'MKU': 143, 'IGM': 159, 'BRV': 203, 'EPT': 92})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051213, Error: No such order: 1712721411922051213
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051236, Error: No such order: 1712721411922051236
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3256853, 'DLO': 85, 'MKU': 143, 'IGM': 155, 'BRV': 203, 'EPT': 96})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051246, Error: No such order: 1712721411922051246
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051247, Error: No such order: 1712721411922051247
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3365268, 'DLO': 85, 'MKU': 149, 'IGM': 169, 'BRV': 203, 'EPT': 96})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051276, Error: No such order: 1712721411922051276
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051277, Error: No such order: 1712721411922051277
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051291, Error: No such order: 1712721411922051291
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051301, Error: No such order: 1712721411922051301
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3472791, 'DLO': 87, 'MKU': 163, 'IGM': 175, 'BRV': 203, 'EPT': 96})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3513072, 'DLO': 88, 'MKU': 167, 'IGM': 178, 'BRV': 203, 'EPT': 96})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051346, Error: No such order: 1712721411922051346
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051352, Error: No such order: 1712721411922051352
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051354, Error: No such order: 1712721411922051354
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3630558, 'DLO': 93, 'MKU': 181, 'IGM': 185, 'BRV': 203, 'EPT': 94})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051393, Error: No such order: 1712721411922051393
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3658111, 'DLO': 93, 'MKU': 181, 'IGM': 189, 'BRV': 203, 'EPT': 95})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051415, Error: No such order: 1712721411922051415
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3630739, 'DLO': 91, 'MKU': 177, 'IGM': 189, 'BRV': 203, 'EPT': 95})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051432, Error: No such order: 1712721411922051432
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3682972, 'DLO': 92, 'MKU': 182, 'IGM': 195, 'BRV': 203, 'EPT': 93})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3693347, 'DLO': 92, 'MKU': 182, 'IGM': 196, 'BRV': 203, 'EPT': 94})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051514, Error: No such order: 1712721411922051514
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3672790, 'DLO': 92, 'MKU': 182, 'IGM': 190, 'BRV': 203, 'EPT': 97})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051539, Error: No such order: 1712721411922051539
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3677424, 'DLO': 92, 'MKU': 180, 'IGM': 194, 'BRV': 203, 'EPT': 95})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3656600, 'DLO': 92, 'MKU': 178, 'IGM': 192, 'BRV': 203, 'EPT': 95})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051595, Error: No such order: 1712721411922051595
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051601, Error: No such order: 1712721411922051601
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051603, Error: No such order: 1712721411922051603
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3609872, 'DLO': 88, 'MKU': 172, 'IGM': 192, 'BRV': 203, 'EPT': 95})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3646004, 'DLO': 89, 'MKU': 175, 'IGM': 195, 'BRV': 203, 'EPT': 95})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051648, Error: No such order: 1712721411922051648
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3601364, 'DLO': 87, 'MKU': 169, 'IGM': 193, 'BRV': 203, 'EPT': 96})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3663394, 'DLO': 90, 'MKU': 177, 'IGM': 194, 'BRV': 203, 'EPT': 97})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051718, Error: No such order: 1712721411922051718
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051728, Error: No such order: 1712721411922051728
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3691263, 'DLO': 91, 'MKU': 182, 'IGM': 194, 'BRV': 203, 'EPT': 97})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051739, Error: No such order: 1712721411922051739
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051750, Error: No such order: 1712721411922051750
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051756, Error: No such order: 1712721411922051756
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051762, Error: No such order: 1712721411922051762
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051764, Error: No such order: 1712721411922051764
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051766, Error: No such order: 1712721411922051766
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3584945, 'DLO': 87, 'MKU': 174, 'IGM': 184, 'BRV': 203, 'EPT': 99})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3627550, 'DLO': 88, 'MKU': 177, 'IGM': 188, 'BRV': 203, 'EPT': 99})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051825, Error: No such order: 1712721411922051825
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3700712, 'DLO': 89, 'MKU': 184, 'IGM': 194, 'BRV': 203, 'EPT': 99})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3739641, 'DLO': 92, 'MKU': 188, 'IGM': 195, 'BRV': 203, 'EPT': 99})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051881, Error: No such order: 1712721411922051881
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3803883, 'DLO': 93, 'MKU': 194, 'IGM': 202, 'BRV': 203, 'EPT': 97})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3792203, 'DLO': 93, 'MKU': 194, 'IGM': 200, 'BRV': 203, 'EPT': 97})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051925, Error: No such order: 1712721411922051925
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051947, Error: No such order: 1712721411922051947
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3794497, 'DLO': 93, 'MKU': 195, 'IGM': 198, 'BRV': 203, 'EPT': 99})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3799238, 'DLO': 94, 'MKU': 195, 'IGM': 198, 'BRV': 203, 'EPT': 99})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922051979, Error: No such order: 1712721411922051979
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3772991, 'DLO': 94, 'MKU': 195, 'IGM': 192, 'BRV': 203, 'EPT': 101})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052014, Error: No such order: 1712721411922052014
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3816578, 'DLO': 94, 'MKU': 196, 'IGM': 197, 'BRV': 203, 'EPT': 103})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052046, Error: No such order: 1712721411922052046
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3803740, 'DLO': 94, 'MKU': 196, 'IGM': 198, 'BRV': 203, 'EPT': 99})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3775366, 'DLO': 92, 'MKU': 192, 'IGM': 198, 'BRV': 203, 'EPT': 99})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052105, Error: No such order: 1712721411922052105
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3843706, 'DLO': 97, 'MKU': 199, 'IGM': 200, 'BRV': 203, 'EPT': 99})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052147, Error: No such order: 1712721411922052147
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3867154, 'DLO': 100, 'MKU': 200, 'IGM': 200, 'BRV': 203, 'EPT': 100})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3853136, 'DLO': 101, 'MKU': 198, 'IGM': 200, 'BRV': 203, 'EPT': 98})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3904593, 'DLO': 111, 'MKU': 199, 'IGM': 200, 'BRV': 203, 'EPT': 98})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052214, Error: No such order: 1712721411922052214
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052223, Error: No such order: 1712721411922052223
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052229, Error: No such order: 1712721411922052229
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052231, Error: No such order: 1712721411922052231
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -3969939, 'DLO': 122, 'MKU': 203, 'IGM': 196, 'BRV': 203, 'EPT': 102})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4013057, 'DLO': 130, 'MKU': 203, 'IGM': 197, 'BRV': 203, 'EPT': 102})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052277, Error: No such order: 1712721411922052277
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4088264, 'DLO': 140, 'MKU': 203, 'IGM': 202, 'BRV': 203, 'EPT': 102})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052299, Error: No such order: 1712721411922052299
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052304, Error: No such order: 1712721411922052304
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052317, Error: No such order: 1712721411922052317
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4099472, 'DLO': 142, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 100})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052320, Error: No such order: 1712721411922052320
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052321, Error: No such order: 1712721411922052321
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4211610, 'DLO': 155, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 111})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052345, Error: No such order: 1712721411922052345
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4295732, 'DLO': 160, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 124})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4342470, 'DLO': 160, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 134})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052398, Error: No such order: 1712721411922052398
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4333168, 'DLO': 158, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 134})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052413, Error: No such order: 1712721411922052413
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4431108, 'DLO': 170, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 143})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052445, Error: No such order: 1712721411922052445
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4458744, 'DLO': 176, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 143})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052461, Error: No such order: 1712721411922052461
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4449278, 'DLO': 176, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 141})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052463, Error: No such order: 1712721411922052463
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052484, Error: No such order: 1712721411922052484
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052482, Error: No such order: 1712721411922052482
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4495865, 'DLO': 182, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 145})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4561395, 'DLO': 184, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 157})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052536, Error: No such order: 1712721411922052536
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4584688, 'DLO': 182, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 164})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052538, Error: No such order: 1712721411922052538
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052559, Error: No such order: 1712721411922052559
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4566032, 'DLO': 178, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 164})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4566032, 'DLO': 178, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 164})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4566032, 'DLO': 178, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 164})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4547232, 'DLO': 178, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 160})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052624, Error: No such order: 1712721411922052624
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4528338, 'DLO': 178, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 156})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052668, Error: No such order: 1712721411922052668
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4533078, 'DLO': 176, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 159})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4547265, 'DLO': 179, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 159})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052719, Error: No such order: 1712721411922052719
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4580178, 'DLO': 186, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 159})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4603883, 'DLO': 186, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 164})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4603883, 'DLO': 186, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 164})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4641639, 'DLO': 188, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 170})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4641639, 'DLO': 188, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 170})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4669903, 'DLO': 188, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 176})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4660485, 'DLO': 188, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 174})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052873, Error: No such order: 1712721411922052873
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4641377, 'DLO': 190, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 168})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052904, Error: No such order: 1712721411922052904
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4593879, 'DLO': 182, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 166})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052921, Error: No such order: 1712721411922052921
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4584085, 'DLO': 184, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 162})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4603429, 'DLO': 184, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 166})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052966, Error: No such order: 1712721411922052966
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922052965, Error: No such order: 1712721411922052965
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4622303, 'DLO': 188, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 166})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4660875, 'DLO': 190, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 172})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4704187, 'DLO': 190, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 181})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4704187, 'DLO': 190, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 181})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922053059, Error: No such order: 1712721411922053059
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4684977, 'DLO': 188, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 179})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922053090, Error: No such order: 1712721411922053090
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4675251, 'DLO': 188, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 177})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4684799, 'DLO': 190, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 177})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922053107, Error: No such order: 1712721411922053107
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922053134, Error: No such order: 1712721411922053134
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4646033, 'DLO': 186, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 173})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4626375, 'DLO': 186, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 169})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4655861, 'DLO': 186, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 175})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4690007, 'DLO': 188, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 180})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922053225, Error: No such order: 1712721411922053225
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4709177, 'DLO': 192, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 180})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922053240, Error: No such order: 1712721411922053240
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4748124, 'DLO': 192, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 188})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4752922, 'DLO': 193, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 188})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922053286, Error: No such order: 1712721411922053286
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922053295, Error: No such order: 1712721411922053295
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4781990, 'DLO': 191, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 196})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4820411, 'DLO': 194, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 201})
+[DEBUG] Order Cancellation Failed - Order ID: 1712721411922053336, Error: No such order: 1712721411922053336
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4829957, 'DLO': 194, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4834760, 'DLO': 195, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853877, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4863399, 'DLO': 201, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4863399, 'DLO': 201, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4863399, 'DLO': 201, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'EPT': 0, 'DLO': 0, 'MKU': 0, 'IGM': 0, 'BRV': 0})
+My positions: defaultdict(<class 'int'>, {'cash': -4853817, 'DLO': 199, 'MKU': 203, 'IGM': 204, 'BRV': 203, 'EPT': 203})
