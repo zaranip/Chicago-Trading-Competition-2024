@@ -48295,3 +48295,1708 @@
 [INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5778, Avg Filled Price: 6427.0
 [TRY ASK] IGM - ask: 1 - penny_ask_price: 5777, avg_filled_price: 6427.0
 [INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5342, Avg Filled Price: 5634.6
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5341, avg_filled_price: 5634.6
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5345, Avg Filled Price: 5678.6
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5344, avg_filled_price: 5678.6
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5342, Avg Filled Price: 5670.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5341, avg_filled_price: 5670.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5345, Avg Filled Price: 5719.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5344, avg_filled_price: 5719.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5342, Avg Filled Price: 5722.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5341, avg_filled_price: 5722.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5345, Avg Filled Price: 5422.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5344, avg_filled_price: 5422.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 90, 'MKU': 94, 'IGM': 95, 'BRV': 83}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 5010, Avg Filled Price: 4647.4
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 5022, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 5010, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 5022, Avg Filled Price: 4629.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 5010, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 5022, Avg Filled Price: 4613.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5086, Avg Filled Price: 5109.6
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5085, avg_filled_price: 5109.6
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5097, Avg Filled Price: 5098.6
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5096, avg_filled_price: 5098.6
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5086, Avg Filled Price: 5119.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5085, avg_filled_price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5097, Avg Filled Price: 5123.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5096, avg_filled_price: 5123.0
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5086, Avg Filled Price: 5106.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5085, avg_filled_price: 5106.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5097, Avg Filled Price: 5157.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5096, avg_filled_price: 5157.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5266, Avg Filled Price: 5351.2
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5265, avg_filled_price: 5351.2
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5268, Avg Filled Price: 5369.8
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5267, avg_filled_price: 5369.8
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5266, Avg Filled Price: 5378.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5265, avg_filled_price: 5378.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5268, Avg Filled Price: 5391.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5267, avg_filled_price: 5391.5
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5266, Avg Filled Price: 5382.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5265, avg_filled_price: 5382.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5268, Avg Filled Price: 5345.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5267, avg_filled_price: 5345.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5298, Avg Filled Price: 5623.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5297, avg_filled_price: 5623.8
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5310, Avg Filled Price: 5642.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5309, avg_filled_price: 5642.8
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5298, Avg Filled Price: 5732.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5297, avg_filled_price: 5732.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5310, Avg Filled Price: 5689.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5309, avg_filled_price: 5689.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5298, Avg Filled Price: 5677.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5297, avg_filled_price: 5677.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5310, Avg Filled Price: 5664.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5309, avg_filled_price: 5664.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 90, 'MKU': 94, 'IGM': 95, 'BRV': 83}
+[FILL] Order Fill - MKU: 5 @ 5261
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 5018, Avg Filled Price: 4646.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 5030, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 5018, Avg Filled Price: 4621.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 5030, Avg Filled Price: 4681.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 5018, Avg Filled Price: 4613.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 5030, Avg Filled Price: 4598.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5083, Avg Filled Price: 5110.0
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5082, avg_filled_price: 5110.0
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5087, Avg Filled Price: 5105.0
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5086, avg_filled_price: 5105.0
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5083, Avg Filled Price: 5119.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5082, avg_filled_price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5087, Avg Filled Price: 5117.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5086, avg_filled_price: 5117.0
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5083, Avg Filled Price: 5116.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5082, avg_filled_price: 5116.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5087, Avg Filled Price: 5107.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5086, avg_filled_price: 5107.0
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5244, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5256, Avg Filled Price: 5360.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5255, avg_filled_price: 5360.4
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5244, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5256, Avg Filled Price: 5389.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5255, avg_filled_price: 5389.5
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5244, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5256, Avg Filled Price: 5383.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5255, avg_filled_price: 5383.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5244, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5741, Avg Filled Price: 6204.0
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5740, avg_filled_price: 6204.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5741, Avg Filled Price: 6379.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5740, avg_filled_price: 6379.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5741, Avg Filled Price: 6407.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5740, avg_filled_price: 6407.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5277, Avg Filled Price: 5656.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5276, avg_filled_price: 5656.2
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5287, Avg Filled Price: 5601.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5286, avg_filled_price: 5601.0
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5277, Avg Filled Price: 5712.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5276, avg_filled_price: 5712.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5287, Avg Filled Price: 5645.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5286, avg_filled_price: 5645.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5277, Avg Filled Price: 5677.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5276, avg_filled_price: 5677.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5287, Avg Filled Price: 5669.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5286, avg_filled_price: 5669.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 90, 'MKU': 102, 'IGM': 100, 'BRV': 83}
+[FILL] Order Fill - DLO: 5 @ 5046
+[FILL] Order Fill - DLO: 2 @ 5046
+[FILL] Order Fill - DLO: 1 @ 5046
+[FILL] Order Fill - IGM: 5 @ 5745
+[FILL] Order Fill - IGM: 2 @ 5745
+[FILL] Order Fill - IGM: 1 @ 5745
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4992, Avg Filled Price: 4637.6
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 5004, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4992, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 5004, Avg Filled Price: 4681.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4992, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 5004, Avg Filled Price: 4669.0
+[INFO] DLO - Level: L0, Side: bid, Qty: -11, Penny Price: 5040, Avg Filled Price: None
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5046, Avg Filled Price: 5085.8
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5045, avg_filled_price: 5085.8
+[INFO] DLO - Level: L1, Side: bid, Qty: -11, Penny Price: 5040, Avg Filled Price: None
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5046, Avg Filled Price: 5101.5
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5045, avg_filled_price: 5101.5
+[INFO] DLO - Level: L2, Side: bid, Qty: -11, Penny Price: 5040, Avg Filled Price: None
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5046, Avg Filled Price: 5114.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5045, avg_filled_price: 5114.0
+[INFO] DLO - Level: L3, Side: bid, Qty: -11, Penny Price: 5040, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5185, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5197, Avg Filled Price: 5338.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5196, avg_filled_price: 5338.4
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5185, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5197, Avg Filled Price: 5374.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5196, avg_filled_price: 5374.5
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5185, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5197, Avg Filled Price: 5405.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5196, avg_filled_price: 5405.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5185, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: bid, Qty: 5, Penny Price: 5755, Avg Filled Price: 6378.4
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5754, avg_filled_price: 6378.4
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5766, Avg Filled Price: 6248.8
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5765, avg_filled_price: 6248.8
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5755, Avg Filled Price: 6106.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5754, avg_filled_price: 6106.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5766, Avg Filled Price: 6415.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5765, avg_filled_price: 6415.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5755, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5754, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5766, Avg Filled Price: 6461.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5765, avg_filled_price: 6461.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5203, Avg Filled Price: 5555.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5202, avg_filled_price: 5555.0
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5214, Avg Filled Price: 5617.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5213, avg_filled_price: 5617.2
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5203, Avg Filled Price: 5729.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5202, avg_filled_price: 5729.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5214, Avg Filled Price: 5574.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5213, avg_filled_price: 5574.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5203, Avg Filled Price: 5676.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5202, avg_filled_price: 5676.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5214, Avg Filled Price: 5669.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5213, avg_filled_price: 5669.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 111, 'MKU': 102, 'IGM': 92, 'BRV': 83}
+[FILL] Order Fill - IGM: 5 @ 5757
+[FILL] Order Fill - DLO: 5 @ 5044
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 5006, Avg Filled Price: 4647.4
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 5018, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 5006, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 5018, Avg Filled Price: 4678.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 5006, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 5018, Avg Filled Price: 4662.0
+[INFO] DLO - Level: L0, Side: bid, Qty: -8, Penny Price: 5044, Avg Filled Price: None
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5056, Avg Filled Price: 5110.2
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5055, avg_filled_price: 5110.2
+[INFO] DLO - Level: L1, Side: bid, Qty: -8, Penny Price: 5044, Avg Filled Price: None
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5056, Avg Filled Price: 5121.5
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5055, avg_filled_price: 5121.5
+[INFO] DLO - Level: L2, Side: bid, Qty: -8, Penny Price: 5044, Avg Filled Price: None
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5056, Avg Filled Price: 5119.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5055, avg_filled_price: 5119.0
+[INFO] DLO - Level: L3, Side: bid, Qty: -8, Penny Price: 5044, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5211, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5222, Avg Filled Price: 5309.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5221, avg_filled_price: 5309.4
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5211, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5222, Avg Filled Price: 5345.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5221, avg_filled_price: 5345.0
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5211, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5222, Avg Filled Price: 5348.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5221, avg_filled_price: 5348.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5211, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5742, Avg Filled Price: 6229.333333333333
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5741, avg_filled_price: 6229.333333333333
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5754, Avg Filled Price: 6303.6
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5753, avg_filled_price: 6303.6
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5742, Avg Filled Price: 6417.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5741, avg_filled_price: 6417.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5754, Avg Filled Price: 6350.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5753, avg_filled_price: 6350.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5742, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5741, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5754, Avg Filled Price: 6367.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5753, avg_filled_price: 6367.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5231, Avg Filled Price: 5701.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5230, avg_filled_price: 5701.2
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5243, Avg Filled Price: 5638.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5242, avg_filled_price: 5638.2
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5231, Avg Filled Price: 5657.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5230, avg_filled_price: 5657.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5243, Avg Filled Price: 5677.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5242, avg_filled_price: 5677.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5231, Avg Filled Price: 5669.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5230, avg_filled_price: 5669.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5243, Avg Filled Price: 5724.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5242, avg_filled_price: 5724.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 108, 'MKU': 102, 'IGM': 97, 'BRV': 83}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4978, Avg Filled Price: 4646.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4990, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4978, Avg Filled Price: 4637.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4990, Avg Filled Price: 4637.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4978, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4990, Avg Filled Price: 4613.0
+[INFO] DLO - Level: L0, Side: bid, Qty: -8, Penny Price: 5039, Avg Filled Price: None
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5052, Avg Filled Price: 5096.8
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5051, avg_filled_price: 5096.8
+[INFO] DLO - Level: L1, Side: bid, Qty: -8, Penny Price: 5039, Avg Filled Price: None
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5052, Avg Filled Price: 5113.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5051, avg_filled_price: 5113.0
+[INFO] DLO - Level: L2, Side: bid, Qty: -8, Penny Price: 5039, Avg Filled Price: None
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5052, Avg Filled Price: 5114.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5051, avg_filled_price: 5114.0
+[INFO] DLO - Level: L3, Side: bid, Qty: -8, Penny Price: 5039, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5209, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5221, Avg Filled Price: 5329.0
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5220, avg_filled_price: 5329.0
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5209, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5221, Avg Filled Price: 5348.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5220, avg_filled_price: 5348.0
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5209, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5221, Avg Filled Price: 5379.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5220, avg_filled_price: 5379.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5209, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5765, Avg Filled Price: 6407.666666666667
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5764, avg_filled_price: 6407.666666666667
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5777, Avg Filled Price: 6146.4
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5776, avg_filled_price: 6146.4
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5765, Avg Filled Price: 6106.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5764, avg_filled_price: 6106.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5777, Avg Filled Price: 6423.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5776, avg_filled_price: 6423.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5765, Avg Filled Price: 5745.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5764, avg_filled_price: 5745.0
+[AGGRESSIVE ASK] IGM - Placed Aggressive Ask Order. ID: 1712710481790151011, Qty: 1, Price: 5755.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5777, Avg Filled Price: 6427.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5776, avg_filled_price: 6427.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5248, Avg Filled Price: 5633.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5247, avg_filled_price: 5633.4
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5260, Avg Filled Price: 5629.6
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5259, avg_filled_price: 5629.6
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5248, Avg Filled Price: 5735.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5247, avg_filled_price: 5735.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5260, Avg Filled Price: 5588.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5259, avg_filled_price: 5588.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5248, Avg Filled Price: 5701.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5247, avg_filled_price: 5701.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5260, Avg Filled Price: 5664.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5259, avg_filled_price: 5664.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 108, 'MKU': 102, 'IGM': 97, 'BRV': 83}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4965, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4977, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4965, Avg Filled Price: 4600.0
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4977, Avg Filled Price: 4681.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4965, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4977, Avg Filled Price: 4598.0
+[INFO] DLO - Level: L0, Side: bid, Qty: -8, Penny Price: 5040, Avg Filled Price: None
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5052, Avg Filled Price: 5111.4
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5051, avg_filled_price: 5111.4
+[INFO] DLO - Level: L1, Side: bid, Qty: -8, Penny Price: 5040, Avg Filled Price: None
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5052, Avg Filled Price: 5090.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5051, avg_filled_price: 5090.0
+[INFO] DLO - Level: L2, Side: bid, Qty: -8, Penny Price: 5040, Avg Filled Price: None
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5052, Avg Filled Price: 5120.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5051, avg_filled_price: 5120.0
+[INFO] DLO - Level: L3, Side: bid, Qty: -8, Penny Price: 5040, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5211, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5223, Avg Filled Price: 5323.2
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5222, avg_filled_price: 5323.2
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5211, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5223, Avg Filled Price: 5335.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5222, avg_filled_price: 5335.0
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5211, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5223, Avg Filled Price: 5412.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5222, avg_filled_price: 5412.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5211, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5811, Avg Filled Price: 6166.666666666667
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5810, avg_filled_price: 6166.666666666667
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5823, Avg Filled Price: 6192.0
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5822, avg_filled_price: 6192.0
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5811, Avg Filled Price: 6417.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5810, avg_filled_price: 6417.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5823, Avg Filled Price: 6423.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5822, avg_filled_price: 6423.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5811, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5810, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5823, Avg Filled Price: 6367.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5822, avg_filled_price: 6367.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5260, Avg Filled Price: 5632.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5259, avg_filled_price: 5632.0
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5270, Avg Filled Price: 5657.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5269, avg_filled_price: 5657.4
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5260, Avg Filled Price: 5743.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5259, avg_filled_price: 5743.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5270, Avg Filled Price: 5677.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5269, avg_filled_price: 5677.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5260, Avg Filled Price: 5744.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5259, avg_filled_price: 5744.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5270, Avg Filled Price: 5664.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5269, avg_filled_price: 5664.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 108, 'MKU': 102, 'IGM': 97, 'BRV': 83}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4963, Avg Filled Price: 4637.6
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4976, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4963, Avg Filled Price: 4636.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4976, Avg Filled Price: 4640.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4963, Avg Filled Price: 4613.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4976, Avg Filled Price: 4669.0
+[INFO] DLO - Level: L0, Side: bid, Qty: -1, Penny Price: 5039, Avg Filled Price: None
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5045, Avg Filled Price: 5095.8
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5044, avg_filled_price: 5095.8
+[INFO] DLO - Level: L1, Side: bid, Qty: -1, Penny Price: 5039, Avg Filled Price: None
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5045, Avg Filled Price: 5106.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5044, avg_filled_price: 5106.0
+[INFO] DLO - Level: L2, Side: bid, Qty: -1, Penny Price: 5039, Avg Filled Price: None
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5045, Avg Filled Price: 5102.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5044, avg_filled_price: 5102.0
+[INFO] DLO - Level: L3, Side: bid, Qty: -1, Penny Price: 5039, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5215, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5227, Avg Filled Price: 5285.8
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5226, avg_filled_price: 5285.8
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5215, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5227, Avg Filled Price: 5375.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5226, avg_filled_price: 5375.5
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5215, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5227, Avg Filled Price: 5349.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5226, avg_filled_price: 5349.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5215, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5802, Avg Filled Price: 6229.333333333333
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5801, avg_filled_price: 6229.333333333333
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5814, Avg Filled Price: 6150.8
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5813, avg_filled_price: 6150.8
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5802, Avg Filled Price: 6417.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5801, avg_filled_price: 6417.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5814, Avg Filled Price: 6369.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5813, avg_filled_price: 6369.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5802, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5801, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5814, Avg Filled Price: 6461.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5813, avg_filled_price: 6461.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5261, Avg Filled Price: 5607.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5260, avg_filled_price: 5607.0
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5273, Avg Filled Price: 5608.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5272, avg_filled_price: 5608.8
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5261, Avg Filled Price: 5701.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5260, avg_filled_price: 5701.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5273, Avg Filled Price: 5698.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5272, avg_filled_price: 5698.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5261, Avg Filled Price: 5669.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5260, avg_filled_price: 5669.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5273, Avg Filled Price: 5736.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5272, avg_filled_price: 5736.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 101, 'MKU': 102, 'IGM': 97, 'BRV': 83}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4990, Avg Filled Price: 4662.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 5002, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4990, Avg Filled Price: 4621.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 5002, Avg Filled Price: 4637.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4990, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 5002, Avg Filled Price: 4613.0
+[INFO] DLO - Level: L0, Side: bid, Qty: -6, Penny Price: 5030, Avg Filled Price: None
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5041, Avg Filled Price: 5090.2
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5040, avg_filled_price: 5090.2
+[INFO] DLO - Level: L1, Side: bid, Qty: -6, Penny Price: 5030, Avg Filled Price: None
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5041, Avg Filled Price: 5116.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5040, avg_filled_price: 5116.0
+[INFO] DLO - Level: L2, Side: bid, Qty: -6, Penny Price: 5030, Avg Filled Price: None
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5041, Avg Filled Price: 5093.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5040, avg_filled_price: 5093.0
+[INFO] DLO - Level: L3, Side: bid, Qty: -6, Penny Price: 5030, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5207, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5217, Avg Filled Price: 5313.2
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5216, avg_filled_price: 5313.2
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5207, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5217, Avg Filled Price: 5352.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5216, avg_filled_price: 5352.0
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5207, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5217, Avg Filled Price: 5380.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5216, avg_filled_price: 5380.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5207, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5781, Avg Filled Price: 6401.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5780, avg_filled_price: 6401.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5793, Avg Filled Price: 6183.4
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5792, avg_filled_price: 6183.4
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5781, Avg Filled Price: 6055.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5780, avg_filled_price: 6055.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5793, Avg Filled Price: 6404.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5792, avg_filled_price: 6404.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5781, Avg Filled Price: 5745.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5780, avg_filled_price: 5745.0
+[AGGRESSIVE ASK] IGM - Placed Aggressive Ask Order. ID: 1712710481790151084, Qty: 1, Price: 5763.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5793, Avg Filled Price: 6442.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5792, avg_filled_price: 6442.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5232, Avg Filled Price: 5623.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5231, avg_filled_price: 5623.8
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5238, Avg Filled Price: 5634.6
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5237, avg_filled_price: 5634.6
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5232, Avg Filled Price: 5701.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5231, avg_filled_price: 5701.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5238, Avg Filled Price: 5645.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5237, avg_filled_price: 5645.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5232, Avg Filled Price: 5701.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5231, avg_filled_price: 5701.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5238, Avg Filled Price: 5664.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5237, avg_filled_price: 5664.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 106, 'MKU': 102, 'IGM': 97, 'BRV': 83}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4999, Avg Filled Price: 4646.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 5011, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4999, Avg Filled Price: 4600.0
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 5011, Avg Filled Price: 4645.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4999, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 5011, Avg Filled Price: 4669.0
+[INFO] DLO - Level: L0, Side: bid, Qty: -6, Penny Price: 5027, Avg Filled Price: None
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5040, Avg Filled Price: 5142.8
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5039, avg_filled_price: 5142.8
+[INFO] DLO - Level: L1, Side: bid, Qty: -6, Penny Price: 5027, Avg Filled Price: None
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5040, Avg Filled Price: 5111.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5039, avg_filled_price: 5111.0
+[INFO] DLO - Level: L2, Side: bid, Qty: -6, Penny Price: 5027, Avg Filled Price: None
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5040, Avg Filled Price: 5119.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5039, avg_filled_price: 5119.0
+[INFO] DLO - Level: L3, Side: bid, Qty: -6, Penny Price: 5027, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5202, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5216, Avg Filled Price: 5326.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5215, avg_filled_price: 5326.4
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5202, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5216, Avg Filled Price: 5374.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5215, avg_filled_price: 5374.0
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5202, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5216, Avg Filled Price: 5345.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5215, avg_filled_price: 5345.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5202, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5767, Avg Filled Price: 6352.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5766, avg_filled_price: 6352.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5779, Avg Filled Price: 6183.4
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5778, avg_filled_price: 6183.4
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5767, Avg Filled Price: 6106.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5766, avg_filled_price: 6106.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5779, Avg Filled Price: 6450.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5778, avg_filled_price: 6450.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5767, Avg Filled Price: 6468.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5766, avg_filled_price: 6468.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5779, Avg Filled Price: 6442.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5778, avg_filled_price: 6442.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5218, Avg Filled Price: 5637.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5217, avg_filled_price: 5637.4
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5230, Avg Filled Price: 5646.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5229, avg_filled_price: 5646.2
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5218, Avg Filled Price: 5704.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5217, avg_filled_price: 5704.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5230, Avg Filled Price: 5730.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5229, avg_filled_price: 5730.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5218, Avg Filled Price: 5744.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5217, avg_filled_price: 5744.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5230, Avg Filled Price: 5724.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5229, avg_filled_price: 5724.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 106, 'MKU': 102, 'IGM': 97, 'BRV': 83}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4984, Avg Filled Price: 4646.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4995, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4984, Avg Filled Price: 4636.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4995, Avg Filled Price: 4629.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4984, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4995, Avg Filled Price: 4669.0
+[INFO] DLO - Level: L0, Side: bid, Qty: -6, Penny Price: 5024, Avg Filled Price: None
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5036, Avg Filled Price: 5125.6
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5035, avg_filled_price: 5125.6
+[INFO] DLO - Level: L1, Side: bid, Qty: -6, Penny Price: 5024, Avg Filled Price: None
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5036, Avg Filled Price: 5086.5
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5035, avg_filled_price: 5086.5
+[INFO] DLO - Level: L2, Side: bid, Qty: -6, Penny Price: 5024, Avg Filled Price: None
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5036, Avg Filled Price: 5125.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5035, avg_filled_price: 5125.0
+[INFO] DLO - Level: L3, Side: bid, Qty: -6, Penny Price: 5024, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5182, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5192, Avg Filled Price: 5353.2
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5191, avg_filled_price: 5353.2
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5182, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5192, Avg Filled Price: 5344.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5191, avg_filled_price: 5344.0
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5182, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5192, Avg Filled Price: 5349.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5191, avg_filled_price: 5349.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5182, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5782, Avg Filled Price: 6374.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5781, avg_filled_price: 6374.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5794, Avg Filled Price: 6127.0
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5793, avg_filled_price: 6127.0
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5782, Avg Filled Price: 6106.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5781, avg_filled_price: 6106.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5794, Avg Filled Price: 6404.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5793, avg_filled_price: 6404.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5782, Avg Filled Price: 5745.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5781, avg_filled_price: 5745.0
+[AGGRESSIVE ASK] IGM - Placed Aggressive Ask Order. ID: 1712710481790151133, Qty: 1, Price: 5764.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5794, Avg Filled Price: 6461.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5793, avg_filled_price: 6461.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5200, Avg Filled Price: 5654.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5199, avg_filled_price: 5654.2
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5211, Avg Filled Price: 5603.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5210, avg_filled_price: 5603.8
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5200, Avg Filled Price: 5709.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5199, avg_filled_price: 5709.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5211, Avg Filled Price: 5597.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5210, avg_filled_price: 5597.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5200, Avg Filled Price: 5677.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5199, avg_filled_price: 5677.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5211, Avg Filled Price: 5724.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5210, avg_filled_price: 5724.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 106, 'MKU': 102, 'IGM': 97, 'BRV': 83}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4967, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4977, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4967, Avg Filled Price: 4659.0
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4977, Avg Filled Price: 4590.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4967, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4977, Avg Filled Price: 4613.0
+[INFO] DLO - Level: L0, Side: bid, Qty: -6, Penny Price: 5035, Avg Filled Price: None
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5039, Avg Filled Price: 5112.0
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5038, avg_filled_price: 5112.0
+[INFO] DLO - Level: L1, Side: bid, Qty: -6, Penny Price: 5035, Avg Filled Price: None
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5039, Avg Filled Price: 5127.5
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5038, avg_filled_price: 5127.5
+[INFO] DLO - Level: L2, Side: bid, Qty: -6, Penny Price: 5035, Avg Filled Price: None
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5039, Avg Filled Price: 5112.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5038, avg_filled_price: 5112.0
+[INFO] DLO - Level: L3, Side: bid, Qty: -6, Penny Price: 5035, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5197, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5207, Avg Filled Price: 5303.6
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5206, avg_filled_price: 5303.6
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5197, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5207, Avg Filled Price: 5346.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5206, avg_filled_price: 5346.5
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5197, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5207, Avg Filled Price: 5349.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5206, avg_filled_price: 5349.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5197, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5818, Avg Filled Price: 6160.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5817, avg_filled_price: 6160.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5822, Avg Filled Price: 6055.0
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5821, avg_filled_price: 6055.0
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5818, Avg Filled Price: 6106.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5817, avg_filled_price: 6106.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5822, Avg Filled Price: 6395.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5821, avg_filled_price: 6395.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5818, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5817, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5822, Avg Filled Price: 6461.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5821, avg_filled_price: 6461.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5235, Avg Filled Price: 5631.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5234, avg_filled_price: 5631.0
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5238, Avg Filled Price: 5635.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5237, avg_filled_price: 5635.0
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5235, Avg Filled Price: 5670.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5234, avg_filled_price: 5670.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5238, Avg Filled Price: 5525.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5237, avg_filled_price: 5525.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5235, Avg Filled Price: 5701.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5234, avg_filled_price: 5701.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5238, Avg Filled Price: 5664.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5237, avg_filled_price: 5664.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 106, 'MKU': 102, 'IGM': 97, 'BRV': 83}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4939, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4951, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4939, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4951, Avg Filled Price: 4637.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4939, Avg Filled Price: 4613.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4951, Avg Filled Price: 4662.0
+[INFO] DLO - Level: L0, Side: bid, Qty: -6, Penny Price: 5037, Avg Filled Price: None
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5039, Avg Filled Price: 5118.8
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5038, avg_filled_price: 5118.8
+[INFO] DLO - Level: L1, Side: bid, Qty: -6, Penny Price: 5037, Avg Filled Price: None
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5039, Avg Filled Price: 5097.5
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5038, avg_filled_price: 5097.5
+[INFO] DLO - Level: L2, Side: bid, Qty: -6, Penny Price: 5037, Avg Filled Price: None
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5039, Avg Filled Price: 5125.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5038, avg_filled_price: 5125.0
+[INFO] DLO - Level: L3, Side: bid, Qty: -6, Penny Price: 5037, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5202, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5214, Avg Filled Price: 5309.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5213, avg_filled_price: 5309.4
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5202, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5214, Avg Filled Price: 5361.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5213, avg_filled_price: 5361.5
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5202, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5214, Avg Filled Price: 5380.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5213, avg_filled_price: 5380.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5202, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5838, Avg Filled Price: 6193.333333333333
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5837, avg_filled_price: 6193.333333333333
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5843, Avg Filled Price: 5973.8
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5842, avg_filled_price: 5973.8
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5838, Avg Filled Price: 6106.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5837, avg_filled_price: 6106.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5843, Avg Filled Price: 6387.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5842, avg_filled_price: 6387.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5838, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5837, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5843, Avg Filled Price: 6367.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5842, avg_filled_price: 6367.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5264, Avg Filled Price: 5595.6
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5263, avg_filled_price: 5595.6
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5276, Avg Filled Price: 5554.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5275, avg_filled_price: 5554.2
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5264, Avg Filled Price: 5639.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5263, avg_filled_price: 5639.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5276, Avg Filled Price: 5694.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5275, avg_filled_price: 5694.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5264, Avg Filled Price: 5722.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5263, avg_filled_price: 5722.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5276, Avg Filled Price: 5713.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5275, avg_filled_price: 5713.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 106, 'MKU': 102, 'IGM': 97, 'BRV': 83}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4926, Avg Filled Price: 4647.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4938, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4926, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4938, Avg Filled Price: 4640.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4926, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4938, Avg Filled Price: 4669.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5063, Avg Filled Price: 5107.6
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5062, avg_filled_price: 5107.6
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5072, Avg Filled Price: 5128.6
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5071, avg_filled_price: 5128.6
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5063, Avg Filled Price: 5119.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5062, avg_filled_price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5072, Avg Filled Price: 5100.5
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5071, avg_filled_price: 5100.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5063, Avg Filled Price: 5119.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5062, avg_filled_price: 5119.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5072, Avg Filled Price: 5093.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5071, avg_filled_price: 5093.0
+[INFO] MKU - Level: L0, Side: bid, Qty: -2, Penny Price: 5231, Avg Filled Price: None
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5238, Avg Filled Price: 5307.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5237, avg_filled_price: 5307.4
+[INFO] MKU - Level: L1, Side: bid, Qty: -2, Penny Price: 5231, Avg Filled Price: None
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5238, Avg Filled Price: 5353.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5237, avg_filled_price: 5353.5
+[INFO] MKU - Level: L2, Side: bid, Qty: -2, Penny Price: 5231, Avg Filled Price: None
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5238, Avg Filled Price: 5412.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5237, avg_filled_price: 5412.0
+[INFO] MKU - Level: L3, Side: bid, Qty: -2, Penny Price: 5231, Avg Filled Price: None
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5851, Avg Filled Price: 6263.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5850, avg_filled_price: 6263.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5859, Avg Filled Price: 6264.2
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5858, avg_filled_price: 6264.2
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5851, Avg Filled Price: 6055.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5850, avg_filled_price: 6055.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5859, Avg Filled Price: 6395.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5858, avg_filled_price: 6395.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5851, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5850, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5859, Avg Filled Price: 6442.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5858, avg_filled_price: 6442.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5317, Avg Filled Price: 5690.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5316, avg_filled_price: 5690.4
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5322, Avg Filled Price: 5620.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5321, avg_filled_price: 5620.8
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5317, Avg Filled Price: 5693.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5316, avg_filled_price: 5693.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5322, Avg Filled Price: 5698.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5321, avg_filled_price: 5698.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5317, Avg Filled Price: 5722.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5316, avg_filled_price: 5722.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5322, Avg Filled Price: 5664.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5321, avg_filled_price: 5664.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 94, 'MKU': 102, 'IGM': 97, 'BRV': 83}
+[FILL] Order Fill - DLO: 5 @ 5071
+[FILL] Order Fill - DLO: 2 @ 5071
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4937, Avg Filled Price: 4647.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4949, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4937, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4949, Avg Filled Price: 4645.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4937, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4949, Avg Filled Price: 4669.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5096, Avg Filled Price: 5093.4
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5095, avg_filled_price: 5093.4
+[AGGRESSIVE ASK] DLO - Placed Aggressive Ask Order. ID: 1712710481790151223, Qty: 5, Price: 5095.0
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5107, Avg Filled Price: 5115.0
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5106, avg_filled_price: 5115.0
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5096, Avg Filled Price: 5095.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5095, avg_filled_price: 5095.0
+[AGGRESSIVE ASK] DLO - Placed Aggressive Ask Order. ID: 1712710481790151226, Qty: 2, Price: 5096.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5107, Avg Filled Price: 5111.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5106, avg_filled_price: 5111.0
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5096, Avg Filled Price: 5111.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5095, avg_filled_price: 5111.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5107, Avg Filled Price: 5135.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5106, avg_filled_price: 5135.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5296, Avg Filled Price: 5330.0
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5295, avg_filled_price: 5330.0
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5301, Avg Filled Price: 5328.8
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5300, avg_filled_price: 5328.8
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5296, Avg Filled Price: 5379.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5295, avg_filled_price: 5379.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5301, Avg Filled Price: 5369.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5300, avg_filled_price: 5369.5
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5296, Avg Filled Price: 5349.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5295, avg_filled_price: 5349.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5301, Avg Filled Price: 5402.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5300, avg_filled_price: 5402.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5875, Avg Filled Price: 6374.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5874, avg_filled_price: 6374.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5887, Avg Filled Price: 6057.8
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5886, avg_filled_price: 6057.8
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5875, Avg Filled Price: 6055.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5874, avg_filled_price: 6055.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5887, Avg Filled Price: 6350.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5886, avg_filled_price: 6350.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5875, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5874, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5887, Avg Filled Price: 6407.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5886, avg_filled_price: 6407.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5403, Avg Filled Price: 5657.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5402, avg_filled_price: 5657.0
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5406, Avg Filled Price: 5668.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5405, avg_filled_price: 5668.4
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5403, Avg Filled Price: 5695.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5402, avg_filled_price: 5695.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5406, Avg Filled Price: 5563.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5405, avg_filled_price: 5563.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5403, Avg Filled Price: 5676.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5402, avg_filled_price: 5676.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5406, Avg Filled Price: 5724.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5405, avg_filled_price: 5724.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 79, 'MKU': 92, 'IGM': 97, 'BRV': 83}
+[FILL] Order Fill - DLO: 2 @ 5098
+[FILL] Order Fill - MKU: 5 @ 5300
+[FILL] Order Fill - DLO: 5 @ 5105
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4935, Avg Filled Price: 4646.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4948, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4935, Avg Filled Price: 4637.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4948, Avg Filled Price: 4625.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4935, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4948, Avg Filled Price: 4662.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5111, Avg Filled Price: 5109.0
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5110, avg_filled_price: 5109.0
+[AGGRESSIVE ASK] DLO - Placed Aggressive Ask Order. ID: 1712710481790151255, Qty: 5, Price: 5110.0
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5114, Avg Filled Price: 5120.6
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5113, avg_filled_price: 5120.6
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5111, Avg Filled Price: 5095.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5110, avg_filled_price: 5095.0
+[AGGRESSIVE ASK] DLO - Placed Aggressive Ask Order. ID: 1712710481790151258, Qty: 2, Price: 5103.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5114, Avg Filled Price: 5118.0
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5113, avg_filled_price: 5118.0
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5111, Avg Filled Price: 5106.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5110, avg_filled_price: 5106.0
+[AGGRESSIVE ASK] DLO - Placed Aggressive Ask Order. ID: 1712710481790151261, Qty: 1, Price: 5109.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5114, Avg Filled Price: 5102.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5113, avg_filled_price: 5102.0
+[AGGRESSIVE ASK] DLO - Placed Aggressive Ask Order. ID: 1712710481790151262, Qty: 1, Price: 5108.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5314, Avg Filled Price: 5321.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5313, avg_filled_price: 5321.4
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5326, Avg Filled Price: 5328.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5325, avg_filled_price: 5328.4
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5314, Avg Filled Price: 5370.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5313, avg_filled_price: 5370.5
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5326, Avg Filled Price: 5373.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5325, avg_filled_price: 5373.5
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5314, Avg Filled Price: 5382.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5313, avg_filled_price: 5382.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5326, Avg Filled Price: 5349.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5325, avg_filled_price: 5349.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5953, Avg Filled Price: 6166.666666666667
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5952, avg_filled_price: 6166.666666666667
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5955, Avg Filled Price: 6338.8
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5954, avg_filled_price: 6338.8
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5953, Avg Filled Price: 6106.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5952, avg_filled_price: 6106.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5955, Avg Filled Price: 6386.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5954, avg_filled_price: 6386.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5953, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5952, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5955, Avg Filled Price: 6427.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5954, avg_filled_price: 6427.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5426, Avg Filled Price: 5590.6
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5425, avg_filled_price: 5590.6
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5441, Avg Filled Price: 5625.6
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5440, avg_filled_price: 5625.6
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5426, Avg Filled Price: 5670.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5425, avg_filled_price: 5670.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5441, Avg Filled Price: 5574.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5440, avg_filled_price: 5574.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5426, Avg Filled Price: 5677.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5425, avg_filled_price: 5677.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5441, Avg Filled Price: 5713.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5440, avg_filled_price: 5713.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 67, 'MKU': 82, 'IGM': 97, 'BRV': 75}
+[FILL] Order Fill - DLO: 5 @ 5116
+[FILL] Order Fill - DLO: 2 @ 5116
+[FILL] Order Fill - BRV: 5 @ 5439
+[FILL] Order Fill - BRV: 2 @ 5439
+[FILL] Order Fill - MKU: 5 @ 5316
+[FILL] Order Fill - BRV: 1 @ 5431
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4931, Avg Filled Price: 4637.6
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4941, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4931, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4941, Avg Filled Price: 4598.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4931, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4941, Avg Filled Price: 4613.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5112, Avg Filled Price: 5115.6
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5122, Avg Filled Price: 5123.4
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5112, Avg Filled Price: 5117.5
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5122, Avg Filled Price: 5131.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5112, Avg Filled Price: 5078.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5122, Avg Filled Price: 5093.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5307, Avg Filled Price: 5303.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5306, avg_filled_price: 5303.4
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151295, Qty: 5, Price: 5306.0
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5318, Avg Filled Price: 5343.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5317, avg_filled_price: 5343.4
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5307, Avg Filled Price: 5351.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5306, avg_filled_price: 5351.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5318, Avg Filled Price: 5390.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5317, avg_filled_price: 5390.0
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5307, Avg Filled Price: 5353.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5306, avg_filled_price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5318, Avg Filled Price: 5311.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5317, avg_filled_price: 5311.0
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151300, Qty: 1, Price: 5315.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5977, Avg Filled Price: 6193.333333333333
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5976, avg_filled_price: 6193.333333333333
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5987, Avg Filled Price: 6249.8
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5986, avg_filled_price: 6249.8
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5977, Avg Filled Price: 6106.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5976, avg_filled_price: 6106.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5987, Avg Filled Price: 6450.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5986, avg_filled_price: 6450.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5977, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5976, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5987, Avg Filled Price: 6427.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5986, avg_filled_price: 6427.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5420, Avg Filled Price: 5651.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5419, avg_filled_price: 5651.2
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5431, Avg Filled Price: 5653.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5430, avg_filled_price: 5653.0
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5420, Avg Filled Price: 5670.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5419, avg_filled_price: 5670.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5431, Avg Filled Price: 5619.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5430, avg_filled_price: 5619.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5420, Avg Filled Price: 5722.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5419, avg_filled_price: 5722.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5431, Avg Filled Price: 5677.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5430, avg_filled_price: 5677.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 41, 'MKU': 87, 'IGM': 97, 'BRV': 69}
+[FILL] Order Fill - DLO: 5 @ 5114
+[FILL] Order Fill - BRV: 2 @ 5423
+[FILL] Order Fill - BRV: 5 @ 5422
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4939, Avg Filled Price: 4646.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4949, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4939, Avg Filled Price: 4637.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4949, Avg Filled Price: 4623.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4939, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4949, Avg Filled Price: 4662.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5098, Avg Filled Price: 5102.4
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5097, avg_filled_price: 5102.4
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5112, Avg Filled Price: 5106.6
+[TRY ASK] DLO - ask: 5 - penny_ask_price: 5111, avg_filled_price: 5106.6
+[AGGRESSIVE ASK] DLO - Placed Aggressive Ask Order. ID: 1712710481790151321, Qty: 5, Price: 5110.0
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5098, Avg Filled Price: 5117.5
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5097, avg_filled_price: 5117.5
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5112, Avg Filled Price: 5099.5
+[TRY ASK] DLO - ask: 2 - penny_ask_price: 5111, avg_filled_price: 5099.5
+[AGGRESSIVE ASK] DLO - Placed Aggressive Ask Order. ID: 1712710481790151324, Qty: 2, Price: 5106.0
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5098, Avg Filled Price: 5078.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5097, avg_filled_price: 5078.0
+[AGGRESSIVE ASK] DLO - Placed Aggressive Ask Order. ID: 1712710481790151327, Qty: 1, Price: 5088.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5112, Avg Filled Price: 5114.0
+[TRY ASK] DLO - ask: 1 - penny_ask_price: 5111, avg_filled_price: 5114.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5303, Avg Filled Price: 5314.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5302, avg_filled_price: 5314.4
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5306, Avg Filled Price: 5331.6
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5305, avg_filled_price: 5331.6
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5303, Avg Filled Price: 5376.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5302, avg_filled_price: 5376.5
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5306, Avg Filled Price: 5358.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5305, avg_filled_price: 5358.5
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5303, Avg Filled Price: 5349.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5302, avg_filled_price: 5349.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5306, Avg Filled Price: 5311.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5305, avg_filled_price: 5311.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6004, Avg Filled Price: 6214.333333333333
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6003, avg_filled_price: 6214.333333333333
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6016, Avg Filled Price: 6044.8
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6015, avg_filled_price: 6044.8
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6004, Avg Filled Price: 6417.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6003, avg_filled_price: 6417.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6016, Avg Filled Price: 6433.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6015, avg_filled_price: 6433.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6004, Avg Filled Price: 6468.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6003, avg_filled_price: 6468.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6016, Avg Filled Price: 6367.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6015, avg_filled_price: 6367.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5402, Avg Filled Price: 5589.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5401, avg_filled_price: 5589.4
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5414, Avg Filled Price: 5639.6
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5413, avg_filled_price: 5639.6
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5402, Avg Filled Price: 5688.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5401, avg_filled_price: 5688.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5414, Avg Filled Price: 5507.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5413, avg_filled_price: 5507.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5402, Avg Filled Price: 5676.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5401, avg_filled_price: 5676.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5414, Avg Filled Price: 5669.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5413, avg_filled_price: 5669.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 56, 'MKU': 87, 'IGM': 97, 'BRV': 83}
+[FILL] Order Fill - BRV: 5 @ 5417
+[FILL] Order Fill - DLO: 5 @ 5110
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4912, Avg Filled Price: 4647.4
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4922, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4912, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4922, Avg Filled Price: 4645.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4912, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4922, Avg Filled Price: 4598.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5106, Avg Filled Price: 5113.75
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5121, Avg Filled Price: 5112.0
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5106, Avg Filled Price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5121, Avg Filled Price: 5086.0
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5106, Avg Filled Price: 5116.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5121, Avg Filled Price: 5114.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5316, Avg Filled Price: 5285.8
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5315, avg_filled_price: 5285.8
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151360, Qty: 5, Price: 5301.0
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5326, Avg Filled Price: 5316.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5325, avg_filled_price: 5316.4
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151361, Qty: 5, Price: 5322.0
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5316, Avg Filled Price: 5394.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5315, avg_filled_price: 5394.5
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5326, Avg Filled Price: 5321.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5325, avg_filled_price: 5321.0
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151364, Qty: 2, Price: 5324.0
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5316, Avg Filled Price: 5241.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5315, avg_filled_price: 5241.0
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151367, Qty: 1, Price: 5279.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5326, Avg Filled Price: 5383.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5325, avg_filled_price: 5383.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6051, Avg Filled Price: 6269.666666666667
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6050, avg_filled_price: 6269.666666666667
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6057, Avg Filled Price: 6231.0
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6056, avg_filled_price: 6231.0
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6051, Avg Filled Price: 6106.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6050, avg_filled_price: 6106.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6057, Avg Filled Price: 6441.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6056, avg_filled_price: 6441.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6051, Avg Filled Price: 6468.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6050, avg_filled_price: 6468.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6057, Avg Filled Price: 6407.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6056, avg_filled_price: 6407.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5445, Avg Filled Price: 5653.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5444, avg_filled_price: 5653.2
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5455, Avg Filled Price: 5609.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5454, avg_filled_price: 5609.0
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5445, Avg Filled Price: 5704.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5444, avg_filled_price: 5704.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5455, Avg Filled Price: 5578.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5454, avg_filled_price: 5578.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5445, Avg Filled Price: 5701.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5444, avg_filled_price: 5701.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5455, Avg Filled Price: 5431.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5454, avg_filled_price: 5431.0
+[AGGRESSIVE ASK] BRV - Placed Aggressive Ask Order. ID: 1712710481790151380, Qty: 1, Price: 5443.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 39, 'MKU': 82, 'IGM': 97, 'BRV': 73}
+[FILL] Order Fill - BRV: 5 @ 5446
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4909, Avg Filled Price: 4637.6
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4921, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4909, Avg Filled Price: 4600.0
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4921, Avg Filled Price: 4623.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4909, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4921, Avg Filled Price: 4669.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5110, Avg Filled Price: 5113.75
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5117, Avg Filled Price: 5096.4
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5110, Avg Filled Price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5117, Avg Filled Price: 5124.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5110, Avg Filled Price: 5078.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5117, Avg Filled Price: 5124.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5305, Avg Filled Price: 5310.6
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5304, avg_filled_price: 5310.6
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5322, Avg Filled Price: 5356.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5321, avg_filled_price: 5356.4
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5305, Avg Filled Price: 5364.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5304, avg_filled_price: 5364.5
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5322, Avg Filled Price: 5363.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5321, avg_filled_price: 5363.0
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5305, Avg Filled Price: 5353.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5304, avg_filled_price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5322, Avg Filled Price: 5405.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5321, avg_filled_price: 5405.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6030, Avg Filled Price: 6385.666666666667
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6029, avg_filled_price: 6385.666666666667
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6069, Avg Filled Price: 6164.8
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6068, avg_filled_price: 6164.8
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6030, Avg Filled Price: 6055.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6029, avg_filled_price: 6055.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6069, Avg Filled Price: 6379.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6068, avg_filled_price: 6379.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6030, Avg Filled Price: 6468.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6029, avg_filled_price: 6468.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6069, Avg Filled Price: 6461.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6068, avg_filled_price: 6461.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5419, Avg Filled Price: 5624.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5418, avg_filled_price: 5624.4
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5467, Avg Filled Price: 5618.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5466, avg_filled_price: 5618.4
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5419, Avg Filled Price: 5704.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5418, avg_filled_price: 5704.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5467, Avg Filled Price: 5721.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5466, avg_filled_price: 5721.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5419, Avg Filled Price: 5677.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5418, avg_filled_price: 5677.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5467, Avg Filled Price: 5713.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5466, avg_filled_price: 5713.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 39, 'MKU': 82, 'IGM': 97, 'BRV': 78}
+[FILL] Order Fill - DLO: 5 @ 5121
+[FILL] Order Fill - MKU: 5 @ 5336
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4886, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4898, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4886, Avg Filled Price: 4621.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4898, Avg Filled Price: 4590.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4886, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4898, Avg Filled Price: 4598.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5125, Avg Filled Price: 5115.2
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5137, Avg Filled Price: 5093.4
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5125, Avg Filled Price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5137, Avg Filled Price: 5121.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5125, Avg Filled Price: 5078.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5137, Avg Filled Price: 5102.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5338, Avg Filled Price: 5337.2
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5337, avg_filled_price: 5337.2
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151425, Qty: 5, Price: 5338.0
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5347, Avg Filled Price: 5334.6
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5346, avg_filled_price: 5334.6
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151426, Qty: 5, Price: 5341.0
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5338, Avg Filled Price: 5364.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5337, avg_filled_price: 5364.5
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5347, Avg Filled Price: 5361.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5346, avg_filled_price: 5361.5
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5338, Avg Filled Price: 5353.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5337, avg_filled_price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5347, Avg Filled Price: 5349.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5346, avg_filled_price: 5349.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6095, Avg Filled Price: 6229.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6094, avg_filled_price: 6229.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6107, Avg Filled Price: 6179.8
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6106, avg_filled_price: 6179.8
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6095, Avg Filled Price: 6106.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6094, avg_filled_price: 6106.5
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6107, Avg Filled Price: 6450.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6106, avg_filled_price: 6450.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6095, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6094, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6107, Avg Filled Price: 6407.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6106, avg_filled_price: 6407.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5493, Avg Filled Price: 5632.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5492, avg_filled_price: 5632.4
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5502, Avg Filled Price: 5546.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5501, avg_filled_price: 5546.8
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5493, Avg Filled Price: 5743.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5492, avg_filled_price: 5743.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5502, Avg Filled Price: 5699.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5501, avg_filled_price: 5699.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5493, Avg Filled Price: 5677.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5492, avg_filled_price: 5677.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5502, Avg Filled Price: 5422.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5501, avg_filled_price: 5422.0
+[AGGRESSIVE ASK] BRV - Placed Aggressive Ask Order. ID: 1712710481790151443, Qty: 1, Price: 5462.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 27, 'MKU': 70, 'IGM': 97, 'BRV': 73}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4877, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4889, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4877, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4889, Avg Filled Price: 4678.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4877, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4889, Avg Filled Price: 4613.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5134, Avg Filled Price: 5115.2
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5141, Avg Filled Price: 5112.0
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5134, Avg Filled Price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5141, Avg Filled Price: 5111.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5134, Avg Filled Price: 5078.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5141, Avg Filled Price: 5124.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5338, Avg Filled Price: 5287.666666666667
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5337, avg_filled_price: 5287.666666666667
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151458, Qty: 5, Price: 5313.0
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5347, Avg Filled Price: 5323.6
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5346, avg_filled_price: 5323.6
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151459, Qty: 5, Price: 5336.0
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5338, Avg Filled Price: 5294.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5337, avg_filled_price: 5294.0
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151462, Qty: 2, Price: 5316.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5347, Avg Filled Price: 5374.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5346, avg_filled_price: 5374.5
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5338, Avg Filled Price: 5353.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5337, avg_filled_price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5347, Avg Filled Price: 5405.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5346, avg_filled_price: 5405.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6119, Avg Filled Price: 6400.666666666667
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6118, avg_filled_price: 6400.666666666667
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6122, Avg Filled Price: 6185.4
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6121, avg_filled_price: 6185.4
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6119, Avg Filled Price: 6055.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6118, avg_filled_price: 6055.5
+[AGGRESSIVE ASK] IGM - Placed Aggressive Ask Order. ID: 1712710481790151469, Qty: 2, Price: 6088.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6122, Avg Filled Price: 6350.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6121, avg_filled_price: 6350.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6119, Avg Filled Price: 6468.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6118, avg_filled_price: 6468.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6122, Avg Filled Price: 6461.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6121, avg_filled_price: 6461.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5497, Avg Filled Price: 5588.6
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5496, avg_filled_price: 5588.6
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5502, Avg Filled Price: 5680.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5501, avg_filled_price: 5680.2
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5497, Avg Filled Price: 5639.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5496, avg_filled_price: 5639.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5502, Avg Filled Price: 5560.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5501, avg_filled_price: 5560.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5497, Avg Filled Price: 5722.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5496, avg_filled_price: 5722.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5502, Avg Filled Price: 5664.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5501, avg_filled_price: 5664.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 27, 'MKU': 70, 'IGM': 97, 'BRV': 73}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4885, Avg Filled Price: 4647.4
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4897, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4885, Avg Filled Price: 4600.0
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4897, Avg Filled Price: 4654.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4885, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4897, Avg Filled Price: 4598.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5122, Avg Filled Price: 5115.2
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5134, Avg Filled Price: 5112.2
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5122, Avg Filled Price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5134, Avg Filled Price: 5093.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5122, Avg Filled Price: 5119.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5134, Avg Filled Price: 5075.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5339, Avg Filled Price: 5287.666666666667
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5338, avg_filled_price: 5287.666666666667
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151492, Qty: 5, Price: 5314.0
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5352, Avg Filled Price: 5328.2
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5351, avg_filled_price: 5328.2
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151493, Qty: 5, Price: 5341.0
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5339, Avg Filled Price: 5350.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5338, avg_filled_price: 5350.5
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5352, Avg Filled Price: 5391.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5351, avg_filled_price: 5391.5
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5339, Avg Filled Price: 5353.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5338, avg_filled_price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5352, Avg Filled Price: 5348.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5351, avg_filled_price: 5348.0
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151498, Qty: 1, Price: 5350.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6113, Avg Filled Price: 6367.333333333333
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6112, avg_filled_price: 6367.333333333333
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6125, Avg Filled Price: 6347.8
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6124, avg_filled_price: 6347.8
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6113, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6112, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6125, Avg Filled Price: 6450.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6124, avg_filled_price: 6450.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6113, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6112, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6125, Avg Filled Price: 6461.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6124, avg_filled_price: 6461.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5493, Avg Filled Price: 5644.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5492, avg_filled_price: 5644.8
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5505, Avg Filled Price: 5527.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5504, avg_filled_price: 5527.0
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5493, Avg Filled Price: 5662.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5492, avg_filled_price: 5662.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5505, Avg Filled Price: 5525.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5504, avg_filled_price: 5525.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5493, Avg Filled Price: 5677.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5492, avg_filled_price: 5677.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5505, Avg Filled Price: 5677.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5504, avg_filled_price: 5677.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 27, 'MKU': 70, 'IGM': 97, 'BRV': 73}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4877, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4889, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4877, Avg Filled Price: 4637.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4889, Avg Filled Price: 4681.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4877, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4889, Avg Filled Price: 4598.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5129, Avg Filled Price: 5115.2
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5141, Avg Filled Price: 5119.8
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5129, Avg Filled Price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5141, Avg Filled Price: 5130.0
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5129, Avg Filled Price: 5116.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5141, Avg Filled Price: 5112.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5343, Avg Filled Price: 5287.666666666667
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5342, avg_filled_price: 5287.666666666667
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151525, Qty: 5, Price: 5316.0
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5358, Avg Filled Price: 5315.8
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5357, avg_filled_price: 5315.8
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151526, Qty: 5, Price: 5337.0
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5343, Avg Filled Price: 5392.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5342, avg_filled_price: 5392.5
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5358, Avg Filled Price: 5370.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5357, avg_filled_price: 5370.5
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5343, Avg Filled Price: 5353.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5342, avg_filled_price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5358, Avg Filled Price: 5359.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5357, avg_filled_price: 5359.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6131, Avg Filled Price: 6028.666666666667
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6130, avg_filled_price: 6028.666666666667
+[AGGRESSIVE ASK] IGM - Placed Aggressive Ask Order. ID: 1712710481790151533, Qty: 3, Price: 6080.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6141, Avg Filled Price: 5868.2
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6140, avg_filled_price: 5868.2
+[AGGRESSIVE ASK] IGM - Placed Aggressive Ask Order. ID: 1712710481790151534, Qty: 5, Price: 6005.0
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6131, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6130, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6141, Avg Filled Price: 6386.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6140, avg_filled_price: 6386.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6131, Avg Filled Price: 6468.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6130, avg_filled_price: 6468.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6141, Avg Filled Price: 6442.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6140, avg_filled_price: 6442.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5508, Avg Filled Price: 5618.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5507, avg_filled_price: 5618.0
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5520, Avg Filled Price: 5698.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5519, avg_filled_price: 5698.0
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5508, Avg Filled Price: 5520.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5507, avg_filled_price: 5520.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5520, Avg Filled Price: 5730.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5519, avg_filled_price: 5730.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5508, Avg Filled Price: 5744.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5507, avg_filled_price: 5744.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5520, Avg Filled Price: 5724.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5519, avg_filled_price: 5724.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 27, 'MKU': 70, 'IGM': 97, 'BRV': 73}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4870, Avg Filled Price: 4647.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4882, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4870, Avg Filled Price: 4636.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4882, Avg Filled Price: 4625.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4870, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4882, Avg Filled Price: 4669.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5113, Avg Filled Price: 5115.2
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5124, Avg Filled Price: 5108.0
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5113, Avg Filled Price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5124, Avg Filled Price: 5093.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5113, Avg Filled Price: 5078.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5124, Avg Filled Price: 5112.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5322, Avg Filled Price: 5287.666666666667
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5321, avg_filled_price: 5287.666666666667
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151559, Qty: 5, Price: 5305.0
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5334, Avg Filled Price: 5355.6
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5333, avg_filled_price: 5355.6
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5322, Avg Filled Price: 5392.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5321, avg_filled_price: 5392.5
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5334, Avg Filled Price: 5325.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5333, avg_filled_price: 5325.5
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151562, Qty: 2, Price: 5330.0
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5322, Avg Filled Price: 5353.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5321, avg_filled_price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5334, Avg Filled Price: 5402.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5333, avg_filled_price: 5402.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6132, Avg Filled Price: 6368.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6131, avg_filled_price: 6368.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6144, Avg Filled Price: 6159.0
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6143, avg_filled_price: 6159.0
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6132, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6131, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6144, Avg Filled Price: 6450.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6143, avg_filled_price: 6450.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6132, Avg Filled Price: 6468.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6131, avg_filled_price: 6468.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6144, Avg Filled Price: 6367.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6143, avg_filled_price: 6367.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5477, Avg Filled Price: 5651.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5476, avg_filled_price: 5651.4
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5489, Avg Filled Price: 5655.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5488, avg_filled_price: 5655.2
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5477, Avg Filled Price: 5743.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5476, avg_filled_price: 5743.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5489, Avg Filled Price: 5660.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5488, avg_filled_price: 5660.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5477, Avg Filled Price: 5722.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5476, avg_filled_price: 5722.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5489, Avg Filled Price: 5669.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5488, avg_filled_price: 5669.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 27, 'MKU': 70, 'IGM': 97, 'BRV': 73}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4923, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4928, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4923, Avg Filled Price: 4636.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4928, Avg Filled Price: 4637.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4923, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4928, Avg Filled Price: 4669.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5123, Avg Filled Price: 5115.2
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5135, Avg Filled Price: 5106.8
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5123, Avg Filled Price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5135, Avg Filled Price: 5097.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5123, Avg Filled Price: 5078.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5135, Avg Filled Price: 5108.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5356, Avg Filled Price: 5287.666666666667
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5355, avg_filled_price: 5287.666666666667
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151591, Qty: 5, Price: 5322.0
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5366, Avg Filled Price: 5345.8
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5365, avg_filled_price: 5345.8
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151592, Qty: 5, Price: 5356.0
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5356, Avg Filled Price: 5409.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5355, avg_filled_price: 5409.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5366, Avg Filled Price: 5379.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5365, avg_filled_price: 5379.5
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5356, Avg Filled Price: 5353.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5355, avg_filled_price: 5353.0
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151597, Qty: 1, Price: 5355.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5366, Avg Filled Price: 5349.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5365, avg_filled_price: 5349.0
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151598, Qty: 1, Price: 5358.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6072, Avg Filled Price: 6368.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6071, avg_filled_price: 6368.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6077, Avg Filled Price: 6272.2
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6076, avg_filled_price: 6272.2
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6072, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6071, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6077, Avg Filled Price: 6387.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6076, avg_filled_price: 6387.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6072, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6071, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6077, Avg Filled Price: 6427.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6076, avg_filled_price: 6427.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5490, Avg Filled Price: 5600.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5489, avg_filled_price: 5600.8
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5502, Avg Filled Price: 5635.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5501, avg_filled_price: 5635.0
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5490, Avg Filled Price: 5589.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5489, avg_filled_price: 5589.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5502, Avg Filled Price: 5713.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5501, avg_filled_price: 5713.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5490, Avg Filled Price: 5744.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5489, avg_filled_price: 5744.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5502, Avg Filled Price: 5677.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5501, avg_filled_price: 5677.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 27, 'MKU': 70, 'IGM': 97, 'BRV': 73}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4984, Avg Filled Price: 4647.4
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4996, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4984, Avg Filled Price: 4621.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4996, Avg Filled Price: 4623.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4984, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4996, Avg Filled Price: 4669.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5344, Avg Filled Price: 5287.666666666667
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5343, avg_filled_price: 5287.666666666667
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151619, Qty: 5, Price: 5316.0
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5350, Avg Filled Price: 5330.4
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5349, avg_filled_price: 5330.4
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151620, Qty: 5, Price: 5341.0
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5344, Avg Filled Price: 5381.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5343, avg_filled_price: 5381.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5350, Avg Filled Price: 5342.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5349, avg_filled_price: 5342.5
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151623, Qty: 2, Price: 5347.0
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5344, Avg Filled Price: 5353.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5343, avg_filled_price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5350, Avg Filled Price: 5349.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5349, avg_filled_price: 5349.0
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151626, Qty: 1, Price: 5350.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5990, Avg Filled Price: 6368.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5989, avg_filled_price: 6368.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6012, Avg Filled Price: 6015.6
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6011, avg_filled_price: 6015.6
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5990, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5989, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6012, Avg Filled Price: 6431.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6011, avg_filled_price: 6431.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5990, Avg Filled Price: 6468.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5989, avg_filled_price: 6468.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6012, Avg Filled Price: 6407.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6011, avg_filled_price: 6407.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5421, Avg Filled Price: 5677.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5420, avg_filled_price: 5677.4
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5429, Avg Filled Price: 5552.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5428, avg_filled_price: 5552.0
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5421, Avg Filled Price: 5558.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5420, avg_filled_price: 5558.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5429, Avg Filled Price: 5744.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5428, avg_filled_price: 5744.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5421, Avg Filled Price: 5722.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5420, avg_filled_price: 5722.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5429, Avg Filled Price: 5677.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5428, avg_filled_price: 5677.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 36, 'MKU': 65, 'IGM': 97, 'BRV': 73}
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5109, Avg Filled Price: 5115.2
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5118, Avg Filled Price: 5105.4
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5109, Avg Filled Price: 5119.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5118, Avg Filled Price: 5124.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5109, Avg Filled Price: 5116.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5118, Avg Filled Price: 5075.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5357, Avg Filled Price: 5287.666666666667
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5356, avg_filled_price: 5287.666666666667
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151647, Qty: 5, Price: 5323.0
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5368, Avg Filled Price: 5350.0
+[TRY ASK] MKU - ask: 5 - penny_ask_price: 5367, avg_filled_price: 5350.0
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151648, Qty: 5, Price: 5359.0
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5357, Avg Filled Price: 5411.0
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5356, avg_filled_price: 5411.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5368, Avg Filled Price: 5364.5
+[TRY ASK] MKU - ask: 2 - penny_ask_price: 5367, avg_filled_price: 5364.5
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151651, Qty: 2, Price: 5367.0
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5357, Avg Filled Price: 5353.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5356, avg_filled_price: 5353.0
+[AGGRESSIVE ASK] MKU - Placed Aggressive Ask Order. ID: 1712710481790151654, Qty: 1, Price: 5355.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5368, Avg Filled Price: 5405.0
+[TRY ASK] MKU - ask: 1 - penny_ask_price: 5367, avg_filled_price: 5405.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6011, Avg Filled Price: 6368.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6010, avg_filled_price: 6368.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6015, Avg Filled Price: 6234.0
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6014, avg_filled_price: 6234.0
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6011, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6010, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6015, Avg Filled Price: 6415.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6014, avg_filled_price: 6415.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6011, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6010, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6015, Avg Filled Price: 6367.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6014, avg_filled_price: 6367.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5447, Avg Filled Price: 5642.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5446, avg_filled_price: 5642.0
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5451, Avg Filled Price: 5616.4
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5450, avg_filled_price: 5616.4
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5447, Avg Filled Price: 5657.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5446, avg_filled_price: 5657.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5451, Avg Filled Price: 5525.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5450, avg_filled_price: 5525.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5447, Avg Filled Price: 5744.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5446, avg_filled_price: 5744.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5451, Avg Filled Price: 5705.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5450, avg_filled_price: 5705.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 41, 'MKU': 55, 'IGM': 97, 'BRV': 73}
+[FILL] Order Fill - DLO: 5 @ 5117
+[FILL] Order Fill - DLO: 2 @ 5117
+[FILL] Order Fill - DLO: 1 @ 5117
+[FILL] Order Fill - MKU: 5 @ 5359
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4944, Avg Filled Price: 4662.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4955, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4944, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4955, Avg Filled Price: 4598.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4944, Avg Filled Price: 4613.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4955, Avg Filled Price: 4669.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5113, Avg Filled Price: 5116.6
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5123, Avg Filled Price: 5112.8
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5113, Avg Filled Price: 5118.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5123, Avg Filled Price: 5091.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5113, Avg Filled Price: 5117.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5123, Avg Filled Price: 5120.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5353, Avg Filled Price: 5287.666666666667
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5358, Avg Filled Price: 5290.6
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5353, Avg Filled Price: 5411.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5358, Avg Filled Price: 5363.5
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5353, Avg Filled Price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5358, Avg Filled Price: 5349.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6051, Avg Filled Price: 6368.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6050, avg_filled_price: 6368.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6062, Avg Filled Price: 6021.4
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6061, avg_filled_price: 6021.4
+[AGGRESSIVE ASK] IGM - Placed Aggressive Ask Order. ID: 1712710481790151687, Qty: 5, Price: 6042.0
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6051, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6050, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6062, Avg Filled Price: 6450.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6061, avg_filled_price: 6450.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6051, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6050, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6062, Avg Filled Price: 6427.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6061, avg_filled_price: 6427.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5466, Avg Filled Price: 5665.6
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5465, avg_filled_price: 5665.6
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5474, Avg Filled Price: 5627.6
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5473, avg_filled_price: 5627.6
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5466, Avg Filled Price: 5558.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5465, avg_filled_price: 5558.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5474, Avg Filled Price: 5588.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5473, avg_filled_price: 5588.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5466, Avg Filled Price: 5722.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5465, avg_filled_price: 5722.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5474, Avg Filled Price: 5422.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5473, avg_filled_price: 5422.0
+[AGGRESSIVE ASK] BRV - Placed Aggressive Ask Order. ID: 1712710481790151698, Qty: 1, Price: 5448.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 33, 'MKU': 50, 'IGM': 97, 'BRV': 73}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4950, Avg Filled Price: 4647.4
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4962, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4950, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4962, Avg Filled Price: 4623.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4950, Avg Filled Price: 4613.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4962, Avg Filled Price: 4598.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5123, Avg Filled Price: 5116.0
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5135, Avg Filled Price: 5106.6
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5123, Avg Filled Price: 5118.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5135, Avg Filled Price: 5118.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5123, Avg Filled Price: 5116.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5135, Avg Filled Price: 5102.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5377, Avg Filled Price: 5287.666666666667
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5384, Avg Filled Price: 5347.2
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5377, Avg Filled Price: 5411.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5384, Avg Filled Price: 5336.0
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5377, Avg Filled Price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5384, Avg Filled Price: 5349.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6066, Avg Filled Price: 6368.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6065, avg_filled_price: 6368.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6078, Avg Filled Price: 6258.0
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6077, avg_filled_price: 6258.0
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6066, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6065, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6078, Avg Filled Price: 6412.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6077, avg_filled_price: 6412.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6066, Avg Filled Price: 6468.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6065, avg_filled_price: 6468.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6078, Avg Filled Price: 6367.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6077, avg_filled_price: 6367.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5496, Avg Filled Price: 5583.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5495, avg_filled_price: 5583.8
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5501, Avg Filled Price: 5563.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5500, avg_filled_price: 5563.8
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5496, Avg Filled Price: 5726.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5495, avg_filled_price: 5726.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5501, Avg Filled Price: 5688.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5500, avg_filled_price: 5688.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5496, Avg Filled Price: 5744.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5495, avg_filled_price: 5744.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5501, Avg Filled Price: 5705.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5500, avg_filled_price: 5705.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 33, 'MKU': 50, 'IGM': 97, 'BRV': 73}
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4972, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4979, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4972, Avg Filled Price: 4659.0
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4979, Avg Filled Price: 4645.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4972, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4979, Avg Filled Price: 4598.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5115, Avg Filled Price: 5114.4
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5119, Avg Filled Price: 5112.0
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5115, Avg Filled Price: 5118.0
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5119, Avg Filled Price: 5108.0
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5115, Avg Filled Price: 5116.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5119, Avg Filled Price: 5157.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5370, Avg Filled Price: 5287.666666666667
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5376, Avg Filled Price: 5362.6
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5370, Avg Filled Price: 5411.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5376, Avg Filled Price: 5340.0
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5370, Avg Filled Price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5376, Avg Filled Price: 5407.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6011, Avg Filled Price: 6368.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6010, avg_filled_price: 6368.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6019, Avg Filled Price: 6237.6
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6018, avg_filled_price: 6237.6
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6011, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6010, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6019, Avg Filled Price: 6433.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6018, avg_filled_price: 6433.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6011, Avg Filled Price: 6468.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6010, avg_filled_price: 6468.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6019, Avg Filled Price: 6461.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6018, avg_filled_price: 6461.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5461, Avg Filled Price: 5606.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5460, avg_filled_price: 5606.0
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5703, Avg Filled Price: 5592.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5702, avg_filled_price: 5592.8
+[AGGRESSIVE ASK] BRV - Placed Aggressive Ask Order. ID: 1712710481790151755, Qty: 5, Price: 5648.0
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5461, Avg Filled Price: 5701.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5460, avg_filled_price: 5701.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5703, Avg Filled Price: 5600.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5702, avg_filled_price: 5600.0
+[AGGRESSIVE ASK] BRV - Placed Aggressive Ask Order. ID: 1712710481790151758, Qty: 2, Price: 5652.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5461, Avg Filled Price: 5744.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5460, avg_filled_price: 5744.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5703, Avg Filled Price: 5724.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5702, avg_filled_price: 5724.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 33, 'MKU': 37, 'IGM': 97, 'BRV': 73}
+[FILL] Order Fill - DLO: 5 @ 5112
+[FILL] Order Fill - DLO: 2 @ 5112
+[FILL] Order Fill - DLO: 1 @ 5112
+[FILL] Order Fill - MKU: 5 @ 5363
+[FILL] Order Fill - MKU: 2 @ 5363
+[FILL] Order Fill - MKU: 1 @ 5363
+[FILL] Order Fill - DLO: 1 @ 5114
+[FILL] Order Fill - DLO: 2 @ 5116
+[FILL] Order Fill - DLO: 5 @ 5117
+[FILL] Order Fill - MKU: 1 @ 5371
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4958, Avg Filled Price: 4662.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 4970, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4958, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 4970, Avg Filled Price: 4640.0
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4958, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 4970, Avg Filled Price: 4613.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5111, Avg Filled Price: 5116.2
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5118, Avg Filled Price: 5106.8
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5111, Avg Filled Price: 5117.5
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5118, Avg Filled Price: 5090.0
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5111, Avg Filled Price: 5114.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5118, Avg Filled Price: 5127.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5370, Avg Filled Price: 5287.666666666667
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5382, Avg Filled Price: 5320.6
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5370, Avg Filled Price: 5411.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5382, Avg Filled Price: 5369.5
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5370, Avg Filled Price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5382, Avg Filled Price: 5412.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 6017, Avg Filled Price: 6368.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 6016, avg_filled_price: 6368.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 6028, Avg Filled Price: 6146.8
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 6027, avg_filled_price: 6146.8
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 6017, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6016, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 6028, Avg Filled Price: 6395.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 6027, avg_filled_price: 6395.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 6017, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6016, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 6028, Avg Filled Price: 6367.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 6027, avg_filled_price: 6367.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5478, Avg Filled Price: 5536.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5477, avg_filled_price: 5536.0
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5490, Avg Filled Price: 5665.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5489, avg_filled_price: 5665.2
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5478, Avg Filled Price: 5558.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5477, avg_filled_price: 5558.5
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5490, Avg Filled Price: 5422.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5489, avg_filled_price: 5422.5
+[AGGRESSIVE ASK] BRV - Placed Aggressive Ask Order. ID: 1712710481790151789, Qty: 2, Price: 5457.0
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5478, Avg Filled Price: 5669.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5477, avg_filled_price: 5669.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5490, Avg Filled Price: 5664.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5489, avg_filled_price: 5664.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 41, 'MKU': 44, 'IGM': 97, 'BRV': 73}
+[FILL] Order Fill - MKU: 5 @ 5380
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 4993, Avg Filled Price: 4637.6
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 5005, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 4993, Avg Filled Price: 4659.0
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 5005, Avg Filled Price: 4639.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 4993, Avg Filled Price: 4660.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 5005, Avg Filled Price: 4598.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5112, Avg Filled Price: 5117.4
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5125, Avg Filled Price: 5098.6
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5112, Avg Filled Price: 5117.5
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5125, Avg Filled Price: 5119.0
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5112, Avg Filled Price: 5078.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5125, Avg Filled Price: 5124.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5409, Avg Filled Price: 5310.75
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5421, Avg Filled Price: 5370.4
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5409, Avg Filled Price: 5411.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5421, Avg Filled Price: 5345.0
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5409, Avg Filled Price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5421, Avg Filled Price: 5380.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5976, Avg Filled Price: 6368.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5975, avg_filled_price: 6368.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5988, Avg Filled Price: 6034.2
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5987, avg_filled_price: 6034.2
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5976, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5975, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5988, Avg Filled Price: 6415.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5987, avg_filled_price: 6415.0
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5976, Avg Filled Price: 6455.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5975, avg_filled_price: 6455.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5988, Avg Filled Price: 6442.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5987, avg_filled_price: 6442.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5509, Avg Filled Price: 5588.2
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5508, avg_filled_price: 5588.2
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5517, Avg Filled Price: 5580.0
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5516, avg_filled_price: 5580.0
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5509, Avg Filled Price: 5688.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5508, avg_filled_price: 5688.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5517, Avg Filled Price: 5542.5
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5516, avg_filled_price: 5542.5
+[INFO] BRV - Level: L2, Side: bid, Qty: 1, Penny Price: 5509, Avg Filled Price: 5669.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5508, avg_filled_price: 5669.0
+[INFO] BRV - Level: L2, Side: ask, Qty: 1, Penny Price: 5517, Avg Filled Price: 5664.0
+[TRY ASK] BRV - ask: 1 - penny_ask_price: 5516, avg_filled_price: 5664.0
+[LOG] Total Positions: {'EPT': -19, 'DLO': 41, 'MKU': 32, 'IGM': 97, 'BRV': 73}
+[FILL] Order Fill - MKU: 5 @ 5419
+[INFO] EPT - Level: L0, Side: bid, Qty: 5, Penny Price: 5012, Avg Filled Price: 4646.0
+[INFO] EPT - Level: L0, Side: ask, Qty: 5, Penny Price: 5021, Avg Filled Price: 4645.8
+[INFO] EPT - Level: L1, Side: bid, Qty: 2, Penny Price: 5012, Avg Filled Price: 4622.5
+[INFO] EPT - Level: L1, Side: ask, Qty: 2, Penny Price: 5021, Avg Filled Price: 4631.5
+[INFO] EPT - Level: L2, Side: bid, Qty: 1, Penny Price: 5012, Avg Filled Price: 4656.0
+[INFO] EPT - Level: L2, Side: ask, Qty: 1, Penny Price: 5021, Avg Filled Price: 4669.0
+[INFO] DLO - Level: L0, Side: bid, Qty: 5, Penny Price: 5112, Avg Filled Price: 5117.4
+[INFO] DLO - Level: L0, Side: ask, Qty: 5, Penny Price: 5124, Avg Filled Price: 5110.2
+[INFO] DLO - Level: L1, Side: bid, Qty: 2, Penny Price: 5112, Avg Filled Price: 5117.5
+[INFO] DLO - Level: L1, Side: ask, Qty: 2, Penny Price: 5124, Avg Filled Price: 5112.5
+[INFO] DLO - Level: L2, Side: bid, Qty: 1, Penny Price: 5112, Avg Filled Price: 5117.0
+[INFO] DLO - Level: L2, Side: ask, Qty: 1, Penny Price: 5124, Avg Filled Price: 5093.0
+[INFO] MKU - Level: L0, Side: bid, Qty: 5, Penny Price: 5410, Avg Filled Price: 5332.4
+[INFO] MKU - Level: L0, Side: ask, Qty: 5, Penny Price: 5422, Avg Filled Price: 5312.2
+[INFO] MKU - Level: L1, Side: bid, Qty: 2, Penny Price: 5410, Avg Filled Price: 5411.0
+[INFO] MKU - Level: L1, Side: ask, Qty: 2, Penny Price: 5422, Avg Filled Price: 5354.0
+[INFO] MKU - Level: L2, Side: bid, Qty: 1, Penny Price: 5410, Avg Filled Price: 5353.0
+[INFO] MKU - Level: L2, Side: ask, Qty: 1, Penny Price: 5422, Avg Filled Price: 5374.0
+[INFO] IGM - Level: L0, Side: bid, Qty: 3, Penny Price: 5959, Avg Filled Price: 6368.0
+[TRY ASK] IGM - ask: 3 - penny_ask_price: 5958, avg_filled_price: 6368.0
+[INFO] IGM - Level: L0, Side: ask, Qty: 5, Penny Price: 5968, Avg Filled Price: 6201.0
+[TRY ASK] IGM - ask: 5 - penny_ask_price: 5967, avg_filled_price: 6201.0
+[INFO] IGM - Level: L1, Side: bid, Qty: 2, Penny Price: 5959, Avg Filled Price: 6366.0
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5958, avg_filled_price: 6366.0
+[INFO] IGM - Level: L1, Side: ask, Qty: 2, Penny Price: 5968, Avg Filled Price: 6433.5
+[TRY ASK] IGM - ask: 2 - penny_ask_price: 5967, avg_filled_price: 6433.5
+[INFO] IGM - Level: L2, Side: bid, Qty: 1, Penny Price: 5959, Avg Filled Price: 6468.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5958, avg_filled_price: 6468.0
+[INFO] IGM - Level: L2, Side: ask, Qty: 1, Penny Price: 5968, Avg Filled Price: 6407.0
+[TRY ASK] IGM - ask: 1 - penny_ask_price: 5967, avg_filled_price: 6407.0
+[INFO] BRV - Level: L0, Side: bid, Qty: 5, Penny Price: 5501, Avg Filled Price: 5601.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5500, avg_filled_price: 5601.8
+[INFO] BRV - Level: L0, Side: ask, Qty: 5, Penny Price: 5508, Avg Filled Price: 5593.8
+[TRY ASK] BRV - ask: 5 - penny_ask_price: 5507, avg_filled_price: 5593.8
+[INFO] BRV - Level: L1, Side: bid, Qty: 2, Penny Price: 5501, Avg Filled Price: 5576.0
+[TRY ASK] BRV - ask: 2 - penny_ask_price: 5500, avg_filled_price: 5576.0
+[INFO] BRV - Level: L1, Side: ask, Qty: 2, Penny Price: 5508, Avg Filled Price: 5556.0
