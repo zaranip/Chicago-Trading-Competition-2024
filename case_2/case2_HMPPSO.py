@@ -4,18 +4,20 @@ import scipy
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 import os
+from itertools import product
+
 
 data = pd.read_csv('Case 2 Data 2024.csv', index_col=0)
 TRAIN, TEST = train_test_split(data, test_size=0.2, shuffle=False)
 
 class HMPPSO:
     def __init__(self, num_particles, num_sub_populations, max_iter, w, c1, c2):
-        self.num_particles = num_particles
-        self.num_sub_populations = num_sub_populations
-        self.max_iter = max_iter
-        self.w = w
-        self.c1 = c1
-        self.c2 = c2
+        self.num_particles = 20
+        self.num_sub_populations = 7
+        self.max_iter = 30
+        self.w = 0.8
+        self.c1 = 1.2
+        self.c2 = 1.2
         self.particles = []
         self.best_position = None
         self.best_fitness = -np.inf
@@ -66,25 +68,31 @@ class HMPPSO:
         return self.best_position
 
 class Allocator:
-    def __init__(self, train_data):
+    def __init__(self, train_data, num_particles, num_sub_populations, max_iter, w, c1, c2):
         self.train_data = train_data
-        self.num_particles = 50
-        self.num_sub_populations = 5
-        self.max_iter = 50
-        self.w = 0.7
-        self.c1 = 1.4
-        self.c2 = 1.4
+        self.train_data = train_data
+        self.num_particles = num_particles
+        self.num_sub_populations = num_sub_populations
+        self.max_iter = max_iter
+        self.w = w
+        self.c1 = c1
+        self.c2 = c2
         self.hmppso = HMPPSO(self.num_particles, self.num_sub_populations, self.max_iter, self.w, self.c1, self.c2)
 
     def allocate_portfolio(self, asset_prices):
+        # returns = np.array(asset_prices) / np.array(self.train_data.iloc[-1])
+        # cov_matrix = np.cov(self.train_data.T)
+        # weights = self.hmppso.optimize(returns, cov_matrix)
+        # return weights
         returns = np.array(asset_prices) / np.array(self.train_data.iloc[-1])
         cov_matrix = np.cov(self.train_data.T)
         weights = self.hmppso.optimize(returns, cov_matrix)
         return weights
 
+
 def grading(train_data, test_data):
     weights = np.full(shape=(len(test_data.index), len(data.columns)), fill_value=0.0)
-    alloc = Allocator(train_data)
+    alloc = Allocator(train_data, num_particles, num_sub_populations, max_iter, w, c1, c2)
     for i in range(0, len(test_data)):
         weights[i, :] = alloc.allocate_portfolio(test_data.iloc[i, :])
         if np.sum(weights < -1) or np.sum(weights > 1):
@@ -106,6 +114,33 @@ def grading(train_data, test_data):
 
     return sharpe, capital, weights
 
+# # Define the range of values for each hyperparameter
+# num_particles_range = [20, 30, 40]
+# num_sub_populations_range = [3, 5, 7]
+# max_iter_range = [20, 25, 30]
+# w_range = [0.6, 0.7, 0.8]
+# c1_range = [1.2, 1.4, 1.6]
+# c2_range = [1.2, 1.4, 1.6]
+
+# # Create a list of all possible combinations of hyperparameters
+# param_combinations = list(product(num_particles_range, num_sub_populations_range, max_iter_range, w_range, c1_range, c2_range))
+
+# best_sharpe = -np.inf
+# best_params = None
+
+# # Perform grid search
+# for params in param_combinations:
+#     num_particles, num_sub_populations, max_iter, w, c1, c2 = params
+#     sharpe, _, _ = grading(TRAIN, TEST, num_particles, num_sub_populations, max_iter, w, c1, c2)
+#     if sharpe > best_sharpe:
+#         best_sharpe = sharpe
+#         best_params = params
+
+# print("Best Sharpe Ratio:", best_sharpe)
+# print("Best Hyperparameters:", best_params)
+
+# # Use the best hyperparameters to allocate the portfolio and plot the results
+# num_particles, num_sub_populations, max_iter, w, c1, c2 = best_params
 sharpe, capital, weights = grading(TRAIN, TEST)
 print(sharpe)
 
