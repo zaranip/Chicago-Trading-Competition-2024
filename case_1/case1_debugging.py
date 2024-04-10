@@ -103,6 +103,7 @@ class PIPOBot(xchange_client.XChangeClient):
             return None
         if qty <= 0:
             return None
+        qty = int(qty)  # Convert qty to an integer
         sampled_prices = random.sample(filled_prices, min(qty, len(filled_prices)))
         return sum(sampled_prices) / len(sampled_prices)
 
@@ -153,7 +154,7 @@ class PIPOBot(xchange_client.XChangeClient):
     async def adjust_aggressiveness_ratio(self, contract, level, side, penny_price):
         # Adjust aggressiveness based on level positions and overall position
         ratio = self.order_ratios[level] / sum(self.order_ratios.values())
-        maintain_ratio_qty = abs(abs(self.open_orders[contract].level_positions[level]) - int(self.order_size * ratio))
+        maintain_ratio_qty = int(abs(abs(self.open_orders[contract].level_positions[level]) - int(self.order_size * ratio)))
         avg_filled_price = self.get_avg_filled_price(contract, level, "bid" if side=="ask" else "ask", maintain_ratio_qty)
         #print(f"[INFO] {contract} - Level: {level}, Side: {side}, Qty: {qty}, Penny Price: {penny_price}, Avg Filled Price: {avg_filled_price}")
         
@@ -183,7 +184,7 @@ class PIPOBot(xchange_client.XChangeClient):
     
     async def adjust_aggressiveness_position(self, contract, level, side, penny_price):
         # Adjust aggressiveness based on level positions and overall position
-        qty = abs(abs(self.positions[contract]) - 0.5 * MAX_ABSOLUTE_POSITION)
+        qty = int(abs(abs(self.positions[contract]) - 0.5 * MAX_ABSOLUTE_POSITION))
         avg_filled_price = self.get_avg_filled_price(contract, level, "bid" if side=="ask" else "ask", qty)
         #print(f"[INFO] {contract} - Level: {level}, Side: {side}, Qty: {qty}, Penny Price: {penny_price}, Avg Filled Price: {avg_filled_price}")
         
@@ -222,8 +223,8 @@ class PIPOBot(xchange_client.XChangeClient):
                         for level in self.order_ratios:
                             spread = self.spreads[level]
                             await self.place_level_orders(contract, level, spread, penny_bid_price, penny_ask_price)
-                await self.adjust_aggressiveness_position(contract, level, 'bid', penny_bid_price)
-                await self.adjust_aggressiveness_position(contract, level, 'ask', penny_ask_price)
+                await self.adjust_aggressiveness_position(contract, 'L0', 'bid', penny_bid_price)
+                await self.adjust_aggressiveness_position(contract, 'L0', 'ask', penny_ask_price)
                 pos[contract] = self.positions[contract]
             print(f"[LOG] Total Positions: {pos}")
             await asyncio.sleep(1)
