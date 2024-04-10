@@ -1,0 +1,41 @@
+Method: Nelder-Mead
+Mean Sharpe Ratio: 1.3484
+Variance of Sharpe Ratios: 0.5691
+Standard Deviation of Sharpe Ratios: 0.7544
+Best value of k: 2451
+
+Method: Powell
+Mean Sharpe Ratio: 1.3809
+Variance of Sharpe Ratios: 0.5921
+Standard Deviation of Sharpe Ratios: 0.7695
+Best value of k: 2451
+
+Method: CG
+Mean Sharpe Ratio: 1.2329
+Variance of Sharpe Ratios: 0.6759
+Standard Deviation of Sharpe Ratios: 0.8221
+Best value of k: 2451
+
+Method: BFGS
+Mean Sharpe Ratio: 1.2534
+Variance of Sharpe Ratios: 0.7090
+Standard Deviation of Sharpe Ratios: 0.8420
+Best value of k: 2451
+
+Method: L-BFGS-B
+Mean Sharpe Ratio: 1.3686
+Variance of Sharpe Ratios: 0.4831
+Standard Deviation of Sharpe Ratios: 0.6951
+Best value of k: 2451
+
+Method: TNC
+Mean Sharpe Ratio: 1.3666
+Variance of Sharpe Ratios: 0.4661
+Standard Deviation of Sharpe Ratios: 0.6827
+Best value of k: 2451
+
+Method: SLSQP
+Mean Sharpe Ratio: 1.2883
+Variance of Sharpe Ratios: 0.5125
+Standard Deviation of Sharpe Ratios: 0.7159
+Best value of k: 2411
