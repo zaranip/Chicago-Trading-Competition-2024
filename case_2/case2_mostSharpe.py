@@ -101,7 +101,7 @@ def detailed_portfolio_statistics(weights, returns):
     print(std_dev_annualized)
 
     # Optimization Metrics
-    risk_free_rate = 0.00
+    risk_free_rate = 0.02
     sharpe_ratio = (mean_return_annualized - risk_free_rate) / std_dev_annualized
     print("\nSharpe Ratio: ")
     print(sharpe_ratio)
