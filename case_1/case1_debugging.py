@@ -73,8 +73,8 @@ class PIPOBot(xchange_client.XChangeClient):
         self.contracts = ["EPT", "DLO", "MKU", "IGM", "BRV"]
         self.order_size = 10
         self.order_ratios = {'L0': 1, 'L1': 0.5, 'L2': 0.35, 'L3': 0.15}
-        self.edge = 1  # cent margin
-        self.spreads = {'L0': self.edge, 'L1': 2, 'L2': 4, 'L3': 6}
+        self.margin = 1  # cent margin
+        self.spreads = {'L0': self.margin, 'L1': 2, 'L2': 4, 'L3': 6}
         self.open_orders = {contract: OpenOrders(contract) for contract in self.contracts}
         self.slack = 1
         
@@ -130,18 +130,18 @@ class PIPOBot(xchange_client.XChangeClient):
         ask_qty = min(order_size, MAX_ABSOLUTE_POSITION + self.positions[contract], MAX_ORDER_SIZE, MAX_OUTSTANDING_VOLUME - outstanding_ask_volume)
         
         # Aggressive buying and selling
-        await self.adjust_aggressiveness(contract, level, 'bid', bid_qty, penny_bid_price)
-        await self.adjust_aggressiveness(contract, level, 'ask', ask_qty, penny_ask_price)
+        await self.adjust_aggressiveness_ratio(contract, level, 'bid', penny_bid_price)
+        await self.adjust_aggressiveness_ratio(contract, level, 'ask', penny_ask_price)
         
         # Normal penny in penny out strategy
         if bid_qty > 0 and penny_bid_price - spread > 0:
-            bid_response = await self.custom_place_order(contract, bid_qty, xchange_client.Side.BUY, penny_bid_price + spread + self.edge)
+            bid_response = await self.custom_place_order(contract, bid_qty, xchange_client.Side.BUY, penny_bid_price + spread)
             self.open_orders[contract].order_ids[f'{level}_bid'] = bid_response
-            self.open_orders[contract].modify_order(penny_bid_price + spread + self.edge, bid_qty, old_bid_id, bid_response)
+            self.open_orders[contract].modify_order(penny_bid_price + spread, bid_qty, old_bid_id, bid_response)
         if ask_qty > 0:
-            ask_response = await self.custom_place_order(contract, ask_qty, xchange_client.Side.SELL, penny_ask_price - spread - self.edge)
+            ask_response = await self.custom_place_order(contract, ask_qty, xchange_client.Side.SELL, penny_ask_price - spread)
             self.open_orders[contract].order_ids[f'{level}_ask'] = ask_response
-            self.open_orders[contract].modify_order(penny_ask_price - spread - self.edge, -ask_qty, old_ask_id, ask_response)
+            self.open_orders[contract].modify_order(penny_ask_price - spread, -ask_qty, old_ask_id, ask_response)
 
     async def cancel_unfavorable_orders_from_contract(self, contract):
         # Cancel unfavorable orders for a specific contract based on max open orders limit
@@ -150,52 +150,65 @@ class PIPOBot(xchange_client.XChangeClient):
             await self.cancel_order(oldest_order_id)
             self.open_orders[contract].remove_order(oldest_order_id)
     
-    async def adjust_aggressiveness(self, contract, level, side, qty, penny_price):
+    async def adjust_aggressiveness_ratio(self, contract, level, side, penny_price):
         # Adjust aggressiveness based on level positions and overall position
         ratio = self.order_ratios[level] / sum(self.order_ratios.values())
-        if qty == 0:
-            return
-        avg_filled_price = self.get_avg_filled_price(contract, level, "bid" if side=="ask" else "ask", qty)
-        print(f"[INFO] {contract} - Level: {level}, Side: {side}, Qty: {qty}, Penny Price: {penny_price}, Avg Filled Price: {avg_filled_price}")
+        maintain_ratio_qty = abs(abs(self.open_orders[contract].level_positions[level]) - int(self.order_size * ratio))
+        avg_filled_price = self.get_avg_filled_price(contract, level, "bid" if side=="ask" else "ask", maintain_ratio_qty)
+        #print(f"[INFO] {contract} - Level: {level}, Side: {side}, Qty: {qty}, Penny Price: {penny_price}, Avg Filled Price: {avg_filled_price}")
         
         if avg_filled_price is None:
             return
         
         if self.open_orders[contract].level_positions[level] < -ratio * MAX_ABSOLUTE_POSITION:
-            print(f"[TRY BUY] {contract} - buy: {qty} - penny_bid_price: {penny_price+self.edge}, avg_filled_price: {avg_filled_price}")
-            if penny_price + self.edge < avg_filled_price:
-                bid_response = await self.custom_place_order(contract, qty, xchange_client.Side.BUY, penny_price + self.edge)
+            print(f"[TRY BUY] {contract} - buy: {maintain_ratio_qty} - penny_bid_price: {penny_price+self.margin}, avg_filled_price: {avg_filled_price}")
+            if penny_price < avg_filled_price:
+                diff = avg_filled_price - penny_price
+                bid_response = await self.custom_place_order(contract, maintain_ratio_qty, xchange_client.Side.BUY, penny_price + int(diff/2))
                 self.open_orders[contract].order_ids[f'{level}_bid'] = bid_response
-                self.open_orders[contract].modify_order(penny_price + self.edge, qty, self.open_orders[contract].order_ids[f'{level}_bid'], bid_response)
-                self.remove_filled_prices(contract, level, 'bid', qty)
-                print(f"[AGGRESSIVE BUY] {contract} - Placed Aggressive Bid Order. ID: {bid_response}, Qty: {qty}, Price: {penny_price + self.edge}")
+                self.open_orders[contract].modify_order(penny_price + self.margin, maintain_ratio_qty, self.open_orders[contract].order_ids[f'{level}_bid'], bid_response)
+                self.remove_filled_prices(contract, level, 'bid', maintain_ratio_qty)
+                print(f"[AGGRESSIVE BUY] {contract} - Placed Aggressive Bid Order. ID: {bid_response}, Qty: {maintain_ratio_qty}, Price: {penny_price + self.margin}")
         
         elif self.open_orders[contract].level_positions[level] > ratio * MAX_ABSOLUTE_POSITION:
-            print(f"[TRY ASK] {contract} - ask: {qty} - penny_ask_price: {penny_price - self.edge}, avg_filled_price: {avg_filled_price}")
-            if penny_price - self.edge > avg_filled_price:
-                ask_response = await self.custom_place_order(contract, qty, xchange_client.Side.SELL, penny_price - self.edge)
+            print(f"[TRY ASK] {contract} - ask: {maintain_ratio_qty} - penny_ask_price: {penny_price - self.margin}, avg_filled_price: {avg_filled_price}")
+            if penny_price - self.margin > avg_filled_price:
+                diff = penny_price - avg_filled_price
+                ask_response = await self.custom_place_order(contract, maintain_ratio_qty, xchange_client.Side.SELL, penny_price - int(diff/2))
                 self.open_orders[contract].order_ids[f'{level}_ask'] = ask_response
-                self.open_orders[contract].modify_order(penny_price - self.edge, -qty, self.open_orders[contract].order_ids[f'{level}_ask'], ask_response)
-                self.remove_filled_prices(contract, level, 'ask', qty)
-                print(f"[AGGRESSIVE SELL] {contract} - Placed Aggressive Ask Order. ID: {ask_response}, Qty: {qty}, Price: {penny_price - self.edge}")
+                self.open_orders[contract].modify_order(penny_price - self.margin, -maintain_ratio_qty, self.open_orders[contract].order_ids[f'{level}_ask'], ask_response)
+                self.remove_filled_prices(contract, level, 'ask', maintain_ratio_qty)
+                print(f"[AGGRESSIVE SELL] {contract} - Placed Aggressive Ask Order. ID: {ask_response}, Qty: {maintain_ratio_qty}, Price: {penny_price - self.margin}")
+        
+    
+    async def adjust_aggressiveness_position(self, contract, level, side, penny_price):
+        # Adjust aggressiveness based on level positions and overall position
+        qty = abs(abs(self.positions[contract]) - 0.5 * MAX_ABSOLUTE_POSITION)
+        avg_filled_price = self.get_avg_filled_price(contract, level, "bid" if side=="ask" else "ask", qty)
+        #print(f"[INFO] {contract} - Level: {level}, Side: {side}, Qty: {qty}, Penny Price: {penny_price}, Avg Filled Price: {avg_filled_price}")
+        
+        if avg_filled_price is None:
+            return
         
         if self.positions[contract] > 0.5 * MAX_ABSOLUTE_POSITION:
-            print(f"[TRY ASK] {contract} - ask: {qty} - penny_ask_price: {penny_price - self.edge}, avg_filled_price: {avg_filled_price}")
+            print(f"[TRY ASK] {contract} - ask: {qty} - penny_ask_price: {penny_price - self.margin}, avg_filled_price: {avg_filled_price}")
             if penny_price > avg_filled_price:
                 diff = penny_price - avg_filled_price
                 ask_response = await self.custom_place_order(contract, qty, xchange_client.Side.SELL, penny_price - int(diff/2))
                 self.open_orders[contract].order_ids[f'{level}_ask'] = ask_response
                 self.remove_filled_prices(contract, level, 'ask', qty)
-                print(f"[AGGRESSIVE ASK] {contract} - Placed Aggressive Ask Order. ID: {ask_response}, Qty: {qty}, Price: {penny_price - (diff//2)}")
+                print(f"[AGGRESSIVE ASK] {contract} - Placed Aggressive Ask Order. ID: {ask_response}, Qty: {qty}, Price: {penny_price - int(diff/2)}")
         
         elif self.positions[contract] < -0.5 * MAX_ABSOLUTE_POSITION:
-            print(f"[TRY BUY] {contract} - buy: {qty} - penny_bid_price: {penny_price + self.edge}, avg_filled_price: {avg_filled_price}")
+            print(f"[TRY BUY] {contract} - buy: {qty} - penny_bid_price: {penny_price + self.margin}, avg_filled_price: {avg_filled_price}")
             if penny_price < avg_filled_price:
                 diff = avg_filled_price - penny_price
                 bid_response = await self.custom_place_order(contract, qty, xchange_client.Side.BUY, penny_price + int(diff/2))
                 self.open_orders[contract].order_ids[f'{level}_bid'] = bid_response
                 self.remove_filled_prices(contract, level, 'bid', qty)
-                print(f"[AGGRESSIVE BUY] {contract} - Placed Aggressive Bid Order. ID: {bid_response}, Qty: {qty}, Price: {penny_price + (diff//2)}")
+                print(f"[AGGRESSIVE BUY] {contract} - Placed Aggressive Bid Order. ID: {bid_response}, Qty: {qty}, Price: {penny_price + int(diff/2)}")
+
+
 
     async def trade(self):
         # Main trading loop
@@ -209,9 +222,9 @@ class PIPOBot(xchange_client.XChangeClient):
                         for level in self.order_ratios:
                             spread = self.spreads[level]
                             await self.place_level_orders(contract, level, spread, penny_bid_price, penny_ask_price)
-                    pos[contract] = self.positions[contract]
-                else:
-                    print(f"[WARNING] {contract} - Invalid Penny Prices. Skipping order placement.")
+                await self.adjust_aggressiveness_position(contract, level, 'bid', penny_bid_price)
+                await self.adjust_aggressiveness_position(contract, level, 'ask', penny_ask_price)
+                pos[contract] = self.positions[contract]
             print(f"[LOG] Total Positions: {pos}")
             await asyncio.sleep(1)
         
