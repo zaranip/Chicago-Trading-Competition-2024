@@ -82,6 +82,8 @@ def grading(train_data, test_data):
     returns = (capital[1:] - capital[:-1]) / capital[:-1]
 
     if np.std(returns) != 0:
+        print(np.mean(returns))
+        print(np.std(returns))
         sharpe = np.mean(returns) / np.std(returns)
     else:
         sharpe = 0
