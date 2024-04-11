@@ -17,8 +17,9 @@ class Allocator():
         ''' Anything data you want to store between days must be stored in a class field '''
         self.running_price_paths = train_data.copy()
         self.train_data = train_data.copy()
-        self.alloc = algos.OLMAR(window=5, eps=10)
-        #BestMarkowitz()
+        self.alloc = algos.BestMarkowitz() #algos.OLMAR(window=5, eps=10)
+        self.i = 0
+        #
         
         # Do any preprocessing here -- do not touch running_price_paths, it will store the price path up to that data
         
@@ -27,8 +28,11 @@ class Allocator():
             weights: np array of length 6, portfolio allocation for the next day
         '''        
         ### TODO Implement your code here
-        result = self.alloc.run(asset_prices)
-        weights = result.weights
+        self.train_data = self.train_data.append(asset_prices, ignore_index=True)
+        result = self.alloc.run(self.train_data)
+        weights = result.weights.iloc[self.i,:]
+        print(result.summary())
+        self.i += 1
         
         return weights
 
@@ -36,8 +40,6 @@ def grading(train_data, test_data):
     ''' Grading Script '''
     weights = np.full(shape=(len(test_data.index),6), fill_value=0.0)
     alloc = Allocator(train_data)
-    print(train_data)
-    print(test_data)
     
     for i in range(0,len(test_data)):
         weights[i,:] = alloc.allocate_portfolio(test_data.iloc[i,:])

@@ -1,0 +1,54 @@
+Method:  PAMR Train Test Ratio:  0.7 Window Size:  252
+Average Sharpe Ratio: 2.6426352113201483
+Variance of Sharpe Ratios: 0.6793542300170256
+Standard Deviation of Sharpe Ratios: 0.8242294765519039
+
+
+Method:  PAMR Train Test Ratio:  0.75 Window Size:  252
+Average Sharpe Ratio: 2.507396048878017
+Variance of Sharpe Ratios: 0.675131382674511
+Standard Deviation of Sharpe Ratios: 0.8216637893168416
+
+
+Method:  PAMR Train Test Ratio:  0.8 Window Size:  252
+Average Sharpe Ratio: 2.444482212860535
+Variance of Sharpe Ratios: 1.0642483654808719
+Standard Deviation of Sharpe Ratios: 1.0316241396365595
+
+
+Method:  PAMR Train Test Ratio:  0.7 Window Size:  1260
+Average Sharpe Ratio: -2.110975505891565
+Variance of Sharpe Ratios: 2.5750753597994104e-06
+Standard Deviation of Sharpe Ratios: 0.0016047041346614055
+
+
+Method:  PAMR Train Test Ratio:  0.75 Window Size:  1260
+Average Sharpe Ratio: -2.442521031702908
+Variance of Sharpe Ratios: 0.0036830651983744125
+Standard Deviation of Sharpe Ratios: 0.06068826244319747
+
+
+Method:  PAMR Train Test Ratio:  0.8 Window Size:  1260
+Average Sharpe Ratio: -1.9495573469293532
+Variance of Sharpe Ratios: 0.0003519270868266252
+Standard Deviation of Sharpe Ratios: 0.018759719796058394
+
+
+Method:  PAMR Train Test Ratio:  0.7 Window Size:  2520
+Average Sharpe Ratio: 0.8503940758969414
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  PAMR Train Test Ratio:  0.75 Window Size:  2520
+Average Sharpe Ratio: 1.4340491033911045
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  PAMR Train Test Ratio:  0.8 Window Size:  2520
+Average Sharpe Ratio: 2.1969919866296954
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+

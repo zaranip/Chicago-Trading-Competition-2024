@@ -9,7 +9,7 @@ data = pd.read_csv('Case 2 Data 2024.csv', index_col=0)
 SYMBOLS = data.keys()
 print(SYMBOLS)
 
-TRAIN, TEST = train_test_split(data, test_size=0.2, shuffle=False)
+TRAIN, TEST = train_test_split(data, test_size=0.9, shuffle=False)
 
 class Allocator():
         #  def __init__(self, train_data, eps=0.5, C=500, variant=0, max_weight=0.3):
@@ -65,6 +65,8 @@ class Allocator():
         return self.last_b
 
 def grading(train_data, test_data):
+    print(train_data)
+    print(test_data)
     weights = np.full(shape=(len(test_data.index), 6), fill_value=0.0)
     alloc = Allocator(train_data)
     for i in range(0, len(test_data)):
@@ -81,13 +83,14 @@ def grading(train_data, test_data):
     capital = np.array(capital)
     returns = (capital[1:] - capital[:-1]) / capital[:-1]
 
+
     if np.std(returns) != 0:
         print(np.mean(returns))
         print(np.std(returns))
         sharpe = np.mean(returns) / np.std(returns)
     else:
         sharpe = 0
-    print(weights)
+
     return sharpe, capital, weights
 
 sharpe, capital, weights = grading(TRAIN, TEST)
