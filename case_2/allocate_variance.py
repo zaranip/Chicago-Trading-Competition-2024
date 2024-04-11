@@ -94,10 +94,12 @@ SYMBOLS = data.keys()
 #         return self.last_b
 
 class Allocator():
-    def __init__(self, train_data):
+    def __init__(self, data, train_data):
         ''' Anything data you want to store between days must be stored in a class field '''
         self.running_price_paths = train_data.copy()
+        self.data = data
         self.train_data = train_data.copy()
+        self.i = 0
         self.alloc = algos.BestMarkowitz()
         
         # Do any preprocessing here -- do not touch running_price_paths, it will store the price path up to that data
@@ -108,9 +110,10 @@ class Allocator():
         '''        
         ### TODO Implement your code here
         self.train_data = self.train_data.append(asset_prices, ignore_index=True)
-        result = self.alloc.run(self.train_data)
-        weights = result.weights
+        result = self.alloc.run(self.data)
+        weights = result.weights.iloc[self.i,:]
         
+        self.i += 1
         return weights
 
 def grading(data, method):
@@ -130,7 +133,7 @@ def grading(data, method):
                 window_test_data = window_data.iloc[int(train_test_ratio*len(window_data)):]
 
                 weights = np.full(shape=(len(window_test_data.index), len(SYMBOLS)), fill_value=0.0)
-                alloc = Allocator(window_train_data)
+                alloc = Allocator(window_data, window_train_data)
 
                 for j in range(len(window_test_data)):
                     weights[j, :] = alloc.allocate_portfolio(window_test_data.iloc[j, :])
@@ -166,5 +169,5 @@ def grading(data, method):
     return sharpe_ratios, capitals, weights_list
 
 # Set the window size (k)
-method = "PAMR"
+method = "MARKOWITZ_ONESHOT"
 sharpe_ratios, capitals, weights_list = grading(data, method)
