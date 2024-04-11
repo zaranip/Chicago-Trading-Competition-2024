@@ -6,6 +6,8 @@ from scipy.stats import norm
 from scipy.stats import skew, kurtosis
 from scipy.stats.mstats import gmean
 import os, sys
+from sklearn.model_selection import train_test_split
+
 
 def log_to_file(log_file_path):
     """
@@ -33,11 +35,11 @@ def log_to_file(log_file_path):
 
 log_to_file("case_2/trial_3/mc_chungus.txt")
 
-data = pd.read_csv('Case 2 Data 2024.csv')
-symbols = data.columns[1:]  # Exclude the first column (presumably the date or index)
+data = pd.read_csv('Case 2 Data 2024.csv', index_col=0)
+symbols = data.columns  # Exclude the first column (presumably the date or index)
 
 # Calculate returns
-returns = data.iloc[:, 1:].pct_change().dropna()  # Exclude the first column from returns calculation
+returns = data.pct_change().dropna()  # Exclude the first column from returns calculation
 num_data_points = len(returns)
 
 def objective_sharpe(weights, returns):
@@ -84,26 +86,34 @@ bounds = tuple((0, 1) for x in range(len(symbols)))
 init_guess = np.array(len(symbols) * [1. / len(symbols)])
 
 min_test_points = 50  # Minimum number of data points required in the test set
+TRAIN_DATA, TEST_DATA = train_test_split(data, test_size=0.2, shuffle=False)
 
-for method in ['TNC', 'SLSQP']:
+for method in ['CG']:
     print(f"Method: {method}")
     # Store k values and test Sharpe ratios
     k_values = []
     test_sharpe_ratios = []
-    interval = 1
+    interval = 252
     print(data.shape, returns.shape, num_data_points)
-    for k in range(1, num_data_points - min_test_points, interval):
+    for k in range(len(TEST_DATA)):
         # print(f"Train-Test Split with k = {k}")
         
         # Split the data into train and test sets
-        train_data = returns.iloc[:k]
-        test_data = returns.iloc[k:]
-        
-        opt_results_sharpe = minimize(objective_sharpe, init_guess, args=train_data, method=method, bounds=bounds, constraints=cons)
+        # train_data = returns.iloc[:k]
+        # test_data = returns.iloc[k:]
+        TRAIN_DATA = TRAIN_DATA.append(TEST_DATA.iloc[k])
+        TRAIN = TRAIN_DATA.pct_change().dropna()
+        TEST = TEST_DATA.pct_change().dropna()
+        #print(TRAIN_DATA)
+
+        opt_results_sharpe = minimize(objective_sharpe, init_guess, args=TRAIN, method=method, bounds=bounds, constraints=cons)
         optimal_weights_sharpe = opt_results_sharpe.x
-        
+        optimal_weights_sharpe = optimal_weights_sharpe/np.max(abs(optimal_weights_sharpe)) if np.max(abs(optimal_weights_sharpe)) > 1 else optimal_weights_sharpe
+        print(optimal_weights_sharpe)
+        #print(optimal_weights_sharpe.shape)
+        init_guess = optimal_weights_sharpe
         # Evaluate the portfolio on the test data
-        test_statistics = detailed_portfolio_statistics(optimal_weights_sharpe, test_data)
+        test_statistics = detailed_portfolio_statistics(optimal_weights_sharpe, TEST)
         test_sharpe_ratio = test_statistics[6]  # Index 6 corresponds to Sharpe Ratio
         
         k_values.append(k)

@@ -1,0 +1,163 @@
+Method:  PAMR Train Test Ratio:  0.7 Window Size:  252
+Average Sharpe Ratio: 2.6426352113201483
+Variance of Sharpe Ratios: 0.6793542300170256
+Standard Deviation of Sharpe Ratios: 0.8242294765519039
+
+
+Method:  PAMR Train Test Ratio:  0.75 Window Size:  252
+Average Sharpe Ratio: 2.507396048878017
+Variance of Sharpe Ratios: 0.675131382674511
+Standard Deviation of Sharpe Ratios: 0.8216637893168416
+
+
+Method:  PAMR Train Test Ratio:  0.8 Window Size:  252
+Average Sharpe Ratio: 2.444482212860535
+Variance of Sharpe Ratios: 1.0642483654808719
+Standard Deviation of Sharpe Ratios: 1.0316241396365595
+
+
+Method:  PAMR Train Test Ratio:  0.7 Window Size:  1260
+Average Sharpe Ratio: -2.110975505891565
+Variance of Sharpe Ratios: 2.5750753597994104e-06
+Standard Deviation of Sharpe Ratios: 0.0016047041346614055
+
+
+Method:  PAMR Train Test Ratio:  0.75 Window Size:  1260
+Average Sharpe Ratio: -2.442521031702908
+Variance of Sharpe Ratios: 0.0036830651983744125
+Standard Deviation of Sharpe Ratios: 0.06068826244319747
+
+
+Method:  PAMR Train Test Ratio:  0.8 Window Size:  1260
+Average Sharpe Ratio: -1.9495573469293532
+Variance of Sharpe Ratios: 0.0003519270868266252
+Standard Deviation of Sharpe Ratios: 0.018759719796058394
+
+
+Method:  PAMR Train Test Ratio:  0.7 Window Size:  2520
+Average Sharpe Ratio: 0.8503940758969414
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  PAMR Train Test Ratio:  0.75 Window Size:  2520
+Average Sharpe Ratio: 1.4340491033911045
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  PAMR Train Test Ratio:  0.8 Window Size:  2520
+Average Sharpe Ratio: 2.1969919866296954
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  MARKOWITZ Train Test Ratio:  0.7 Window Size:  252
+Method:  MARKOWITZ Train Test Ratio:  0.7 Window Size:  252
+Average Sharpe Ratio: 1.9932676366898936
+Variance of Sharpe Ratios: 0.043969413744921984
+Standard Deviation of Sharpe Ratios: 0.2096888498345155
+
+
+Method:  MARKOWITZ Train Test Ratio:  0.75 Window Size:  252
+Average Sharpe Ratio: 1.2431979769724708
+Variance of Sharpe Ratios: 0.12269524094737157
+Standard Deviation of Sharpe Ratios: 0.3502788045933861
+
+
+Method:  MARKOWITZ Train Test Ratio:  0.8 Window Size:  252
+Average Sharpe Ratio: 2.081864816948317
+Variance of Sharpe Ratios: 0.346268555083478
+Standard Deviation of Sharpe Ratios: 0.5884458811849038
+
+
+Method:  MARKOWITZ Train Test Ratio:  0.7 Window Size:  1260
+Average Sharpe Ratio: 0.3698698310232672
+Variance of Sharpe Ratios: 0.000951305239274153
+Standard Deviation of Sharpe Ratios: 0.03084323652397966
+
+
+Method:  MARKOWITZ Train Test Ratio:  0.75 Window Size:  1260
+Average Sharpe Ratio: 0.1388274693038692
+Variance of Sharpe Ratios: 0.0009949623563259428
+Standard Deviation of Sharpe Ratios: 0.03154302389318346
+
+
+Method:  MARKOWITZ Train Test Ratio:  0.8 Window Size:  1260
+Average Sharpe Ratio: 0.988700636641425
+Variance of Sharpe Ratios: 0.0024237024941275984
+Standard Deviation of Sharpe Ratios: 0.04923111307016731
+
+
+Method:  MARKOWITZ Train Test Ratio:  0.7 Window Size:  2520
+Average Sharpe Ratio: 0.5528494231097107
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  MARKOWITZ Train Test Ratio:  0.75 Window Size:  2520
+Average Sharpe Ratio: 0.5160090208382891
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  MARKOWITZ Train Test Ratio:  0.8 Window Size:  2520
+Average Sharpe Ratio: 0.3430900535234152
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  MARKOWITZ_ONESHOT Train Test Ratio:  0.7 Window Size:  252
+Average Sharpe Ratio: 3.891637582278148
+Variance of Sharpe Ratios: 0.08300253091784439
+Standard Deviation of Sharpe Ratios: 0.2881015982563172
+
+
+Method:  MARKOWITZ_ONESHOT Train Test Ratio:  0.75 Window Size:  252
+Average Sharpe Ratio: 4.485803851384561
+Variance of Sharpe Ratios: 0.9812907491634675
+Standard Deviation of Sharpe Ratios: 0.9906012059166229
+
+
+Method:  MARKOWITZ_ONESHOT Train Test Ratio:  0.8 Window Size:  252
+Average Sharpe Ratio: 5.140676307887672
+Variance of Sharpe Ratios: 0.3706923891768775
+Standard Deviation of Sharpe Ratios: 0.6088451274149096
+
+
+Method:  MARKOWITZ_ONESHOT Train Test Ratio:  0.7 Window Size:  1260
+Average Sharpe Ratio: 1.0270346467892968
+Variance of Sharpe Ratios: 9.954044373587298e-05
+Standard Deviation of Sharpe Ratios: 0.009976995726964755
+
+
+Method:  MARKOWITZ_ONESHOT Train Test Ratio:  0.75 Window Size:  1260
+Average Sharpe Ratio: 0.7821040574628859
+Variance of Sharpe Ratios: 0.00018847893698879567
+Standard Deviation of Sharpe Ratios: 0.01372876312669119
+
+
+Method:  MARKOWITZ_ONESHOT Train Test Ratio:  0.8 Window Size:  1260
+Average Sharpe Ratio: 1.571905015631035
+Variance of Sharpe Ratios: 0.002892327792231278
+Standard Deviation of Sharpe Ratios: 0.053780366233703525
+
+
+Method:  MARKOWITZ_ONESHOT Train Test Ratio:  0.7 Window Size:  2520
+Average Sharpe Ratio: 1.4344171149441565
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  MARKOWITZ_ONESHOT Train Test Ratio:  0.75 Window Size:  2520
+Average Sharpe Ratio: 1.6580049268221189
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  MARKOWITZ_ONESHOT Train Test Ratio:  0.8 Window Size:  2520
+Average Sharpe Ratio: 1.855462963536209
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
