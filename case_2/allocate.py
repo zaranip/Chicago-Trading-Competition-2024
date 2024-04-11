@@ -87,7 +87,7 @@ def grading(train_data, test_data):
         sharpe = np.mean(returns) / np.std(returns)
     else:
         sharpe = 0
-
+    print(weights)
     return sharpe, capital, weights
 
 sharpe, capital, weights = grading(TRAIN, TEST)
