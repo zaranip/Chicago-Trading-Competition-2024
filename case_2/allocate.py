@@ -33,7 +33,7 @@ class Allocator():
         return weights
 
 def grading(train_data, test_data):
-    ''' Grading Script '''
+    '''Grading Script'''
     weights = np.full(shape=(len(test_data.index),6), fill_value=0.0)
     alloc = Allocator(train_data)
     
