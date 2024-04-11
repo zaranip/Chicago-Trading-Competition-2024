@@ -269,7 +269,7 @@ class MainBot(xchange_client.XChangeClient):
         self.load_open_orders()
         # get first round prices
         for symbol in SYMBOLS + ETFS:
-            self.bot_place_order(symbol, 1, xchange_client.Side.BUY, 0, market=True)
+            self.bot_place_order(symbol, 1, xchange_client.Side.SELL, 0, market=True)
         await asyncio.sleep(1)
         while True:
             bids = dict((symbol, self.last_transacted_price[symbol] - 1) for symbol in SYMBOLS + ETFS)
@@ -319,19 +319,19 @@ class MainBot(xchange_client.XChangeClient):
                     elif int(bids[symbol]) > 0:
                         await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, int(bids[symbol]))
   
-            # Level Orders
-            for symbol in SYMBOLS:
-                for level in range(1, 4):
-                    if bids[symbol] < 0 or asks[symbol] < 0:
-                        continue
-                    spread = self.spreads[level - 1]
-                    bid = bids[symbol] - spread
-                    ask = asks[symbol] + spread
+            # # Level Orders
+            # for symbol in SYMBOLS:
+            #     for level in range(1, 4):
+            #         if bids[symbol] < 0 or asks[symbol] < 0:
+            #             continue
+            #         spread = self.spreads[level - 1]
+            #         bid = bids[symbol] - spread
+            #         ask = asks[symbol] + spread
 
-                    if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
-                        await self.bot_place_order(symbol, 2, xchange_client.Side.BUY, int(bid), level)
-                    if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
-                        await self.bot_place_order(symbol, 2, xchange_client.Side.SELL, int(ask), level)
+            #         if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
+            #             await self.bot_place_order(symbol, 2, xchange_client.Side.BUY, int(bid), level)
+            #         if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
+            #             await self.bot_place_order(symbol, 2, xchange_client.Side.SELL, int(ask), level)
             # Viewing Positions
             print("My positions:", self.positions)
             await asyncio.sleep(1)
