@@ -117,12 +117,19 @@ def grading(train_data, test_data):
     capital = np.array(capital)
     returns = (capital[1:] - capital[:-1]) / capital[:-1]
 
+<<<<<<< Updated upstream
     risk_free_rate = 0.02
     excess_returns = returns - risk_free_rate
     if np.std(excess_returns) != 0:
         sharpe = np.mean(excess_returns) / np.std(excess_returns)
     else:
         sharpe = 0
+=======
+   if np.std(returns) != 0:
+       sharpe = np.mean(returns) / np.std(returns)
+   else:
+       sharpe = 0
+>>>>>>> Stashed changes
 
     return sharpe, capital, weights
 

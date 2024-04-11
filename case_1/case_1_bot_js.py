@@ -109,7 +109,7 @@ class MainBot(xchange_client.XChangeClient):
         self.spreads = [2,4,6]
         self.open_orders_object = open_orders
         self.open_orders = self.load_open_orders()
-        self.last_transacted_price = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
+        self.last_transacted_price = dict((symbol, {side: 0 for side in [xchange_client.Side.BUY, xchange_client.Side.SELL]}) for symbol in SYMBOLS + ETFS)
         self.fade = 2
         self.augmented = 0
         print("Object equality", self.open_orders_object)
@@ -125,7 +125,7 @@ class MainBot(xchange_client.XChangeClient):
 
     async def bot_handle_order_fill(self, order_id: str, qty: int, price: int):
         self.writing_to_file(order_id, "FILLED", price)
-        self.last_transacted_price[self.open_orders_object.get_symbol(order_id)] = price
+        self.last_transacted_price[self.open_orders_object.get_symbol(order_id)][self.open_orders_object.get_side(order_id)] = price
         self.open_orders_object.adjust_qty(order_id, -qty)
 
     async def bot_handle_order_rejected(self, order_id: str, reason: str) -> None:
@@ -251,8 +251,8 @@ class MainBot(xchange_client.XChangeClient):
         await asyncio.sleep(1)
         while True:
             # avg_last_prices = dict((symbol, self.last_transacted_price[symbol]["BID"]) for symbol in SYMBOLS + ETFS)
-            bids = dict((symbol, self.last_transacted_price[symbol] - 1) for symbol in SYMBOLS + ETFS)
-            asks = dict((symbol, self.last_transacted_price[symbol] + 1) for symbol in SYMBOLS + ETFS)
+            bids = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.BUY] - 1) for symbol in SYMBOLS + ETFS)
+            asks = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.SELL] + 1) for symbol in SYMBOLS + ETFS)
             
             # ETF Arbitrage
             # TODO: review

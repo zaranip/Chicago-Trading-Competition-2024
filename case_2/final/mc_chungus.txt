@@ -161,3 +161,68 @@ Variance of Sharpe Ratios: 0.0
 Standard Deviation of Sharpe Ratios: 0.0
 
 
+Method:  HMPPSO Train Test Ratio:  0.7 Window Size:  252
+Average Sharpe Ratio: 3.111914602699665
+Variance of Sharpe Ratios: 0.7080811071331953
+Standard Deviation of Sharpe Ratios: 0.841475553497067
+
+
+Method:  HMPPSO Train Test Ratio:  0.75 Window Size:  252
+Average Sharpe Ratio: 3.9412585745964845
+Variance of Sharpe Ratios: 0.5544173159367985
+Standard Deviation of Sharpe Ratios: 0.7445920466515866
+
+
+Method:  HMPPSO Train Test Ratio:  0.8 Window Size:  252
+Average Sharpe Ratio: 4.05890890112173
+Variance of Sharpe Ratios: 2.6980571697528704
+Standard Deviation of Sharpe Ratios: 1.6425763817104124
+
+
+Method:  HMPPSO Train Test Ratio:  0.7 Window Size:  1260
+Average Sharpe Ratio: -1.615387099625729
+Variance of Sharpe Ratios: 0.0194976129578286
+Standard Deviation of Sharpe Ratios: 0.13963385319408972
+
+
+Method:  HMPPSO Train Test Ratio:  0.75 Window Size:  1260
+Average Sharpe Ratio: -1.2642284613610988
+Variance of Sharpe Ratios: 0.0016772411104545122
+Standard Deviation of Sharpe Ratios: 0.04095413422909233
+
+
+Method:  HMPPSO Train Test Ratio:  0.8 Window Size:  1260
+Average Sharpe Ratio: -1.3046676875516485
+Variance of Sharpe Ratios: 0.22399700190337635
+Standard Deviation of Sharpe Ratios: 0.4732832153197241
+
+
+Method:  HMPPSO Train Test Ratio:  0.7 Window Size:  2520
+Average Sharpe Ratio: -0.0026676401276447604
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  HMPPSO Train Test Ratio:  0.75 Window Size:  2520
+Average Sharpe Ratio: 0.3285506079394327
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  HMPPSO Train Test Ratio:  0.8 Window Size:  2520
+Average Sharpe Ratio: 0.9595298892655852
+Variance of Sharpe Ratios: 0.0
+Standard Deviation of Sharpe Ratios: 0.0
+
+
+Method:  PAMR FINAL Train Test Ratio:  0.7 Window Size:  252
+Method:  PAMR FINAL Train Test Ratio:  0.7 Window Size:  252
+Method:  PAMR FINAL Train Test Ratio:  0.7 Window Size:  252
+Method:  PAMR FINAL Train Test Ratio:  0.7 Window Size:  252
+A    112.707185
+B    117.222772
+C    100.649843
+D     99.103472
+E    126.245232
+F     89.239126
+Name: 176, dtype: float64
