@@ -1,4 +1,5 @@
 import asyncio
+import math
 import random
 import traceback
 import numpy as np
@@ -107,11 +108,11 @@ class MainBot(xchange_client.XChangeClient):
         self.order_size = 10
         self.level_orders = 10
         self.spreads = [2,4,6]
+        self.fade = 15
         self.open_orders_object = open_orders
         self.open_orders = self.load_open_orders()
         self.last_transacted_price = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
-        self.fade = 2
-        self.augmented = 0
+        self.augmented = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
         print("Object equality", self.open_orders_object)
 
 
@@ -238,6 +239,12 @@ class MainBot(xchange_client.XChangeClient):
                                                         side=side)
             open_orders[order_id] = [order_request, qty, False]
         return open_orders
+    def set_fade_logic(self):
+        threshold = 0.5
+        for symbol in SYMBOLS + ETFS:
+            absolute_position = abs(self.positions[symbol]) / MAX_ABSOLUTE_POSITION
+            sign = 1 if self.positions[symbol] > 0 else -1
+            self.augmented[symbol] = - self.fade * sign *math.log2(1 + absolute_position)
 
 
     async def trade(self):
@@ -251,9 +258,11 @@ class MainBot(xchange_client.XChangeClient):
         await asyncio.sleep(1)
         while True:
             # avg_last_prices = dict((symbol, self.last_transacted_price[symbol]["BID"]) for symbol in SYMBOLS + ETFS)
-            bids = dict((symbol, self.last_transacted_price[symbol] - 1) for symbol in SYMBOLS + ETFS)
-            asks = dict((symbol, self.last_transacted_price[symbol] + 1) for symbol in SYMBOLS + ETFS)
+            self.set_fade_logic()
             
+            bids = dict((symbol, self.last_transacted_price[symbol] + self.augmented[symbol] - 1) for symbol in SYMBOLS + ETFS)
+            asks = dict((symbol, self.last_transacted_price[symbol] + self.augmented[symbol] + 1) for symbol in SYMBOLS + ETFS)
+            # handle the unbalanced position
             # ETF Arbitrage
             # TODO: review
             # how aggressively to arbitrage
@@ -286,19 +295,19 @@ class MainBot(xchange_client.XChangeClient):
             
             # Penny In Penny Out
             for symbol in SYMBOLS + ETFS:
-                buy_volume = random.randint(4, 10)
+                buy_volume = random.randint(4, 7)
                 sell_volume = buy_volume
                 buy_first = random.choice([True, False])
                 if buy_first:
                     if int(bids[symbol]) > 0:
-                        await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, int(bids[symbol]))
+                        await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, round(bids[symbol]))
                     elif int(asks[symbol]) > 0:
-                        await self.bot_place_order(symbol, sell_volume, xchange_client.Side.SELL, int(asks[symbol]))
+                        await self.bot_place_order(symbol, sell_volume, xchange_client.Side.SELL, round(asks[symbol]))
                 else:
                     if int(asks[symbol]) > 0:
-                        await self.bot_place_order(symbol, sell_volume, xchange_client.Side.SELL, int(asks[symbol]))
+                        await self.bot_place_order(symbol, sell_volume, xchange_client.Side.SELL, round(asks[symbol]))
                     elif int(bids[symbol]) > 0:
-                        await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, int(bids[symbol]))
+                        await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, round(bids[symbol]))
   
             # # Level Orders
             # TODO: review
@@ -315,7 +324,8 @@ class MainBot(xchange_client.XChangeClient):
             #         if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
             #             await self.bot_place_order(symbol, 2, xchange_client.Side.SELL, int(ask), level)
             # Viewing Positions
-            print("My positions:", self.positions)
+            print(self.estimate_pnl())
+            # print("My positions:", self.positions)
             await asyncio.sleep(1)
 
     async def view_books(self):
