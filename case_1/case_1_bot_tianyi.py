@@ -28,9 +28,8 @@ class OrderResponse:
 
 class OpenOrders:
     def __init__(self):
-        self.num_open_orders = 0
-        self.outstanding_volume = 0
-        self.trap_ids = set()
+        self.num_open_orders = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
+        self.outstanding_volume = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
         self.id_to_price = {}
         self.id_to_qty = {}
         self.id_to_side = {}
@@ -38,17 +37,21 @@ class OpenOrders:
         self.id_to_symbol = {}
         self.level_orders = dict((symbol, {0: 0, 1: 0, 2: 0, 3: 0}) for symbol in SYMBOLS + ETFS)
         self.queue = dict((symbol, collections.deque()) for symbol in SYMBOLS + ETFS)
+        self.trap_ids = set()
     def adjust_qty(self, id, adj):
         self.id_to_qty[id] += adj
-        self.outstanding_volume += adj
+        symbol = self.id_to_symbol[id]
+        self.outstanding_volume[symbol] += adj
+        print(f"Adjusting {id} by {adj} to {self.id_to_qty[id]}")
+        print(f"Outstanding volume for {symbol} is {self.outstanding_volume[symbol]}")
         if self.id_to_qty[id] == 0:
             self.remove_order(id)
     def get_all_orders(self):
         return list(self.id_to_price.keys())
     def get_price(self, id):
         return self.id_to_price[id]
-    def get_num_open_orders(self):
-        return self.num_open_orders
+    def get_num_open_orders(self, symbol):
+        return self.num_open_orders[symbol]
     def get_qty(self, id):
         return self.id_to_qty[id]
     def get_symbol(self, id):
@@ -61,8 +64,8 @@ class OpenOrders:
         return self.id_to_level[id]
     def get_symbol_levels(self, symbol):
         return self.level_orders[symbol]
-    def get_outstanding_volume(self):
-        return self.outstanding_volume
+    def get_outstanding_volume(self, symbol):
+        return self.outstanding_volume[symbol]
     def get_k_oldest_order(self, symbol, k):
         if len(self.queue[symbol]) >= k:
             count = 0
@@ -80,17 +83,19 @@ class OpenOrders:
         self.id_to_side[id] = side
         self.id_to_level[id] = level
         self.id_to_symbol[id] = symbol
-        self.num_open_orders += 1
-        self.outstanding_volume += qty
+        self.num_open_orders[symbol] += 1
+        self.outstanding_volume[symbol] += qty
+        print(f"Adding {id} with qty {qty} to {symbol}")
+        print(f"Outstanding volume for {symbol} is {self.outstanding_volume[symbol]}")
         self.level_orders[symbol][level] += 1
         self.queue[symbol].append(id)
 
     def remove_order(self, id):
-        if id not in self.id_to_level: return
+        # if id not in self.id_to_level: return
         level = self.id_to_level[id]
         symbol = self.id_to_symbol[id]
-        self.outstanding_volume -= self.id_to_qty[id]
-        self.num_open_orders -= 1
+        self.outstanding_volume[symbol] -= self.id_to_qty[id]
+        self.num_open_orders[symbol] -= 1
         self.level_orders[symbol][level] -= 1
         if id in self.queue[symbol]:
             self.queue[symbol].remove(id)
@@ -149,10 +154,9 @@ class MainBot(xchange_client.XChangeClient):
 
     async def bot_place_order(self, symbol, qty, side, price, level=0, market=False):
         if level == 0:
-            diff = self.open_orders_object.get_num_open_orders() + 1 - MAX_OPEN_ORDERS
+            diff = self.open_orders_object.get_num_open_orders(symbol) + 1 - MAX_OPEN_ORDERS
             oldest_orders = self.open_orders_object.get_k_oldest_order(symbol, diff)
             for order_id in oldest_orders:
-                # self.open_orders_object.remove_order(order_id)
                 await self.cancel_order(order_id)
         if market==True:
             order_id = await self.place_order(symbol, qty, side)
@@ -162,7 +166,10 @@ class MainBot(xchange_client.XChangeClient):
         vol = min(qty,
                   MAX_ORDER_SIZE,
                   MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION,
-                  OUTSTANDING_VOLUME - self.open_orders_object.get_outstanding_volume())
+                  OUTSTANDING_VOLUME - self.open_orders_object.get_outstanding_volume(symbol))
+        print(qty, OUTSTANDING_VOLUME - self.open_orders_object.get_outstanding_volume(symbol), MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION)
+        print(f"Open orders: {self.open_orders_object.get_num_open_orders(symbol)} ")
+        print(f"Outstanding volume: {self.open_orders_object.get_outstanding_volume(symbol)}")
         if vol > 0:
             order_id = await self.place_order(symbol, vol, side, price)
             self.open_orders_object.add_order(symbol, price, vol, order_id, side, level)
@@ -298,10 +305,10 @@ class MainBot(xchange_client.XChangeClient):
             
             # Penny In Penny Out
             for symbol in SYMBOLS + ETFS:
-                buy_volume = random.randint(4, 7)
+                buy_volume = 1
                 sell_volume = buy_volume
                 buy_first = random.choice([True, False])
-                print(bids[symbol], asks[symbol])
+                # print(bids[symbol], asks[symbol])
 
                 if buy_first:
                     if int(bids[symbol]) > 0:
