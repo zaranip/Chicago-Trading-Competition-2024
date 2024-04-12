@@ -10,6 +10,7 @@ import os, sys
 from datetime import datetime
 from typing import Optional
 from xchangelib import xchange_client, service_pb2 as utc_bot_pb2
+from case_1.params import Parameters
 from  prediction import Prediction
 from grpc.aio import AioRpcError
 # constants
@@ -310,6 +311,14 @@ class MainBot(xchange_client.XChangeClient):
         else:
             self.safety_check = 0
         return old_safety_check
+    
+    def load_params(self):
+        exec(open("params.py").read())
+        params = Parameters()
+        self.min_margin = params.contract_params["min_margin"]
+        self.fade = params.contract_params["fade"]
+        self.edge_sensitivity = params.contract_params["edge_sensitivity"]
+        self.slack = params.contract_params["slack"]
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # intended to load the position if we are disconnected somehow
@@ -321,6 +330,9 @@ class MainBot(xchange_client.XChangeClient):
             self.round += 1
             await asyncio.sleep(1)
         while True:
+            self.load_params()
+
+            # check for safety before trading
             old_safety_check = self.update_safety_check()
             if self.safety_check >=5:
                 #end the round
