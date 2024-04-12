@@ -110,6 +110,8 @@ class MainBot(xchange_client.XChangeClient):
 
     def __init__(self, host: str, username: str, password: str, open_orders):
         super().__init__(host, username, password)
+        self.round = 0
+        self.safety_check = 0
         self.order_size = 16
         self.level_orders = 10
         self.spreads = [2,4,6]
@@ -153,6 +155,15 @@ class MainBot(xchange_client.XChangeClient):
         pass
 
     async def bot_place_order(self, symbol, qty, side, price, level=0, market=False):
+        vol = min(qty,
+                  MAX_ORDER_SIZE,
+                  MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION,
+                  OUTSTANDING_VOLUME - self.open_orders_object.get_outstanding_volume(symbol))
+        print(qty, OUTSTANDING_VOLUME - self.open_orders_object.get_outstanding_volume(symbol), MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION)
+        print(f"Open orders: {self.open_orders_object.get_num_open_orders(symbol)} ")
+        print(f"Outstanding volume: {self.open_orders_object.get_outstanding_volume(symbol)}")
+        if vol <= 0:
+            return 0
         if level == 0:
             diff = self.open_orders_object.get_num_open_orders(symbol) + 1 - MAX_OPEN_ORDERS
             oldest_orders = self.open_orders_object.get_k_oldest_order(symbol, diff)
@@ -166,13 +177,7 @@ class MainBot(xchange_client.XChangeClient):
         
         if self.open_orders_object.get_num_open_orders(symbol) >= MAX_OPEN_ORDERS:
             return 
-        vol = min(qty,
-                  MAX_ORDER_SIZE,
-                  MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION,
-                  OUTSTANDING_VOLUME - self.open_orders_object.get_outstanding_volume(symbol))
-        print(qty, OUTSTANDING_VOLUME - self.open_orders_object.get_outstanding_volume(symbol), MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION)
-        print(f"Open orders: {self.open_orders_object.get_num_open_orders(symbol)} ")
-        print(f"Outstanding volume: {self.open_orders_object.get_outstanding_volume(symbol)}")
+        
         if vol > 0:
             order_id = await self.place_order(symbol, vol, side, price)
             self.open_orders_object.add_order(symbol, price, vol, order_id, side, level)
@@ -252,14 +257,26 @@ class MainBot(xchange_client.XChangeClient):
             open_orders[order_id] = [order_request, qty, False]
         return open_orders
     def set_fade_logic(self):
-        threshold = 0.5
         for symbol in SYMBOLS + ETFS:
             absolute_position = abs(self.positions[symbol]) / MAX_ABSOLUTE_POSITION
             sign = 1 if self.positions[symbol] > 0 else -1
             self.augmented[symbol] = - self.fade * sign *math.log2(1 + absolute_position)
     def calculate_profit(self, side, qty, price):
         return -price * qty if side == xchange_client.Side.BUY else price * qty
-
+    def update_safety_check(self):
+        estimated_pnl = self.estimate_pnl()
+        old_safety_check = self.safety_check
+        if estimated_pnl >= 150000:
+            self.safety_check += 2
+        elif estimated_pnl >= 100000:
+            self.safety_check += 1
+        elif estimated_pnl >= 50000:
+            self.safety_check += 0.8
+        elif estimated_pnl >= 10000:
+            self.safety_check += 0.2
+        else:
+            self.safety_check = 0
+        return old_safety_check
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # intended to load the position if we are disconnected somehow
@@ -268,13 +285,26 @@ class MainBot(xchange_client.XChangeClient):
         for symbol in SYMBOLS + ETFS:
             await self.bot_place_order(symbol, 1, xchange_client.Side.SELL, 0, market=True)
             await self.bot_place_order(symbol, 1, xchange_client.Side.BUY, 0, market=True)
-        await asyncio.sleep(1)
+            self.round += 1
+            await asyncio.sleep(1)
         while True:
+            old_safety_check = self.update_safety_check()
+            if self.safety_check >=5:
+                #end the round
+                self.round += 1
+                print(self.estimate_pnl())
+                await asyncio.sleep(1)
+                continue
+
+            # if the stock last traded price is very old or we just recovered from a non trading period
+            if old_safety_check >= 5:
+                pass
+                
             # avg_last_prices = dict((symbol, self.last_transacted_price[symbol]["BID"]) for symbol in SYMBOLS + ETFS)
             self.set_fade_logic()
             
-            bids = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.BUY] + self.augmented[symbol] - 1) for symbol in SYMBOLS + ETFS)
-            asks = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.SELL] + self.augmented[symbol] + 1) for symbol in SYMBOLS + ETFS)
+            bids = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.BUY] + self.augmented[symbol] + 1) for symbol in SYMBOLS + ETFS)
+            asks = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.SELL] + self.augmented[symbol] - 1) for symbol in SYMBOLS + ETFS)
             # handle the unbalanced position
             # ETF Arbitrage
             # TODO: review
@@ -308,21 +338,22 @@ class MainBot(xchange_client.XChangeClient):
             
             # Penny In Penny Out
             for symbol in SYMBOLS + ETFS:
-                buy_volume = 1
+                buy_volume = 3
                 sell_volume = buy_volume
                 buy_first = random.choice([True, False])
                 # print(bids[symbol], asks[symbol])
-
+                bid = min(round(bids[symbol]), round(asks[symbol]))
+                ask = max(round(bids[symbol]), round(asks[symbol]))
                 if buy_first:
                     if int(bids[symbol]) > 0:
-                        await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, round(bids[symbol]))
+                        await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, bid)
                     elif int(asks[symbol]) > 0:
-                        await self.bot_place_order(symbol, sell_volume, xchange_client.Side.SELL, round(asks[symbol]))
+                        await self.bot_place_order(symbol, sell_volume, xchange_client.Side.SELL, ask)
                 else:
                     if int(asks[symbol]) > 0:
-                        await self.bot_place_order(symbol, sell_volume, xchange_client.Side.SELL, round(asks[symbol]))
+                        await self.bot_place_order(symbol, sell_volume, xchange_client.Side.SELL, ask)
                     elif int(bids[symbol]) > 0:
-                        await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, round(bids[symbol]))
+                        await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, bid)
   
             # # Level Orders
             # TODO: review
@@ -341,6 +372,7 @@ class MainBot(xchange_client.XChangeClient):
             # Viewing Positions
             print(self.estimate_pnl())
             # print("My positions:", self.positions)
+            self.round += 1
             await asyncio.sleep(1)
 
     async def view_books(self):
