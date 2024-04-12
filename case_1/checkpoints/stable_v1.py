@@ -7,15 +7,11 @@ import pandas as pd
 import collections
 import os, sys
 import importlib
-import tkinter as tk
-from tkinter import ttk
 
-import params
-from params_gui import ParametersGUI
+import params_v1 as params_v1
 from datetime import datetime
 from typing import Optional
 from xchangelib import xchange_client, service_pb2 as utc_bot_pb2
-from  prediction import Prediction
 from grpc.aio import AioRpcError
 import random
 
@@ -50,6 +46,8 @@ class OpenOrders:
         self.id_to_qty[id] += adj
         symbol = self.id_to_symbol[id]
         self.outstanding_volume[symbol] += adj
+        # print(f"Adjusting {id} by {adj} to {self.id_to_qty[id]}")
+        # print(f"Outstanding volume for {symbol} is {self.outstanding_volume[symbol]}")
         if self.id_to_qty[id] == 0:
             self.remove_order(id)
     def get_all_orders(self):
@@ -91,6 +89,8 @@ class OpenOrders:
         self.id_to_symbol[id] = symbol
         self.num_open_orders[symbol] += 1
         self.outstanding_volume[symbol] += qty
+        # print(f"Adding {id} with qty {qty} to {symbol}")
+        # print(f"Outstanding volume for {symbol} is {self.outstanding_volume[symbol]}")
         self.level_orders[symbol][level] += 1
         self.queue[symbol].append(id)
 
@@ -118,8 +118,7 @@ class MainBot(xchange_client.XChangeClient):
         self.safety_check = 0
         self.order_size = 16
         self.level_orders = 10
-        self.spreads = NotImplemented
-        self.etf_margin = NotImplemented
+        self.spreads = [2,4,6]
 
         self.fade = NotImplemented
 
@@ -171,6 +170,9 @@ class MainBot(xchange_client.XChangeClient):
                   MAX_ORDER_SIZE,
                   MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION,
                   OUTSTANDING_VOLUME - self.open_orders_object.get_outstanding_volume(symbol))
+        #print(qty, OUTSTANDING_VOLUME - self.open_orders_object.get_outstanding_volume(symbol), MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION)
+        # print(f"Open orders: {self.open_orders_object.get_num_open_orders(symbol)} ")
+        # print(f"Outstanding volume: {self.open_orders_object.get_outstanding_volume(symbol)}")
         if vol <= 0:
             return 0
         if level == 0:
@@ -313,19 +315,13 @@ class MainBot(xchange_client.XChangeClient):
         return old_safety_check
     
     def load_params(self):
-        importlib.reload(params)
-        params_instance = params.get_params()
+        importlib.reload(params_v1)
+        params_instance = params_v1.get_params()
         self.min_margin = params_instance.contract_params["min_margin"]
         self.fade = params_instance.contract_params["fade"]
         self.edge_sensitivity = params_instance.contract_params["edge_sensitivity"]
         self.slack = params_instance.contract_params["slack"]
-        self.spreads = params_instance.spreads
-<<<<<<< HEAD
-        self.etf_margin = params_instance.etf_margin
-=======
-        print(f"Parameters loaded: {self.min_margin}, {self.fade}, {self.edge_sensitivity}, {self.slack}")
 
->>>>>>> 0fd395f (bruh)
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # intended to load the position if we are disconnected somehow
@@ -364,17 +360,19 @@ class MainBot(xchange_client.XChangeClient):
             # handle the unbalanced position
             # ETF Arbitrage
             # TODO: review
-           
-            for etf in ETFS:
-                if etf == "SCP":
-                    price = (3 * bids["EPT"] + 3*bids["IGM"] + 4*bids["BRV"])/10
-                elif etf == "JAK":
-                    price = (2 * bids['EPT'] + 5*bids['DLO'] + 3*bids['MKU'])/10
-                predicted_price = bids[etf]
-                if predicted_price - price > self.etf_margin:
-                    await self.bot_place_arbitrage_order(etf, "to")
-                elif predicted_price - price < - self.etf_margin:
-                    await self.bot_place_arbitrage_order(etf, "from")
+            # how aggressively to arbitrage
+            # rate = 0.8            
+            # for etf in ETFS:
+            #     if etf == "SCP":
+            #         price = (3 * self.last_transacted_price["EPT"] + 3*self.last_transacted_price["IGM"] + 4*self.last_transacted_price["BRV"])/10
+            #     elif etf == "JAK":
+            #         price = (2 * self.last_transacted_price['EPT'] + 5*self.last_transacted_price['DLO'] + 3*self.last_transacted_price['MKU'])/10
+            #     margin = 500
+            #     predicted_price = self.last_transacted_price[etf]
+            #     if predicted_price - price > margin:
+            #         await self.bot_place_arbitrage_order(etf, "to")
+            #     elif predicted_price - price < -margin:
+            #         await self.bot_place_arbitrage_order(etf, "from")
             
             
             # Take advantage of the spread
@@ -411,24 +409,18 @@ class MainBot(xchange_client.XChangeClient):
   
             # # Level Orders
             # TODO: review
-            for symbol in SYMBOLS:
-                for level in range(1, 3):
-                    if bids[symbol] < 0 or asks[symbol] < 0:
-                        continue
-                    spread = self.spreads[level - 1]
-                    bid = bids[symbol] - spread
-                    ask = asks[symbol] + spread
-                    buy_first = random.choice([True, False])
-                    if buy_first:
-                        if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
-                            await self.bot_place_order(symbol, 3, xchange_client.Side.BUY, round(bid), level)
-                        if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
-                            await self.bot_place_order(symbol, 3, xchange_client.Side.SELL, round(ask), level)
-                    else:
-                        if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
-                            await self.bot_place_order(symbol, 3, xchange_client.Side.SELL, round(ask), level)
-                        if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
-                            await self.bot_place_order(symbol, 3, xchange_client.Side.BUY, round(bid), level)
+            # for symbol in SYMBOLS:
+            #     for level in range(1, 4):
+            #         if bids[symbol] < 0 or asks[symbol] < 0:
+            #             continue
+            #         spread = self.spreads[level - 1]
+            #         bid = bids[symbol] - spread
+            #         ask = asks[symbol] + spread
+
+            #         if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
+            #             await self.bot_place_order(symbol, 2, xchange_client.Side.BUY, int(bid), level)
+            #         if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
+            #             await self.bot_place_order(symbol, 2, xchange_client.Side.SELL, int(ask), level)
             # Viewing Positions
             print(self.estimate_pnl())
             # print("My positions:", self.positions)
@@ -481,4 +473,5 @@ if __name__ == "__main__":
     start_time = datetime.now().strftime("%y-%m-%d-%H-%M-%S")
     asyncio.run(main())
     
+
 

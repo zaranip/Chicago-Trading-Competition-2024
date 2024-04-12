@@ -1,3 +1,4 @@
+
 class Parameters:
     def __init__(self):
         self.max_pos = 950
@@ -10,12 +11,15 @@ class Parameters:
         }
         self.contract_params = {
             "min_margin": 1,
-            "fade": 20, #increasing fade reduces profit AND loss (hitter); decreasing fade increases profit AND loss (non-hitter)
-            "edge_sensitivity": 1, #increasing to 1 increases frequency; decreasing to 0.1 increases profit per trade; switch when expected pnl is going down
-            "slack":2    #2: 1-3; 3: 1-4; 4: 1-5
+            "fade": 20,
+            "edge_sensitivity": 0.1,
+            "slack": 2
         }
-
-        self.spreads = [5, 10, 20]
+        for c in ["EPT", "DLO", "MKU", "IGM", "BRV"]:
+            self.params[c] = self.contract_params
+        for c in ["SCP", "JAK"]:
+            self.params[c] = self.etf_params
+        self.spreads = [5, 10, 15]
         self.level_orders = 2
         self.etf_margin = 55
 
