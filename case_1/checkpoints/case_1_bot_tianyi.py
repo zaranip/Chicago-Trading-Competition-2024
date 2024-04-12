@@ -108,7 +108,7 @@ class MainBot(xchange_client.XChangeClient):
         self.order_size = 10
         self.level_orders = 10
         self.spreads = [2,4,6]
-        self.fade = 20
+        self.fade = 25
         self.profit = 0
         self.open_orders_object = open_orders
         self.open_orders = self.load_open_orders()
@@ -301,8 +301,6 @@ class MainBot(xchange_client.XChangeClient):
                 buy_volume = random.randint(4, 7)
                 sell_volume = buy_volume
                 buy_first = random.choice([True, False])
-                print(bids[symbol], asks[symbol])
-
                 if buy_first:
                     if int(bids[symbol]) > 0:
                         await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, round(bids[symbol]))
