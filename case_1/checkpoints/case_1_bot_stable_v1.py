@@ -8,7 +8,7 @@ import collections
 import os, sys
 import importlib
 
-import params
+import case_1.checkpoints.params_v1 as params_v1
 from datetime import datetime
 from typing import Optional
 from xchangelib import xchange_client, service_pb2 as utc_bot_pb2
@@ -316,8 +316,8 @@ class MainBot(xchange_client.XChangeClient):
         return old_safety_check
     
     def load_params(self):
-        importlib.reload(params)
-        params_instance = params.get_params()
+        importlib.reload(params_v1)
+        params_instance = params_v1.get_params()
         self.min_margin = params_instance.contract_params["min_margin"]
         self.fade = params_instance.contract_params["fade"]
         self.edge_sensitivity = params_instance.contract_params["edge_sensitivity"]
