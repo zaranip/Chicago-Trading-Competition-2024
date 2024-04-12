@@ -14,7 +14,7 @@ from  prediction import Prediction
 from grpc.aio import AioRpcError
 # constants
 MAX_ORDER_SIZE = 40
-MAX_OPEN_ORDERS = 10
+MAX_OPEN_ORDERS = 50
 OUTSTANDING_VOLUME = 120
 MAX_ABSOLUTE_POSITION = 200
 SYMBOLS = ["EPT", "DLO", "MKU", "IGM", "BRV"]
@@ -108,10 +108,11 @@ class MainBot(xchange_client.XChangeClient):
         self.order_size = 10
         self.level_orders = 10
         self.spreads = [2,4,6]
-        self.fade = 15
+        self.fade = 25
+        self.profit = 0
         self.open_orders_object = open_orders
         self.open_orders = self.load_open_orders()
-        self.last_transacted_price = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
+        self.last_transacted_price = dict((symbol, {side: 0 for side in [xchange_client.Side.BUY, xchange_client.Side.SELL]}) for symbol in SYMBOLS + ETFS)
         self.augmented = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
         print("Object equality", self.open_orders_object)
 
@@ -126,7 +127,8 @@ class MainBot(xchange_client.XChangeClient):
 
     async def bot_handle_order_fill(self, order_id: str, qty: int, price: int):
         self.writing_to_file(order_id, "FILLED", price)
-        self.last_transacted_price[self.open_orders_object.get_symbol(order_id)] = price
+        self.last_transacted_price[self.open_orders_object.get_symbol(order_id)][self.open_orders_object.get_side(order_id)] = price
+        self.profit += self.calculate_profit(self.open_orders_object.get_side(order_id), qty, price)
         self.open_orders_object.adjust_qty(order_id, -qty)
 
     async def bot_handle_order_rejected(self, order_id: str, reason: str) -> None:
@@ -207,7 +209,7 @@ class MainBot(xchange_client.XChangeClient):
             qty = self.open_orders_object.get_qty(order_id)
             gap = self.open_orders_object.get_price(order_id) - price
             with open(f"./log/filled/round_data_{start_time}.txt", "a") as f:
-                f.write(f"{order_id} {(symbol, side)} {qty} {price} {gap}\n")
+                f.write(f"{order_id} {(symbol, side)} {qty} {price} {gap} | Profit: {self.profit}\n")
         elif type == "CANCELLED":
             symbol = self.open_orders_object.id_to_symbol[order_id]
             side = self.open_orders_object.get_side(order_id)
@@ -245,7 +247,8 @@ class MainBot(xchange_client.XChangeClient):
             absolute_position = abs(self.positions[symbol]) / MAX_ABSOLUTE_POSITION
             sign = 1 if self.positions[symbol] > 0 else -1
             self.augmented[symbol] = - self.fade * sign *math.log2(1 + absolute_position)
-
+    def calculate_profit(self, side, qty, price):
+        return -price * qty if side == xchange_client.Side.BUY else price * qty
 
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
@@ -254,14 +257,14 @@ class MainBot(xchange_client.XChangeClient):
         # get first round prices
         for symbol in SYMBOLS + ETFS:
             await self.bot_place_order(symbol, 1, xchange_client.Side.SELL, 0, market=True)
-            # await self.bot_place_order(symbol, 1, xchange_client.Side.BUY, 0, market=True)
+            await self.bot_place_order(symbol, 1, xchange_client.Side.BUY, 0, market=True)
         await asyncio.sleep(1)
         while True:
             # avg_last_prices = dict((symbol, self.last_transacted_price[symbol]["BID"]) for symbol in SYMBOLS + ETFS)
             self.set_fade_logic()
             
-            bids = dict((symbol, self.last_transacted_price[symbol] + self.augmented[symbol] - 1) for symbol in SYMBOLS + ETFS)
-            asks = dict((symbol, self.last_transacted_price[symbol] + self.augmented[symbol] + 1) for symbol in SYMBOLS + ETFS)
+            bids = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.BUY] + self.augmented[symbol] - 1) for symbol in SYMBOLS + ETFS)
+            asks = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.SELL] + self.augmented[symbol] + 1) for symbol in SYMBOLS + ETFS)
             # handle the unbalanced position
             # ETF Arbitrage
             # TODO: review
