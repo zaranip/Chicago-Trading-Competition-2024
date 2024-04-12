@@ -14,7 +14,7 @@ from  prediction import Prediction
 from grpc.aio import AioRpcError
 # constants
 MAX_ORDER_SIZE = 40
-MAX_OPEN_ORDERS = 50
+MAX_OPEN_ORDERS = 10
 OUTSTANDING_VOLUME = 120
 MAX_ABSOLUTE_POSITION = 200
 SYMBOLS = ["EPT", "DLO", "MKU", "IGM", "BRV"]
@@ -91,7 +91,7 @@ class OpenOrders:
         self.queue[symbol].append(id)
 
     def remove_order(self, id):
-        # if id not in self.id_to_level: return
+        if id not in self.id_to_level: return
         level = self.id_to_level[id]
         symbol = self.id_to_symbol[id]
         self.outstanding_volume[symbol] -= self.id_to_qty[id]
@@ -110,7 +110,7 @@ class MainBot(xchange_client.XChangeClient):
 
     def __init__(self, host: str, username: str, password: str, open_orders):
         super().__init__(host, username, password)
-        self.order_size = 10
+        self.order_size = 16
         self.level_orders = 10
         self.spreads = [2,4,6]
         self.fade = 20
@@ -163,6 +163,9 @@ class MainBot(xchange_client.XChangeClient):
             self.open_orders_object.add_order(symbol, price, qty, order_id, side, level)
             self.writing_to_file(order_id, "PLACED")
             return order_id
+        
+        if self.open_orders_object.get_num_open_orders(symbol) >= MAX_OPEN_ORDERS:
+            return 
         vol = min(qty,
                   MAX_ORDER_SIZE,
                   MAX_ABSOLUTE_POSITION - self.positions[symbol] if side == xchange_client.Side.BUY else self.positions[symbol] + MAX_ABSOLUTE_POSITION,
