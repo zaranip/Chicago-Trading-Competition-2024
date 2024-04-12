@@ -15,8 +15,9 @@ class Parameters:
             "slack":2    #2: 1-3; 3: 1-4; 4: 1-5
         }
 
-        self.spreads = [10, 20, 30]
+        self.spreads = [5, 10, 20]
         self.level_orders = 2
+        self.etf_margin = 55
 
 def get_params():
     return Parameters()

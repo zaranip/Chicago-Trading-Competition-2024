@@ -116,6 +116,7 @@ class MainBot(xchange_client.XChangeClient):
         self.order_size = 16
         self.level_orders = 10
         self.spreads = NotImplemented
+        self.etf_margin = NotImplemented
 
         self.fade = NotImplemented
 
@@ -316,7 +317,7 @@ class MainBot(xchange_client.XChangeClient):
         self.edge_sensitivity = params_instance.contract_params["edge_sensitivity"]
         self.slack = params_instance.contract_params["slack"]
         self.spreads = params_instance.spreads
-
+        self.etf_margin = params_instance.etf_margin
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # intended to load the position if we are disconnected somehow
@@ -355,19 +356,17 @@ class MainBot(xchange_client.XChangeClient):
             # handle the unbalanced position
             # ETF Arbitrage
             # TODO: review
-            # how aggressively to arbitrage
-            # rate = 0.8            
-            # for etf in ETFS:
-            #     if etf == "SCP":
-            #         price = (3 * self.last_transacted_price["EPT"] + 3*self.last_transacted_price["IGM"] + 4*self.last_transacted_price["BRV"])/10
-            #     elif etf == "JAK":
-            #         price = (2 * self.last_transacted_price['EPT'] + 5*self.last_transacted_price['DLO'] + 3*self.last_transacted_price['MKU'])/10
-            #     margin = 500
-            #     predicted_price = self.last_transacted_price[etf]
-            #     if predicted_price - price > margin:
-            #         await self.bot_place_arbitrage_order(etf, "to")
-            #     elif predicted_price - price < -margin:
-            #         await self.bot_place_arbitrage_order(etf, "from")
+           
+            for etf in ETFS:
+                if etf == "SCP":
+                    price = (3 * bids["EPT"] + 3*bids["IGM"] + 4*bids["BRV"])/10
+                elif etf == "JAK":
+                    price = (2 * bids['EPT'] + 5*bids['DLO'] + 3*bids['MKU'])/10
+                predicted_price = bids[etf]
+                if predicted_price - price > self.etf_margin:
+                    await self.bot_place_arbitrage_order(etf, "to")
+                elif predicted_price - price < - self.etf_margin:
+                    await self.bot_place_arbitrage_order(etf, "from")
             
             
             # Take advantage of the spread
