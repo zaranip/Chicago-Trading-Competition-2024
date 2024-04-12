@@ -115,12 +115,20 @@ class MainBot(xchange_client.XChangeClient):
         self.order_size = 16
         self.level_orders = 10
         self.spreads = [2,4,6]
+
         self.fade = 20
+
+        self.min_margin = 1
+        self.edge_sensitivity = 0.5 # keep between 0 (broad) and 1 (steep). roughly decides the steepness of the edge and therefore the range of num orders around it; edge sensitivity = k => 4/k orders in range
+        self.slack = 2 # (edge range = [min_margin, min_margin + slack])
+
         self.profit = 0
         self.open_orders_object = open_orders
         self.open_orders = self.load_open_orders()
         self.last_transacted_price = dict((symbol, {side: 0 for side in [xchange_client.Side.BUY, xchange_client.Side.SELL]}) for symbol in SYMBOLS + ETFS)
-        self.augmented = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
+        self.fade_augmented = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
+        self.edge_augmented = dict((symbol, {side: 0 for side in [xchange_client.Side.BUY, xchange_client.Side.SELL]}) for symbol in SYMBOLS + ETFS)
+
         print("Object equality", self.open_orders_object)
 
 
@@ -256,11 +264,36 @@ class MainBot(xchange_client.XChangeClient):
                                                         side=side)
             open_orders[order_id] = [order_request, qty, False]
         return open_orders
+    
     def set_fade_logic(self):
         for symbol in SYMBOLS + ETFS:
             absolute_position = abs(self.positions[symbol]) / MAX_ABSOLUTE_POSITION
             sign = 1 if self.positions[symbol] > 0 else -1
-            self.augmented[symbol] = - self.fade * sign *math.log2(1 + absolute_position)
+            self.fade_augmented[symbol] = - self.fade * sign *math.log2(1 + absolute_position)
+
+    def get_market_activity_level(self, symbol, side):
+        price = self.last_transacted_price[symbol][side]
+        side_orders = self.order_books[symbol].bids if side == xchange_client.Side.BUY else self.order_books[symbol].asks
+        # count the number of orders within the edge_window
+        count = 0
+        edge_window = self.min_margin + self.slack
+        for order in side_orders:
+            if abs(order - price) < edge_window:
+                count += 1
+        return count
+
+    
+    def set_edge_logic(self):
+        for symbol in SYMBOLS + ETFS:
+            for side in [xchange_client.Side.BUY, xchange_client.Side.SELL]:
+                amplitude = self.slack/2
+                min_margin = self.min_margin
+                activity_level = self.get_market_activity_level(symbol, side)
+                # 4 is magic number. At sensitivity = 1, it will be so steep that one order in window will set edge = 1
+                self.edge_augmented[symbol][side] = int(round(min_margin + (amplitude * math.tanh(-4*self.edge_sensitivity * activity_level+2) + 1)))
+                print("edge: ", self.edge_augmented[symbol][side])
+
+
     def calculate_profit(self, side, qty, price):
         return -price * qty if side == xchange_client.Side.BUY else price * qty
     def update_safety_check(self):
@@ -302,6 +335,7 @@ class MainBot(xchange_client.XChangeClient):
                 
             # avg_last_prices = dict((symbol, self.last_transacted_price[symbol]["BID"]) for symbol in SYMBOLS + ETFS)
             self.set_fade_logic()
+            self.set_edge_logic()
             
             bids = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.BUY] + self.augmented[symbol] + 1) for symbol in SYMBOLS + ETFS)
             asks = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.SELL] + self.augmented[symbol] - 1) for symbol in SYMBOLS + ETFS)
