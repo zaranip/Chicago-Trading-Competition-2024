@@ -112,7 +112,7 @@ class MainBot(xchange_client.XChangeClient):
         self.last_transacted_price = dict((symbol, {side: 0 for side in [xchange_client.Side.BUY, xchange_client.Side.SELL]}) for symbol in SYMBOLS + ETFS)
         self.fade = 2
         self.augmented = 0
-        print("Object equality", self.open_orders_object)
+        self.profit = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
 
 
     async def bot_handle_cancel_response(self, order_id: str, success: bool, error: Optional[str]) -> None:
@@ -127,6 +127,7 @@ class MainBot(xchange_client.XChangeClient):
         self.writing_to_file(order_id, "FILLED", price)
         self.last_transacted_price[self.open_orders_object.get_symbol(order_id)][self.open_orders_object.get_side(order_id)] = price
         self.open_orders_object.adjust_qty(order_id, -qty)
+        self.log_profit(self.open_orders_object.get_symbol(order_id), self.open_orders_object.get_side(order_id), qty, price) 
 
     async def bot_handle_order_rejected(self, order_id: str, reason: str) -> None:
         self.writing_to_file(order_id, "REJECTED")
@@ -316,6 +317,7 @@ class MainBot(xchange_client.XChangeClient):
             #             await self.bot_place_order(symbol, 2, xchange_client.Side.SELL, int(ask), level)
             # Viewing Positions
             print("My positions:", self.positions)
+            print("My profit:", self.profit)
             await asyncio.sleep(1)
 
     async def view_books(self):
@@ -327,6 +329,13 @@ class MainBot(xchange_client.XChangeClient):
                 sorted_asks = sorted((k,v) for k,v in book.asks.items() if v != 0)
                 print(f"Bids for {security}:\n{sorted_bids}")
                 print(f"Asks for {security}:\n{sorted_asks}")
+    
+    def log_profit(self, symbol, side, qty, price):
+        if side == xchange_client.Side.BUY:
+            profit = -price * qty  # Negative profit represents the cost of buying
+        else:  # xchange_client.Side.SELL
+            profit = price * qty   # Positive profit represents the revenue from selling
+        self.profit[symbol] = profit
 
     async def start(self):
         """
