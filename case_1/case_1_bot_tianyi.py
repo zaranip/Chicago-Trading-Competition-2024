@@ -120,7 +120,7 @@ class MainBot(xchange_client.XChangeClient):
         self.fade = 20
 
         self.min_margin = 1
-        self.edge_sensitivity = 0.5 # keep between 0 (broad) and 1 (steep). roughly decides the steepness of the edge and therefore the range of num orders around it; edge sensitivity = k => 4/k orders in range
+        self.edge_sensitivity = 0.1 # keep between 0 (broad) and 1 (steep). roughly decides the steepness of the edge and therefore the range of num orders around it; edge sensitivity = k => 4/k orders in range
         self.slack = 2 # (edge range = [min_margin, min_margin + slack])
 
         self.profit = 0
