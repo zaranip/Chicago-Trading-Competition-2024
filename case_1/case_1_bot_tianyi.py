@@ -6,11 +6,12 @@ import numpy as np
 import pandas as pd
 import collections
 import os, sys
+import importlib
 
+import params
 from datetime import datetime
 from typing import Optional
 from xchangelib import xchange_client, service_pb2 as utc_bot_pb2
-from case_1.params import Parameters
 from  prediction import Prediction
 from grpc.aio import AioRpcError
 # constants
@@ -120,7 +121,7 @@ class MainBot(xchange_client.XChangeClient):
         self.fade = 20
 
         self.min_margin = 1
-        self.edge_sensitivity = 0.1 # keep between 0 (broad) and 1 (steep). roughly decides the steepness of the edge and therefore the range of num orders around it; edge sensitivity = k => 4/k orders in range
+        self.edge_sensitivity = 0.5 # keep between 0 (broad) and 1 (steep). roughly decides the steepness of the edge and therefore the range of num orders around it; edge sensitivity = k => 4/k orders in range
         self.slack = 2 # (edge range = [min_margin, min_margin + slack])
 
         self.profit = 0
@@ -313,12 +314,15 @@ class MainBot(xchange_client.XChangeClient):
         return old_safety_check
     
     def load_params(self):
-        exec(open("params.py").read())
-        params = Parameters()
-        self.min_margin = params.contract_params["min_margin"]
-        self.fade = params.contract_params["fade"]
-        self.edge_sensitivity = params.contract_params["edge_sensitivity"]
-        self.slack = params.contract_params["slack"]
+        importlib.reload(params)
+        params_instance = params.get_params()
+        print(params_instance.contract_params)
+        self.min_margin = params_instance.contract_params["min_margin"]
+        self.fade = params_instance.contract_params["fade"]
+        self.edge_sensitivity = params_instance.contract_params["edge_sensitivity"]
+        self.slack = params_instance.contract_params["slack"]
+        print(self.min_margin, self.fade, self.edge_sensitivity, self.slack)
+
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # intended to load the position if we are disconnected somehow
@@ -348,9 +352,11 @@ class MainBot(xchange_client.XChangeClient):
             # avg_last_prices = dict((symbol, self.last_transacted_price[symbol]["BID"]) for symbol in SYMBOLS + ETFS)
             self.set_fade_logic()
             self.set_edge_logic()
+
+            print(f"Slack is {self.slack}", f"Fade is {self.fade}", f"Edge Sensitivity is {self.edge_sensitivity}")
             
-            bids = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.BUY] + self.augmented[symbol] + 1) for symbol in SYMBOLS + ETFS)
-            asks = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.SELL] + self.augmented[symbol] - 1) for symbol in SYMBOLS + ETFS)
+            bids = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.BUY] + self.fade_augmented[symbol] - self.edge_augmented[symbol][xchange_client.Side.BUY]) for symbol in SYMBOLS + ETFS)
+            asks = dict((symbol, self.last_transacted_price[symbol][xchange_client.Side.SELL] + self.fade_augmented[symbol] + self.edge_augmented[symbol][xchange_client.Side.SELL]) for symbol in SYMBOLS + ETFS)
             # handle the unbalanced position
             # ETF Arbitrage
             # TODO: review
