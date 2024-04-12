@@ -1,0 +1,42 @@
+Method:  PAMR FINAL Train Test Ratio:  0.75 Window Size:  1260
+Window Sharpe Ratio: 0
+Window Sharpe Ratio: -0.8353239490921125
+Window Sharpe Ratio: 1.97344405498602
+Window Sharpe Ratio: -0.11668794943508212
+Window Sharpe Ratio: 0.11754230342761904
+Window Sharpe Ratio: 1.9234631381489982
+Method:  PAMR FINAL Train Test Ratio:  0.8 Window Size:  1260
+Window Sharpe Ratio: 0
+Window Sharpe Ratio: -0.45440801962741056
+Window Sharpe Ratio: 2.161409466671603
+Window Sharpe Ratio: -0.6039681880640322
+Window Sharpe Ratio: 0.4847496710882659
+Window Sharpe Ratio: 1.5879663339709318
+Method:  PAMR FINAL Train Test Ratio:  0.85 Window Size:  1260
+Window Sharpe Ratio: 0
+Window Sharpe Ratio: 0.047994245741066206
+Window Sharpe Ratio: 2.2655544761890583
+Window Sharpe Ratio: -0.9156269348680321
+Window Sharpe Ratio: 0.8289943721824121
+Window Sharpe Ratio: 1.0518996273200574
+Method:  PAMR FINAL Train Test Ratio:  0.75 Window Size:  1890
+Window Sharpe Ratio: 0
+Window Sharpe Ratio: 0.23366585328373016
+Window Sharpe Ratio: 0.7491474577213105
+Window Sharpe Ratio: 1.3675793152981168
+Method:  PAMR FINAL Train Test Ratio:  0.8 Window Size:  1890
+Window Sharpe Ratio: 0
+Window Sharpe Ratio: -0.3740591817123738
+Window Sharpe Ratio: 1.118997597946037
+Window Sharpe Ratio: 1.6294370639026439
+Method:  PAMR FINAL Train Test Ratio:  0.85 Window Size:  1890
+Window Sharpe Ratio: 0
+Window Sharpe Ratio: -0.6716731230757513
+Window Sharpe Ratio: 1.658797750048403
+Window Sharpe Ratio: 1.2557478413110037
+Method:  PAMR FINAL Train Test Ratio:  0.75 Window Size:  2520
+Window Sharpe Ratio: 1.4340491033911045
+Method:  PAMR FINAL Train Test Ratio:  0.8 Window Size:  2520
+Window Sharpe Ratio: 2.1969919866296954
+Method:  PAMR FINAL Train Test Ratio:  0.85 Window Size:  2520
+Window Sharpe Ratio: 2.089474883651629
