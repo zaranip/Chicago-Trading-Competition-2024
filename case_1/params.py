@@ -10,7 +10,7 @@ class Parameters:
         }
         self.contract_params = {
             "min_margin": 1,
-            "fade": 10,
+            "fade": 20,
             "edge_sensitivity": 0.5,
             "slack": 2
         }

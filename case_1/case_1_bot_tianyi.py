@@ -118,11 +118,11 @@ class MainBot(xchange_client.XChangeClient):
         self.level_orders = 10
         self.spreads = [2,4,6]
 
-        self.fade = 20
+        self.fade = NotImplemented
 
-        self.min_margin = 1
-        self.edge_sensitivity = 0.5 # keep between 0 (broad) and 1 (steep). roughly decides the steepness of the edge and therefore the range of num orders around it; edge sensitivity = k => 4/k orders in range
-        self.slack = 2 # (edge range = [min_margin, min_margin + slack])
+        self.min_margin = NotImplemented
+        self.edge_sensitivity = NotImplemented # keep between 0 (broad) and 1 (steep). roughly decides the steepness of the edge and therefore the range of num orders around it; edge sensitivity = k => 4/k orders in range
+        self.slack = NotImplemented # (edge range = [min_margin, min_margin + slack])
 
         self.profit = 0
         self.open_orders_object = open_orders
@@ -326,6 +326,7 @@ class MainBot(xchange_client.XChangeClient):
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""
         # intended to load the position if we are disconnected somehow
+        self.load_params()
         self.load_open_orders()
         # get first round prices
         for symbol in SYMBOLS + ETFS:
