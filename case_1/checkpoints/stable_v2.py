@@ -15,7 +15,6 @@ from params_gui import ParametersGUI
 from datetime import datetime
 from typing import Optional
 from xchangelib import xchange_client, service_pb2 as utc_bot_pb2
-from  prediction import Prediction
 from grpc.aio import AioRpcError
 import random
 
@@ -28,7 +27,6 @@ MAX_ABSOLUTE_POSITION = 200
 SYMBOLS = ["EPT", "DLO", "MKU", "IGM", "BRV"]
 ETFS = ["SCP", "JAK"]
 TRAP = 1000000
-df = pd.read_csv("Case1_Historical_Amended.csv")
 
 class OrderResponse:
     def __init__(self, order_id: str):
@@ -456,7 +454,7 @@ async def main():
     count = 0
     open_orders = OpenOrders()
     while True:
-        bot = MainBot("staging.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133", open_orders=open_orders)
+        bot = MainBot("dayof.uchicagotradingcompetition.com:3333", "university_of_chicago_umassamherst", "ekans-mew-8133", open_orders=open_orders)
         count += 1
         try:
             await bot.start()
