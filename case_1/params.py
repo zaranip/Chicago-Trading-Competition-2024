@@ -21,6 +21,8 @@ class Parameters:
             self.params[c] = self.etf_params
         self.spreads = [5, 10, 15]
         self.level_orders = 2
+        self.etf_margin = 100
+        self.safety = False
 
 def get_params():
     return Parameters()

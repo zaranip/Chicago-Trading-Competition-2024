@@ -119,7 +119,6 @@ class MainBot(xchange_client.XChangeClient):
         self.safety_check = 0
         self.order_size = 16
         self.level_orders = 10
-        self.etf_margin = 100
         self.fifty_threshold = {
             "EPT": 0.5,
             "DLO": 0.5,
@@ -130,6 +129,7 @@ class MainBot(xchange_client.XChangeClient):
             "JAK": 0.5,
         }
 
+        self.etf_margin = NotImplemented
         self.spreads = NotImplemented
         self.fade = NotImplemented
         self.min_margin = NotImplemented
@@ -222,7 +222,7 @@ class MainBot(xchange_client.XChangeClient):
         # BUY IN
         # qty = min([(MAX_ABSOLUTE_POSITION - self.positions[symbol])//convert[etf][symbol] for symbol in convert[etf]] +
         #               [(MAX_ABSOLUTE_POSITION - self.positions[etf])//10])
-        qty = random.randint(1, 4)
+        qty = random.randint(1, 3)
         if side == "from":
             await self.bot_place_order(etf, qty * 10, xchange_client.Side.BUY, round(fair[etf]))
         elif side == "to":
@@ -354,6 +354,8 @@ class MainBot(xchange_client.XChangeClient):
         self.edge_sensitivity = params_instance.contract_params["edge_sensitivity"]
         self.slack = params_instance.contract_params["slack"]
         self.spreads = params_instance.spreads
+        self.etf_margin = params_instance.etf_margin
+        self.safety = params_instance.safety
         print(f"Parameters loaded: {self.min_margin}, {self.fade}, {self.edge_sensitivity}, {self.slack}")
 
     async def trade(self):
@@ -366,7 +368,6 @@ class MainBot(xchange_client.XChangeClient):
         await self.bot_place_order("JMS", OUTSTANDING_VOLUME, xchange_client.Side.BUY, 4999)
 
         #place bogus bids
-        
 
         # get first round prices
         for symbol in SYMBOLS + ETFS:
@@ -391,19 +392,15 @@ class MainBot(xchange_client.XChangeClient):
             asks = dict((symbol, self.get_last_transacted_price(symbol, xchange_client.Side.SELL) + self.fade_augmented[symbol] + self.edge_augmented[symbol][xchange_client.Side.SELL]) for symbol in SYMBOLS + ETFS)
         
             # check for safety before trading
-            # old_safety_check = self.update_safety_check()
-            # if self.safety_check >=5:
-            #     #end the round
-            #     self.revert_to_balance(bids, asks)
-            #     self.round += 1
-            #     print(self.estimate_pnl())
-            #     await asyncio.sleep(1)
-            #     continue
-
-            # # if the stock last traded price is very old or we just recovered from a non trading period
-            # if old_safety_check >= 5:
-            #     pass
-                
+            if self.safety == True:
+                self.update_safety_check()
+                if self.safety_check >=5:
+                    #end the round
+                    self.revert_to_balance(bids, asks)
+                    self.round += 1
+                    print(self.estimate_pnl())
+                    await asyncio.sleep(1)
+                    continue                
             # handle the unbalanced position
             # ETF Arbitrage
             # TODO: review
