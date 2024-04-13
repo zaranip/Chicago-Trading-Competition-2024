@@ -28,12 +28,15 @@ class ParametersGUI:
             self.slack_contract_var = tk.StringVar(value=str(params.contract_params["slack"]))
             self.spreads_var = tk.StringVar(value=str(params.spreads))
             self.level_orders_var = tk.StringVar(value=str(params.level_orders))
+            self.etf_margin_var = tk.StringVar(value=str(params.etf_margin))
+            self.safety_var = tk.BooleanVar(value=params.safety)
         
     def create_widgets(self):
         max_pos_label = ttk.Label(self.window, text="Max Position:")
         max_pos_label.grid(row=0, column=0, sticky=tk.W)
         max_pos_entry = ttk.Entry(self.window, textvariable=self.max_pos_var)
         max_pos_entry.grid(row=0, column=1)
+        self.create_max_pos_buttons()
         
         ttk.Separator(self.window, orient="horizontal").grid(row=1, columnspan=4, sticky="ew")
         
@@ -103,9 +106,26 @@ class ParametersGUI:
         level_orders_label.grid(row=15, column=0, sticky=tk.W)
         level_orders_entry = ttk.Entry(self.window, textvariable=self.level_orders_var)
         level_orders_entry.grid(row=15, column=1)
+        self.create_level_orders_buttons()
+
+        etf_margin_label = ttk.Label(self.window, text="ETF Margin:")
+        etf_margin_label.grid(row=16, column=0, sticky=tk.W)
+        etf_margin_entry = ttk.Entry(self.window, textvariable=self.etf_margin_var)
+        etf_margin_entry.grid(row=16, column=1)
+        self.create_etf_margin_buttons()
+        
+        safety_label = ttk.Label(self.window, text="Safety:")
+        safety_label.grid(row=17, column=0, sticky=tk.W)
+        self.create_safety_buttons()
         
         update_button = ttk.Button(self.window, text="Update", command=self.update_parameters)
         update_button.grid(row=16, columnspan=4)
+
+    def create_max_pos_buttons(self):
+        max_pos_values = [50, 100, 150, 200]
+        for i, value in enumerate(max_pos_values):
+            button = ttk.Button(self.window, text=str(value), command=lambda v=value: self.update_max_pos(v))
+            button.grid(row=0, column=i+2)
         
     def create_fade_etf_buttons(self):
         fade_etf_values = [10, 20, 30]
@@ -126,13 +146,13 @@ class ParametersGUI:
             button.grid(row=6, column=i+2)
     
     def create_fade_contract_buttons(self):
-        fade_contract_values = [20, 40, 60]
+        fade_contract_values = [5, 10, 20, 40, 80]
         for i, value in enumerate(fade_contract_values):
             button = ttk.Button(self.window, text=str(value), command=lambda v=value: self.update_fade_contract(v))
             button.grid(row=10, column=i+2)
     
     def create_edge_sensitivity_contract_buttons(self):
-        edge_sensitivity_contract_values = [0.1, 0.25, 1]
+        edge_sensitivity_contract_values = [0.1, 0.25, 0.5, 1]
         for i, value in enumerate(edge_sensitivity_contract_values):
             button = ttk.Button(self.window, text=str(value), command=lambda v=value: self.update_edge_sensitivity_contract(v))
             button.grid(row=11, column=i+2)
@@ -144,10 +164,32 @@ class ParametersGUI:
             button.grid(row=12, column=i+2)
     
     def create_spreads_buttons(self):
-        spreads_values = [[5, 10, 15], [10, 20, 30]]
+        spreads_values = [[2, 4, 6], [5, 10, 15], [10, 20, 30]]
         for i, values in enumerate(spreads_values):
             button = ttk.Button(self.window, text=str(values), command=lambda v=values: self.update_spreads(v))
             button.grid(row=14, column=i+2)
+
+    def create_level_orders_buttons(self):
+        level_orders_values = [1, 2, 3]
+        for i, value in enumerate(level_orders_values):
+            button = ttk.Button(self.window, text=str(value), command=lambda v=value: self.update_level_orders(v))
+            button.grid(row=15, column=i+2)
+
+    def create_etf_margin_buttons(self):
+        etf_margin_values = [60, 80, 100, 120]
+        for i, value in enumerate(etf_margin_values):
+            button = ttk.Button(self.window, text=str(value), command=lambda v=value: self.update_etf_margin(v))
+            button.grid(row=16, column=i+2)
+
+    def create_safety_buttons(self):
+        safety_true_button = ttk.Button(self.window, text="True", command=lambda: self.update_safety(True))
+        safety_true_button.grid(row=17, column=1)
+        safety_false_button = ttk.Button(self.window, text="False", command=lambda: self.update_safety(False))
+        safety_false_button.grid(row=17, column=2)
+
+    def update_max_pos(self, value):
+        self.max_pos_var.set(str(value))
+        self.update_parameters()
     
     def update_fade_etf(self, value):
         self.fade_etf_var.set(str(value))
@@ -176,6 +218,18 @@ class ParametersGUI:
     def update_spreads(self, values):
         self.spreads_var.set(str(values))
         self.update_parameters()
+
+    def update_level_orders(self, value):
+        self.level_orders_var.set(str(value))
+        self.update_parameters()
+
+    def update_etf_margin(self, value):
+        self.etf_margin_var.set(str(value))
+        self.update_parameters()
+
+    def update_safety(self, value):
+        self.safety_var.set(value)
+        self.update_parameters()
     
     def update_parameters(self):
         max_pos = self.max_pos_var.get()
@@ -189,6 +243,8 @@ class ParametersGUI:
         slack_contract = self.slack_contract_var.get()
         spreads = self.spreads_var.get()
         level_orders = self.level_orders_var.get()
+        etf_margin = self.etf_margin_var.get()
+        safety = self.safety_var.get()
         
         with open(self.file_path, "w") as file:
             file.write(f"""
@@ -214,6 +270,8 @@ class Parameters:
             self.params[c] = self.etf_params
         self.spreads = {spreads}
         self.level_orders = {level_orders}
+        self.etf_margin = {etf_margin}
+        self.safety = {safety}
 
 def get_params():
     return Parameters()

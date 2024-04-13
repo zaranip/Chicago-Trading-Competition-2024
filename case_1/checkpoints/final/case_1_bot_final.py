@@ -10,12 +10,11 @@ import importlib
 import tkinter as tk
 from tkinter import ttk
 
-import params
+import params as params
 from params_gui import ParametersGUI
 from datetime import datetime
 from typing import Optional
 from xchangelib import xchange_client, service_pb2 as utc_bot_pb2
-from  prediction import Prediction
 from grpc.aio import AioRpcError
 import random
 
@@ -29,7 +28,6 @@ SYMBOLS = ["EPT", "DLO", "MKU", "IGM", "BRV"]
 ETFS = ["SCP", "JAK"]
 ASSET = ["JMS"]
 TRAP = 8500
-df = pd.read_csv("Case1_Historical_Amended.csv")
 
 class OrderResponse:
     def __init__(self, order_id: str):
@@ -357,7 +355,7 @@ class MainBot(xchange_client.XChangeClient):
         self.spreads = params_instance.spreads
         self.etf_margin = params_instance.etf_margin
         self.safety = params_instance.safety
-        print(f"Parameters loaded: {self.min_margin}, {self.fade}, {self.edge_sensitivity}, {self.slack}")
+        print(f"Parameters loaded: {self.min_margin}, {self.fade}, {self.edge_sensitivity}, {self.slack}, {self.spreads}, {self.etf_margin}, {self.safety}")
 
     async def trade(self):
         """This is a task that is started right before the bot connects and runs in the background."""

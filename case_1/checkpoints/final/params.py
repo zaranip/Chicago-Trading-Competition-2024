@@ -5,23 +5,23 @@ class Parameters:
         self.params = {}
         self.etf_params = {
             "min_margin": 1,
-            "fade": 20,
-            "edge_sensitivity": 1,
-            "slack": 2
+            "fade": 10,
+            "edge_sensitivity": 1.5,
+            "slack": 3
         }
         self.contract_params = {
             "min_margin": 1,
-            "fade": 20,
-            "edge_sensitivity": .1,
-            "slack": 2
+            "fade": 80,
+            "edge_sensitivity": 0.25,
+            "slack": 4
         }
         for c in ["EPT", "DLO", "MKU", "IGM", "BRV"]:
             self.params[c] = self.contract_params
         for c in ["SCP", "JAK"]:
             self.params[c] = self.etf_params
-        self.spreads = [5, 10, 15]
-        self.level_orders = 2
-        self.etf_margin = 100
+        self.spreads = [2, 4, 6]
+        self.level_orders = 3
+        self.etf_margin = 120
         self.safety = False
 
 def get_params():
