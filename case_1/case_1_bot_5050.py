@@ -118,7 +118,7 @@ class MainBot(xchange_client.XChangeClient):
         self.safety_check = 0
         self.order_size = 16
         self.level_orders = 10
-        self.etf_margin = 100
+        self.etf_margin = 55
 
         self.spreads = NotImplemented
         self.fade = NotImplemented
@@ -135,7 +135,13 @@ class MainBot(xchange_client.XChangeClient):
         self.fade_augmented = dict((symbol, 0) for symbol in SYMBOLS + ETFS)
         self.edge_augmented = dict((symbol, {side: 0 for side in [xchange_client.Side.BUY, xchange_client.Side.SELL]}) for symbol in SYMBOLS + ETFS)
         self.history = dict((symbol, []) for symbol in SYMBOLS + ETFS)
-
+        self.median = {'EPT': 4786.436436436436, 
+                       'DLO': 4935.249249249249, 
+                       'MKU': 4901.693693693694, 
+                       'IGM': 5618.577577577577, 
+                       'BRV': 5000.308308308308,
+                       'SCP': 5077.168568568568, 
+                       'JAK': 4891.073873873874}
     def get_last_transacted_price(self, symbol, side):
         return self.last_transacted_price[symbol][side]["price"]
     
@@ -357,109 +363,20 @@ class MainBot(xchange_client.XChangeClient):
             self.round += 1
             await asyncio.sleep(1)
         while True:
-            self.load_params()
-
-            # # check for safety before trading
-            # old_safety_check = self.update_safety_check()
-            # if self.safety_check >=5:
-            #     #end the round
-            #     self.round += 1
-            #     print(self.estimate_pnl())
-            #     await asyncio.sleep(1)
-            #     continue
-
-            # # if the stock last traded price is very old or we just recovered from a non trading period
-            # if old_safety_check >= 5:
-            #     pass
-                
+            self.load_params()   
             self.set_fade_logic()
             self.set_edge_logic()
 
-            #print(f"Slack is {self.slack}", f"Fade is {self.fade}", f"Edge Sensitivity is {self.edge_sensitivity}")
             
             bids = dict((symbol, self.get_last_transacted_price(symbol, xchange_client.Side.BUY) + self.fade_augmented[symbol] - self.edge_augmented[symbol][xchange_client.Side.BUY]) for symbol in SYMBOLS + ETFS)
             asks = dict((symbol, self.get_last_transacted_price(symbol, xchange_client.Side.SELL) + self.fade_augmented[symbol] + self.edge_augmented[symbol][xchange_client.Side.SELL]) for symbol in SYMBOLS + ETFS)
-            # handle the unbalanced position
-            # ETF Arbitrage
-            # TODO: review
-
-            # If it has been too long since last order, sacrifice to get true price
+            
             for symbol in SYMBOLS + ETFS:
-                print("Age of ", symbol, self.last_transacted_price[symbol][xchange_client.Side.BUY]["age"])
-                if self.round - self.last_transacted_price[symbol][xchange_client.Side.BUY]["age"] > 10:
-                    await self.bot_place_order(symbol, 1, xchange_client.Side.BUY, 0, market=True)
-                if self.round - self.last_transacted_price[symbol][xchange_client.Side.SELL]["age"] > 10:
-                    await self.bot_place_order(symbol, 1, xchange_client.Side.SELL, 0, market=True)
-
-            # for etf in ETFS:
-            #     fair = dict((symbol, np.mean(self.history[symbol][-5:]) if len(self.history[symbol]) >= 5 else np.mean(self.history[symbol])) for symbol in SYMBOLS + ETFS)
-            #     if etf == "SCP":
-            #         price = (3 * fair["EPT"] + 3*fair["IGM"] + 4*fair["BRV"])/10
-            #     elif etf == "JAK":
-            #         price = (2 * fair['EPT'] + 5*fair['DLO'] + 3*fair['MKU'])/10
-            #     predicted_price = fair[etf]
-            #     if predicted_price - price > self.etf_margin:
-            #         with open(f"./log/etfs/round_data_{start_time}.txt", "a") as f:
-            #             f.write(f"ETF: {etf} | Predicted: {predicted_price} | Actual: {price} | Margin: {predicted_price - price}\n")
-            #         await self.bot_place_arbitrage_order(etf, "to")
-            #     elif predicted_price - price < - self.etf_margin:
-            #         with open(f"./log/etfs/round_data_{start_time}.txt", "a") as f:
-            #             f.write(f"ETF: {etf} | Predicted: {predicted_price} | Actual: {price} | Margin: {predicted_price - price}\n")
-            #         await self.bot_place_arbitrage_order(etf, "from")
-            
-            
-            # Take advantage of the spread
-            # TODO: review
-            # for symbol in SYMBOLS:
-            #     margin = 50
-            #     symbol_bids = sorted([(k,v) for k, v in self.order_books[symbol].bids.items() if k > self.predictions[symbol] + margin and v > 0])
-            #     symbol_asks = sorted([(k,v) for k, v in self.order_books[symbol].asks.items() if k < self.predictions[symbol] - margin and v > 0], reverse=True)
-            #     m = max(len(symbol_bids), len(symbol_asks))
-            #     for i in range(m):
-            #         if i < len(symbol_bids):
-            #             await self.bot_place_order(symbol, symbol_bids[i][1], xchange_client.Side.SELL, symbol_bids[i][0])
-            #         if i < len(symbol_asks):
-            #             await self.bot_place_order(symbol, symbol_asks[i][1], xchange_client.Side.BUY, symbol_asks[i][0])
-            
-            # Penny In Penny Out
-            for symbol in SYMBOLS + ETFS:
-                buy_volume = 3
-                sell_volume = buy_volume
-                buy_first = random.choice([True, False])
-                # print(bids[symbol], asks[symbol])
-                bid = min(round(bids[symbol]), round(asks[symbol]))
-                ask = max(round(bids[symbol]), round(asks[symbol]))
-                if buy_first:
-                    if int(bids[symbol]) > 0:
-                        await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, bid)
-                    if int(asks[symbol]) > 0:
-                        await self.bot_place_order(symbol, sell_volume, xchange_client.Side.SELL, ask)
-                else:
-                    if int(asks[symbol]) > 0:
-                        await self.bot_place_order(symbol, sell_volume, xchange_client.Side.SELL, ask)
-                    if int(bids[symbol]) > 0:
-                        await self.bot_place_order(symbol, buy_volume, xchange_client.Side.BUY, bid)
+                if bids[symbol] > 0 and bids[symbol] < self.median[symbol] - 1:
+                    await self.bot_place_order(symbol, 1, xchange_client.Side.BUY, round(bids[symbol]))
+                if asks[symbol] > 0 and asks[symbol] > self.median[symbol] + 1:
+                    await self.bot_place_order(symbol, 1, xchange_client.Side.SELL, round(asks[symbol]))
   
-            # # Level Orders
-            # TODO: review
-            for symbol in SYMBOLS:
-                for level in range(1, 3):
-                    if bids[symbol] < 0 or asks[symbol] < 0:
-                        continue
-                    spread = self.spreads[level - 1]
-                    bid = bids[symbol] - spread
-                    ask = asks[symbol] + spread
-                    buy_first = random.choice([True, False])
-                    if buy_first:
-                        if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
-                            await self.bot_place_order(symbol, 3, xchange_client.Side.BUY, round(bid), level)
-                        if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
-                            await self.bot_place_order(symbol, 3, xchange_client.Side.SELL, round(ask), level)
-                    else:
-                        if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
-                            await self.bot_place_order(symbol, 3, xchange_client.Side.SELL, round(ask), level)
-                        if self.open_orders_object.get_symbol_levels(symbol)[level] < self.level_orders:
-                            await self.bot_place_order(symbol, 3, xchange_client.Side.BUY, round(bid), level)
             # Viewing Positions
             print("Self: ", self.estimate_pnl())
             # print("My positions:", self.positions)

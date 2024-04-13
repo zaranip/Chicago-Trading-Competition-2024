@@ -11,8 +11,8 @@ class Parameters:
         }
         self.contract_params = {
             "min_margin": 1,
-            "fade": 80,
-            "edge_sensitivity": 1,
+            "fade": 20,
+            "edge_sensitivity": .1,
             "slack": 2
         }
         for c in ["EPT", "DLO", "MKU", "IGM", "BRV"]:
