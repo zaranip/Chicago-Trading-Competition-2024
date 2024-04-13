@@ -432,8 +432,14 @@ class MainBot(xchange_client.XChangeClient):
             
             # Penny In Penny Out
             for symbol in SYMBOLS + ETFS:
-                buy_volume = random.randint(3, 9)
-                sell_volume = buy_volume
+                buy_volume, sell_volume = 1, 1
+                if self.positions[symbol] > 0:
+                    buy_volume = self.positions[symbol]//10 + 1
+                    sell_volume = max(buy_volume, 1)
+                elif self.positions[symbol] < 0:
+                    sell_volume = abs(self.positions[symbol])//10 + 1
+                    buy_volume = max(sell_volume, 1)
+                    
                 buy_first = random.choice([True, False])
                 # print(bids[symbol], asks[symbol])
                 bid = min(round(bids[symbol]), round(asks[symbol]))
@@ -452,7 +458,7 @@ class MainBot(xchange_client.XChangeClient):
             # # Level Orders
             # TODO: review
             for symbol in SYMBOLS:
-                for level in range(1, 3):
+                for level in range(1, 4):
                     if bids[symbol] < 0 or asks[symbol] < 0:
                         continue
                     spread = self.spreads[level - 1]
