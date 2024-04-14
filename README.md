@@ -21,8 +21,8 @@ If you are a recruiter and / or looking to hire in the quantitative finance fiel
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#case-1">Case 1</a></li>
-    <li><a href="#case-2">Case 2</a></li>
+    <li><a href="#case-1-market-making">Case 1</a></li>
+    <li><a href="#case-2-portfolio-optimization">Case 2</a></li>
     <li><a href="#contact">Recruiting</a></li>
   </ol>
 </details>
