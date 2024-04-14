@@ -17,7 +17,7 @@ from typing import Optional
 from xchangelib import xchange_client, service_pb2 as utc_bot_pb2
 from grpc.aio import AioRpcError
 import random
-
+from prediction import Prediction
 random.seed(1)
 # constants
 MAX_ORDER_SIZE = 40
