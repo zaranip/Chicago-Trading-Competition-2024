@@ -16,17 +16,64 @@ If you are a recruiter and / or looking to hire in the quantitative finance fiel
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Case 1</a></li>
-    <li><a href="#contributing">Case 2</a></li>
+    <li><a href="#case-1">Case 1</a></li>
+    <li><a href="#case-2">Case 2</a></li>
     <li><a href="#contact">Recruiting</a></li>
   </ol>
 </details>
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+Instructions on setting up our project locally.
+To get a local copy up and running follow these simple example steps.
+
+
+### Installation
+
+1. Clone the repository
+   ```sh
+   git clone https://github.com/zaranip/Chicago-Trading-Competition-2024/
+   ```
+2. Navigate into the directory
+   ```sh
+   cd Chicago-Trading-Competition-2024
+   ```
+3. Install and activate relevant packages
+  ```sh
+  conda env create --name utc --file=environment.yaml
+  conda activate utc
+  ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Case 1 -->
+## Case 1: Market Making
+
+Our strategy included several parts:
+<ul>
+  <li>
+    Penny in, penny out with levels
+  </li>
+  <li>
+    ETF arbitrage
+  </li>
+    <li>
+    GUI Interface and accessory strategies (bogus bids)
+    </li>
+</ul>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Case 2 -->
+## Case 2: Portfolio Optimization
+
+Case 2 info here
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
