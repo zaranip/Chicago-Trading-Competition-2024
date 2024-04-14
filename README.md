@@ -18,7 +18,6 @@ If you are a recruiter and / or looking to hire in the quantitative finance fiel
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
