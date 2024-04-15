@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 import os
 
+# This code is based off of https://www.hindawi.com/journals/mpe/2017/4197914/ 
 
 data = pd.read_csv('Case 2 Data 2024.csv', index_col=0)
 

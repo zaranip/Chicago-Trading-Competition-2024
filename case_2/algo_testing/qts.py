@@ -5,6 +5,9 @@ from xchangelib import xchange_client
 import asyncio
 import numpy as np
 
+# This strategy is based off of https://ieeexplore.ieee.org/abstract/document/8616267
+# QTS stands for Quantum-inspired Trading Strategy
+
 class QTSXchangeClient(xchange_client.XChangeClient):
     def __init__(self, host: str, username: str, password: str, data_file: str):
         super().__init__(host, username, password)
