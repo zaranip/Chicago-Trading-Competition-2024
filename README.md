@@ -55,7 +55,7 @@ To get a local copy up and running follow these simple example steps.
 <!-- Case 1 -->
 ## Case 1: Market Making
 
-Strategies
+### Strategies
 1. **Penny in, Penny out with Levels**: This strategy involves placing orders at the best bid and ask prices, with the aim of capturing the bid-ask spread. The bot continuously adjusts its orders based on predefined levels to optimize its position in the order book.
 2. **ETF Arbitrage**: The bot monitors the prices of exchange-traded funds (ETFs) and their underlying assets. It identifies and exploits price discrepancies between the ETF and its components, taking advantage of arbitrage opportunities.
 3. **GUI Interface and Accessory Strategies**: The bot includes a graphical user interface (GUI) that allows users to monitor its performance and adjust settings in real-time. Additionally, the bot employs accessory strategies, such as placing bogus bids, to manipulate the market and gain an advantage over other participants.
