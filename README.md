@@ -60,7 +60,7 @@ Strategies
 2. **ETF Arbitrage**: The bot monitors the prices of exchange-traded funds (ETFs) and their underlying assets. It identifies and exploits price discrepancies between the ETF and its components, taking advantage of arbitrage opportunities.
 3. **GUI Interface and Accessory Strategies**: The bot includes a graphical user interface (GUI) that allows users to monitor its performance and adjust settings in real-time. Additionally, the bot employs accessory strategies, such as placing bogus bids, to manipulate the market and gain an advantage over other participants.
 
-The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack, and minimum margin. These can be found in our "params_gui.py" file.
+The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack (max margin), and minimum margin. These can be found in our "params_gui.py" file.
 
 ### Challenges
 During the development and deployment of the bot, we encountered a significant challenge posed by "hitter bots". These bots aggressively hit our orders, making it difficult for our market-making bot to function effectively. The hitter bots' actions disrupted our bot's ability to maintain its desired position in the order book and execute trades as intended.
