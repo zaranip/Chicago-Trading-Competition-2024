@@ -1,4 +1,4 @@
-# Chicago Trading Competition 2024
+# UChicago Trading Competition 2024
 ## Team UChicago x UMass Amherst
 - <a href="https://github.com/coolkite/">Divyansh Shivashok</a>, 2024 AI / ML SWE Intern @ Microsoft, 2x USNCO (US Chemistry Olympiad) Top 50, AI Research @ UMass Computer Graphics Lab, MIT CSAIL
 - <a href="https://github.com/dmtrung14/">Trung Dang</a>, 2x Vietnam Math Olympiad Top 25, AI Research @ UMass Dynamic and Autonomous Robotic Systems (DARoS) Lab
