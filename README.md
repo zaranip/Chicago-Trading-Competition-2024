@@ -87,7 +87,7 @@ During the portfolio optimization phase, we implemented a passive-aggressive mea
 
 3. **Position Sizing**: The strategy employed a passive-aggressive approach to position sizing. When an entry signal was triggered, the strategy took a passive position, allocating a portion of the portfolio to the asset. If the price continued to deviate from the mean, the strategy aggressively increased the position size, capitalizing on the expected mean reversion.
 
-## Insights from Exploratory Data Analysis (EDA)
+#### Insights from Exploratory Data Analysis (EDA)
 
 During the exploratory data analysis phase, we made a crucial observation that supported the implementation of the passive-aggressive mean reversion strategy. While analyzing historical price data, we noticed that certain assets exhibited strong mean-reverting characteristics.
 
