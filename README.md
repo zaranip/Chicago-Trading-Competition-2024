@@ -55,24 +55,54 @@ To get a local copy up and running follow these simple example steps.
 <!-- Case 1 -->
 ## Case 1: Market Making
 
-Our strategy included several parts:
-<ul>
-  <li>
-    Penny in, penny out with levels
-  </li>
-  <li>
-    ETF arbitrage
-  </li>
-    <li>
-    GUI Interface and accessory strategies (bogus bids)
-    </li>
-</ul>
+Strategies
+1. **Penny in, Penny out with Levels**: This strategy involves placing orders at the best bid and ask prices, with the aim of capturing the bid-ask spread. The bot continuously adjusts its orders based on predefined levels to optimize its position in the order book.
+2. **ETF Arbitrage**: The bot monitors the prices of exchange-traded funds (ETFs) and their underlying assets. It identifies and exploits price discrepancies between the ETF and its components, taking advantage of arbitrage opportunities.
+3. **GUI Interface and Accessory Strategies**: The bot includes a graphical user interface (GUI) that allows users to monitor its performance and adjust settings in real-time. Additionally, the bot employs accessory strategies, such as placing bogus bids, to manipulate the market and gain an advantage over other participants.
+
+The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack, and minimum margin. These can be found in our "params_gui.py" file.
+
+### Challenges
+During the development and deployment of the bot, we encountered a significant challenge posed by "hitter bots". These bots aggressively hit our orders, making it difficult for our market-making bot to function effectively. The hitter bots' actions disrupted our bot's ability to maintain its desired position in the order book and execute trades as intended.
+
+To mitigate the impact of hitter bots, we implemented various countermeasures and refined our algorithms. However, the presence of these bots highlighted the importance of robust error handling, risk management, and continuous monitoring when operating in a highly competitive and fast-paced trading environment.
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Case 2 -->
 ## Case 2: Portfolio Optimization
 
-Case 2 info here
+### Portfolio Optimization: Case 2
 
+In this case study, we focus on the portfolio optimization process, specifically highlighting the passive-aggressive mean reversion strategy and the insights gained from exploratory data analysis (EDA).
+
+#### Passive-Aggressive Mean Reversion Strategy
+
+During the portfolio optimization phase, we implemented a passive-aggressive mean reversion strategy. This strategy aims to capitalize on the tendency of asset prices to revert to their long-term average over time. The strategy involves the following steps:
+
+1. **Identification of Mean-Reverting Assets**: Through extensive analysis of historical price data, we identified assets that exhibited mean-reverting behavior. These assets were characterized by prices that tended to oscillate around a long-term average, deviating from it in the short term but eventually reverting back to the mean.
+
+2. **Entry and Exit Signals**: We developed a set of entry and exit signals based on the deviation of asset prices from their long-term average. When an asset's price significantly deviated from its mean, either above or below, it triggered an entry signal. Conversely, when the price reverted back towards the mean, it generated an exit signal.
+
+3. **Position Sizing**: The strategy employed a passive-aggressive approach to position sizing. When an entry signal was triggered, the strategy took a passive position, allocating a portion of the portfolio to the asset. If the price continued to deviate from the mean, the strategy aggressively increased the position size, capitalizing on the expected mean reversion.
+
+## Insights from Exploratory Data Analysis (EDA)
+
+During the exploratory data analysis phase, we made a crucial observation that supported the implementation of the passive-aggressive mean reversion strategy. While analyzing historical price data, we noticed that certain assets exhibited strong mean-reverting characteristics.
+
+Through visual inspection of price charts and statistical analysis, we identified patterns of prices oscillating around a central value over time. These assets displayed a tendency to deviate from their long-term average in the short term, but consistently reverted back to the mean over a longer horizon.
+
+The EDA process involved the following steps:
+
+1. **Data Visualization**: We created price charts and plotted the long-term average or moving average of the asset prices. This visual representation helped us identify the mean-reverting behavior of the assets.
+
+2. **Statistical Tests**: We performed statistical tests, such as the Augmented Dickey-Fuller (ADF) test, to assess the stationarity of the price series. Stationary series are more likely to exhibit mean reversion, as they have a constant mean and variance over time.
+
+3. **Autocorrelation Analysis**: We examined the autocorrelation of the price series to determine the presence of mean reversion. Negative autocorrelation, particularly at longer lags, indicated a tendency for prices to revert to their mean.
+
+The insights gained from the EDA process provided strong evidence of mean-reverting behavior in certain assets. This information was instrumental in the development and implementation of the passive-aggressive mean reversion strategy within our portfolio optimization framework.
+
+By leveraging the mean-reverting characteristics of these assets, we aimed to capitalize on short-term deviations from the long-term average, potentially generating profits as prices reverted back to their equilibrium levels.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
