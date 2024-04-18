@@ -93,7 +93,7 @@ During the portfolio optimization phase, we implemented a passive-aggressive mea
 3. **Position Sizing**: The strategy employed a passive-aggressive approach to position sizing. When an entry signal was triggered, the strategy took a passive position, allocating a portion of the portfolio to the asset. If the price continued to deviate from the mean, the strategy aggressively increased the position size, capitalizing on the expected mean reversion.
 
 #### Other Implemented Strategies
-We implemented 9 different strategies to test on the training data. Related graphs and results of these experiments can be found in the case_2 -> testing_metrics folder.
+We implemented 9 strategies (besides PAMR) to test on the training data. Related graphs and results of these experiments can be found in the case_2 -> testing_metrics folder.
 1. Heterogeneous multiple population particle swarm optimization algorithm (HMPPSO.py): https://ieeexplore.ieee.org/document/7257025
 2. Mean-Variance Optimization (mvo.py): Industry-standard method for optimizing risk and return
 3. Genetic Algorithm 1 (oh_genetic.py): https://www.sciencedirect.com/science/article/abs/pii/S1568494617305240
@@ -118,6 +118,7 @@ The EDA process involved the following steps:
 
 The insights gained from the EDA process provided strong evidence of mean-reverting behavior in certain assets. This information was instrumental in the development and implementation of the passive-aggressive mean reversion strategy within our portfolio optimization framework.
 
-By leveraging the mean-reverting characteristics of these assets, we aimed to capitalize on short-term deviations from the long-term average, potentially generating profits as prices reverted back to their equilibrium levels.
+In the end, we submitted the algorithm with the best Sharpe, the PAMR model. One future consideration would be to make dynamically changing Sharpe, as this was not something that we knew was possible ;(.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
