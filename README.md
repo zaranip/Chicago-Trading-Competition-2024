@@ -64,8 +64,10 @@ The GUI allowed us to control fade (rate of selling / buying assets), edge (prof
 
 We used three different ways of evaluating fair value:
 1. Potential energy graph for interaction between a proton and electron - we found the distributions of prices given to us fit very closely with this model. We did end up implementing this model in predictions.py, and it worked with varying results.
-2. Kernel density estimation (KDE) distribution, using 50% marks to determine fair price on incoming data.
-3. Last transacted price. We used this during our training rounds with great success. Unfortunately, the hitter bots (explained later) messed up these calculations.
+![pe_equation](media/PE_equation.png)
+![pe_graph](media/pe_graph.png)
+3. Kernel density estimation (KDE) distribution, using 50% marks to determine fair price on incoming data.
+4. Last transacted price. We used this during our training rounds with great success. Unfortunately, the hitter bots (explained later) messed up these calculations.
 
 ### Challenges
 During the development and deployment of the bot, we encountered a significant challenge posed by "hitter bots". These bots aggressively hit our orders, making it difficult for our market-making bot to function effectively. The hitter bots' actions disrupted our bot's ability to maintain its desired position in the order book and execute trades as intended.
