@@ -62,6 +62,11 @@ To get a local copy up and running follow these simple example steps.
 
 The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack (max margin), and minimum margin. These can be found in our "params_gui.py" file.
 
+We used three different ways of evaluating fair value:
+1. Potential energy graph for interaction between a proton and electron - we found the distributions of prices given to us fit very closely with this model. We did end up implementing this model in predictions.py, and it worked with varying results.
+2. Kernel density estimation (KDE) distribution, using 50% marks to determine fair price on incoming data.
+3. Last transacted price. We used this during our training rounds with great success. Unfortunately, the hitter bots (explained later) messed up these calculations.
+
 ### Challenges
 During the development and deployment of the bot, we encountered a significant challenge posed by "hitter bots". These bots aggressively hit our orders, making it difficult for our market-making bot to function effectively. The hitter bots' actions disrupted our bot's ability to maintain its desired position in the order book and execute trades as intended.
 
@@ -87,11 +92,21 @@ During the portfolio optimization phase, we implemented a passive-aggressive mea
 
 3. **Position Sizing**: The strategy employed a passive-aggressive approach to position sizing. When an entry signal was triggered, the strategy took a passive position, allocating a portion of the portfolio to the asset. If the price continued to deviate from the mean, the strategy aggressively increased the position size, capitalizing on the expected mean reversion.
 
+#### Other Implemented Strategies
+We implemented 9 different strategies to test on the training data. Related graphs and results of these experiments can be found in the case_2 -> testing_metrics folder.
+1. Heterogeneous multiple population particle swarm optimization algorithm (HMPPSO.py): https://ieeexplore.ieee.org/document/7257025
+2. Mean-Variance Optimization (mvo.py): Industry-standard method for optimizing risk and return
+3. Genetic Algorithm 1 (oh_genetic.py): https://www.sciencedirect.com/science/article/abs/pii/S1568494617305240
+4. On-Line Portfolio Selection with Moving Average Reversion (OLMAR) (olmar.py): https://arxiv.org/ftp/arxiv/papers/1206/1206.4626.pdf
+5. Optimizing Sharpe (optimize_sharpe.py): Tried all the optimization methods available through the Scipy library https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html.
+6. Optimized Markowitz (optimized_markowitz.py): https://en.wikipedia.org/wiki/Modern_portfolio_theory
+7. Particle Swarm Optimization (PSO) (pso.py) https://www.sciencedirect.com/science/article/abs/pii/S0957417411002818
+8. Quantum-inspired Tabu Search algorithm improved by the quantum-not-gate (GNQTS) (qts.py): https://ieeexplore.ieee.org/abstract/document/8616267
+9. Multiobjective Evolutionary Algorithms and Preselection Methods (qu_evolutionary.py): https://www.hindawi.com/journals/mpe/2017/4197914/
+ 
 #### Insights from Exploratory Data Analysis (EDA)
 
 During the exploratory data analysis phase, we made a crucial observation that supported the implementation of the passive-aggressive mean reversion strategy. While analyzing historical price data, we noticed that certain assets exhibited strong mean-reverting characteristics.
-
-Through visual inspection of price charts and statistical analysis, we identified patterns of prices oscillating around a central value over time. These assets displayed a tendency to deviate from their long-term average in the short term, but consistently reverted back to the mean over a longer horizon.
 
 The EDA process involved the following steps:
 
