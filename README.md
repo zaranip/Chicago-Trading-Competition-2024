@@ -65,6 +65,11 @@ To get a local copy up and running follow these simple example steps.
 
 The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack (max margin), and minimum margin. These can be found in our "params_gui.py" file. Our edge specifically uses a tanh function to adjust our margins and a logarithmic function to adjust the fades.
 
+Here is the edge equation:
+<p align = "center>
+  <img src="media/edge_equation.png" width = "700">  
+</p>
+
 Here is what the final GUI looked like and the tanh function that we to adjust the edge:
 <p align="center">
   <img src="media/parameters_gui.png" width="700">
