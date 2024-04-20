@@ -7,7 +7,7 @@
 ## General Thoughts
 This year's competition included a live market making simulation (Case 1) and a portfolio optimization case (Case 2) from April 12-13. This was the first time some of us had ever attempted to anything related to quantitative finance - and also the first time that UMass Amherst was invited to the competition in all 12 years of its running (hopefully not the last!).
 
-UMass Amherst has historically sent very few people to quantitative funds, noted by the lack of inclusion on university dropdown options on some firms' career pages. Both of our UMass members are incredibly talented, and we hope to continue to breakthrough these barriers.
+UMass Amherst has historically sent very few people to quantitative firms, noted by the lack of inclusion on university dropdown options on some firms' career pages. Both of our UMass members are incredibly talented, and we hope to continue to breakthrough these barriers.
 
 If you are a recruiter and / or looking to hire in the quantitative finance field, please navigate to the resumes folder of this respository to find our resumes and contact information. We are currently recruiting for 2025 internships (Trung, Zara) and full-time positions (Divyansh).
 
@@ -58,14 +58,16 @@ To get a local copy up and running follow these simple example steps.
 ### Strategies
 1. **Penny in, Penny out with Levels**: This strategy involves placing orders at the best bid and ask prices, with the aim of capturing the bid-ask spread. The bot continuously adjusts its orders based on predefined levels to optimize its position in the order book.
 2. **ETF Arbitrage**: The bot monitors the prices of exchange-traded funds (ETFs) and their underlying assets. It identifies and exploits price discrepancies between the ETF and its components, taking advantage of arbitrage opportunities.
-3. **GUI Interface and Accessory Strategies**: The bot includes a graphical user interface (GUI) that allows users to monitor its performance and adjust settings in real-time. Additionally, the bot employs accessory strategies, such as placing bogus bids, to manipulate the market and gain an advantage over other participants.
+3. **GUI Interface and Accessory Strategies**: The bot includes a graphical user interface (GUI) that allows us to monitor its performance and adjust settings in real-time. Additionally, the bot employs accessory strategies, such as placing bogus bids, to manipulate the market and gain an advantage over other participants. We suggest that future competitiors also employ this, but to make sure that you can do X11 port forwarding before the competition.
 
-The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack (max margin), and minimum margin. These can be found in our "params_gui.py" file.
+The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack (max margin), and minimum margin. These can be found in our "params_gui.py" file. Our edge specifically uses a tanh function to adjust our margins and a logarithmic function to adjust the fades.
 
 We used three different ways of evaluating fair value:
 1. Potential energy graph for interaction between a proton and electron - we found the distributions of prices given to us fit very closely with this model. We did end up implementing this model in predictions.py, and it worked with varying results.
-2. Kernel density estimation (KDE) distribution, using 50% marks to determine fair price on incoming data.
-3. Last transacted price. We used this during our training rounds with great success. Unfortunately, the hitter bots (explained later) messed up these calculations.
+![pe_equation](media/PE_equation.png)
+![pe_graph](media/pe_graph.png)
+3. Kernel density estimation (KDE) distribution, using 50% marks to determine fair price on incoming data.
+4. Last transacted price. We used this during our training rounds with great success. Unfortunately, the hitter bots (explained later) messed up these calculations.
 
 ### Challenges
 During the development and deployment of the bot, we encountered a significant challenge posed by "hitter bots". These bots aggressively hit our orders, making it difficult for our market-making bot to function effectively. The hitter bots' actions disrupted our bot's ability to maintain its desired position in the order book and execute trades as intended.
