@@ -7,7 +7,7 @@
 ## General Thoughts
 This year's competition included a live market making simulation (Case 1) and a portfolio optimization case (Case 2) from April 12-13. This was the first time some of us had ever attempted to anything related to quantitative finance - and also the first time that UMass Amherst was invited to the competition in all 12 years of its running (hopefully not the last!).
 
-UMass Amherst has historically sent very few people to quantitative funds, noted by the lack of inclusion on university dropdown options on some firms' career pages. Both of our UMass members are incredibly talented, and we hope to continue to breakthrough these barriers.
+UMass Amherst has historically sent very few people to quantitative firms, noted by the lack of inclusion on university dropdown options on some firms' career pages. Both of our UMass members are incredibly talented, and we hope to continue to breakthrough these barriers.
 
 If you are a recruiter and / or looking to hire in the quantitative finance field, please navigate to the resumes folder of this respository to find our resumes and contact information. We are currently recruiting for 2025 internships (Trung, Zara) and full-time positions (Divyansh).
 
