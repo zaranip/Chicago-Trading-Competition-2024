@@ -62,6 +62,10 @@ To get a local copy up and running follow these simple example steps.
 
 The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack (max margin), and minimum margin. These can be found in our "params_gui.py" file. Our edge specifically uses a tanh function to adjust our margins and a logarithmic function to adjust the fades.
 
+Here is what the final GUI looked like and the tanh function that we to adjust the edge:
+![parameters_gui](media/parameters_gui.png)
+![tanh](media/tanh.jpg)
+
 We used three different ways of evaluating fair value:
 1. Potential energy graph for interaction between a proton and electron - we found the distributions of prices given to us fit very closely with this model. We did end up implementing this model in predictions.py, and it worked with varying results.
 ![pe_equation](media/PE_equation.png)
