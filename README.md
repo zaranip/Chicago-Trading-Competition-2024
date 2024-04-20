@@ -79,7 +79,7 @@ Here is the fade equation:
   <img src="media\fade_equation.png" width="900">
 </p>
 
-Here is what the final GUI looked like and the tanh function that we used to adjust the edge:
+Here is what the final GUI looked like and the _base_ tanh function that we used to adjust the edge.
 <p align="center">
   <img src="media/parameters_gui.png" width="700">
   <br>
