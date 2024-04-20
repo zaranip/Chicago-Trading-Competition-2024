@@ -94,9 +94,8 @@ During the portfolio optimization phase, we implemented a passive-aggressive mea
 
 1. **Identification of Mean-Reverting Assets**: Through extensive analysis of historical price data, we identified assets that exhibited mean-reverting behavior. These assets were characterized by prices that tended to oscillate around a long-term average, deviating from it in the short term but eventually reverting back to the mean.
 
-2. **Entry and Exit Signals**: We developed a set of entry and exit signals based on the deviation of asset prices from their long-term average. When an asset's price significantly deviated from its mean, either above or below, it triggered an entry signal. Conversely, when the price reverted back towards the mean, it generated an exit signal.
-
-3. **Position Sizing**: The strategy employed a passive-aggressive approach to position sizing. When an entry signal was triggered, the strategy took a passive position, allocating a portion of the portfolio to the asset. If the price continued to deviate from the mean, the strategy aggressively increased the position size, capitalizing on the expected mean reversion.
+2. **K-Fold Cross Validation**: We used this validation method to test the volatility and general patterns of each strategy type (noted below). Here is an example of one graph that we generated, out of at least 30 such graphs.
+![k-fold](case_2/final_algorithm/graphs/sharpe_ratios_window_1260.png)
 
 #### Other Implemented Strategies
 We implemented 9 strategies (besides PAMR) to test on the training data. Related graphs and results of these experiments can be found in the case_2 -> testing_metrics folder.
@@ -116,11 +115,12 @@ During the exploratory data analysis phase, we made a crucial observation that s
 
 The EDA process involved the following steps:
 
-1. **Data Visualization**: We created price charts and plotted the long-term average or moving average of the asset prices. This visual representation helped us identify the mean-reverting behavior of the assets.
+1. **Data Visualization**: Price charts, correlation matrices, scree plots.
+![correlation_matrix](media/correlation_matrix.png)
 
-2. **Statistical Tests**: We performed statistical tests, such as the Augmented Dickey-Fuller (ADF) test, to assess the stationarity of the price series. Stationary series are more likely to exhibit mean reversion, as they have a constant mean and variance over time.
+3. **Statistical Tests**: We performed statistical tests, such as the Augmented Dickey-Fuller (ADF) test, to assess the stationarity of the price series. Stationary series are more likely to exhibit mean reversion, as they have a constant mean and variance over time.
 
-3. **Autocorrelation Analysis**: We examined the autocorrelation of the price series to determine the presence of mean reversion. Negative autocorrelation, particularly at longer lags, indicated a tendency for prices to revert to their mean.
+4. **Autocorrelation Analysis**: We examined the autocorrelation of the price series to determine the presence of mean reversion. Negative autocorrelation, particularly at longer lags, indicated a tendency for prices to revert to their mean.
 
 The insights gained from the EDA process provided strong evidence of mean-reverting behavior in certain assets. This information was instrumental in the development and implementation of the passive-aggressive mean reversion strategy within our portfolio optimization framework.
 
