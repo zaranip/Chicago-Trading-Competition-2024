@@ -4,6 +4,11 @@
 - <a href="https://github.com/dmtrung14/">Trung Dang</a>, 2x Vietnam Math Olympiad Top 25, AI Research @ UMass Dynamic and Autonomous Robotic Systems (DARoS) Lab
 - <a href="https://github.com/zaranip/">Zara Nip</a>, 2024 Risk Quant Intern @ PIMCO, AI Break Through Tech Scholar, Girls Who Invest Scholar, AnitaB.org Scholar, UChicago Financial Markets Scholar
 
+<p align="center">
+  <img src="media\team_photo.png" width="900">
+</p>
+
+
 Please contact us at dshivashok@umass.edu, tmdang@umass.edu, or znip@uchicago.edu with any questions or concerns.
 
 ## General Thoughts
