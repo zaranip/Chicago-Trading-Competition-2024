@@ -65,13 +65,15 @@ To get a local copy up and running follow these simple example steps.
 1. **Penny in, Penny out with Levels**: This strategy involves placing orders at the best bid and ask prices, with the aim of capturing the bid-ask spread. The bot continuously adjusts its orders based on predefined levels to optimize its position in the order book.
 2. **ETF Arbitrage**: The bot monitors the prices of exchange-traded funds (ETFs) and their underlying assets. It identifies and exploits price discrepancies between the ETF and its components, taking advantage of arbitrage opportunities.
 3. **GUI Interface and Accessory Strategies**: The bot includes a graphical user interface (GUI) that allows us to monitor its performance and adjust settings in real-time. Additionally, the bot employs accessory strategies, such as placing bogus bids, to manipulate the market and gain an advantage over other participants. We suggest that future competitiors also employ this, but to make sure that you can do X11 port forwarding before the competition.
-4. **Noise**: Because the price, margins, and bid / ask spreads are hard to predict, we added additional "noise" to make our models for fair price non-deterministic. We used random values several times in our code: volume of assets transacted, edge parameter value, and whether to buy or sell first (all else held equal), 
+4. **Noise**: Because the price, margins, and bid / ask spreads are hard to predict, we added additional "noise" to make our models for fair price non-deterministic. We used random values several times in our code: volume of assets transacted, edge parameter value, and whether to buy or sell first (all else held equal).
+5. **Safety Mechanism**: Stop trading if we are losing too much (included in the GUI).
 
 The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack (max margin), and minimum margin. These can be found in our "params_gui.py" file. Our edge specifically uses a tanh function to adjust our margins and a logarithmic function to adjust the fades.
 
 Here is the edge equation:
 <p align="center">
   <img src="media/edge_equation.png" width="900">
+  <img src="media/edge_equation2.png" width="900">
 </p>
 
 Here is the fade equation:
@@ -83,7 +85,7 @@ Here is what the final GUI looked like and the _base_ tanh function that we used
 <p align="center">
   <img src="media/parameters_gui.png" width="700">
   <br>
-  <img src="media/tanh.jpg" width="700">
+  <img src="media/tanh.png" width="700">
 </p>
 
 We used three different ways of evaluating fair value:
