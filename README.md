@@ -134,7 +134,7 @@ During the portfolio optimization phase, we implemented a passive-aggressive mea
 We implemented 9 strategies (besides PAMR) to test on the training data. Related graphs and results of these experiments can be found in the case_2 -> testing_metrics folder.
 1. Heterogeneous multiple population particle swarm optimization algorithm (HMPPSO.py): https://ieeexplore.ieee.org/document/7257025
 2. Mean-Variance Optimization (mvo.py): Industry-standard method for optimizing risk and return
-3. Genetic Algorithm 1 (oh_genetic.py): https://www.sciencedirect.com/science/article/abs/pii/S1568494617305240
+3. Genetic algorithm to support clustering-based portfolio optimization (oh_genetic.py): https://www.sciencedirect.com/science/article/abs/pii/S1568494617305240
 4. On-Line Portfolio Selection with Moving Average Reversion (OLMAR) (olmar.py): https://arxiv.org/ftp/arxiv/papers/1206/1206.4626.pdf
 5. Optimizing Sharpe (optimize_sharpe.py): Tried all the optimization methods available through the Scipy library https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html.
 6. Optimized Markowitz (optimized_markowitz.py): https://en.wikipedia.org/wiki/Modern_portfolio_theory
