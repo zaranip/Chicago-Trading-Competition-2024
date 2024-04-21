@@ -5,7 +5,7 @@
 - <a href="https://github.com/zaranip/">Zara Nip</a>, 2024 Risk Quant Intern @ PIMCO, AI Break Through Tech Scholar, Girls Who Invest Scholar, AnitaB.org Scholar, UChicago Financial Markets Scholar
 
 <p align="center">
-  <img src="media\team_photo.png" height="600">
+  <img src="media\team_photo.png" height="400">
 </p>
 
 
@@ -74,34 +74,34 @@ Our edge specifically uses a tanh function to adjust our margins and a logarithm
 
 Here is the edge representation:
 <p align="center">
-  <img src="media/edge_equation.png" width="900">
-  <img src="media/edge_equation2.png" width="900">
+  <img src="media/edge_equation.png" width="700">
+  <img src="media/edge_equation2.png" width="700">
 </p>
 
 Here is the fade representation:
 <p align="center">
-  <img src="media\fade_equation.png" width="900">
-  <img src="media\fade.png" width="900">
+  <img src="media\fade_equation.png" width="700">
+  <img src="media\fade.png" width="700">
 
 </p>
 
 Here is what the final GUI looked like and the _base_ tanh function that we used to adjust the edge.
 <p align="center">
-  <img src="media/parameters_gui.png" width="700">
+  <img src="media/parameters_gui.png" width="500">
   <br>
-  <img src="media/tanh.png" width="700">
+  <img src="media/tanh.png" width="500">
 </p>
 
 We used three different ways of evaluating fair value:
 1. Potential energy graph for interaction between a proton and electron - we found the distributions of prices given to us fit very closely with this model. We did end up implementing this model in predictions.py, and it worked with varying results.
 <p align="center">
-  <img src="media/PE_equation.png" width="700">
+  <img src="media/PE_equation.png" width="500">
   <br>
-  <img src="media/pe_graph.png" width="700">
+  <img src="media/pe_graph.png" width="500">
 </p>
 2. Kernel density estimation (KDE) distribution, using 50% marks to determine fair price on incoming data. <br>
 <p align="center">
-  <img src="media\kde.png" width="700">
+  <img src="media\kde.png" width="500">
 </p>
 
 3. Last transacted price. We used this during our training rounds with great success. Unfortunately, the hitter bots (explained later) messed up these calculations.
@@ -130,7 +130,7 @@ During the portfolio optimization phase, we implemented a passive-aggressive mea
 2. **K-Fold Cross Validation**: We used this validation method to test the volatility and general patterns of each strategy type (noted below). Here is an example of one graph that we generated, out of at least 30 such graphs. These graphs helped to solidify our trust in the PAMR model to outperform other strategies.
 
 <p align="center">
-  <img src="case_2/final_algorithm/graphs/sharpe_ratios_window_1260.png" width="900">
+  <img src="case_2/final_algorithm/graphs/sharpe_ratios_window_1260.png" width="700">
 </p>
 
 
@@ -154,7 +154,7 @@ The EDA process involved the following steps:
 
 1. **Data Visualization**: Price charts, correlation matrices, scree plots.
 <p align="center">
-  <img src="media/correlation_matrix.png" width="800">
+  <img src="media/correlation_matrix.png" width="600">
 </p>
 
 3. **Statistical Tests**: We performed statistical tests, such as the Augmented Dickey-Fuller (ADF) test, to assess the stationarity of the price series. Stationary series are more likely to exhibit mean reversion, as they have a constant mean and variance over time.
