@@ -9,7 +9,8 @@
 </p>
 
 
-Please contact us at dshivashok@umass.edu, tmdang@umass.edu, or znip@uchicago.edu with any questions or concerns.
+Please contact us at dshivashok@umass.edu, tmdang@umass.edu, or znip@uchicago.edu with any questions or concerns. <br> Refer to Trung's website: https://trungdang.netlify.app/blogs/uchicagotc_writeups.html for a greater inquiry into Case 1.
+
 ## Table of Contents
 <!-- TABLE OF CONTENTS -->
   <ol>
@@ -62,6 +63,8 @@ To get a local copy up and running follow these simple example steps.
 ## Case 1: Market Making
 
 ### Strategies
+Please refer to https://trungdang.netlify.app/blogs/uchicagotc_writeups.html for the math.
+
 1. **Penny in, Penny out with Levels**: This strategy involves placing orders at the best bid and ask prices, with the aim of capturing the bid-ask spread. The bot continuously adjusts its orders based on predefined levels to optimize its position in the order book.
 2. **ETF Arbitrage**: The bot monitors the prices of exchange-traded funds (ETFs) and their underlying assets. It identifies and exploits price discrepancies between the ETF and its components, taking advantage of arbitrage opportunities.
 3. **GUI Interface and Accessory Strategies**: The bot includes a graphical user interface (GUI) that allows us to monitor its performance and adjust settings in real-time. Additionally, the bot employs accessory strategies, such as placing bogus bids, to manipulate the market and gain an advantage over other participants. We suggest that future competitiors also employ this, but to make sure that you can do X11 port forwarding before the competition.
@@ -93,18 +96,16 @@ Here is what the final GUI looked like and the _base_ tanh function that we used
 </p>
 
 We used three different ways of evaluating fair value:
-1. Potential energy graph for interaction between a proton and electron - we found the distributions of prices given to us fit very closely with this model. We did end up implementing this model in predictions.py, and it worked with varying results.
+1. Potential energy graph for interaction between a proton and electron - we found the distributions of prices given to us fit very closely with this model. We did end up implementing this model in predictions.py, and it worked with varying results. We used a kernel density estimation (KDE) function to help estimate the final prices.
 <p align="center">
   <img src="media/PE_equation.png" width="500">
   <br>
   <img src="media/pe_graph.png" width="500">
 </p>
-2. Kernel density estimation (KDE) distribution, using 50% marks to determine fair price on incoming data. <br>
-<p align="center">
-  <img src="media\kde.png" width="500">
-</p>
-
-3. Last transacted price. We used this during our training rounds with great success. Unfortunately, the hitter bots (explained later) messed up these calculations.
+<br>
+2. Exponential moving average (EMA) <br>
+3. Sliding window mean<br>
+4. Last transacted price. We used this during our training rounds with great success. Unfortunately, the hitter bots (explained later) messed up these calculations.
 
 ### Challenges
 During the development and deployment of the bot, we encountered a significant challenge posed by "hitter bots". These bots aggressively hit our orders, making it difficult for our market-making bot to function effectively. The hitter bots' actions disrupted our bot's ability to maintain its desired position in the order book and execute trades as intended.
