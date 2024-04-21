@@ -73,6 +73,7 @@ The GUI allowed us to control fade (rate of selling / buying assets), edge (prof
 Here is the edge equation:
 <p align="center">
   <img src="media/edge_equation.png" width="900">
+  <img src="media/edge_equation2.png" width="900">
 </p>
 
 Here is the fade equation:
