@@ -124,7 +124,7 @@ In this case study, we focus on the portfolio optimization process, specifically
 
 #### Passive-Aggressive Mean Reversion Strategy
 
-During the portfolio optimization phase, we implemented a passive-aggressive mean reversion strategy. This strategy aims to capitalize on the tendency of asset prices to revert to their long-term average over time. The strategy involves the following steps:
+During the portfolio optimization phase, we implemented a passive-aggressive mean reversion strategy based on this paper (https://link.springer.com/article/10.1007/s10994-012-5281-z). This strategy aims to capitalize on the tendency of asset prices to revert to their long-term average over time. The strategy involves the following steps:
 
 1. **Identification of Mean-Reverting Assets**: Through extensive analysis of historical price data, we identified assets that exhibited mean-reverting behavior. These assets were characterized by prices that tended to oscillate around a long-term average, deviating from it in the short term but eventually reverting back to the mean.
 
