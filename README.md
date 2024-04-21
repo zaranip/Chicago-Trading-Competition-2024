@@ -66,7 +66,7 @@ To get a local copy up and running follow these simple example steps.
 2. **ETF Arbitrage**: The bot monitors the prices of exchange-traded funds (ETFs) and their underlying assets. It identifies and exploits price discrepancies between the ETF and its components, taking advantage of arbitrage opportunities.
 3. **GUI Interface and Accessory Strategies**: The bot includes a graphical user interface (GUI) that allows us to monitor its performance and adjust settings in real-time. Additionally, the bot employs accessory strategies, such as placing bogus bids, to manipulate the market and gain an advantage over other participants. We suggest that future competitiors also employ this, but to make sure that you can do X11 port forwarding before the competition.
 4. **Noise**: Because the price, margins, and bid / ask spreads are hard to predict, we added additional "noise" to make our models for fair price non-deterministic. We used random values several times in our code: volume of assets transacted, edge parameter value, and whether to buy or sell first (all else held equal).
-5. **Safety Mechanism**: Stop trading if we are losing too much.
+5. **Safety Mechanism**: Stop trading if we are losing too much (included in the GUI).
 
 The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack (max margin), and minimum margin. These can be found in our "params_gui.py" file. Our edge specifically uses a tanh function to adjust our margins and a logarithmic function to adjust the fades.
 
