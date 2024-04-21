@@ -68,7 +68,9 @@ To get a local copy up and running follow these simple example steps.
 4. **Noise**: Because the price, margins, and bid / ask spreads are hard to predict, we added additional "noise" to make our models for fair price non-deterministic. We used random values several times in our code: volume of assets transacted, edge parameter value, and whether to buy or sell first (all else held equal).
 5. **Safety Mechanism**: Stop trading if we are losing too much (included in the GUI).
 
-The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack (max margin), and minimum margin. These can be found in our "params_gui.py" file. Our edge specifically uses a tanh function to adjust our margins and a logarithmic function to adjust the fades.
+The GUI allowed us to control fade (rate of selling / buying assets), edge (profit margin sensitivity), slack (max margin), and minimum margin. These can be found in our "params_gui.py" file. 
+
+Our edge specifically uses a tanh function to adjust our margins and a logarithmic function to adjust the fades. For the fade, our logic is that since we are using penny in and penny out and holding onto a lot of positions for a long time, then our function should bring us back to 0 for the total position for each asset because we want are trades to be high in frequency. For an example, we want our trades to be like +10/-20/+10 instead of +100/-100. The more the volume of each asset grows, the more the function penalizes the asset and will bring us closer to 0. The sign of the current position therefore dictates if we want to buy or sell more stock.
 
 Here is the edge equation:
 <p align="center">
@@ -134,7 +136,7 @@ During the portfolio optimization phase, we implemented a passive-aggressive mea
 We implemented 9 strategies (besides PAMR) to test on the training data. Related graphs and results of these experiments can be found in the case_2 -> testing_metrics folder.
 1. Heterogeneous multiple population particle swarm optimization algorithm (HMPPSO.py): https://ieeexplore.ieee.org/document/7257025
 2. Mean-Variance Optimization (mvo.py): Industry-standard method for optimizing risk and return
-3. Genetic Algorithm 1 (oh_genetic.py): https://www.sciencedirect.com/science/article/abs/pii/S1568494617305240
+3. Genetic algorithm to support clustering-based portfolio optimization (oh_genetic.py): https://www.sciencedirect.com/science/article/abs/pii/S1568494617305240
 4. On-Line Portfolio Selection with Moving Average Reversion (OLMAR) (olmar.py): https://arxiv.org/ftp/arxiv/papers/1206/1206.4626.pdf
 5. Optimizing Sharpe (optimize_sharpe.py): Tried all the optimization methods available through the Scipy library https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html.
 6. Optimized Markowitz (optimized_markowitz.py): https://en.wikipedia.org/wiki/Modern_portfolio_theory
