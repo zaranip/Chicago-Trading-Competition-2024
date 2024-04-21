@@ -4,12 +4,14 @@
 - <a href="https://github.com/dmtrung14/">Trung Dang</a>, 2x Vietnam Math Olympiad Top 25, AI Research @ UMass Dynamic and Autonomous Robotic Systems (DARoS) Lab
 - <a href="https://github.com/zaranip/">Zara Nip</a>, 2024 Risk Quant Intern @ PIMCO, AI Break Through Tech Scholar, Girls Who Invest Scholar, AnitaB.org Scholar, UChicago Financial Markets Scholar
 
+If you are a recruiter and / or looking to hire in the quantitative finance field, please navigate to the resumes folder of this respository to find our resumes and contact information. We are currently recruiting for 2025 internships (Trung, Zara) and full-time positions (Divyansh).
+
 <p align="center">
   <img src="media\team_photo.png" height="400">
 </p>
 
 
-Please contact us at dshivashok@umass.edu, tmdang@umass.edu, or znip@uchicago.edu with any questions or concerns. <br> Refer to Trung's website: https://trungdang.netlify.app/blogs/uchicagotc_writeups.html for a greater inquiry into Case 1.
+Contact us at dshivashok@umass.edu, tmdang@umass.edu, or znip@uchicago.edu with any questions or concerns. <br> Refer to Trung's website: https://trungdang.netlify.app/blogs/uchicagotc_writeups.html for a greater inquiry into Case 1.
 
 ## Table of Contents
 <!-- TABLE OF CONTENTS -->
@@ -30,9 +32,7 @@ Please contact us at dshivashok@umass.edu, tmdang@umass.edu, or znip@uchicago.ed
 ## General Thoughts
 This year's competition included a live market making simulation (Case 1) and a portfolio optimization case (Case 2) from April 12-13. This was the first time some of us had ever attempted to anything related to quantitative finance - and also the first time that UMass Amherst was invited to the competition in all 12 years of its running (hopefully not the last!).
 
-The event and case studies were very carefully planned, and we enjoyed every minute of it. Kudos to the team behind the competition.
-
-If you are a recruiter and / or looking to hire in the quantitative finance field, please navigate to the resumes folder of this respository to find our resumes and contact information. We are currently recruiting for 2025 internships (Trung, Zara) and full-time positions (Divyansh).
+The event and case studies were very carefully planned, and we enjoyed every minute of it. Huge kudos to the team behind the competition!
 
 <!-- GETTING STARTED -->
 ## Getting Started
