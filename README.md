@@ -83,7 +83,7 @@ Here is what the final GUI looked like and the _base_ tanh function that we used
 <p align="center">
   <img src="media/parameters_gui.png" width="700">
   <br>
-  <img src="media/tanh.jpg" width="700">
+  <img src="media/tanh.png" width="700">
 </p>
 
 We used three different ways of evaluating fair value:
