@@ -72,15 +72,17 @@ The GUI allowed us to control fade (rate of selling / buying assets), edge (prof
 
 Our edge specifically uses a tanh function to adjust our margins and a logarithmic function to adjust the fades. For the fade, our logic is that since we are using penny in and penny out and holding onto a lot of positions for a long time, then our function should bring us back to 0 for the total position for each asset because we want are trades to be high in frequency. For an example, we want our trades to be like +10/-20/+10 instead of +100/-100. The more the volume of each asset grows, the more the function penalizes the asset and will bring us closer to 0. The sign of the current position therefore dictates if we want to buy or sell more stock.
 
-Here is the edge equation:
+Here is the edge representation:
 <p align="center">
   <img src="media/edge_equation.png" width="900">
   <img src="media/edge_equation2.png" width="900">
 </p>
 
-Here is the fade equation:
+Here is the fade representation:
 <p align="center">
   <img src="media\fade_equation.png" width="900">
+  <img src="media\fade.png" width="900">
+
 </p>
 
 Here is what the final GUI looked like and the _base_ tanh function that we used to adjust the edge.
