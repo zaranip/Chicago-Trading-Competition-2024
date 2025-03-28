@@ -2,7 +2,7 @@
 ## Team UChicago x UMass Amherst
 - <a href="https://github.com/coolkite/">Divyansh Shivashok</a>, Incomging AI/ML SWE at Microsoft, 2024 AI / ML SWE Intern @ Microsoft, 2x USNCO (US Chemistry Olympiad) Top 50, AI Research @ UMass Computer Graphics Lab, MIT CSAIL
 - <a href="https://github.com/dmtrung14/">Trung Dang</a>, Incoming SWE at Meta, 2x Vietnam Math Olympiad Top 25, AI Research @ UMass Dynamic and Autonomous Robotic Systems (DARoS) Lab
-- <a href="https://github.com/zaranip/">Zara Nip</a>, Income Trading Intern @ PIMCo, 2024 Risk Quant Intern @ PIMCO, AI Break Through Tech Scholar, Girls Who Invest Scholar, AnitaB.org Scholar, UChicago Financial Markets Scholar
+- <a href="https://github.com/zaranip/">Zara Nip</a>, Income Trading Intern @ PIMCO, 2024 Risk Quant Intern @ PIMCO, AI Break Through Tech Scholar, Girls Who Invest Scholar, AnitaB.org Scholar, UChicago Financial Markets Scholar
 
 If you are a recruiter and / or looking to hire in the quantitative finance field, please navigate to the resumes folder of this respository to find our resumes and contact information.
 
